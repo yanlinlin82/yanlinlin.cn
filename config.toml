@@ -1,0 +1,56 @@
+baseurl = "/"
+languageCode = "zh-Hans"
+title = "颜林林的个人博客"
+theme = "hugo-dusk"
+
+pygmentsStyle = "native" # 代码高亮
+pygmentsCodeFences = true
+
+canonifyurls = true
+paginate = 3
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+googleAnalytics = ""
+disqusShortname = ""
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+  page = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  weight = 10
+  name = "随笔"
+  slug = "prose"
+  url = "/categories/prose/"
+  
+[[menu.main]]
+  weight = 20
+  name = "实践"
+  slug = "practise"
+  url = "/categories/practise/"
+  
+[[menu.main]]
+  weight = 90
+  name = "关于"
+  slug = "about"
+  url = "/about/"
+  
+[params.meta]
+  keywords = "personal blog, bioinformatics, open source"
+  description = "Linlin Yan's personal blog"
+  
+[params]
+  github = "yanlinlin82"
+  gitlab = "yanlinlin82"
+  twitter = "yanlinlin82"
+  linkedin = "yanlinlin82"
+  
+[params.colors]
+  background = "#101010" # background color for the site
+  main = "#99cc66"
+  text = "#dbdbdb"
+  code-quote-bg = "#1D1F21" # background color for quotes and code blocks

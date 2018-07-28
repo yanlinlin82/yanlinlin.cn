@@ -1,0 +1,3 @@
+[submodule "themes/hugo-dusk"]
+	path = themes/hugo-dusk
+	url = git@github.com:yanlinlin82/hugo-dusk.git
