@@ -37,6 +37,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   name = "RSS"
   url = "/index.xml"
 
+[params]
+  favicon = "logo/logo.ico"
+
 [params.colors]
   background = "#101010" # background color for the site
   main = "#99cc66"
