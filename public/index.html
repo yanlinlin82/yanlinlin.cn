@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.45.1" />
+
+<link rel="canonical" href="/">
+<base href="/" />
+<meta property="og:title" content="颜林林的个人博客" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+
+
+
+<meta property="og:updated_time" content="2018-07-29T17:59:50&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="颜林林的个人博客"/>
+<meta name="twitter:description" content=""/>
+
+
+
+<meta itemprop="name" content="颜林林的个人博客">
+<meta itemprop="description" content="">
+
+
+
+<link rel="icon" href="logo/logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/layout.css" />
+<style type="text/css">
+body {
+  background-color: #101010;
+  color: #dbdbdb;
+}
+
+a { color: #dbdbdb; }
+
+pre {
+  background: #1D1F21;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+code {
+  background: #1D1F21;
+}
+
+blockquote {
+  background: #1D1F21;
+  border-left: 3px solid #dbdbdb;
+}
+
+table {
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #dbdbdb;
+}
+
+th {
+  background: #dbdbdb;
+  color: #101010;
+}
+
+.siteTitle a { color: #99cc66; }
+
+.post .content h1{ color: #99cc66; }
+.post .content h2{ color: #99cc66; }
+.post .content h3{ color: #99cc66; }
+.post .content h4{ color: #99cc66; }
+.post .content h5{ color: #99cc66; }
+.post .content h6{ color: #99cc66; }
+.post .content a:hover { color: #99cc66; }
+.social-link:hover { color: #99cc66; }
+.nav-item-title:hover { color: #99cc66; }
+.tag a:hover { color: #99cc66; }
+.copyright { color: <no value> }
+.poweredby { color: <no value> }
+.poweredby a { color: <no value>; }
+.post-preview .title a{ color: #99cc66; }
+.content-item a:hover{
+  text-decoration: underline;
+  color: #99cc66;
+}
+.post-list .title { color: #99cc66; }
+.rmore { color: #99cc66; }
+.terms .term a:hover {
+  text-decoration: underline;
+  color: #99cc66;
+}
+
+</style>
+
+
+
+<title>
+
+
+     颜林林的个人博客 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="/">颜林林的个人博客</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/categories/%E9%9A%8F%E7%AC%94/"><div class="nav-item-title">随笔</div></a>
+    
+    <a class="nav-item" href="/categories/%E5%AE%9E%E8%B7%B5/"><div class="nav-item-title">实践</div></a>
+    
+    <a class="nav-item" href="/about/"><div class="nav-item-title">关于</div></a>
+    
+    <a class="nav-item" href="/index.xml"><div class="nav-item-title">RSS</div></a>
+    
+
+  </nav>
+</div>
+
+</header>
+
+
+<main>
+
+
+  
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='/2018/07/how-to-establish-a-blog/'> 如何用blogdown快速搭建博客</a> </h2>
+    <div class="meta">
+      发布于：2018年7月29日 17时59分
+    </div>
+    
+<div class="tags">
+    
+      <div class="tag">
+        <a href="/tags/blogdown">#blogdown</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/%E5%8D%9A%E5%AE%A2">#博客</a>
+      </div>
+    
+</div>
+
+  </header>
+
+  <div class="summary">
+    使用blogdown搭建博客网站是一个很简单的过程。
+一个简化版的快速上手过程如下：
+$ mkdir my-site # 创建空目录，用于存放网站 $ cd my-site $ R R&gt; install.package(&quot;blogdown&quot;) # 只需要在第一次使用时安装即可 R&gt; library(blogdown) R&gt; new_site() # 创建网站 R&gt; serve_site() # 启动服务，并在浏览器中打开页面（此后修改会自动刷新） R&gt; new_post(&quot;标题名称&quot;) # 创建一篇新文章  最终结果发布在my-site/public目录中，将其整体上传到网站主机即可。
+要选择不同的主题样式，可以在Hugo网站上浏览，找到合适的主题，在R中执行命令自动下载安装：
+R&gt; install_theme(&quot;gyorb/hugo-dusk&quot;) # 这里以本站当前使用的`hugo-dusk`为例  更多的选项和定制，建议仔细阅读如下电子书和网站：
+ https://bookdown.org/yihui/blogdown/ https://gohugo.io/documentation/  
+    <a href='/2018/07/how-to-establish-a-blog/' class="rmore">阅读更多&gt;&gt;</a>
+  </div>
+
+  <div class="rmore">
+  </div>
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='/2018/07/another-new-beginning/'> 再开启新篇章</a> </h2>
+    <div class="meta">
+      发布于：2018年7月29日 7时34分
+    </div>
+    
+<div class="tags">
+    
+      <div class="tag">
+        <a href="/tags/%E5%8D%9A%E5%AE%A2">#博客</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/%E6%88%90%E9%95%BF">#成长</a>
+      </div>
+    
+</div>
+
+  </header>
+
+  <div class="summary">
+    世事恒变，往复循环，个人亦如是。
+在蹉跎良久后，我终于鼓足干劲，搭建起这个新版博客，准备恢复曾经的写作习惯，并以此重塑自我。
+是为再开启新篇章。
+    <a href='/2018/07/another-new-beginning/' class="rmore">阅读更多&gt;&gt;</a>
+  </div>
+
+  <div class="rmore">
+  </div>
+
+</article>
+
+
+
+
+<div class="page-nav">
+  <div class="page-prev">
+    
+  </div> 
+
+  <div class="page-num">
+    1/1
+  </div> 
+
+  <div class="page-next">
+    
+  </div> 
+</div> 
+
+
+</main>
+
+  <footer>
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

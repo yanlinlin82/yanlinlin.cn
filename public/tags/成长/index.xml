@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>成长 on 颜林林的个人博客</title>
+    <link>/tags/%E6%88%90%E9%95%BF/</link>
+    <description>Recent content in 成长 on 颜林林的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Sun, 29 Jul 2018 07:34:31 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>再开启新篇章</title>
+      <link>/2018/07/another-new-beginning/</link>
+      <pubDate>Sun, 29 Jul 2018 07:34:31 +0800</pubDate>
+      
+      <guid>/2018/07/another-new-beginning/</guid>
+      <description>世事恒变，往复循环，个人亦如是。
+在蹉跎良久后，我终于鼓足干劲，搭建起这个新版博客，准备恢复曾经的写作习惯，并以此重塑自我。
+是为再开启新篇章。</description>
+    </item>
+    
+  </channel>
+</rss>
