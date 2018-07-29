@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/2018/07/how-to-establish-a-blog/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2018-07-29T16:57:39+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2018/07/another-new-beginning/</loc>
+    <lastmod>2018-07-29T07:34:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blogdown/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%88%90%E9%95%BF/</loc>
+    <lastmod>2018-07-29T07:34:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E7%A4%BE%E4%BA%A4/</loc>
+    <lastmod>2018-07-29T16:57:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2018-07-29T07:34:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-07-29T17:59:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
