@@ -27,6 +27,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   url = "/categories/实践/"
   
 [[menu.main]]
+  weight = 80
+  name = "旧文"
+  url = "/categories/旧文/"
+
+[[menu.main]]
   weight = 90
   name = "关于"
   slug = "about"
