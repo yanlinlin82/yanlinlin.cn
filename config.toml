@@ -20,17 +20,27 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   weight = 10
   name = "随笔"
   url = "/categories/随笔/"
-  
+
 [[menu.main]]
   weight = 20
   name = "技术"
   url = "/categories/技术/"
-  
+
 [[menu.main]]
   weight = 30
   name = "科学"
   url = "/categories/科学/"
-  
+
+[[menu.main]]
+  weight = 40
+  name = "艺术"
+  url = "/categories/艺术/"
+
+[[menu.main]]
+  weight = 50
+  name = "哲学"
+  url = "/categories/哲学/"
+
 [[menu.main]]
   weight = 80
   name = "旧文"
@@ -41,7 +51,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   name = "关于"
   slug = "about"
   url = "/about/"
-  
+
 [[menu.main]]
   weight = 99
   name = "RSS"
