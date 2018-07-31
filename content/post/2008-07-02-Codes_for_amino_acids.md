@@ -1,9 +1,10 @@
 ---
 title: Codes for amino acids
 slug: codes-for-amino-acids
-date: 2008-07-02 12:22:00 +8
+date: 2008-07-02T12:22:00+08:00
 place: 北京
-tags: [ 科学 生物信息学 氨基酸 ]
+categories: [ 旧文, 科学 ]
+tags: [ 生物信息学, 氨基酸 ]
 host-at: LiveSpace
 ---
 It is known that amino acids or nucleotide acids can be represented as codes of either triple letters or single letter. When I was learning pairwise alignment algorithm a few days ago, I found that there is a letter ‘J’, a single letter for amino acid that I had never seen before, in NCBI’s scoring matrix. I posted the question in the newsgroup and got the answer in the next day. Thank Hamish McWilliam of EBI, who mailed me with a very detail explanation. Following are the codes for amino acids (from <http://www.ebi.ac.uk/RESID/faq.html#q01>).

@@ -3,8 +3,8 @@ title: 细数PowerBuilder的几个缺陷
 slug: limitation-of-powerbuilder
 date: 2007-08-19T02:12:00+08:00
 place: 北京
-categories: [ 旧文, 实践 ]
-tags: [ 技术, 编程, PowerBuilder ]
+categories: [ 旧文, 技术 ]
+tags: [ 编程, PowerBuilder ]
 host-at: LiveSpace
 ---
 新的公司、新的环境、新的领域、新的业务，当然也包括新的程序和新的开发工具，这些，就是我这半年多以来的经历。其中，从Visual C++到PowerBuilder的转变，在这个Java与C#兴起并盛行的大时代，的确不能不让人觉得是一段难得的经历。适应的过程总伴着痛苦与挑战，幸而C++与汇编的基础帮我走了过来，也终于能体会到网上关于“PB已经没落”的传言确有一定道理。下面就我这半年多的使用PB的感觉总结总结：
@@ -55,13 +55,6 @@ PB的对象有自己的属性、方法，方法有参数，方法里还有局部
 也就是说那个 `integer li_Value = 1` 只执行了一次，说明它的生存期为整个函数。但上面的代码却容易让人以为循环每次都执行了赋值为1的动作。
 
 > 评论（备份自LiveSpace）：
-> 
-comments:
-  -
-    author: bear keke
-    date: 2007-08-19
-    content: 再漂过～～～～～～··
-  -
-    author: 柳奇瑞
-    date: 2007-09-01
-    content: 搞不懂　路过
+>
+> * 2007-08-19 - bear keke: 再漂过～～～～～～··
+> * 2007-09-01 - 柳奇瑞: 搞不懂　路过
