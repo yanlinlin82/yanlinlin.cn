@@ -1,7 +1,7 @@
 ---
 title: R语言中的编程范型(paradigm)
 slug: paradigm-in-r-language
-date: 2009-05-17 14:26:00 +8
+date: 2009-05-17T14:26:00+08:00
 place: 北京
 tags: [ 技术 编程 R 范型 ]
 host-at: LiveSpace

@@ -1,7 +1,7 @@
 ---
 title: 关于std::string的效率问题
 slug: performance-of-std-string
-date: 2009-07-01 10:39:00 +8
+date: 2009-07-01T10:39:00+08:00
 place: 北京
 tags: [ 技术 编程 C++ std::string 传参方式 ]
 host-at: Oray

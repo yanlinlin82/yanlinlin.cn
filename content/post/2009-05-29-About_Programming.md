@@ -1,7 +1,7 @@
 ---
 title: About Programming
 slug: about-programming
-date: 2009-05-29 10:42:00 +8
+date: 2009-05-29T10:42:00+08:00
 place: 北京
 tags: [ 随笔 编程 ]
 host-at: LiveSpace

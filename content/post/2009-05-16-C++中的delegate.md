@@ -1,7 +1,7 @@
 ---
 title: C++中的delegate
 slug: delegate-in-c++
-date: 2009-05-16 21:15:00 +8
+date: 2009-05-16T21:15:00+08:00
 place: 北京
 tags: [ 技术 编程 boost C# C++ delegate ]
 host-at: LiveSpace
