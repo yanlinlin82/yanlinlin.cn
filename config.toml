@@ -23,8 +23,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   
 [[menu.main]]
   weight = 20
-  name = "实践"
-  url = "/categories/实践/"
+  name = "技术"
+  url = "/categories/技术/"
+  
+[[menu.main]]
+  weight = 30
+  name = "科学"
+  url = "/categories/科学/"
   
 [[menu.main]]
   weight = 80
