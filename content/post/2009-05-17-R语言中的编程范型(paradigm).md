@@ -3,14 +3,9 @@ title: R语言中的编程范型(paradigm)
 slug: paradigm-in-r-language
 date: 2009-05-17T14:26:00+08:00
 place: 北京
-tags: [ 技术 编程 R 范型 ]
+categories: [ 旧文, 技术 ]
+tags: [ 编程, R, 范型 ]
 host-at: LiveSpace
-comments:
-  -
-    author: Alan Chen 
-    link: http://cid-bc50ca5b7024dc31.profile.live.com/
-    date: 2009-05-18
-    content: 老婆，快带着孩子一起来看外星人。。。
 ---
 为了学R，同时也为了顺带着练习练习英语，订了R-help的maillist。几个月来，每天都能收到百来封邮件，可惜时间有限，大部分邮件都被我直接跳过了。最近坚持着读了一些，学到不少东西。其中的一组邮件，让我理解了R语言中同一问题在不同范型中的解决方案。
 
@@ -90,3 +85,7 @@ comments:
     2 lapply 0.17
 
 关键在于两种写法在对程序的理解角度不同。有人举了另一个“break 6 eggs”例子：要打破六个蛋，可以“for n from 1 to 6, break then nth egg.”（n循环从1到6，分别打破第n个蛋），也可以“apply break to the eggs”（向所有蛋都执行打破动作）。这下子，不同的写法差异，成了一个有点哲学性的问题，也就体现了不同的编程范型（paradigm）。
+
+> 评论（备份自LiveSpace）：
+> 
+> * 2009-05-18 - [Alan Chen](http://cid-bc50ca5b7024dc31.profile.live.com/): 老婆，快带着孩子一起来看外星人。。。

@@ -15,8 +15,6 @@ It seems geeky to host a personal blog on [GitHub Pages]. Suffered too much pain
 
 The relevance between posts is measured by number of shared tags. It is better to re-order the related posts by relevance. Here goes my final solution (see also [source of my blog]):
 
-{% raw %}
-
     {% if site.brute_force_lsi %}
       {% capture related %}
         {% for tag in page.tags %}
@@ -70,8 +68,6 @@ The relevance between posts is measured by number of shared tags. It is better t
       </ul>
     </div>
     {% endif %}
-
-{% endraw %}
 
 Finally, to enable such brute force scanning for related posts, add following lines into `_config.yml`:
 
