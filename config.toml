@@ -3,6 +3,8 @@ languageCode = "zh-Hans"
 title = "颜林林的个人博客"
 theme = "hugo-dusk"
 
+googleAnalytics = "UA-74397492-1"
+
 pygmentsStyle = "native" # 代码高亮
 pygmentsCodeFences = true
 
