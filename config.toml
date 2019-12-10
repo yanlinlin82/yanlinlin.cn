@@ -29,6 +29,11 @@ name = "博客"
 url = "/"
 
 [[menu.main]]
+weight = 30
+name = "作品"
+url = "/works/"
+
+[[menu.main]]
 weight = 90
 name = "关于"
 url = "/about/"

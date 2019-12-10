@@ -1,6 +1,6 @@
-# My Personal Blog
+# My Personal Website
 
-Here is the source code of my personal blog.
+Here is the source code of my personal website.
 
 ## How to update
 
