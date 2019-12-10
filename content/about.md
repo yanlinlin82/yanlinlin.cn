@@ -1,29 +1,35 @@
 ---
-title: "关于本博客"
+title: "关于本人及本站"
 ---
 
-本人生物信息专业，爱好编程，崇尚开源。兼喜文字，建此博客，供自娱自乐。
+I am a scientific researcher and software programmer. My major is bioinformatics. I received PhD from School of Life Sciences, Peking University. I have more than 20 years experience on programming. My current work is research and development on precision medicine, including data analysis of high-throughput technology, such as next-generation sequencing. I am also interested in genomics and other -omics.
 
-本博客设如下栏目：
+本人是一名研究者兼程序员，在北大取得生信专业博士学位，拥有20多年编程经验。目前我的主要兴趣是各类高通量组学数据分析，并在精准医疗领域做相应的技术研发工作。本人平时酷爱编程，崇尚开源，且喜欢写作。搭建此个人网站，自娱自乐的同时，既为记录平时点滴心得，也用于收集整理自己的各类产出作品。
 
-* **[《随笔》](/categories/随笔/)**：来自日常生活的杂记，有一时思想感悟，也不排斥流水帐，全凭心情记录，让文字随时间自行沉淀。
-* **[《技术》](/categories/技术/)**：对IT技术实践的点滴记录，不成体系，权作备忘。不求完美，只为使每日有进步。故此“实践”，非“最佳实践（Best Practise）”，而力求是“更佳实践（Better Practise）”。
-* **[《科学》](/categories/科学/)**：跟科学研究相关的知识积累和思考。
-* **[《艺术》](/categories/艺术/)**：受夫人熏陶多年，我也假装自己有那么点文艺细胞。
-* **[《哲学》](/categories/哲学/)**：不沾边、不实用的抽象类思考。
-* **[《旧文》](/categories/旧文/)**：收录2015年及之前的旧文。
+本人从十多年前起，就开始写博客。这些年来，虽然经历过多个平台切换，也常有较大间断，但所幸大多数文字都得以保留至今。所有博客内容，除少量引文外，均属个人原创。文中观点，仅代表个人当时想法，作为记忆珍藏于此，不做对错争辩。也因此，本站不设留言功能。如需沟通交流，欢迎以如下方式与我联系：
 
-所有博客内容，除少量引文外，均系原创。因本人已于文字酝酿创作过程中受益，盲目相信这些内容自有其生命张力，故不对转载再做任何限制。有意者请各取所需。
+* **微信号**：yanlinlin82
 
-文中观点，仅代表本人写作之时的想法，故本博客不设留言功能，不做对错争辩。如需沟通交流，请移步各社交APP或网站：
+    ![yanlinlin82](/images/weixin_scancode.jpg)
 
-* **邮箱**：yanlinlin82[AT]gmail.com
-* **微信**：![微信号：yanlinlin82](/images/weixin_scancode.jpg)
-* **微博**：http://weibo.com/yanlinlin82
-* **GitHub**: http://github.com/yanlinlin82
-* **Twitter**: http://twitter.com/yanlinlin82
-* **Facebook**: http://facebook.com/yanlinlin82
-* **LinkedIn**: http://cn.linkedin.com/in/yanlinlin82
-* **Google+**: http://google.com/+linlinyan
+* **Email**：<yanlinlin82@gmail.com>
 
-最后，本博客基于[Hugo](https://gohugo.io/)，用[blogdown](https://bookdown.org/yihui/blogdown/)生成。源码见：http://github.com/yanlinlin82/myblog
+* **ORCID**：[0000-0002-4990-6239](https://orcid.org/0000-0002-4990-6239)
+
+* **其他**：
+[GitHub](http://github.com/yanlinlin82) |
+[ResearchGate](https://www.researchgate.net/profile/Linlin_Yan4) |
+[Twitter](http://twitter.com/yanlinlin82) |
+[LinkedIn](http://linkedin.com/in/yanlinlin82) |
+[Facebook](http://facebook.com/yanlinlin82) |
+[微博](http://weibo.com/yanlinlin82)
+
+此外，本人还开了一个个人公众号：
+
+* **不靠谱颜论**
+
+    ![不靠谱颜论](/images/bukaopuyanlun-qrcode.png)
+
+其中一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介。
+
+欢迎关注和交流！
