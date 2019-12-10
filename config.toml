@@ -1,69 +1,34 @@
 baseurl = "/"
-languageCode = "zh-Hans"
-title = "颜林林的个人博客"
-theme = "hugo-dusk"
-
+title = "颜林林的个人网站"
+theme = "simple-style"
+paginate = 20
 googleAnalytics = "UA-74397492-1"
-
-pygmentsStyle = "native" # 代码高亮
-pygmentsCodeFences = true
-
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-
-[permalinks]
-  post = "/:year/:month/:slug/"
-  page = "/:slug/"
-
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
-[[menu.main]]
-  weight = 10
-  name = "随笔"
-  url = "/categories/随笔/"
-
-[[menu.main]]
-  weight = 20
-  name = "技术"
-  url = "/categories/技术/"
-
-[[menu.main]]
-  weight = 30
-  name = "科学"
-  url = "/categories/科学/"
-
-[[menu.main]]
-  weight = 40
-  name = "艺术"
-  url = "/categories/艺术/"
-
-[[menu.main]]
-  weight = 50
-  name = "哲学"
-  url = "/categories/哲学/"
-
-[[menu.main]]
-  weight = 80
-  name = "旧文"
-  url = "/categories/旧文/"
-
-[[menu.main]]
-  weight = 90
-  name = "关于"
-  slug = "about"
-  url = "/about/"
-
-[[menu.main]]
-  weight = 99
-  name = "RSS"
-  url = "/index.xml"
+copyright = "2007-2019 Linlin Yan"
 
 [params]
-  favicon = "logo/logo.ico"
+subtitle = "Linlin Yan's Personal Website"
+favicon = "/logo/logo.ico"
 
-[params.colors]
-  background = "#101010" # background color for the site
-  main = "#99cc66"
-  text = "#dbdbdb"
-  code-quote-bg = "#1D1F21" # background color for quotes and code blocks
+[markup.highlight]
+codeFences = true
+lineNos = true
+style = "monokailight"
+
+[permalinks]
+post = "/:year/:month/:slug/"
+page = "/:slug/"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[[menu.main]]
+weight = 10
+name = "博客"
+url = "/"
+
+[[menu.main]]
+weight = 90
+name = "关于"
+url = "/about/"
