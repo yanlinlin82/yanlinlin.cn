@@ -21,7 +21,6 @@ page = "/:slug/"
 
 [taxonomies]
 tag = "tags"
-category = "categories"
 
 [[menu.main]]
 weight = 10

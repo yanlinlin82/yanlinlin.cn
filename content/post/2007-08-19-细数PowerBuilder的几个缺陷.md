@@ -3,7 +3,6 @@ title: 细数PowerBuilder的几个缺陷
 slug: limitation-of-powerbuilder
 date: 2007-08-19T02:12:00+08:00
 place: 北京
-categories: [ 旧文, 技术 ]
 tags: [ 编程, PowerBuilder ]
 host-at: LiveSpace
 ---

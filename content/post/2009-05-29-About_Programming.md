@@ -3,7 +3,6 @@ title: About Programming
 slug: about-programming
 date: 2009-05-29T10:42:00+08:00
 place: 北京
-categories: [ 旧文, 技术, 随笔 ]
 tags: [ 编程, 精确性 ]
 host-at: LiveSpace
 ---
