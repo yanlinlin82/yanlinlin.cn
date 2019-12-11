@@ -2,7 +2,6 @@
 title: Reinvent to Learn
 slug: reinvent-to-learn
 date: 2015-06-22T13:40:20+08:00
-categories: [ 旧文, 随笔 ]
 tags: [ 博客, 微博, 微信, 发明轮子, 学习, 父亲节 ]
 host-at: GitHub
 ---

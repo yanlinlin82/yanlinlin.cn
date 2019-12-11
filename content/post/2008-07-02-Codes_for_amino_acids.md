@@ -3,7 +3,6 @@ title: Codes for amino acids
 slug: codes-for-amino-acids
 date: 2008-07-02T12:22:00+08:00
 place: 北京
-categories: [ 旧文, 科学 ]
 tags: [ 生物信息学, 氨基酸 ]
 host-at: LiveSpace
 ---

@@ -3,7 +3,6 @@ title: Special Day
 slug: special-day
 date: 2008-06-30T21:14:00+08:00
 place: 北京
-categories: [ 旧文, 随笔 ]
 tags: [ 考研, 学习, 离职, 梦想 ]
 host-at: LiveSpace
 ---
