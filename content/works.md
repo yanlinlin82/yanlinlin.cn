@@ -14,9 +14,9 @@ title: "我的作品"
 ## 开源软件项目
 
 * [dup-file-scanner](https://github.com/yanlinlin82/dup-file-scanner)：用于搜索本地磁盘上的文件，通过计算md5sum，判断文件是否重复，并生成bash语句，可对重复文件进行去重。
-* [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包。
+* [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包，doi: [10.5281/zenodo.3521775](https://doi.org/10.5281/zenodo.3521775)。
 * [link-game-in-r](https://github.com/yanlinlin82/link-game-in-r)：连连看R语言版。
-* [seqpipe](https://github.com/yanlinlin82/seqpipe)：自动对分析过程命令行及结果做详细记录的流程框架。
+* [seqpipe](https://github.com/yanlinlin82/seqpipe)：自动对分析过程命令行及结果做详细记录的流程框架，doi: [10.5281/zenodo.3570939](https://doi.org/10.5281/zenodo.3570939)。
 * [simple-style](https://github.com/yanlinlin82/simple-style)：一个自己从头手写的极简风格的Hugo主题，也是本网站目前采用的风格。
 * [tsv](https://github.com/yanlinlin82/tsv)：一个处理TSV格式文件的命令行工具。
 * [webpage-templates](https://github.com/yanlinlin82/webpage-templates)：手写HTML页面模板，用以学习HTML5，同时完成一些页面样式的模板。
