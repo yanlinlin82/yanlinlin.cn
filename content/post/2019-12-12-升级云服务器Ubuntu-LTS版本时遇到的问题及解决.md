@@ -1,6 +1,7 @@
 ---
 title: "升级云服务器Ubuntu LTS版本时遇到的问题及解决"
 date: 2019-12-12T22:59:51+08:00
+slug: "ubuntu-lts-upgrade"
 tags: [ Ubuntu, upgrade ]
 ---
 
