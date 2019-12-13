@@ -6,6 +6,9 @@ googleAnalytics = "UA-74397492-1"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 copyright = "2007-2019 Linlin Yan"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 subtitle = "Linlin Yan's Personal Website"
 favicon = "/logo/logo.ico"
@@ -34,6 +37,11 @@ url = "/public/"
 
 [[menu.main]]
 weight = 30
+name = "朋友圈"
+url = "/moments/"
+
+[[menu.main]]
+weight = 40
 name = "作品"
 url = "/works/"
 
