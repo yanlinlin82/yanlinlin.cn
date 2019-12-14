@@ -4,7 +4,7 @@ theme = "simple-style"
 paginate = 20
 googleAnalytics = "UA-74397492-1"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-copyright = "2007-2019 Linlin Yan"
+copyright = "2007-2019 Linlin Yan. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)"
 
 [markup.goldmark.renderer]
 unsafe = true
