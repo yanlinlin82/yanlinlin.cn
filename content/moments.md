@@ -12,6 +12,28 @@ title: "微信朋友圈内容精选"
 
 ## 2019-12
 
+### 2019-12-14
+
+#### (2)
+
+各位靠血肉之躯筑起大众医疗健康保障的同道们，战线还很宽，而且旷日持久，看现在的数据暴增趋势，未来的任务负荷只会翻倍增加，所以，千万要注意保护好自己！
+
+各位看好或看空人工智能的专家们，都少整些复杂到把自己都能砸晕的泡沫了，回归到最基本的需求上吧：怎么把需要靠人肉连轴转地处理的业务，逐步用更多信息化和自动化的手段做起来，就功德无量了。
+
+**分享链接：** [【中国医药报】心痛！药品审评员倒在了执行检查任务的路上，年仅39岁](https://mp.weixin.qq.com/s/ocgxPQ5q1Axzk2jc-lF5WA)
+
+#### (1)
+
+**分享链接：** [【DahShu】辉瑞生统总监：聊一聊癌症新型免疫疗法中的统计模型](https://mp.weixin.qq.com/s/4dgWaKdLfy-9Eanqs6R9aw)
+
+<a href="/images/moments/2019-12/2019-12-14-001.jpg"><img src="/images/moments/2019-12/2019-12-14-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-14-002.jpg"><img src="/images/moments/2019-12/2019-12-14-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-14-003.jpg"><img src="/images/moments/2019-12/2019-12-14-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+**评论：** 挺不错的。尤其是生存曲线是右移还是抬升，所反映的不同治疗方法的疗效变化类型，的确需要深入到统计模型中去尝试区分和解释。不过可惜我的基础偏弱，还需要再看回放学习。理解统计模型，对于真正理解一个分析的结论，还是挺重要的。
+
+---
+
 ### 2019-12-13
 
 #### (4)
@@ -37,7 +59,7 @@ https://doi.org/10.1371/journal.pone.0216224
 
 从伦理的角度说，知情同意书背后的逻辑，并不是为了责任规避，而是为了当事人充分且正确地理解所有可能的信息，以便做出恰当的决策。也因此，医患其实是本是同一战线同一阵营的。
 
-[【向日葵儿童】2次病危1次复发，她大胆做了3个决定从死神手里抢回孩子……](https://mp.weixin.qq.com/s/t2mftIT0Ixm5RLkXll0uaQ)
+**分享链接：** [【向日葵儿童】2次病危1次复发，她大胆做了3个决定从死神手里抢回孩子……](https://mp.weixin.qq.com/s/t2mftIT0Ixm5RLkXll0uaQ)
 
 #### (1)
 
@@ -52,3 +74,20 @@ https://doi.org/10.1371/journal.pone.0216224
 <a href="/images/moments/2019-12/2019-12-13-003.jpg"><img src="/images/moments/2019-12/2019-12-13-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-13-004.jpg"><img src="/images/moments/2019-12/2019-12-13-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-13-005.jpg"><img src="/images/moments/2019-12/2019-12-13-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+---
+
+### 2019-12-12
+
+#### (2)
+
+物理学的时间是处处均等的，物理学以外的时间则不是。所以，别期望复制，缅怀一下就好。每代人都有自己要面对的独特机遇，无关过去和未来。
+
+<a href="/images/moments/2019-12/2019-12-12-003.jpg"><img src="/images/moments/2019-12/2019-12-12-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-002.jpg"><img src="/images/moments/2019-12/2019-12-12-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (1)
+
+12/12
+
+<a href="/images/moments/2019-12/2019-12-12-001.jpg"><img src="/images/moments/2019-12/2019-12-12-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
