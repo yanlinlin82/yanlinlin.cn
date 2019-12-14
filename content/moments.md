@@ -6,7 +6,7 @@ title: "微信朋友圈内容精选"
 
 近半年多我在朋友圈分享较多，要全部同步过来，实属一项浩大的工程，无法一下子完成。加上我同时希望手工进行精选，挑出部分自己觉得可能会有价值的内容，再做同步，而不是单纯的机械拷贝。所以，我会在未来的一段时间内，抽空慢慢进行。
 
-此外，我的微信号是`yanlinlin82`，欢迎建设性同道们联系交流。
+此外，我的微信号是`yanlinlin82`，欢迎建设性同道们联系交流。部分图片来自网络，若侵权请联系我进行删除。
 
 ---
 
@@ -118,7 +118,116 @@ https://doi.org/10.1371/journal.pone.0216224
 
 #### (1)
 
-当年还很不成熟的乔帮主:D
+当年还很不成熟的乔帮主[呲牙]
 
 <a href="/images/moments/2019-12/2019-12-11-001.jpg"><img src="/images/moments/2019-12/2019-12-11-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-11-002.jpg"><img src="/images/moments/2019-12/2019-12-11-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+---
+
+### 2019-12-10
+
+#### (2)
+
+“We believe: Data are boundless. Big ideas deserve a big audience. Insights fuel action.”
+
+https://www.cell.com/patterns/home
+
+Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关注。“... promotes all types of research outputs and facilitates sharing and collaboration to solve key scientific problems and aid in the development of solutions for practice, policies, and management.”
+
+<a href="/images/moments/2019-12/2019-12-10-001.jpg"><img src="/images/moments/2019-12/2019-12-10-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (1)
+
+在我读研究生期间，正好赶上饶毅做生科院院长，他推动的BIO2000和自然科学史这两门课程，令我受益匪浅，使我对科学的认识得到了质的提升，在科研的路上真正入了门。
+
+**分享链接：** [【拾遗】保护饶毅](https://mp.weixin.qq.com/s/AGk4ze1d9sC1u2pQclNeZg)
+
+---
+
+### 2019-12-09
+
+#### (1)
+
+关于成长的恐怖故事：随着理解力的升级，会逐渐发现，所有恐怖故事中的逻辑设定，其实都是真的[衰]
+
+<a href="/images/moments/2019-12/2019-12-09-001.jpg"><img src="/images/moments/2019-12/2019-12-09-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+---
+
+### 2019-12-08
+
+#### (3)
+
+解算法题，有时候还是硬编码来得高效：不仅写起来容易，运行也容易；提交一次过，速度排名还高。
+
+https://github.com/yanlinlin82/leetcode
+
+<a href="/images/moments/2019-12/2019-12-08-004.jpg"><img src="/images/moments/2019-12/2019-12-08-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (2)
+
+从多年前的《人人都是产品经理》的水平看，该书苏杰在这几年可以说经历了极大的升华，在这次极客时间的专栏课程中，可以明显感觉到这种格局的变化，也带给人更多启发和思考。
+
+精准医疗是一盘大棋，企业之间为短期利益互相中伤诋毁不应该是常态，互利互惠合作、加快行业发展，尽可能并尽早地为患者造福、减少绝望和痛苦，而不是制造伤害，才是长期需要思考的。
+
+<a href="/images/moments/2019-12/2019-12-08-001.jpg"><img src="/images/moments/2019-12/2019-12-08-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-08-002.jpg"><img src="/images/moments/2019-12/2019-12-08-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-08-003.jpg"><img src="/images/moments/2019-12/2019-12-08-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (1)
+
+12月1日，网络安全等级保护制度2.0已正式开始实施。
+
+**分享链接：** [【极客视点】“等保 2.0”时代正式到来](https://time.geekbang.org/column/article/175887?from=timeline)
+
+---
+
+### 2019-12-07
+
+#### (5)
+
+R语言也二十年了！
+
+http://www.celebration2020.org/
+
+<a href="/images/moments/2019-12/2019-12-07-005.jpg"><img src="/images/moments/2019-12/2019-12-07-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (4)
+
+C++是一个古老却仍在不断展开的美妙世界。为了赶上其他语言的优雅性，C++（及boost库）一直在拼尽全力地制造各种甜腻腻的语法糖。
+
+图1是理想的代码，可惜并不能编译通过，但通过一系列设计封装，就能实现其类似效果，见图2。
+
+https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign/
+
+<a href="/images/moments/2019-12/2019-12-07-004.jpg"><img src="/images/moments/2019-12/2019-12-07-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-003.jpg"><img src="/images/moments/2019-12/2019-12-07-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (3)
+
+业，精于勤，荒于嬉，荣于营销，卒于媒体；水军能载舟，亦能覆舟。
+
+**分享链接：** [【白鸦】请求“创业邦”减少对创业者的伤害](https://mp.weixin.qq.com/s/Tenk092RvcQkAQb3KspidQ)
+
+#### (2)
+
+是《Nature》杂志沦落了，还是其实一直都很low？几百例的“最大规模”研究，诸多因素不做严格control，在metagenomics这么高维的数据中去多重检验，结论直接上临床……“总想搞点大新闻”，以至于连严谨性都可以践踏了？还是说只是为了促进产业创新，支持作者开公司圈经费？
+
+**分享链接：** [【Nature自然科研】剖腹产宝宝缺少关键微生物：迄今最大规模新生儿微生物组研究提供坚实证据](https://mp.weixin.qq.com/s/GBh2TfKyZ8OmfqCX16BEsw)
+
+**朋友评论：** 您这么想，如今做科学家就是 另一个方向的推销员，写文章 sell 自己领域方向，吹牛逼很正常啊
+
+**回复：** 这么说也对，反正吹牛逼不用负责，就算间接害死了人，也是很容易撇开责任的，连过失杀人都算不上；反倒是，谨慎更使人固步，扼杀了创新，使人类失去希望，才是大罪。
+
+**朋友回复：** 您看下《反脆弱》那书，这书里对科学家的定义就是给社会增加脆弱性
+
+
+#### (1)
+
+如此说来，比丘国的这只妖怪，倒也是翦除邪恶、净化世界的善类了。
+
+<a href="/images/moments/2019-12/2019-12-07-001.jpg"><img src="/images/moments/2019-12/2019-12-07-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-002.jpg"><img src="/images/moments/2019-12/2019-12-07-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+**朋友评论：** 不要污蔑中医 何曾用过真的犀牛角
