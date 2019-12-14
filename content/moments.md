@@ -83,11 +83,42 @@ https://doi.org/10.1371/journal.pone.0216224
 
 物理学的时间是处处均等的，物理学以外的时间则不是。所以，别期望复制，缅怀一下就好。每代人都有自己要面对的独特机遇，无关过去和未来。
 
-<a href="/images/moments/2019-12/2019-12-12-003.jpg"><img src="/images/moments/2019-12/2019-12-12-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-12-002.jpg"><img src="/images/moments/2019-12/2019-12-12-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-003.jpg"><img src="/images/moments/2019-12/2019-12-12-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
 
 #### (1)
 
 12/12
 
 <a href="/images/moments/2019-12/2019-12-12-001.jpg"><img src="/images/moments/2019-12/2019-12-12-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+---
+
+### 2019-12-11
+
+#### (4)
+
+“创新的新本质”
+
+<a href="/images/moments/2019-12/2019-12-11-006.jpg"><img src="/images/moments/2019-12/2019-12-11-006.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-007.jpg"><img src="/images/moments/2019-12/2019-12-11-007.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (3)
+
+传奇硅谷史上，果然有很多神奇的逻辑，能给人突破雷池的启发。
+
+另外，“人机互动”一定也是今天的未来之星！
+
+<a href="/images/moments/2019-12/2019-12-11-005.jpg"><img src="/images/moments/2019-12/2019-12-11-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (2)
+
+<a href="/images/moments/2019-12/2019-12-11-003.jpg"><img src="/images/moments/2019-12/2019-12-11-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-004.jpg"><img src="/images/moments/2019-12/2019-12-11-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+#### (1)
+
+当年还很不成熟的乔帮主:D
+
+<a href="/images/moments/2019-12/2019-12-11-001.jpg"><img src="/images/moments/2019-12/2019-12-11-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-002.jpg"><img src="/images/moments/2019-12/2019-12-11-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
