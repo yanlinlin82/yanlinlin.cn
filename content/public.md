@@ -8,7 +8,7 @@ title: 微信公众号：不靠谱颜论
 
 ![](/images/bukaopuyanlun-qrcode.png)
 
-GitHub上同步内容：<https://github.com/yanlinlin82/bukaopuyanlun>
+文章目录列表如下：
 
 * 2019-10-17 - **[《开篇词：数据统治世界》](https://mp.weixin.qq.com/s/Oq-JjT4LCE-ilT0ZACqXJg)**
 
