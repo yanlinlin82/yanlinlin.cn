@@ -8,6 +8,8 @@ title: "微信朋友圈内容精选"
 
 此外，我的微信号是`yanlinlin82`，欢迎建设性同道们联系交流。部分图片来自网络，若侵权请联系我进行删除。
 
+<img src="/images/weixin_scancode.jpg" style="display:block;text-align:center">
+
 ---
 
 ## 2019-12
