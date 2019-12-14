@@ -231,3 +231,61 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 <a href="/images/moments/2019-12/2019-12-07-002.jpg"><img src="/images/moments/2019-12/2019-12-07-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
 
 **朋友评论：** 不要污蔑中医 何曾用过真的犀牛角
+
+---
+
+### 2019-12-06
+
+#### (2)
+
+酒精是一级致癌物，即“有充足证据证明其具有致癌性的物质”，板上钉钉的！各位酒仙，生命过半，禁不起几次燃烧了，在无限续命技能炼成前，最好还是先把酒戒戒啦！
+
+**分享链接：** [【臻和基因】我们对酒的热爱像极了爱情](https://mp.weixin.qq.com/s/sI1cUEsaYwNEvjFdEm4teQ)
+
+#### (1)
+
+还是《硅谷百年史》，感谢倩姐推荐好书！
+
+我挑选出的内容片段，都是带着偏见、并强烈diss自己的；更客观的见解，请考虑阅读原书。
+
+<a href="/images/moments/2019-12/2019-12-06-001.jpg"><img src="/images/moments/2019-12/2019-12-06-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-06-002.jpg"><img src="/images/moments/2019-12/2019-12-06-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-06-003.jpg"><img src="/images/moments/2019-12/2019-12-06-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+
+---
+
+### 2019-12-05
+
+#### (1)
+
+六神磊磊的提醒很到位[强]
+
+我就是个以编程为爱好、每天只懂得钻研底层技术的人。虽然也会对似网易兄弟和华为兄弟那般可怕遭遇而心悸，但除了想想“回家能不能养活老婆孩子？能不能把家里人生活搞好一点？”的类似问题外，的确真没有什么实质性可做的。
+
+因为乱怼人，我已经自罚在群里禁言快一周了。每天看各种群里，无关者拿着片面消息，为热点事件各执己见，一天下来，经常能吵吵出好几百条未读消息，其实最终还是不解决任何问题。而我自己，应该已经快习惯这种旁观不语的状态了。
+
+**分享链接：** [【六神磊磊读金庸】有事想不明白的时候，就想想你自己是谁](https://mp.weixin.qq.com/s/vOIM-51iRyofYRImfFo4XA)
+
+---
+
+### 2019-12-04
+
+#### (3)
+
+辟谣的确有被踢被拉黑风险[撇嘴]
+
+**分享链接：** [【我是科学家iScientist】据说“不孝有三，辟谣为大”？我觉得他们可能没用好策略｜阮光锋](https://mp.weixin.qq.com/s/Pt1Jz0O47YkXnu7ey8UurQ)
+
+#### (2)
+
+PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种观点的科学证据，不管多么意想不到，在某个时刻，似乎都可以从这个杂志上找出来。
+
+**分享链接：** [【浙大学报英文版】女人如何对男人好？国际知名SCI：让他做家务去，越重越好！](https://mp.weixin.qq.com/s/18J-LT5ari7KuR_944zWOA)
+
+#### (1)
+
+学术还是产业，如同小婴儿的摸摸还是舔舔，都只是我们在和世界打招呼的方式
+
+**分享链接：** [【轴突纪】我为什么离开学术圈？](https://mp.weixin.qq.com/s/LXCkOtTA-NinQJFDSf9tCw)
+
+**朋友评论：** Hello world!
