@@ -2,15 +2,11 @@
 title: "我的作品"
 ---
 
-## 持续学习
-
-* [力扣刷题](https://github.com/yanlinlin82/leetcode)：力扣（leetcode）算法题库，每周坚持刷题，目前使用C++语言，顺序完成题库的每一题。
-* [左耳听风ARTS](https://github.com/yanlinlin82/ARTS-Weekly)：《左耳听风》专栏的每周学习的打卡记录，打卡内容详见链接页面。
-
 ## 开源软件项目
 
 ### R包
 
+* [ggturtle](https://github.com/yanlinlin82/ggturtle)：基于ggplot，实现LOGO语言的绘图功能。
 * [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包，doi: [10.5281/zenodo.3521775](https://doi.org/10.5281/zenodo.3521775)。
 
 ### 工具类
