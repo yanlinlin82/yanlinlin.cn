@@ -46,6 +46,11 @@ name = "作品"
 url = "/works/"
 
 [[menu.main]]
+weight = 50
+name = "学习"
+url = "/study/"
+
+[[menu.main]]
 weight = 90
 name = "关于"
 url = "/about/"
