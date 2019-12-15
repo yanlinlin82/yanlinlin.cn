@@ -16,4 +16,4 @@ I am a scientific researcher and software programmer. My major is bioinformatics
 
 * **个人公众号**：不靠谱颜论
 
-    ![不靠谱颜论](static/images/bukaopuyanlun-qrcode.png)
+    ![不靠谱颜论](static/images/bukaopuyanlun-qrcode.jpg)
