@@ -28,7 +28,7 @@ I am a scientific researcher and software programmer. My major is bioinformatics
 
 * **不靠谱颜论**
 
-    ![不靠谱颜论](/images/bukaopuyanlun-qrcode.png)
+    ![不靠谱颜论](/images/bukaopuyanlun-qrcode.jpg)
 
 其中一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介。
 
