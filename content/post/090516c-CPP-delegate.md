@@ -1,6 +1,6 @@
 ---
 title: C++中的delegate
-slug: delegate-in-c++
+slug: delegate-in-cpp
 date: 2009-05-16T21:15:00+08:00
 place: 北京
 tags: [ 编程, boost, C#, C++, delegate ]
