@@ -44,9 +44,9 @@ title: "微信朋友圈内容精选"
 
 **分享链接：** [【DahShu】辉瑞生统总监：聊一聊癌症新型免疫疗法中的统计模型](https://mp.weixin.qq.com/s/4dgWaKdLfy-9Eanqs6R9aw)
 
-<a href="/images/moments/2019-12/2019-12-14-001.jpg"><img src="/images/moments/2019-12/2019-12-14-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-14-002.jpg"><img src="/images/moments/2019-12/2019-12-14-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-14-003.jpg"><img src="/images/moments/2019-12/2019-12-14-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-14-001.jpg"><img src="/images/moments/2019-12/2019-12-14-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-14-002.jpg"><img src="/images/moments/2019-12/2019-12-14-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-14-003.jpg"><img src="/images/moments/2019-12/2019-12-14-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **评论：** 挺不错的。尤其是生存曲线是右移还是抬升，所反映的不同治疗方法的疗效变化类型，的确需要深入到统计模型中去尝试区分和解释。不过可惜我的基础偏弱，还需要再看回放学习。理解统计模型，对于真正理解一个分析的结论，还是挺重要的。
 
@@ -60,7 +60,7 @@ title: "微信朋友圈内容精选"
 
 这个世界上还真有不少“闲侠”，游走于github，挨个检查哪个仓库缺少LICENSE（开源协议），就给人家提交一个issue，双语地建议把协议申明加上，并详细解释了原因，还附有视频教程链接。
 
-<a href="/images/moments/2019-12/2019-12-13-010.jpg"><img src="/images/moments/2019-12/2019-12-13-010.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-010.jpg"><img src="/images/moments/2019-12/2019-12-13-010.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (3)
 
@@ -68,10 +68,10 @@ title: "微信朋友圈内容精选"
 
 https://doi.org/10.1371/journal.pone.0216224
 
-<a href="/images/moments/2019-12/2019-12-13-006.jpg"><img src="/images/moments/2019-12/2019-12-13-006.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-007.jpg"><img src="/images/moments/2019-12/2019-12-13-007.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-008.jpg"><img src="/images/moments/2019-12/2019-12-13-008.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-009.jpg"><img src="/images/moments/2019-12/2019-12-13-009.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-006.jpg"><img src="/images/moments/2019-12/2019-12-13-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-007.jpg"><img src="/images/moments/2019-12/2019-12-13-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-008.jpg"><img src="/images/moments/2019-12/2019-12-13-008.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-009.jpg"><img src="/images/moments/2019-12/2019-12-13-009.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2)
 
@@ -89,11 +89,11 @@ https://doi.org/10.1371/journal.pone.0216224
 
 现在，是时候做些系统性学习，把多年经验串一串，升华一下自己了。我会不定期总结自己的学习笔记，欢迎加入，与我一起升级！
 
-<a href="/images/moments/2019-12/2019-12-13-001.jpg"><img src="/images/moments/2019-12/2019-12-13-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-002.jpg"><img src="/images/moments/2019-12/2019-12-13-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-003.jpg"><img src="/images/moments/2019-12/2019-12-13-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-004.jpg"><img src="/images/moments/2019-12/2019-12-13-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-005.jpg"><img src="/images/moments/2019-12/2019-12-13-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-001.jpg"><img src="/images/moments/2019-12/2019-12-13-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-002.jpg"><img src="/images/moments/2019-12/2019-12-13-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-003.jpg"><img src="/images/moments/2019-12/2019-12-13-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-004.jpg"><img src="/images/moments/2019-12/2019-12-13-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-005.jpg"><img src="/images/moments/2019-12/2019-12-13-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
 
@@ -103,7 +103,7 @@ https://doi.org/10.1371/journal.pone.0216224
 
 双十二
 
-<a href="/images/moments/2019-12/2019-12-12-004.jpg"><img src="/images/moments/2019-12/2019-12-12-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-004.jpg"><img src="/images/moments/2019-12/2019-12-12-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** 好书，你赶快学，生物信息学使用量子计算这个工具，很多梦想就要实现了，比如攻克癌症，比如DNA编程，还比如克隆，最好能把意识数字化搞定，我的永生计划就等你来助力了
 
@@ -113,14 +113,14 @@ https://doi.org/10.1371/journal.pone.0216224
 
 物理学的时间是处处均等的，物理学以外的时间则不是。所以，别期望复制，缅怀一下就好。每代人都有自己要面对的独特机遇，无关过去和未来。
 
-<a href="/images/moments/2019-12/2019-12-12-002.jpg"><img src="/images/moments/2019-12/2019-12-12-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-12-003.jpg"><img src="/images/moments/2019-12/2019-12-12-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-002.jpg"><img src="/images/moments/2019-12/2019-12-12-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-003.jpg"><img src="/images/moments/2019-12/2019-12-12-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1)
 
 12/12
 
-<a href="/images/moments/2019-12/2019-12-12-001.jpg"><img src="/images/moments/2019-12/2019-12-12-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-001.jpg"><img src="/images/moments/2019-12/2019-12-12-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** 读博是吗
 
@@ -134,8 +134,8 @@ https://doi.org/10.1371/journal.pone.0216224
 
 “创新的新本质”
 
-<a href="/images/moments/2019-12/2019-12-11-006.jpg"><img src="/images/moments/2019-12/2019-12-11-006.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-11-007.jpg"><img src="/images/moments/2019-12/2019-12-11-007.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-006.jpg"><img src="/images/moments/2019-12/2019-12-11-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-007.jpg"><img src="/images/moments/2019-12/2019-12-11-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (3)
 
@@ -143,19 +143,19 @@ https://doi.org/10.1371/journal.pone.0216224
 
 另外，“人机互动”一定也是今天的未来之星！
 
-<a href="/images/moments/2019-12/2019-12-11-005.jpg"><img src="/images/moments/2019-12/2019-12-11-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-005.jpg"><img src="/images/moments/2019-12/2019-12-11-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2)
 
-<a href="/images/moments/2019-12/2019-12-11-003.jpg"><img src="/images/moments/2019-12/2019-12-11-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-11-004.jpg"><img src="/images/moments/2019-12/2019-12-11-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-003.jpg"><img src="/images/moments/2019-12/2019-12-11-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-004.jpg"><img src="/images/moments/2019-12/2019-12-11-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1)
 
 当年还很不成熟的乔帮主[呲牙]
 
-<a href="/images/moments/2019-12/2019-12-11-001.jpg"><img src="/images/moments/2019-12/2019-12-11-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-11-002.jpg"><img src="/images/moments/2019-12/2019-12-11-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-001.jpg"><img src="/images/moments/2019-12/2019-12-11-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-11-002.jpg"><img src="/images/moments/2019-12/2019-12-11-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
 
@@ -169,7 +169,7 @@ https://www.cell.com/patterns/home
 
 Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关注。“... promotes all types of research outputs and facilitates sharing and collaboration to solve key scientific problems and aid in the development of solutions for practice, policies, and management.”
 
-<a href="/images/moments/2019-12/2019-12-10-001.jpg"><img src="/images/moments/2019-12/2019-12-10-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-10-001.jpg"><img src="/images/moments/2019-12/2019-12-10-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1)
 
@@ -185,7 +185,7 @@ Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关�
 
 关于成长的恐怖故事：随着理解力的升级，会逐渐发现，所有恐怖故事中的逻辑设定，其实都是真的[衰]
 
-<a href="/images/moments/2019-12/2019-12-09-001.jpg"><img src="/images/moments/2019-12/2019-12-09-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-09-001.jpg"><img src="/images/moments/2019-12/2019-12-09-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
 
@@ -197,7 +197,7 @@ Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关�
 
 https://github.com/yanlinlin82/leetcode
 
-<a href="/images/moments/2019-12/2019-12-08-004.jpg"><img src="/images/moments/2019-12/2019-12-08-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-08-004.jpg"><img src="/images/moments/2019-12/2019-12-08-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2)
 
@@ -205,9 +205,9 @@ https://github.com/yanlinlin82/leetcode
 
 精准医疗是一盘大棋，企业之间为短期利益互相中伤诋毁不应该是常态，互利互惠合作、加快行业发展，尽可能并尽早地为患者造福、减少绝望和痛苦，而不是制造伤害，才是长期需要思考的。
 
-<a href="/images/moments/2019-12/2019-12-08-001.jpg"><img src="/images/moments/2019-12/2019-12-08-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-08-002.jpg"><img src="/images/moments/2019-12/2019-12-08-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-08-003.jpg"><img src="/images/moments/2019-12/2019-12-08-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-08-001.jpg"><img src="/images/moments/2019-12/2019-12-08-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-08-002.jpg"><img src="/images/moments/2019-12/2019-12-08-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-08-003.jpg"><img src="/images/moments/2019-12/2019-12-08-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1)
 
@@ -225,7 +225,7 @@ R语言也二十年了！
 
 http://www.celebration2020.org/
 
-<a href="/images/moments/2019-12/2019-12-07-005.jpg"><img src="/images/moments/2019-12/2019-12-07-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-005.jpg"><img src="/images/moments/2019-12/2019-12-07-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (4)
 
@@ -235,8 +235,8 @@ C++是一个古老却仍在不断展开的美妙世界。为了赶上其他语�
 
 https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign/
 
-<a href="/images/moments/2019-12/2019-12-07-004.jpg"><img src="/images/moments/2019-12/2019-12-07-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-07-003.jpg"><img src="/images/moments/2019-12/2019-12-07-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-004.jpg"><img src="/images/moments/2019-12/2019-12-07-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-003.jpg"><img src="/images/moments/2019-12/2019-12-07-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** rust 可以尝试下
 
@@ -265,8 +265,8 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 如此说来，比丘国的这只妖怪，倒也是翦除邪恶、净化世界的善类了。
 
-<a href="/images/moments/2019-12/2019-12-07-001.jpg"><img src="/images/moments/2019-12/2019-12-07-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-07-002.jpg"><img src="/images/moments/2019-12/2019-12-07-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-001.jpg"><img src="/images/moments/2019-12/2019-12-07-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-07-002.jpg"><img src="/images/moments/2019-12/2019-12-07-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** 不要污蔑中医 何曾用过真的犀牛角
 
@@ -286,9 +286,9 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 我挑选出的内容片段，都是带着偏见、并强烈diss自己的；更客观的见解，请考虑阅读原书。
 
-<a href="/images/moments/2019-12/2019-12-06-001.jpg"><img src="/images/moments/2019-12/2019-12-06-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-06-002.jpg"><img src="/images/moments/2019-12/2019-12-06-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-06-003.jpg"><img src="/images/moments/2019-12/2019-12-06-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-06-001.jpg"><img src="/images/moments/2019-12/2019-12-06-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-06-002.jpg"><img src="/images/moments/2019-12/2019-12-06-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-06-003.jpg"><img src="/images/moments/2019-12/2019-12-06-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
 
@@ -342,26 +342,26 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 这个意料之外、情理之中的事实，是不是有点打脸现在倍受追捧的“精益创新”概念呢？伟大的创新竟然都来自于暴力乱撞，那讲求效率和精益的微创新，岂不就成了遏制伟大的最佳绊脚石了[发呆]
 
-<a href="/images/moments/2019-12/2019-12-03-005.jpg"><img src="/images/moments/2019-12/2019-12-03-005.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-03-005.jpg"><img src="/images/moments/2019-12/2019-12-03-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (3)
 
 整个世界到处都充满了铺天盖地的情绪。这个时候才发现自罚禁言是有好处的：克制的情绪，才更有价值。
 
-<a href="/images/moments/2019-12/2019-12-03-004.jpg"><img src="/images/moments/2019-12/2019-12-03-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-03-004.jpg"><img src="/images/moments/2019-12/2019-12-03-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2)
 
 一辈子平均只有约九百个月，能挥霍的时间是非常有限的，所以要始终记得提醒自己，当下在做的事，是否真能帮助到这个世界上的哪些人？
 
-<a href="/images/moments/2019-12/2019-12-03-003.jpg"><img src="/images/moments/2019-12/2019-12-03-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-03-002.jpg"><img src="/images/moments/2019-12/2019-12-03-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-03-003.jpg"><img src="/images/moments/2019-12/2019-12-03-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-03-002.jpg"><img src="/images/moments/2019-12/2019-12-03-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1)
 
 转发：大象踩了一脚蚂蚁，没踩死，对蚂蚁说，你可以踩我一脚。
 
-<a href="/images/moments/2019-12/2019-12-03-001.jpg"><img src="/images/moments/2019-12/2019-12-03-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-03-001.jpg"><img src="/images/moments/2019-12/2019-12-03-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
 
@@ -399,7 +399,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 （配图来自网络）
 
-<a href="/images/moments/2019-12/2019-12-01-001.jpg"><img src="/images/moments/2019-12/2019-12-01-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-01-001.jpg"><img src="/images/moments/2019-12/2019-12-01-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** 你觉得用鲁迅作品中的故事线整个科幻小说，会受欢迎吗？
 
@@ -467,13 +467,13 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 我实名支持多贡献精品代码[拳头]！
 
-<a href="/images/moments/2019-11/2019-11-29-002.jpg"><img src="/images/moments/2019-11/2019-11-29-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-29-002.jpg"><img src="/images/moments/2019-11/2019-11-29-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1)
 
 太贴切。转发。
 
-<a href="/images/moments/2019-11/2019-11-29-001.jpg"><img src="/images/moments/2019-11/2019-11-29-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-29-001.jpg"><img src="/images/moments/2019-11/2019-11-29-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
 
@@ -491,7 +491,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 https://xkcd.com/2234/
 
-<a href="/images/moments/2019-11/2019-11-28-002.jpg"><img src="/images/moments/2019-11/2019-11-28-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-28-002.jpg"><img src="/images/moments/2019-11/2019-11-28-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (3)
 
@@ -501,7 +501,7 @@ https://mail-wolf.de/?p=4543
 
 https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
-<a href="/images/moments/2019-11/2019-11-28-001.jpg"><img src="/images/moments/2019-11/2019-11-28-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-28-001.jpg"><img src="/images/moments/2019-11/2019-11-28-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** vroom还可以再加加速。
 
@@ -541,7 +541,7 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 <https://mp.weixin.qq.com/s/2e_b0aXzUdBNcaQpbVD6Bg>
 
-<a href="/images/moments/2019-11/2019-11-27-004.jpg"><img src="/images/moments/2019-11/2019-11-27-004.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-27-004.jpg"><img src="/images/moments/2019-11/2019-11-27-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (4)
 
@@ -557,9 +557,9 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 凑个热闹
 
-<a href="/images/moments/2019-11/2019-11-27-001.jpg"><img src="/images/moments/2019-11/2019-11-27-001.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-11/2019-11-27-002.jpg"><img src="/images/moments/2019-11/2019-11-27-002.thumb.jpg" style="display:inline;border:1px solid #333"></a>
-<a href="/images/moments/2019-11/2019-11-27-003.jpg"><img src="/images/moments/2019-11/2019-11-27-003.thumb.jpg" style="display:inline;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-27-001.jpg"><img src="/images/moments/2019-11/2019-11-27-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-27-002.jpg"><img src="/images/moments/2019-11/2019-11-27-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-27-003.jpg"><img src="/images/moments/2019-11/2019-11-27-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2)
 
