@@ -14,7 +14,86 @@ title: "微信朋友圈内容精选"
 
 ## 2019-12
 
+### 2019-12-17
+
+#### (6)
+
+五年来，千人团的产出文章数都上千了，相比五年前翻了倍。科研口的贫富差距，估计也同样在拉大，要是算基尼系数，不知道已经到多少了。未来会撕裂成什么样子呢？
+
+“The number of research papers with more than 1,000 authors has more than doubled in the past 5 years”
+
+https://www.nature.com/articles/d41586-019-03862-0
+
+<a href="/images/moments/2019-12/2019-12-17-004.jpg"><img src="/images/moments/2019-12/2019-12-17-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 我很好奇千人团怎么一起做同一个paper？这堪比开发Windows了
+
+**回复：** 一般都是大型多中心研究，撸袖子干活的下属单位很多，尤其是提供临床样本的那些，不给挂名太说不过去；我估计最后都是按博弈结果，把名额分下去，自个儿安排谁上谁下呗。我觉得，倒是可以发挥你的优势，开发个在线作者列表管理协商系统，支持各种具名和匿名的排座次掐架，将来一定会特别有市场。
+
+#### (5)
+
+想要圣诞贺卡的，可以找找这个R包：
+
+```r
+install.packages("christmas")
+library(christmas)
+xmas2009caganer()
+library(help = christmas)
+```
+
+https://cran.r-project.org/web/packages/christmas/
+
+https://en.wikipedia.org/wiki/Caganer
+
+<a href="/images/moments/2019-12/2019-12-17-003.jpg"><img src="/images/moments/2019-12/2019-12-17-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (4)
+
+这一篇我也很喜欢。因为我依然严重近视，有一千度。闭上眼，会看清：所有过往，皆是历练；苦极之处，自有甘饴。
+
+**分享链接：** [【MacTalk】格局不行，什么都没法凑](https://mp.weixin.qq.com/s/6j-RM5buMJuMdsyEtxlF4A)
+
+#### (3)
+
+虽然以前总骂Windows各种不好，但现在却是越来越喜欢大微软了。有这个gmail link存在，即使偶尔墙高难翻时，也能收发gmail邮件了。
+
+https://mail.live.com/
+
+<a href="/images/moments/2019-12/2019-12-17-002.jpg"><img src="/images/moments/2019-12/2019-12-17-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 怎么搞？
+
+**回复：** 网页版登录outlook邮箱，它会提示，或者左侧那列圆形图标底下找加号
+
+#### (2)
+
+好用且免费的东西（大微软出品），自然该喜大普奔：
+
+Practice R and Python on the Cloud for Free  
+https://georgejmount.com/practice-r-and-python-on-the-cloud-for-free/
+
+Microsoft Azure Notebooks  
+https://notebooks.azure.com/
+
+<a href="/images/moments/2019-12/2019-12-17-001.jpg"><img src="/images/moments/2019-12/2019-12-17-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** MRO很香
+
+**回复：** [抱拳]谢谢推荐！赞 MRO（Microsoft R Open，the enhanced distribution of R from Microsoft, is a complete and free open source platform for statistical analysis and data science），我也下载来试试。
+
+https://mran.microsoft.com/open
+
+#### (1)
+
+要情绪自由，而不是要情绪发泄自由；后者用钱能买到，前者却只能靠魔法，或朋友家人
+
+**分享链接：** [【倩姐】看懂了《冰雪奇缘》中的安娜，才知道情绪自由的意义](https://mp.weixin.qq.com/s/GL5632sKaGwUIoIOuLvxLQ)
+
+---
+
 ### 2019-12-16
+
+#### (1)
 
 接着谈育儿经，以极客的方式[呲牙]
 
