@@ -12,6 +12,7 @@ unsafe = true
 [params]
 subtitle = "Linlin Yan's Personal Website"
 favicon = "/logo/logo.ico"
+githubUrl = "https://github.com/yanlinlin82/yanlinlin.cn/"
 
 [markup.highlight]
 codeFences = true
