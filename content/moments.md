@@ -14,6 +14,15 @@ title: "微信朋友圈内容精选"
 
 ## 2019-12
 
+### 2019-12-19
+
+案前灯意暖，精进难成眠。  
+数九寒冬尽，春来犹争先。
+
+<a href="/images/moments/2019-12/2019-12-19-001.jpg"><img src="/images/moments/2019-12/2019-12-19-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2019-12-18
 
 #### (3)
