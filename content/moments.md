@@ -16,10 +16,30 @@ title: "微信朋友圈内容精选"
 
 ### 2019-12-19
 
+#### (3)
+
+送给同样有社交恐惧症和选择困难症的朋友们
+
+<a href="/images/moments/2019-12/2019-12-19-003.jpg"><img src="/images/moments/2019-12/2019-12-19-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-19-004.jpg"><img src="/images/moments/2019-12/2019-12-19-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-19-005.jpg"><img src="/images/moments/2019-12/2019-12-19-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (2)
+
+有句话说得好：十分耕耘，总有九分浪费，只不过，不做完十分，是不知道收获到底在哪一分的。所以，多做就对了，这是互联网时代的快速试错玩法，需要不断地fork it。
+
+<a href="/images/moments/2019-12/2019-12-19-002.jpg"><img src="/images/moments/2019-12/2019-12-19-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1)
+
 案前灯意暖，精进难成眠。  
 数九寒冬尽，春来犹争先。
 
 <a href="/images/moments/2019-12/2019-12-19-001.jpg"><img src="/images/moments/2019-12/2019-12-19-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 这个打卡要求好高
+
+**回复：** 这个打卡确实挺有挑战，我也不确定自己能坚持多久。也正因为如此，我这想法其实是大约两个月前就有的，一直拖到现在，就是为了把一些框架性事务做起来，同时把另一个打卡做到熟练，可以在每周的前一两天就完成，好留出时间做这个。[笑]
 
 ---
 
