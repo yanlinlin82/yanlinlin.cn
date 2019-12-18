@@ -14,6 +14,36 @@ title: "微信朋友圈内容精选"
 
 ## 2019-12
 
+### 2019-12-18
+
+#### (3)
+
+易语言自问世就一直被各种吐槽，不如来一门“难”语言吧，看看github上的新秀：“文言编程”！
+
+https://github.com/LingDong-/wenyan-lang  
+http://wenyan-lang.lingdong.works/  
+http://wenyan-lang.lingdong.works/ide.html
+
+<a href="/images/moments/2019-12/2019-12-18-003.jpg"><img src="/images/moments/2019-12/2019-12-18-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-18-004.jpg"><img src="/images/moments/2019-12/2019-12-18-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-18-005.jpg"><img src="/images/moments/2019-12/2019-12-18-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (2)
+
+从很多角度都可以看出，科研圈也越来越重社交了。而ResearchGate的这个简直就是科研者的知乎问答呀，到底是谁“借鉴”了谁呢？现在知乎的内容大多已经不能看了，不知道ResearchGate将来会走向何方呢？
+
+<https://www.researchgate.net/post/What_are_the_reasons_that_make_researchers_happy>
+
+<a href="/images/moments/2019-12/2019-12-18-002.jpg"><img src="/images/moments/2019-12/2019-12-18-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1)
+
+今天的鸡汤
+
+<a href="/images/moments/2019-12/2019-12-18-001.jpg"><img src="/images/moments/2019-12/2019-12-18-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2019-12-17
 
 #### (6)
