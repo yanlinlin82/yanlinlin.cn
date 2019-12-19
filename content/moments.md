@@ -16,6 +16,31 @@ title: "微信朋友圈内容精选"
 
 ### 2019-12-19
 
+#### (5)
+
+继续分享一些或许有价值的金句。
+
+<a href="/images/moments/2019-12/2019-12-19-008.jpg"><img src="/images/moments/2019-12/2019-12-19-008.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-19-009.jpg"><img src="/images/moments/2019-12/2019-12-19-009.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-19-005.jpg"><img src="/images/moments/2019-12/2019-12-19-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (4)
+
+首先声明：我没读过这本书，不对该书做推荐，也不诋毁。只谈我自己看到这个封面广告的瞬时感受。
+
+Kindle推荐的畅销书中，总少不了这样自怨自艾的一类，像一种带着甜味的受害者情结，间接反映了某种普遍存在的社会问题。
+
+过去，我总以为这是自己的特殊遭遇，现在却发现，其实大多数人都如此。成长，大抵是把自己的特殊感磨掉的过程。
+
+文言文编程的github仓库星标数过八千了，却惹来心存嫉妒者的恶言相向。世间谈“缺爱”，多从自身感受讲起，却娇惯纵容了永远长不大的孩子们，他们获取安全感的方式，通常来自于伤害他人，而伤害之后，总会被辩护，他们自己也是受害者啊。
+
+<a href="/images/moments/2019-12/2019-12-19-006.jpg"><img src="/images/moments/2019-12/2019-12-19-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-19-007.jpg"><img src="/images/moments/2019-12/2019-12-19-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 14岁以后我就不读这种类型的书了
+
+**回复：** 成熟得好早，真羡慕[强]；我不行，我到现在还得靠这类书回血[捂脸]
+
 #### (3)
 
 送给同样有社交恐惧症和选择困难症的朋友们
