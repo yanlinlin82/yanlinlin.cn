@@ -783,3 +783,70 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 关于我前些天在朋友圈推荐的那本《互联网思维的公司》，我觉得我推荐错了，这是我写的一篇简短书评，供参考。
 
 **分享链接：** [【不靠谱颜论】敢于怀疑，才能免遭蒙蔽](https://mp.weixin.qq.com/s/lgzVm76hQzmgBP8h81wnew)
+
+---
+
+### 2019-11-25
+
+#### (5) {#2019-11-25-5}
+
+1、我无意断人财路；
+2、我不愿费劲去尝试叫醒装睡的人；
+3、保健品误用也可能是有害的；
+4、心存恶意者总能偷换概念，他们舔舐人血馒头时不会有任何愧疚。
+
+<a href="/images/moments/2019-11/2019-11-25-002.jpg"><img src="/images/moments/2019-11/2019-11-25-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-25-003.jpg"><img src="/images/moments/2019-11/2019-11-25-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-25-004.jpg"><img src="/images/moments/2019-11/2019-11-25-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 说的很克制了
+
+**回复：** 我一直在克制情绪，因为情绪虽然能打动人，但情绪会掩盖理智，会激起其他人更多的不理智。
+
+#### (4) {#2019-11-25-4}
+
+**分享链接：** [【索罗说】和死神赛跑：趁父亲还在世，我想用人工智能留住他](https://mp.weixin.qq.com/s/bRt0seqxnIuoQnASJTU-8w)
+
+#### (3) {#2019-11-25-3}
+
+**分享链接：** [【遗传学会遗传咨询分会】遗传咨询远程会诊中心在深圳正式揭牌启动，开创新模式提升我国遗传咨询能力](https://mp.weixin.qq.com/s/wyI4L8JgnEcdDJAFM6eF2w)
+
+#### (2) {#2019-11-25-2}
+
+tidyverse的`case_when`是个好用的东西。
+
+<https://thewoodpeckr.wordpress.com/2019/10/11/if-ifelse-had-more-ifs/>  
+<https://thewoodpeckr.wordpress.com/2019/11/22/if-ifelse-had-more-ifs-and-an-else/>  
+<https://dplyr.tidyverse.org/reference/case_when.html>
+
+<a href="/images/moments/2019-11/2019-11-25-001.jpg"><img src="/images/moments/2019-11/2019-11-25-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {#2019-11-25-1}
+
+我说的都是错的，但有些会有用。
+
+**分享链接：** [【乐生活与爱IT】AI、BD四人谈](https://mp.weixin.qq.com/s/cD6YrQCHOFC2qVV3cC8Fwg)
+
+---
+
+### 2019-11-24
+
+#### (2) {#2019-11-24-2}
+
+梦想真的还有足够库存吗？难道不是早已被恐慌性抛售了吗？进一步说，现在还有什么样的梦想，算得上是优质资产，值得长期持有呢？
+
+有句被广为传播的提问：“假如你的生命只剩下一年，你会做什么？”，似乎最多的答案，就是放下一切，放飞自我，到处旅行。虽然这无疑是享乐主义的直接表现，但对已经临近生命终点的人做这样的指责，是有沉重道德负担的。
+
+如果每个人都这么想、这么做，作为群体的人类，又该何去何从呢？一个可能的反驳观点是：让那些尚未嗅到死神气息的人去做高尚的事吧！可是，谁又能真正说出自己还有几年或是几天阳寿呢？
+
+<a href="/images/moments/2019-11/2019-11-24-002.jpg"><img src="/images/moments/2019-11/2019-11-24-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {#2019-11-24-1}
+
+听说存在 “USB 充电座诈骗”，即当人们将电子设备插入已经加载了恶意软件的 USB 接口或 USB 数据线时，就有可能出现个人信息泄漏的情况，因此不建议随便使用不明的USB充电口。
+
+想请教各位安全大牛，不考虑电压过载破坏机器的情况，单纯说软件，是否从底层协议和操作系统层面上，就存在这样的信息安全隐患吗？
+
+<a href="/images/moments/2019-11/2019-11-24-001.jpg"><img src="/images/moments/2019-11/2019-11-24-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 去百度一下“充电宝 不安全”，主要是安卓打开了允许usb调试
