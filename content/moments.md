@@ -223,7 +223,7 @@ https://mran.microsoft.com/open
 
 这个世界上还真有不少“闲侠”，游走于github，挨个检查哪个仓库缺少LICENSE（开源协议），就给人家提交一个issue，双语地建议把协议申明加上，并详细解释了原因，还附有视频教程链接。
 
-<a href="/images/moments/2019-12/2019-12-13-010.jpg"><img src="/images/moments/2019-12/2019-12-13-010.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-13-009.jpg"><img src="/images/moments/2019-12/2019-12-13-009.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (3)
 
@@ -234,7 +234,7 @@ https://doi.org/10.1371/journal.pone.0216224
 <a href="/images/moments/2019-12/2019-12-13-006.jpg"><img src="/images/moments/2019-12/2019-12-13-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-13-007.jpg"><img src="/images/moments/2019-12/2019-12-13-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-13-008.jpg"><img src="/images/moments/2019-12/2019-12-13-008.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
-<a href="/images/moments/2019-12/2019-12-13-009.jpg"><img src="/images/moments/2019-12/2019-12-13-009.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-12-004.jpg"><img src="/images/moments/2019-12/2019-12-12-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2)
 
