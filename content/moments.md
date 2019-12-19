@@ -16,7 +16,7 @@ title: "微信朋友圈内容精选"
 
 ### 2019-12-19
 
-#### (5)
+#### (5) {#2019-12-19-5}
 
 继续分享一些或许有价值的金句。
 
@@ -24,7 +24,7 @@ title: "微信朋友圈内容精选"
 <a href="/images/moments/2019-12/2019-12-19-009.jpg"><img src="/images/moments/2019-12/2019-12-19-009.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-19-005.jpg"><img src="/images/moments/2019-12/2019-12-19-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (4)
+#### (4) {#2019-12-19-4}
 
 首先声明：我没读过这本书，不对该书做推荐，也不诋毁。只谈我自己看到这个封面广告的瞬时感受。
 
@@ -41,7 +41,7 @@ Kindle推荐的畅销书中，总少不了这样自怨自艾的一类，像一�
 
 **回复：** 成熟得好早，真羡慕[强]；我不行，我到现在还得靠这类书回血[捂脸]
 
-#### (3)
+#### (3) {#2019-12-19-3}
 
 送给同样有社交恐惧症和选择困难症的朋友们
 
@@ -49,13 +49,13 @@ Kindle推荐的畅销书中，总少不了这样自怨自艾的一类，像一�
 <a href="/images/moments/2019-12/2019-12-19-004.jpg"><img src="/images/moments/2019-12/2019-12-19-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-19-005.jpg"><img src="/images/moments/2019-12/2019-12-19-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-12-19-2}
 
 有句话说得好：十分耕耘，总有九分浪费，只不过，不做完十分，是不知道收获到底在哪一分的。所以，多做就对了，这是互联网时代的快速试错玩法，需要不断地fork it。
 
 <a href="/images/moments/2019-12/2019-12-19-002.jpg"><img src="/images/moments/2019-12/2019-12-19-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-19-1}
 
 案前灯意暖，精进难成眠。  
 数九寒冬尽，春来犹争先。
@@ -70,7 +70,7 @@ Kindle推荐的畅销书中，总少不了这样自怨自艾的一类，像一�
 
 ### 2019-12-18
 
-#### (3)
+#### (3) {#2019-12-18-3}
 
 易语言自问世就一直被各种吐槽，不如来一门“难”语言吧，看看github上的新秀：“文言编程”！
 
@@ -82,7 +82,7 @@ http://wenyan-lang.lingdong.works/ide.html
 <a href="/images/moments/2019-12/2019-12-18-004.jpg"><img src="/images/moments/2019-12/2019-12-18-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-18-005.jpg"><img src="/images/moments/2019-12/2019-12-18-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-12-18-2}
 
 从很多角度都可以看出，科研圈也越来越重社交了。而ResearchGate的这个简直就是科研者的知乎问答呀，到底是谁“借鉴”了谁呢？现在知乎的内容大多已经不能看了，不知道ResearchGate将来会走向何方呢？
 
@@ -90,7 +90,7 @@ http://wenyan-lang.lingdong.works/ide.html
 
 <a href="/images/moments/2019-12/2019-12-18-002.jpg"><img src="/images/moments/2019-12/2019-12-18-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-18-1}
 
 今天的鸡汤
 
@@ -100,7 +100,7 @@ http://wenyan-lang.lingdong.works/ide.html
 
 ### 2019-12-17
 
-#### (6)
+#### (6) {#2019-12-17-6}
 
 五年来，千人团的产出文章数都上千了，相比五年前翻了倍。科研口的贫富差距，估计也同样在拉大，要是算基尼系数，不知道已经到多少了。未来会撕裂成什么样子呢？
 
@@ -114,7 +114,7 @@ https://www.nature.com/articles/d41586-019-03862-0
 
 **回复：** 一般都是大型多中心研究，撸袖子干活的下属单位很多，尤其是提供临床样本的那些，不给挂名太说不过去；我估计最后都是按博弈结果，把名额分下去，自个儿安排谁上谁下呗。我觉得，倒是可以发挥你的优势，开发个在线作者列表管理协商系统，支持各种具名和匿名的排座次掐架，将来一定会特别有市场。
 
-#### (5)
+#### (5) {#2019-12-17-5}
 
 想要圣诞贺卡的，可以找找这个R包：
 
@@ -131,13 +131,13 @@ https://en.wikipedia.org/wiki/Caganer
 
 <a href="/images/moments/2019-12/2019-12-17-003.jpg"><img src="/images/moments/2019-12/2019-12-17-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (4)
+#### (4) {#2019-12-17-4}
 
 这一篇我也很喜欢。因为我依然严重近视，有一千度。闭上眼，会看清：所有过往，皆是历练；苦极之处，自有甘饴。
 
 **分享链接：** [【MacTalk】格局不行，什么都没法凑](https://mp.weixin.qq.com/s/6j-RM5buMJuMdsyEtxlF4A)
 
-#### (3)
+#### (3) {#2019-12-17-3}
 
 虽然以前总骂Windows各种不好，但现在却是越来越喜欢大微软了。有这个gmail link存在，即使偶尔墙高难翻时，也能收发gmail邮件了。
 
@@ -149,7 +149,7 @@ https://mail.live.com/
 
 **回复：** 网页版登录outlook邮箱，它会提示，或者左侧那列圆形图标底下找加号
 
-#### (2)
+#### (2) {#2019-12-17-2}
 
 好用且免费的东西（大微软出品），自然该喜大普奔：
 
@@ -167,7 +167,7 @@ https://notebooks.azure.com/
 
 https://mran.microsoft.com/open
 
-#### (1)
+#### (1) {#2019-12-17-1}
 
 要情绪自由，而不是要情绪发泄自由；后者用钱能买到，前者却只能靠魔法，或朋友家人
 
@@ -177,7 +177,7 @@ https://mran.microsoft.com/open
 
 ### 2019-12-16
 
-#### (1)
+#### (1) {#2019-12-16-1}
 
 接着谈育儿经，以极客的方式[呲牙]
 
@@ -187,7 +187,7 @@ https://mran.microsoft.com/open
 
 ### 2019-12-15
 
-#### (1)
+#### (1) {#2019-12-15-1}
 
 慎言慎行！有些话是不能随便开玩笑的，因为它们对他人和社会的伤害，有可能是难以估量的，自然也可能“因言获罪”。
 
@@ -195,7 +195,7 @@ https://mran.microsoft.com/open
 
 ### 2019-12-14
 
-#### (2)
+#### (2) {#2019-12-14-2}
 
 各位靠血肉之躯筑起大众医疗健康保障的同道们，战线还很宽，而且旷日持久，看现在的数据暴增趋势，未来的任务负荷只会翻倍增加，所以，千万要注意保护好自己！
 
@@ -203,7 +203,7 @@ https://mran.microsoft.com/open
 
 **分享链接：** [【中国医药报】心痛！药品审评员倒在了执行检查任务的路上，年仅39岁](https://mp.weixin.qq.com/s/ocgxPQ5q1Axzk2jc-lF5WA)
 
-#### (1)
+#### (1) {#2019-12-14-1}
 
 **分享链接：** [【DahShu】辉瑞生统总监：聊一聊癌症新型免疫疗法中的统计模型](https://mp.weixin.qq.com/s/4dgWaKdLfy-9Eanqs6R9aw)
 
@@ -217,7 +217,7 @@ https://mran.microsoft.com/open
 
 ### 2019-12-13
 
-#### (4)
+#### (4) {#2019-12-13-4}
 
 最近各种社会负面消息很多。在看到世界阴暗面的同时，我们也应保持理智，睁开眼睛去发现一些光明面，从而不断地加深自己对世界的理解，一如从我们出生时便开始做的那样。
 
@@ -225,7 +225,7 @@ https://mran.microsoft.com/open
 
 <a href="/images/moments/2019-12/2019-12-13-009.jpg"><img src="/images/moments/2019-12/2019-12-13-009.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (3)
+#### (3) {#2019-12-13-3}
 
 正如发展航天科技能够大大带动民生基建的进步，像量子计算这样的理论先行且超前的学科，对于当代的现实问题，也是可以有直接帮助的。比如这一篇PLOS One论文，关于分类器算法的，就是借鉴了量子计算的概念和思想。量子编程这门学科，的确值得花时间仔细研读下，学科边界碰撞才是创新源泉。
 
@@ -236,7 +236,7 @@ https://doi.org/10.1371/journal.pone.0216224
 <a href="/images/moments/2019-12/2019-12-13-008.jpg"><img src="/images/moments/2019-12/2019-12-13-008.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-12-004.jpg"><img src="/images/moments/2019-12/2019-12-12-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-12-13-2}
 
 从伦理的角度说，知情同意书背后的逻辑，并不是为了责任规避，而是为了当事人充分且正确地理解所有可能的信息，以便做出恰当的决策。也因此，医患其实是本是同一战线同一阵营的。
 
@@ -244,7 +244,7 @@ https://doi.org/10.1371/journal.pone.0216224
 
 **朋友评论：** 想起初中政治课本上的话：矛盾就是对立统一。又对立,有统一。
 
-#### (1)
+#### (1) {#2019-12-13-1}
 
 最近几年频繁爆出的各类数据安全危机事件，都在共同呼吁一个观点：数据为王的大背景下，信息安全意识和技能，再怎么强调都不为过，而且似乎永远都不会过时。
 
@@ -262,7 +262,7 @@ https://doi.org/10.1371/journal.pone.0216224
 
 ### 2019-12-12
 
-#### (3)
+#### (3) {#2019-12-12-3}
 
 双十二
 
@@ -272,14 +272,14 @@ https://doi.org/10.1371/journal.pone.0216224
 
 **回复：** 你说的这些应该都不需要量子计算，靠现在的电子计算机体系正常加速就够了；我之所以想了解量子计算，其实是想跳出现在的思维模式，寻找一些很不同的对世界理解的角度
 
-#### (2)
+#### (2) {#2019-12-12-2}
 
 物理学的时间是处处均等的，物理学以外的时间则不是。所以，别期望复制，缅怀一下就好。每代人都有自己要面对的独特机遇，无关过去和未来。
 
 <a href="/images/moments/2019-12/2019-12-12-002.jpg"><img src="/images/moments/2019-12/2019-12-12-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-12-003.jpg"><img src="/images/moments/2019-12/2019-12-12-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-12-3}
 
 12/12
 
@@ -293,14 +293,14 @@ https://doi.org/10.1371/journal.pone.0216224
 
 ### 2019-12-11
 
-#### (4)
+#### (4) {#2019-12-11-4}
 
 “创新的新本质”
 
 <a href="/images/moments/2019-12/2019-12-11-006.jpg"><img src="/images/moments/2019-12/2019-12-11-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-11-007.jpg"><img src="/images/moments/2019-12/2019-12-11-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (3)
+#### (3) {#2019-12-11-3}
 
 传奇硅谷史上，果然有很多神奇的逻辑，能给人突破雷池的启发。
 
@@ -308,12 +308,12 @@ https://doi.org/10.1371/journal.pone.0216224
 
 <a href="/images/moments/2019-12/2019-12-11-005.jpg"><img src="/images/moments/2019-12/2019-12-11-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-12-11-2}
 
 <a href="/images/moments/2019-12/2019-12-11-003.jpg"><img src="/images/moments/2019-12/2019-12-11-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-11-004.jpg"><img src="/images/moments/2019-12/2019-12-11-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-11-1}
 
 当年还很不成熟的乔帮主[呲牙]
 
@@ -324,7 +324,7 @@ https://doi.org/10.1371/journal.pone.0216224
 
 ### 2019-12-10
 
-#### (2)
+#### (2) {#2019-12-10-2}
 
 “We believe: Data are boundless. Big ideas deserve a big audience. Insights fuel action.”
 
@@ -334,7 +334,7 @@ Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关�
 
 <a href="/images/moments/2019-12/2019-12-10-001.jpg"><img src="/images/moments/2019-12/2019-12-10-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-10-1}
 
 在我读研究生期间，正好赶上饶毅做生科院院长，他推动的BIO2000和自然科学史这两门课程，令我受益匪浅，使我对科学的认识得到了质的提升，在科研的路上真正入了门。
 
@@ -344,7 +344,7 @@ Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关�
 
 ### 2019-12-09
 
-#### (1)
+#### (1) {#2019-12-09-1}
 
 关于成长的恐怖故事：随着理解力的升级，会逐渐发现，所有恐怖故事中的逻辑设定，其实都是真的[衰]
 
@@ -354,7 +354,7 @@ Cell旗下新设立的开放期刊《Patterns》，关于数据的，值得关�
 
 ### 2019-12-08
 
-#### (3)
+#### (3) {#2019-12-08-3}
 
 解算法题，有时候还是硬编码来得高效：不仅写起来容易，运行也容易；提交一次过，速度排名还高。
 
@@ -362,7 +362,7 @@ https://github.com/yanlinlin82/leetcode
 
 <a href="/images/moments/2019-12/2019-12-08-004.jpg"><img src="/images/moments/2019-12/2019-12-08-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-12-08-2}
 
 从多年前的《人人都是产品经理》的水平看，该书苏杰在这几年可以说经历了极大的升华，在这次极客时间的专栏课程中，可以明显感觉到这种格局的变化，也带给人更多启发和思考。
 
@@ -372,7 +372,7 @@ https://github.com/yanlinlin82/leetcode
 <a href="/images/moments/2019-12/2019-12-08-002.jpg"><img src="/images/moments/2019-12/2019-12-08-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-08-003.jpg"><img src="/images/moments/2019-12/2019-12-08-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-08-1}
 
 12月1日，网络安全等级保护制度2.0已正式开始实施。
 
@@ -382,7 +382,7 @@ https://github.com/yanlinlin82/leetcode
 
 ### 2019-12-07
 
-#### (5)
+#### (5) {#2019-12-07-5}
 
 R语言也二十年了！
 
@@ -390,7 +390,7 @@ http://www.celebration2020.org/
 
 <a href="/images/moments/2019-12/2019-12-07-005.jpg"><img src="/images/moments/2019-12/2019-12-07-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (4)
+#### (4) {#2019-12-07-4}
 
 C++是一个古老却仍在不断展开的美妙世界。为了赶上其他语言的优雅性，C++（及boost库）一直在拼尽全力地制造各种甜腻腻的语法糖。
 
@@ -405,13 +405,13 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 **回复：** 好的，有这个计划
 
-#### (3)
+#### (3) {#2019-12-07-3}
 
 业，精于勤，荒于嬉，荣于营销，卒于媒体；水军能载舟，亦能覆舟。
 
 **分享链接：** [【白鸦】请求“创业邦”减少对创业者的伤害](https://mp.weixin.qq.com/s/Tenk092RvcQkAQb3KspidQ)
 
-#### (2)
+#### (2) {#2019-12-07-2}
 
 是《Nature》杂志沦落了，还是其实一直都很low？几百例的“最大规模”研究，诸多因素不做严格control，在metagenomics这么高维的数据中去多重检验，结论直接上临床……“总想搞点大新闻”，以至于连严谨性都可以践踏了？还是说只是为了促进产业创新，支持作者开公司圈经费？
 
@@ -424,7 +424,7 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 **朋友回复：** 您看下《反脆弱》那书，这书里对科学家的定义就是给社会增加脆弱性
 
 
-#### (1)
+#### (1) {#2019-12-07-1}
 
 如此说来，比丘国的这只妖怪，倒也是翦除邪恶、净化世界的善类了。
 
@@ -437,13 +437,13 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 ### 2019-12-06
 
-#### (2)
+#### (2) {#2019-12-06-2}
 
 酒精是一级致癌物，即“有充足证据证明其具有致癌性的物质”，板上钉钉的！各位酒仙，生命过半，禁不起几次燃烧了，在无限续命技能炼成前，最好还是先把酒戒戒啦！
 
 **分享链接：** [【臻和基因】我们对酒的热爱像极了爱情](https://mp.weixin.qq.com/s/sI1cUEsaYwNEvjFdEm4teQ)
 
-#### (1)
+#### (1) {#2019-12-06-1}
 
 还是《硅谷百年史》，感谢倩姐推荐好书！
 
@@ -457,7 +457,7 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 ### 2019-12-05
 
-#### (2)
+#### (2) {#2019-12-05-2}
 
 六神磊磊的提醒很到位[强]
 
@@ -467,7 +467,7 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 **分享链接：** [【六神磊磊读金庸】有事想不明白的时候，就想想你自己是谁](https://mp.weixin.qq.com/s/vOIM-51iRyofYRImfFo4XA)
 
-#### (1)
+#### (1) {#2019-12-05-1}
 
 这是我写的第七篇[奋斗]
 
@@ -477,19 +477,19 @@ https://www.fluentcpp.com/2019/12/03/inserting-values-to-a-map-with-boost-assign
 
 ### 2019-12-04
 
-#### (3)
+#### (3) {#2019-12-04-3}
 
 辟谣的确有被踢被拉黑风险[撇嘴]
 
 **分享链接：** [【我是科学家iScientist】据说“不孝有三，辟谣为大”？我觉得他们可能没用好策略｜阮光锋](https://mp.weixin.qq.com/s/Pt1Jz0O47YkXnu7ey8UurQ)
 
-#### (2)
+#### (2) {#2019-12-04-2}
 
 PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种观点的科学证据，不管多么意想不到，在某个时刻，似乎都可以从这个杂志上找出来。
 
 **分享链接：** [【浙大学报英文版】女人如何对男人好？国际知名SCI：让他做家务去，越重越好！](https://mp.weixin.qq.com/s/18J-LT5ari7KuR_944zWOA)
 
-#### (1)
+#### (1) {#2019-12-04-1}
 
 学术还是产业，如同小婴儿的摸摸还是舔舔，都只是我们在和世界打招呼的方式
 
@@ -501,26 +501,26 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 ### 2019-12-03
 
-#### (4)
+#### (4) {#2019-12-03-4}
 
 这个意料之外、情理之中的事实，是不是有点打脸现在倍受追捧的“精益创新”概念呢？伟大的创新竟然都来自于暴力乱撞，那讲求效率和精益的微创新，岂不就成了遏制伟大的最佳绊脚石了[发呆]
 
 <a href="/images/moments/2019-12/2019-12-03-005.jpg"><img src="/images/moments/2019-12/2019-12-03-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (3)
+#### (3) {#2019-12-03-3}
 
 整个世界到处都充满了铺天盖地的情绪。这个时候才发现自罚禁言是有好处的：克制的情绪，才更有价值。
 
 <a href="/images/moments/2019-12/2019-12-03-004.jpg"><img src="/images/moments/2019-12/2019-12-03-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-12-03-2}
 
 一辈子平均只有约九百个月，能挥霍的时间是非常有限的，所以要始终记得提醒自己，当下在做的事，是否真能帮助到这个世界上的哪些人？
 
 <a href="/images/moments/2019-12/2019-12-03-003.jpg"><img src="/images/moments/2019-12/2019-12-03-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-12/2019-12-03-002.jpg"><img src="/images/moments/2019-12/2019-12-03-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-12-03-1}
 
 转发：大象踩了一脚蚂蚁，没踩死，对蚂蚁说，你可以踩我一脚。
 
@@ -530,7 +530,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 ### 2019-12-02
 
-#### (2)
+#### (2) {#2019-12-02-2}
 
 这是一篇值得反复读的长文。
 
@@ -540,7 +540,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 **朋友评论：** 老板今天组会提到了不要让别人的research 来contaminate your research。简言之：不需要学习。虽然不完全同意其适用范围,但细细琢磨,还是有道理的。治疗“幻觉”的方法之一就是耳不充目不明。[捂脸]
 
-#### (1)
+#### (1) {#2019-12-02-1}
 
 于淼大神几乎每篇博客都是精品啊[强]
 
@@ -550,7 +550,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 ### 2019-12-01
 
-#### (3)
+#### (3) {#2019-12-01-3}
 
 昨夜做梦，天现异象，双月当空。
 
@@ -574,13 +574,13 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 我个人倒是有心将来用科幻手法写写上古神话的故事线，因为那些角色的遗留文字相对较少，想象空间更大，可以铺垫很多有趣的场景，促成有价值的思考。
 
-#### (2)
+#### (2) {#2019-12-01-2}
 
 如同先前梅姨通缉照片刷屏后被辟谣，这类事件实在太伤人心！绝大多数时候，我们缺乏的是一个兼具足够影响力和足够公信力的信息发布平台，于是只能依靠朋友圈转发这种形式，冒着欺骗和被欺骗的风险，去尽量触探到每个国民。
 
 **分享链接：** [【中国基金报】水滴筹"爆雷"！"扫楼式"筹款：员工按单提成，月入过万！网友炸了:太寒心](https://mp.weixin.qq.com/s/peYt76pe5RZp6G85xSnUJw)
 
-#### (1)
+#### (1) {#2019-12-01-1}
 
 “宁肯多花钱做封面，也不愿给校对”。社会的急功近利式演变，已经让正版书，在诸如错别字的质量方面，越来越赶超盗版书了。
 
@@ -604,7 +604,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 ### 2019-11-30
 
-#### (1)
+#### (1) {#2019-11-30-1}
 
 厚积当如雪：纯，且美！
 
@@ -616,7 +616,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 ### 2019-11-29
 
-#### (3)
+#### (3) {#2019-11-29-3}
 
 所有涉及重要结论的数据都该仔细求证
 
@@ -624,7 +624,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 **朋友评论：** 关键数据不公开呀 而且认为扭曲过
 
-#### (2)
+#### (2) {#2019-11-29-2}
 
 神仙吵架总不停，非我等凡人所能辨别。好在代码世界要简单得多，即使是“优雅与否”这样的比较主观的问题，也是相对容易评判的。所以：
 
@@ -632,7 +632,7 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 <a href="/images/moments/2019-11/2019-11-29-002.jpg"><img src="/images/moments/2019-11/2019-11-29-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (1)
+#### (1) {#2019-11-29-1}
 
 太贴切。转发。
 
@@ -642,13 +642,13 @@ PLOS One真是神刊，公众号内容创作的坚强后盾。但凡需要某种
 
 ### 2019-11-28
 
-#### (5)
+#### (5) {#2019-11-28-5}
 
 **分享链接：** [【临床在线】全民都在悼念高以翔，你知不知道2019年多少医生猝死手术台](https://mp.weixin.qq.com/s/BkMZrcmwEHgfsjTUukDCBw)
 
 **朋友评论：** 好难得看到圈外人关心医生的猝死
 
-#### (4)
+#### (4) {#2019-11-28-4}
 
 圣诞节快到了！你家还有烟囱吗？
 
@@ -656,7 +656,7 @@ https://xkcd.com/2234/
 
 <a href="/images/moments/2019-11/2019-11-28-002.jpg"><img src="/images/moments/2019-11/2019-11-28-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (3)
+#### (3) {#2019-11-28-3}
 
 哈神新发dtplyr，data.table的易用封装。data.table相比tibble和原生data.frame，性能是很有优势的。代码编写维护容易了，运行性能就得考虑起来。做数据分析的，可以学起来了。图片来自：
 
@@ -670,13 +670,13 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 清洗数据的时候，在读取写入超过1G很耗时间，这个vroom包解决这个痛点。
 
-#### (2)
+#### (2) {#2019-11-28-2}
 
 “为什么明明知道健康很重要，年轻人还是各种作死？”，那么，昨晚你作了吗？
 
 **分享链接：** [【历史教师王汉周】高以翔凌晨录节目猝死，年仅35岁：没有任何工作，值得拿命去换！](https://mp.weixin.qq.com/s/xIXO97mAJVt1IRSZdf-0rA)
 
-#### (1)
+#### (1) {#2019-11-28-1}
 
 这是个好问题：“作恶能致富，先把钱赚了，然后用这些钱去洗白，换一个大慈善家的名声，你会不会选择作恶？”
 
@@ -692,13 +692,13 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 ### 2019-11-27
 
-#### (6)
+#### (6) {#2019-11-27-6}
 
 广义地说，每天花时间在做什么，包括熬什么夜，都未尝不是个人在不断投资的过程。所以，等到一定时间后，是该找这本书来读读。
 
 **分享链接：** [【Unended Quest】重读《巴菲特致股东的信》](https://mp.weixin.qq.com/s/xFZdWRmYhodh7-kHFFWUjQ)
 
-#### (5)
+#### (5) {#2019-11-27-5}
 
 666！我正努力走在成为正对照的路上[奋斗]
 
@@ -706,7 +706,7 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 <a href="/images/moments/2019-11/2019-11-27-004.jpg"><img src="/images/moments/2019-11/2019-11-27-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (4)
+#### (4) {#2019-11-27-4}
 
 我要是说自己认同这一篇，会不会越发显得特别有阿Q精神呢？
 
@@ -716,7 +716,7 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 **分享链接：** [【饶议科学】证明你的研究不是体力而是智力活动的三种模式](https://mp.weixin.qq.com/s/S8wWY06R9l2O6ZATbfaHkg)
 
-#### (3)
+#### (3) {#2019-11-27-3}
 
 凑个热闹
 
@@ -724,7 +724,7 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 <a href="/images/moments/2019-11/2019-11-27-002.jpg"><img src="/images/moments/2019-11/2019-11-27-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-11/2019-11-27-003.jpg"><img src="/images/moments/2019-11/2019-11-27-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
-#### (2)
+#### (2) {#2019-11-27-2}
 
 同样与信息安全相关的，阮一峰的这篇新文章，值得各位小朋友们学习一下。
 
@@ -744,7 +744,7 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 **回复：** 原来如此，感谢JIM哥又帮我推开一扇通往新世界的大门[呲牙]
 
-#### (1)
+#### (1) {#2019-11-27-1}
 
 **分享链接：** [【不靠谱颜论】啊哈！我终于也收到这封勒索电子邮件了](https://mp.weixin.qq.com/s/PABhpICPHli_p3zrfMxGSA)
 
@@ -764,13 +764,13 @@ https://www.tidyverse.org/blog/2019/11/dtplyr-1-0-0/
 
 ### 2019-11-26
 
-#### (2)
+#### (2) {#2019-11-26-2}
 
 关于“咋说都对”的问题，池大给推荐了这篇文章，感觉挺有意思，这本《反常识》可以抽空找来读读。
 
 **分享链接：** [【 二爷鉴书】人类一归纳，上帝就发笑](https://mp.weixin.qq.com/s/uMEZ0LSA1cbH2TRHgQ1Jdg)
 
-#### (1)
+#### (1) {#2019-11-26-1}
 
 很多成功学和管理学的书籍，总是让我又爱又恨：一方面，觉得它们讲得太好，字字珠玑，唯恐错过；另一方面，看过后，虽然找不出任何破绽，却又总觉得似乎哪里不对。
 
