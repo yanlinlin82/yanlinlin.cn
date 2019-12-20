@@ -13,6 +13,14 @@ unsafe = true
 subtitle = "Linlin Yan's Personal Website"
 favicon = "/logo/logo.ico"
 githubUrl = "https://github.com/yanlinlin82/yanlinlin.cn/"
+googleSiteVerification = "D5IvhsfIEesbsZ95nsB1P0G6YyP9RRk9zbgBF7H7K8Y"
+referrer = "always"
+author = "Linlin Yan (颜林林)"
+description = """\
+    颜林林的个人网站：一名研究者兼程序员，在北大取得生信专业博士学位，拥有20多年编程经验。目前我的主要兴趣是各类高通量组学数据分析，并在精准医疗领域做相应的技术研发工作。本人平时酷爱编程，崇尚开源，且喜欢写作。搭建此个人网站，自娱自乐的同时，既为记录平时点滴心得，也用于收集整理自己的各类产出作品。
+    Linlin Yan's Personal Website: a scientific researcher and software programmer. My major is bioinformatics. I received PhD from School of Life Sciences, Peking University. I have more than 20 years experience on programming. My current work is research and development on precision medicine, including data analysis of high-throughput technology, such as next-generation sequencing. I am also interested in genomics and other -omics.
+    """
+keywords = "博客, 技术, 生物信息，精准医疗, 遗传咨询, 高通量技术, 算法, 学习, 作品, 写作, C++, Perl"
 
 [markup.highlight]
 codeFences = true
@@ -20,7 +28,7 @@ lineNos = true
 style = "monokailight"
 
 [permalinks]
-post = "/:year/:month/:slug/"
+post = "/:year/:month/:day/:slug/"
 page = "/:slug/"
 
 [taxonomies]
