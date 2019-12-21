@@ -16,6 +16,15 @@ title: "微信朋友圈内容精选"
 
 ### 2019-12-21
 
+#### (2) {#2019-12-21-2}
+
+如今，ClinVar的累计记录数也过百万了。这对于精准医疗和相关领域的研究都是好事。而证据收集、汇总、整理和解读的工作量，也会相应地越来越大。
+
+https://www.ncbi.nlm.nih.gov/clinvar/submitters/
+
+<a href="/images/moments/2019-12/2019-12-21-002.jpg"><img src="/images/moments/2019-12/2019-12-21-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-21-003.jpg"><img src="/images/moments/2019-12/2019-12-21-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
 #### (1) {#2019-12-21-1}
 
 微微绫罗羽，笑笑信手来。小闺女刚完成的作品。
