@@ -918,3 +918,183 @@ tidyverse的`case_when`是个好用的东西。
 <a href="/images/moments/2019-11/2019-11-24-001.jpg"><img src="/images/moments/2019-11/2019-11-24-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 **朋友评论：** 去百度一下“充电宝 不安全”，主要是安卓打开了允许usb调试
+
+---
+
+### 2019-11-23
+
+#### (5) {#2019-11-23-5}
+
+优秀的柱子哥[强]
+
+**分享链接：** [【BioMedR】临床信息的组合可视化](https://mp.weixin.qq.com/s/PcbKtf77DYDktEidVLPHrA)
+
+#### (4) {#2019-11-23-4}
+
+这本书的英文版出版于2012年，中文版出版于2014年，果然在互联网公司视角上还是有些陈旧了，对它的推荐评分，我该从7分降到6分。
+
+自从小米终结其所代表的扁平化管理模式，便让我觉得互联网理想和精神都是有规模边界的，这的确有点自相矛盾地讽刺。也许只有真当某一天，企业品牌成为单纯某种生态标签时，相应的完全由众多“小而美”团队构成的乌托邦，才能落地吧。
+
+<a href="/images/moments/2019-11/2019-11-23-008.jpg"><img src="/images/moments/2019-11/2019-11-23-008.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (3) {#2019-11-23-3}
+
+《互联网思维的企业》第九章图二。
+
+<a href="/images/moments/2019-11/2019-11-23-007.jpg"><img src="/images/moments/2019-11/2019-11-23-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (2) {#2019-11-23-2}
+
+关于如何连接生与死的这项科幻，已经开始变成现实。
+
+原文见：https://www.wired.com/story/a-sons-race-to-give-his-dying-father-artificial-immortality/
+截图中文由微信实现图片内容自动翻译！
+
+<a href="/images/moments/2019-11/2019-11-23-001.jpg"><img src="/images/moments/2019-11/2019-11-23-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-23-002.jpg"><img src="/images/moments/2019-11/2019-11-23-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-23-003.jpg"><img src="/images/moments/2019-11/2019-11-23-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-23-004.jpg"><img src="/images/moments/2019-11/2019-11-23-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-23-005.jpg"><img src="/images/moments/2019-11/2019-11-23-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-23-006.jpg"><img src="/images/moments/2019-11/2019-11-23-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {#2019-11-23-1}
+
+喜欢唠叨或长篇大论的老程序员，总能讲出一些足以概括数字时代部分本质面的金句。
+
+**分享链接：** [【CodeProject】Lessons from a Life in a Chair](https://www.codeproject.com/Articles/5152541/Lessons-from-a-Life-in-a-Chair?from=timeline)
+
+**朋友评论：** 好多年没看到这个网站了
+
+**回复：** 我感觉这个网站有往medium转型的倾向，但却学得不好，说不定活不久啦[捂脸]
+
+**朋友回复：** 它最大的问题是只有微软技术[坏笑]
+
+这也是当年它最佳的原因
+
+**回复：** 并不只有微软技术呢，而且的确还是有一些比较有思想深度的文章的。另外，大微软的软件格局观还是挺不错的，可惜被人（包括我）盲目诟病起来，就往往容易忽略了其闪光点。
+
+**朋友回复：** 和微软合作过7年。我很喜欢它的底层组织形式和跨组织协作方式。其实和外部批判的不太一样。
+
+**回复：** [强]这话我相信
+
+**朋友回复：** 我把它山寨了一版用在国人团队，挺好用的。
+
+---
+
+### 2019-11-22
+
+#### (8) {#2019-11-22-8}
+
+这果然是本神奇的书，拉慢了我的阅读速度。想起当年维护一套50万行代码的软件系统时，也是每天战战兢兢地一点点理着每个零星的头绪。
+
+<a href="/images/moments/2019-11/2019-11-22-006.jpg"><img src="/images/moments/2019-11/2019-11-22-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (7) {#2019-11-22-7}
+
+**分享链接：** [【虾画研究所】云计算100年](https://mp.weixin.qq.com/s/czNDN__MR-1u64wugrJbyg)
+
+#### (6) {#2019-11-22-6}
+
+被“在公园里”那段文字触动了
+
+**分享链接：** [【栩先生】年轻时候的毛泽东，从来不焦虑](https://mp.weixin.qq.com/s/F8kffdIg1DUQFOCZFpmQLg)
+
+**朋友评论：** 也许就是因为年轻的时候在很多重大事情上都表现出了异常的清醒和理性，年老的他才笃信自己依然可以操控一切。但是任何人都是有局限性的。
+
+#### (5) {#2019-11-22-5}
+
+未来五年内，无论哪个行业，软件开发自动化，都是必争之地！
+
+**分享链接：** [【前端之巅】双11模块79.34%的前端代码是怎样智能生成的？](https://mp.weixin.qq.com/s/hl8mPVQi2vV0WSUIOaAhPw)
+
+**朋友评论：** 随着AI自动生成的不断普及，我猜测以后手写代码会被冠以“工匠精神”的名头，就像现在很多手工打造的工艺品一样
+
+#### (4) {#2019-11-22-4}
+
+古板的IBM竟然还有这么好玩的事[呲牙]
+
+<a href="/images/moments/2019-11/2019-11-22-005.jpg"><img src="/images/moments/2019-11/2019-11-22-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (3) {#2019-11-22-3}
+
+看这趋势，还是应该优先选PyTorch，胜于TensorFlow呢
+
+https://chillee.github.io/pytorch-vs-tensorflow/
+
+<a href="/images/moments/2019-11/2019-11-22-002.jpg"><img src="/images/moments/2019-11/2019-11-22-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-22-003.jpg"><img src="/images/moments/2019-11/2019-11-22-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-22-004.jpg"><img src="/images/moments/2019-11/2019-11-22-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (2) {#2019-11-22-2}
+
+喜大普奔！PyTorch官方放出的免费电子书。
+
+https://pytorch.org/deep-learning-with-pytorch
+
+<a href="/images/moments/2019-11/2019-11-22-001.jpg"><img src="/images/moments/2019-11/2019-11-22-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 这书还没写完，全书有14章
+
+#### (1) {#2019-11-22-1}
+
+我坚信，不管是不是第一次学做爸爸，跟孩子的交流互动，都永远会是最难的挑战，比洋洋洒洒写出一个惊世骇俗、十万加星标的开源项目，还要困难许多许多！
+
+准备收藏这本《我，轻如鸿毛》，好随时翻出来读读，对照着看看自己，是做得更好了些呢，还是做得更糟了。
+
+**分享链接：** [【远读重洋】我的渣男爸爸乔布斯](https://mp.weixin.qq.com/s/6Gz1Dt8TPUWHw_jkPt35rQ)
+
+**朋友评论：** 真的太难了，反求诸己
+
+**朋友评论：** 只会觉得自己永远也做不够好
+
+**朋友评论：** 其实道理很简单，把手里的事情做好！有娃就把爸爸当好培养人才出来，没娃就把开源项目做到10万+ star
+
+**回复：** 所以，还是那个结论嘛：多写代码多生娃[坏笑]
+
+---
+
+### 2019-11-21
+
+#### (3) {#2019-11-21-3}
+
+之前我还调侃过一句话：“是会发光的蜡烛，就总能找到更黑暗的地方去发光”。现在发现，这句话居然说对了。
+
+**分享链接：** [【是马豪杰】“监狱”里的得到之光](https://mp.weixin.qq.com/s/5Z5mqvmJzuGiLR7-et7Qsg)
+
+#### (2) {#2019-11-21-2}
+
+“应对贫富差距，治本的方法是把蛋糕做大，也就是想办法创造更多的财富”。换言之，没有生于富贵家，就早点放弃跟别人比富，安于贫穷，跟自己的昨天比比，没有明显差，也就好了，这样社会也就都和谐了。
+
+**分享链接：** [【集智俱乐部】人类不平等的起源：为什么每一次技术变革都加剧了贫富分化](https://mp.weixin.qq.com/s/ntsr8guUFPt1B01fPxrxJg)
+
+#### (1) {#2019-11-21-1}
+
+盲点是如何产生的？  
+盲点该如何避免呢？
+
+<a href="/images/moments/2019-11/2019-11-21-001.jpg"><img src="/images/moments/2019-11/2019-11-21-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-21-002.jpg"><img src="/images/moments/2019-11/2019-11-21-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 盲点是“知道不知道”,还有很多“不知道不知道”的。相比避免盲点,发现更多盲点也是极好的呢。
+
+**朋友评论：** 死于安乐的真实案例，管理团队Low逼所致
+
+---
+
+### 2019-11-20
+
+#### (2) {#2019-11-20-2}
+
+容错：发生故障时，如何让系统继续运行。
+高可用：系统中断时，如何尽快恢复。
+灾备：系统毁灭时，如何抢救数据。
+
+**分享链接：** [【阮一峰的网络日志】容错，高可用和灾备](http://www.ruanyifeng.com/blog/2019/11/fault-tolerance.html?from=timeline)
+
+#### (1) {#2019-11-20-1}
+
+#论算法的价值# 搞个简单的数值变换，体重秤就能价格翻倍卖，还有某度情亲助力忽悠，难怪连巨佬也要学，房地产若能智能延寿，估计不止是能翻倍
+
+<a href="/images/moments/2019-11/2019-11-20-001.jpg"><img src="/images/moments/2019-11/2019-11-20-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-20-002.jpg"><img src="/images/moments/2019-11/2019-11-20-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-20-003.jpg"><img src="/images/moments/2019-11/2019-11-20-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
