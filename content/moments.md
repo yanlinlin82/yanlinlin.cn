@@ -14,6 +14,23 @@ title: "微信朋友圈内容精选"
 
 ## 2019-12
 
+### 2019-12-22
+
+#### (1) {#2019-12-22-1}
+
+这玩意我前段时间就看到了，只不过没有想到评价会这么高。目前在github上已经接近两万星标了。
+
+一直以来，数据分析的绝大部分工作，都是消耗在各种琐碎任务上，合适的工具的确是有可能事半功倍的，甚至可能带来某些质的飞跃。
+
+也许可以抽时间研究研究。
+
+<https://github.com/metabase/metabase/>  
+<https://www.metabase.com/>
+
+<a href="/images/moments/2019-12/2019-12-22-001.jpg"><img src="/images/moments/2019-12/2019-12-22-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-22-002.jpg"><img src="/images/moments/2019-12/2019-12-22-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-22-003.jpg"><img src="/images/moments/2019-12/2019-12-22-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
 ### 2019-12-21
 
 #### (2) {#2019-12-21-2}
