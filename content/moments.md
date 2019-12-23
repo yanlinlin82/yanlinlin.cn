@@ -14,6 +14,28 @@ title: "微信朋友圈内容精选"
 
 ## 2019-12
 
+### 2019-12-23
+
+#### (3) {#2019-12-23-3}
+
+#童话都是真的#系列：当年小红帽回家也是要穿越森林的。
+
+<a href="/images/moments/2019-12/2019-12-23-002.jpg"><img src="/images/moments/2019-12/2019-12-23-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (2) {#2019-12-23-2}
+
+这其中很多建议，即使是对于研究生毕业以后的人们，也是非常有益的。
+
+**分享链接：** [【李程研究组】科研生活 | 做研究生的10个简单法则](https://mp.weixin.qq.com/s/TQrC7fmTWGA1X4jbrFTD2Q)
+
+#### (1) {#2019-12-23-1}
+
+年度黑夜最长的一天过去了
+
+<a href="/images/moments/2019-12/2019-12-23-001.jpg"><img src="/images/moments/2019-12/2019-12-23-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2019-12-22
 
 #### (1) {#2019-12-22-1}
