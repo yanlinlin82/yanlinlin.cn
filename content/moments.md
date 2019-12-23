@@ -16,6 +16,20 @@ title: "微信朋友圈内容精选"
 
 ### 2019-12-23
 
+#### (4) {#2019-12-23-4}
+
+快，还是慢？这是个值得思考的问题。
+
+<https://doi.org/10.1016/j.tics.2019.10.007>  
+<https://www.goodreads.com/quotes/458856-my-dear-here-we-must-run-as-fast-as-we>  
+<https://www.slideshare.net/brikis98/startup-dna-speed-wins>  
+<http://attackofthecute.com/on/?i=3682>
+
+<a href="/images/moments/2019-12/2019-12-23-003.jpg"><img src="/images/moments/2019-12/2019-12-23-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-23-004.jpg"><img src="/images/moments/2019-12/2019-12-23-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-23-005.jpg"><img src="/images/moments/2019-12/2019-12-23-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-23-006.jpg"><img src="/images/moments/2019-12/2019-12-23-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
 #### (3) {#2019-12-23-3}
 
 #童话都是真的#系列：当年小红帽回家也是要穿越森林的。
