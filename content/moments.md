@@ -14,6 +14,20 @@ title: "微信朋友圈内容精选"
 
 ## [2019-12](#2019-12) {#2019-12}
 
+### [2019-12-25](#2019-12-25) {#2019-12-25}
+
+#### [(1)](#2019-12-25) {#2019-12-25-1}
+
+持续训练还是有效果的，终于在“中等”难度的题中，一次刷到100%排名。
+
+https://leetcode-cn.com/submissions/detail/41133624/  
+https://github.com/yanlinlin82/leetcode#leetcode
+
+<a href="/images/moments/2019-12/2019-12-25-001.jpg"><img src="/images/moments/2019-12/2019-12-25-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-25-002.jpg"><img src="/images/moments/2019-12/2019-12-25-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### [2019-12-24](#2019-12-24) {#2019-12-24}
 
 #### [(2)](#2019-12-24-2) {#2019-12-24-2}
