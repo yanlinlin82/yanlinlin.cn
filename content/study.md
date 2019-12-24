@@ -36,6 +36,7 @@ title: "我的持续学习"
 * [生物信息学](/notes/bioinformatics)
 * [二代测序技术](/notes/ngs)
 * [结构变异](/notes/sv)
+* [统计学](/notes/statistics)
 
 ### 计算机类
 
