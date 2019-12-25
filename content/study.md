@@ -7,8 +7,8 @@ title: "我的持续学习"
 ## 打卡式学习
 
 * [力扣刷题](https://github.com/yanlinlin82/leetcode/blob/master/README.md)：力扣（leetcode）算法题库，每周坚持刷题，目前使用C++语言，顺序完成题库的每一题。
-* [左耳听风ARTS](https://yanlinlin82.github.io/ARTS-Weekly)：《左耳听风》专栏的每周学习的打卡记录，打卡内容详见链接页面。
-* [生物医学ARTS](https://yanlinlin82.github.io/ARTS-Weekly-BioMed)：这是我仿照《左耳听风》专栏ARTS每周打卡活动而启动的自学活动，内容面向生物信息/精准医疗。
+* [左耳听风ARTS](/ARTS-Weekly)：《左耳听风》专栏的每周学习的打卡记录，打卡内容详见链接页面。
+* [生物医学ARTS](/ARTS-Weekly-BioMed)：这是我仿照《左耳听风》专栏ARTS每周打卡活动而启动的自学活动，内容面向生物信息/精准医疗。
 
 ## 前沿专题调研
 
