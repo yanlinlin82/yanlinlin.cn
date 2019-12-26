@@ -4,6 +4,8 @@ title: "关于本人及本站"
 
 I am a scientific researcher and software programmer. My major is bioinformatics. I received PhD from School of Life Sciences, Peking University. I have more than 20 years experience on programming. My current work is research and development on precision medicine, including data analysis of high-throughput technology, such as next-generation sequencing. I am also interested in genomics and other -omics.
 
+This site is written in Chinese mostly. For readers who use English only, online translation service, such as *Google translate*, could allow you to [browse my site in English](https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fyanlinlin.cn%2Fabout%2F). Suggestions are welcome!
+
 本人是一名研究者兼程序员，在北大取得生信专业博士学位，拥有20多年编程经验。目前我的主要兴趣是各类高通量组学数据分析，并在精准医疗领域做相应的技术研发工作。本人平时酷爱编程，崇尚开源，且喜欢写作。搭建此个人网站，自娱自乐的同时，既为记录平时点滴心得，也用于收集整理自己的各类产出作品。
 
 本人从十多年前起，就开始写博客。这些年来，虽然经历过多个平台切换，也常有较大间断，但所幸大多数文字都得以保留至今。所有博客内容，除少量引文外，均属个人原创。文中观点，仅代表个人当时想法，作为记忆珍藏于此，不做对错争辩。也因此，本站不设留言功能。如需沟通交流，欢迎以如下方式与我联系：
