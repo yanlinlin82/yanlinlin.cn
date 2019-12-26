@@ -20,6 +20,10 @@ title: "我的持续学习"
 * [生物计算](/notes/bio-computing)：关于“生物计算”的学习笔记。
 * [量子计算](/notes/quantum-computing)：
 
+## 课程作业类
+
+* [PyTorch-Homework](https://github.com/yanlinlin82/PyTorch-Homework)
+
 ## 系统性学习笔记
 
 ### 生物医学类
