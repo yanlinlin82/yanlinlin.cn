@@ -10,7 +10,9 @@ I am a scientific researcher and software programmer. My major is bioinformatics
 
 * **微信号**：yanlinlin82
 
-    <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto;text-align:center">
+    <a href="/images/weixin_scancode.jpg" style="text-align:center">
+    <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto">
+    </a>
 
 * **Email**：<yanlinlin82@gmail.com>
 
@@ -28,7 +30,9 @@ I am a scientific researcher and software programmer. My major is bioinformatics
 
 * **不靠谱颜论**
 
-    <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto;text-align:center">
+    <a href="/images/bukaopuyanlun-qrcode.jpg" style="text-align:center">
+    <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
+    </a>
 
 其中一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介。
 
