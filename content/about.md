@@ -36,6 +36,6 @@ This site is written in Chinese mostly. For readers who use English only, online
     <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
     </a>
 
-其中一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介。
+其中的一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介（或查看我更正式些的[个人简历](/resume/)），可帮助您了解我。
 
 欢迎关注和交流！
