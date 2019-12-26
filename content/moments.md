@@ -14,6 +14,24 @@ title: "微信朋友圈内容精选"
 
 ## [2019-12](#2019-12) {#2019-12}
 
+### [2019-12-26](#2019-12-26) {#2019-12-26}
+
+这种简单的小功能真不错，用户使用习惯的画像数据，配上简洁的文案设计，套用固定的模板，就是一款产品提供给用户的年终总结快速生成方式。
+
+2019年我的重点是学习，2020年我的重点将是输出，而且，我已经在这条路上了。欢迎关注我的公众号和个人网站。
+
+https://yanlinlin.cn/works/
+
+<a href="/images/moments/2019-12/2019-12-26-001.jpg"><img src="/images/moments/2019-12/2019-12-26-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-26-002.jpg"><img src="/images/moments/2019-12/2019-12-26-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-26-003.jpg"><img src="/images/moments/2019-12/2019-12-26-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-26-004.jpg"><img src="/images/moments/2019-12/2019-12-26-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-26-005.jpg"><img src="/images/moments/2019-12/2019-12-26-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-26-006.jpg"><img src="/images/moments/2019-12/2019-12-26-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-26-007.jpg"><img src="/images/moments/2019-12/2019-12-26-007.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### [2019-12-25](#2019-12-25) {#2019-12-25}
 
 #### [(2)](#2019-12-25-2) {#2019-12-25-2}
