@@ -1204,3 +1204,134 @@ https://pytorch.org/deep-learning-with-pytorch
 <a href="/images/moments/2019-11/2019-11-20-001.jpg"><img src="/images/moments/2019-11/2019-11-20-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-11/2019-11-20-002.jpg"><img src="/images/moments/2019-11/2019-11-20-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2019-11/2019-11-20-003.jpg"><img src="/images/moments/2019-11/2019-11-20-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### [2019-11-19](#2019-11-19) {#2019-11-19}
+
+#### [(6)](#2019-11-19-6) {#2019-11-19-6}
+
+上两个截图来自这篇。
+
+**分享链接：** [【极客时间】如何评测搜索系统的在线表现？](https://time.geekbang.org/column/article/57ccf88ff34b2174c9fda728d6d5c949/share?code=oN52yNYOPi2ELMeshgt0mtLui1QcYzPVkoqjOdDYik0%3D&from=timeline)
+
+#### [(5)](#2019-11-19-5) {#2019-11-19-5}
+
+不学好统计学，包括教科书以外的超纲内容“因果推论”，想做好AB测试来优化一个产品，都将是有心无力的。在此再次推荐科普书《为什么》。
+
+<a href="/images/moments/2019-11/2019-11-19-003.jpg"><img src="/images/moments/2019-11/2019-11-19-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-11/2019-11-19-004.jpg"><img src="/images/moments/2019-11/2019-11-19-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### [(4)](#2019-11-19-4) {#2019-11-19-4}
+
+PubMed更新了界面（https://pubmed.ncbi.nlm.nih.gov），也启用了新域名。清新了很多，使用也更顺手了。
+
+感觉PubMed也要开始做社区了，这是大势所趋。这样的文献索引大户出马，应该很容易就能把其他ResearchGate、Dimensions之流给怼死啊。
+
+**分享链接：** <https://www.nlm.nih.gov/pubs/techbull/nd19/nd19_pubmed_new.html?from=timeline>
+
+#### [(3)](#2019-11-19-3) {#2019-11-19-3}
+
+何止FDA评审药物呢？所有现在涉及知识人工密集型的工作，诸如报告审核、证据收集整理、知识推理和解读，都将因相应数据的暴增，而成为绝对的体系限速瓶颈，无法避免。
+
+只有两条路或可缓解此窘境：一、多写代码；二、多生娃。
+
+<a href="/images/moments/2019-11/2019-11-19-002.jpg"><img src="/images/moments/2019-11/2019-11-19-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### [(2)](#2019-11-19-2) {#2019-11-19-2}
+
+全是鸡汤
+
+**分享链接：** [【Linux宝库】江湖传说——阿里巴巴土话102句完整版](https://mp.weixin.qq.com/s/8EROpJUHjjus6t02vkPX4g)
+
+#### [(1)](#2019-11-19-1) {#2019-11-19-1}
+
+这个看着不错
+
+<https://www.linux.com/audience/devops/the-onnx-format-becomes-the-newest-linux-foundation-project/>
+
+<a href="/images/moments/2019-11/2019-11-19-001.jpg"><img src="/images/moments/2019-11/2019-11-19-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### [2019-11-18](#2019-11-18) {#2019-11-18}
+
+#### [(4)](#2019-11-18-4) {#2019-11-18-4}
+
+用户体验优化系列神器
+
+**分享链接：** [【谷歌开发者】谁说优美动画和高效性能不可两全其美？](https://mp.weixin.qq.com/s/ZCNuRTfaGNuTCqFNoVPFRg)
+
+#### [(3)](#2019-11-18-3) {#2019-11-18-3}
+
+小时候听政治老师谈及服务业（第三产业）时，似乎总被赋予一种低声下气损己利他的感觉。看过这么多年的社会发展，才明白这是对工业化的一种矫枉和补充。往好了说，是“精准”，对标准化以外的需求进行实现；往怂了说，是产品总无法做到足够好，于是就只好边做边卖了。
+
+<a href="/images/moments/2019-11/2019-11-18-002.jpg"><img src="/images/moments/2019-11/2019-11-18-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### [(2)](#2019-11-18-2) {#2019-11-18-2}
+
+先不论结论及真假，至少可以从中学习如何做危机公关
+
+**分享链接：** [【GeenMedical】刚刚，曹雪涛本人正式回应「论文造假」质疑！](https://mp.weixin.qq.com/s/--LE9Fu0jo0sBavk8u-HbQ)
+
+#### [(1)](#2019-11-18-1) {#2019-11-18-1}
+
+我以为大案牍术终于开始生效，能提供买得起且用得上的代金券，结果发现它仅限极少几个遥远门店可用，果然还是骗人的[衰]
+
+<a href="/images/moments/2019-11/2019-11-18-001.jpg"><img src="/images/moments/2019-11/2019-11-18-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### [2019-11-17](#2019-11-17) {#2019-11-17}
+
+#### [(2)](#2019-11-17-2) {#2019-11-17-2}
+
+也因此，对情绪的克制，才更加珍贵。
+
+<a href="/images/moments/2019-11/2019-11-17-002.jpg"><img src="/images/moments/2019-11/2019-11-17-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### [(1)](#2019-11-17-1) {#2019-11-17-1}
+
+感谢戴老师记录、整理并配图[捂脸]
+
+<a href="/images/moments/2019-11/2019-11-17-001.jpg"><img src="/images/moments/2019-11/2019-11-17-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### [2019-11-16](#2019-11-16) {#2019-11-16}
+
+#### [(5)](#2019-11-16-5) {#2019-11-16-5}
+
+朋友们，该戒烟了！
+
+抽烟者的肺！#戒烟#  转发中国最大的肺移植中心，南京医科大学附属无锡市人民医院，无锡陈静瑜教授肺移植团队。团队获取的脑死亡爱心捐献供肺，此供者52岁，近30年烟龄，获取后观察此供肺轻度气肿、肺尘部有肺大泡、结核钙化。我国许多烟民的肺都会如此，大同小异，团队决定放弃使用此供肺移植了，也就是说抽烟的人脑死亡后你想捐肺都没受者要，看了这肺，你还有抽烟的勇气吗？
+
+（朋友圈分享为视频，下面为该视频的截图）
+
+<a href="/images/moments/2019-11/2019-11-16-004.jpg"><img src="/images/moments/2019-11/2019-11-16-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### [(4)](#2019-11-16-4) {#2019-11-16-4}
+
+偶尔要试着模仿大师说话，沾点模因（mene）仙气，万一成功了呢？
+
+<a href="/images/moments/2019-11/2019-11-16-003.jpg"><img src="/images/moments/2019-11/2019-11-16-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** 出一门误导的艺术及实践课程
+
+**回复：** 好主意[强]
+
+#### [(3)](#2019-11-16-3) {#2019-11-16-3}
+
+https://mp.weixin.qq.com/s/14r9oJHW73AlnXXcwj5a7A
+
+#### [(2)](#2019-11-16-2) {#2019-11-16-2}
+
+公益广告
+
+<a href="/images/moments/2019-11/2019-11-16-002.jpg"><img src="/images/moments/2019-11/2019-11-16-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### [(1)](#2019-11-16-1) {#2019-11-16-1}
+
+我等刷朋友圈过多的穷人，代金券都没实力使，只能玩免费小游戏啦[捂脸]
+
+<a href="/images/moments/2019-11/2019-11-16-001.jpg"><img src="/images/moments/2019-11/2019-11-16-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
