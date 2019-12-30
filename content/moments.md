@@ -16,6 +16,17 @@ title: "微信朋友圈内容精选"
 
 ## [2019-12](#2019-12) {#2019-12}
 
+### [2019-12-30](#2019-12-30) {#2019-12-30}
+
+#### [(1)](#2019-12-30-1) {#2019-12-30-1}
+
+前几天急病一场，痛楚不堪，戒了两天咖啡，把睡眠补了补，终于算是活转过来。但这两天见杀医事件不断发酵并刷屏，心灵感受之折磨，犹胜于前。人性之善，人性之恶，促人深思。
+
+<a href="/images/moments/2019-12/2019-12-30-001.jpg"><img src="/images/moments/2019-12/2019-12-30-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2019-12/2019-12-30-002.jpg"><img src="/images/moments/2019-12/2019-12-30-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### [2019-12-27](#2019-12-27) {#2019-12-27}
 
 #### [(1)](#2019-12-27-1) {#2019-12-27-1}
@@ -25,8 +36,6 @@ title: "微信朋友圈内容精选"
 <a href="/images/moments/2019-12/2019-12-27-001.jpg"><img src="/images/moments/2019-12/2019-12-27-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 ---
-
-## [2019-12](#2019-12) {#2019-12}
 
 ### [2019-12-26](#2019-12-26) {#2019-12-26}
 
