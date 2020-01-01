@@ -14,7 +14,33 @@ title: "微信朋友圈内容精选"
 
 ---
 
+## [2020-01](#2020-01) {#2020-01}
+
+### [2020-01-01](#2020-01-01) {#2020-01-01}
+
+#### [(1)](#2020-01-01-1) {#2020-01-01-1}
+
+复盘了一下2019年，发现自己立下的FLAG，大多数都没能达成。很多目标，天生就是难以企及的，但它们指示出方向，并嘉奖着努力，让比目标本身更美好的惊喜持续发生。2020年，继续好高骛远、歪打正着。
+
+<a href="/images/moments/2020-01/2020-01-01-001.jpg"><img src="/images/moments/2020-01/2020-01-01-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-01-002.jpg"><img src="/images/moments/2020-01/2020-01-01-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**朋友评论：** "Shoot for the moon. Even you miss, you'll land among the stars."  
+——简而言之，要好高骛远。
+
+---
+
 ## [2019-12](#2019-12) {#2019-12}
+
+### [2019-12-31](#2019-12-31) {#2019-12-31}
+
+#### [(1)](#2019-12-31-1) {#2019-12-31-1}
+
+年末最后几小时，小闺女独立制造。
+
+<a href="/images/moments/2019-12/2019-12-31-001.jpg"><img src="/images/moments/2019-12/2019-12-31-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
 
 ### [2019-12-30](#2019-12-30) {#2019-12-30}
 
