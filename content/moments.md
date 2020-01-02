@@ -20,11 +20,20 @@ title: "微信朋友圈内容精选"
 
 ### 2020-01-02 {{<permalink "2020-01-02">}}
 
+#### (3) {{<permalink "2020-01-02-3">}}
+
+很遗憾，即使是号称“能不断自我纠正”的科学界，也不太能公正地对待批评；再权威的人，也不免受制于自身的情绪属性，对“不以物喜、不以己悲”的追求，终究会落入“叶公好龙”的尴尬；究其原因，解决提出问题的人，确实比解决问题本身容易太多。
+
+截图来自本期《Nature》  
+<https://doi.org/10.1038/d41586-019-03909-2>
+
+<a href="/images/moments/2020-01/2020-01-02-005.jpg"><img src="/images/moments/2020-01/2020-01-02-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
 #### (2) {{<permalink "2020-01-02-2">}}
 
 从这个调查结果看，C++17的确已经开始成为主流选择。相比守着一个老旧编译器，以满足虚幻的稳定感，倒不如投入正式发布已久的新版编译器的怀抱，以新标准支持带来的开发效率大幅度提升，换取足够的测试时间，赢得更可信的稳定性。
 
-https://www.bfilipek.com/2019/12/cpp-status-2019.html
+<https://www.bfilipek.com/2019/12/cpp-status-2019.html>
 
 <a href="/images/moments/2020-01/2020-01-02-003.jpg"><img src="/images/moments/2020-01/2020-01-02-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 <a href="/images/moments/2020-01/2020-01-02-004.jpg"><img src="/images/moments/2020-01/2020-01-02-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
