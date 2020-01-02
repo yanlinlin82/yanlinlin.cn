@@ -9,9 +9,21 @@ slug: genome-editing
 
 ## 动机
 
+## 简介
+
+### 策略
+
+* zinc-finger nucleases (ZFNs)
+* transcription activator-like effector nucleases (TALENs)
+* clustered regularly interspaced short palindromic repeat/Cas9 (CRISPR/Cas9)
+
 ## 最新进展
 
 ## 重要文献
+
+### 评估工具
+
+* [【PLOS One】AlleleProfileR: A versatile tool to identify and profile sequence variants in edited genomes](https://doi.org/10.1371/journal.pone.0226694)
 
 ## 专利
 

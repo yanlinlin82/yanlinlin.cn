@@ -30,3 +30,4 @@ slug: bio-computing
 
 * [A Novel Bioelectronic Reporter System in Living Cells Tested With a Synthetic Biological Comparator](https://doi.org/10.1038/s41598-019-43771-w)
 * [Synthetic Metabolic Computation in a Bioluminescence-Sensing System](https://doi.org/10.1093/nar/gkz807)
+* [A new DNA-based model for finite field arithmetic](https://doi.org/10.1016/j.heliyon.2019.e02901)
