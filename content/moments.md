@@ -16,7 +16,36 @@ title: "微信朋友圈内容精选"
 
 ## 2020-01 {{<permalink "2020-01">}}
 
+---
+
+### 2020-01-02 {{<permalink "2020-01-02">}}
+
+#### (2) {{<permalink "2020-01-02-2">}}
+
+从这个调查结果看，C++17的确已经开始成为主流选择。相比守着一个老旧编译器，以满足虚幻的稳定感，倒不如投入正式发布已久的新版编译器的怀抱，以新标准支持带来的开发效率大幅度提升，换取足够的测试时间，赢得更可信的稳定性。
+
+https://www.bfilipek.com/2019/12/cpp-status-2019.html
+
+<a href="/images/moments/2020-01/2020-01-02-003.jpg"><img src="/images/moments/2020-01/2020-01-02-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-02-004.jpg"><img src="/images/moments/2020-01/2020-01-02-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {{<permalink "2020-01-02-1">}}
+
+在这艰难模式的人生副本中，的确有很多事，是超越出理性所能衡量的范围的。
+
+<a href="/images/moments/2020-01/2020-01-02-001.jpg"><img src="/images/moments/2020-01/2020-01-02-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-02-002.jpg"><img src="/images/moments/2020-01/2020-01-02-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2020-01-01 {{<permalink "2020-01-01">}}
+
+#### (2) {{<permalink "2020-01-01-2">}}
+
+借用刚收到的礼物，祝大家笑口常开，心想事成，创意泉涌，新年开泰！
+
+<a href="/images/moments/2020-01/2020-01-01-003.jpg"><img src="/images/moments/2020-01/2020-01-01-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-01-004.jpg"><img src="/images/moments/2020-01/2020-01-01-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (1) {{<permalink "2020-01-01-1">}}
 
