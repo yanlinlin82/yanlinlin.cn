@@ -13,18 +13,26 @@ slug: bio-computing
 
 ## 新闻
 
-* 2019-11-16
-    * [Former Google CEO Eric Schmidt Talks Synthetic Biology](https://synbiobeta.com/former-google-ceo-eric-schmidt-talks-synthetic-biology/)
+### 2020-01-03
 
-* 2019-11-25
-    * [Building a Better World in the ‘Convergence Era’](https://news.samsung.com/us/building-better-world-convergence-era/)
+* [Test tube DNA computer calculates the square root of 900](https://www.zdnet.com/article/test-tube-dna-computer-calculates-the-square-root-of-900/)
 
-* 2019-12-10
-    * [Inspired by the Brain](https://www.newswise.com/articles/inspired-by-the-brain)
-    * [Former Google CEO Eric Schmidt believes biology is the next frontier in computing](https://www.cnbc.com/2019/10/02/eric-schmidt-says-hes-eyeing-biology-for-the-next-computing-frontier.html)
+### 2019-12-16
 
-* 2019-12-16
-    * [First Hint Of How DNA Calculators Could Supercharge Computing](https://insiderfinancial.net/first-hint-of-how-dna-calculators-could-supercharge-computing.html)
+* [First Hint Of How DNA Calculators Could Supercharge Computing](https://insiderfinancial.net/first-hint-of-how-dna-calculators-could-supercharge-computing.html)
+
+### 2019-12-10
+
+* [Inspired by the Brain](https://www.newswise.com/articles/inspired-by-the-brain)
+* [Former Google CEO Eric Schmidt believes biology is the next frontier in computing](https://www.cnbc.com/2019/10/02/eric-schmidt-says-hes-eyeing-biology-for-the-next-computing-frontier.html)
+
+### 2019-11-25
+
+* [Building a Better World in the ‘Convergence Era’](https://news.samsung.com/us/building-better-world-convergence-era/)
+
+### 2019-11-16
+
+* [Former Google CEO Eric Schmidt Talks Synthetic Biology](https://synbiobeta.com/former-google-ceo-eric-schmidt-talks-synthetic-biology/)
 
 ## 研究论文
 

@@ -39,6 +39,10 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-01-03
+
+* [Embedded DNA used to reproduce 3D-printed rabbit](https://physicsworld.com/a/embedded-dna-used-to-reproduce-3d-printed-rabbit/)
+
 ### 2019-12-25
 
 * [For Data Storage, Mother Nature Knows Best](https://northfortynews.com/for-data-storage-mother-nature-knows-best/)
