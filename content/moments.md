@@ -18,6 +18,32 @@ title: "微信朋友圈内容精选"
 
 ---
 
+### 2020-01-03 {{<permalink "2020-01-03">}}
+
+#### (2) {{<permalink "2020-01-03-2">}}
+
+午间吐槽：  
+高光只见发表时，谁眷沙场遍地尸。  
+名利催得轮回转，惊梦醒来总是迟。
+
+同样来自《Nature》：  
+<https://doi.org/10.1038/d41586-019-02912-x>
+
+另外，Nature Briefing是个好栏目，值得订阅，比较适合准备写文章的各位。
+
+<a href="/images/moments/2020-01/2020-01-03-005.jpg"><img src="/images/moments/2020-01/2020-01-03-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {{<permalink "2020-01-03-1">}}
+
+编程也是。当一段代码强烈地想要活过来时，它会假借你的脑子和手指，来实现自己的愿望。
+
+<a href="/images/moments/2020-01/2020-01-03-001.jpg"><img src="/images/moments/2020-01/2020-01-03-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-03-002.jpg"><img src="/images/moments/2020-01/2020-01-03-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-03-003.jpg"><img src="/images/moments/2020-01/2020-01-03-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-03-004.jpg"><img src="/images/moments/2020-01/2020-01-03-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2020-01-02 {{<permalink "2020-01-02">}}
 
 #### (3) {{<permalink "2020-01-02-3">}}
