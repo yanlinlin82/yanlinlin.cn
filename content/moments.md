@@ -18,7 +18,30 @@ title: "微信朋友圈内容精选"
 
 ---
 
+### 2020-01-05 {{<permalink "2020-01-05">}}
+
+#### (1) {{<permalink "2020-01-05-1">}}
+
+不断修炼内功才是硬道理[奋斗]
+
+<a href="/images/moments/2020-01/2020-01-05-001.jpg"><img src="/images/moments/2020-01/2020-01-05-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-05-002.jpg"><img src="/images/moments/2020-01/2020-01-05-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-05-003.jpg"><img src="/images/moments/2020-01/2020-01-05-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-05-004.jpg"><img src="/images/moments/2020-01/2020-01-05-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-05-005.jpg"><img src="/images/moments/2020-01/2020-01-05-005.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-05-006.jpg"><img src="/images/moments/2020-01/2020-01-05-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2020-01-03 {{<permalink "2020-01-03">}}
+
+#### (3) {{<permalink "2020-01-03-3">}}
+
+各种竞争冲突的恶性发展，最终损害的，其实还是用户的选择自由和相关利益。终于，在这次系统升级后，见识了直接封杀应用服务的水火不容。在此，祭奠一下已经从我手机中莫名消失的G家各种图标。
+
+二十多年前，电脑报上的一篇技术文章，曾深深打动过我。该文介绍了如何构建一张可启动且携带诸多日常工具的软盘上，使得在完全没有系统的“孤岛”电脑上，赢得“野外生存”机会。也许，是时候考虑下其他合适的野外生存方案了。
+
+<a href="/images/moments/2020-01/2020-01-03-006.jpg"><img src="/images/moments/2020-01/2020-01-03-006.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
 
 #### (2) {{<permalink "2020-01-03-2">}}
 
