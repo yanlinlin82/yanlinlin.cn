@@ -21,6 +21,7 @@ slug: genetic-disorders
 
 ## 其他
 
+* [Family History, Genetic Risk Score Combined Improves Prostate Cancer Screening](https://www.curetoday.com/articles/family-history-genetic-risk-score-combined-improves-prostate-cancer-screening)
 * [Points to consider: Should germline genetic testing be offered to all patients with breast cancer?](https://www.news-medical.net/news/20191213/Points-to-consider-Should-germline-genetic-testing-be-offered-to-all-patients-with-breast-cancer.aspx)
 
 ---
