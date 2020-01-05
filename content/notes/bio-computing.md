@@ -13,6 +13,10 @@ slug: bio-computing
 
 ## 新闻
 
+### 2020-01-05
+
+* [Research continues showing gains in DNA computing](https://techxplore.com/news/2020-01-gains-dna.html)
+
 ### 2020-01-03
 
 * [Test tube DNA computer calculates the square root of 900](https://www.zdnet.com/article/test-tube-dna-computer-calculates-the-square-root-of-900/)
