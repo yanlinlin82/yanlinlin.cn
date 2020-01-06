@@ -18,6 +18,24 @@ title: "微信朋友圈内容精选"
 
 ---
 
+### 2020-01-06 {{<permalink "2020-01-06">}}
+
+#### (2) {{<permalink "2020-01-06-2">}}
+
+看过那么多让人出离愤怒的GAME OVER，真的会彻底颠覆人生观，可能的确需要重新定义成功了。
+
+<a href="/images/moments/2020-01/2020-01-06-001.jpg"><img src="/images/moments/2020-01/2020-01-06-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {{<permalink "2020-01-06-1">}}
+
+2019年底：医生是高危职业！  
+2020年初：教师是高危职业！  
+到底还有多少伟大的职业，将不会再被推荐让孩子们从事？
+
+**分享链接：** [【林孤先生】西安女教师之死](https://mp.weixin.qq.com/s/RAAcIOv7aLhlR3gF66u2AA)
+
+---
+
 ### 2020-01-05 {{<permalink "2020-01-05">}}
 
 #### (1) {{<permalink "2020-01-05-1">}}
