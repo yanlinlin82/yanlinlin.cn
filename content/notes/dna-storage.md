@@ -39,6 +39,10 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-01-06
+
+* [Storing Data in Everyday Objects](https://www.3dprintingprogress.com/articles/19327/storing-data-in-everyday-objects)
+
 ### 2020-01-03
 
 * [Embedded DNA used to reproduce 3D-printed rabbit](https://physicsworld.com/a/embedded-dna-used-to-reproduce-3d-printed-rabbit/)
