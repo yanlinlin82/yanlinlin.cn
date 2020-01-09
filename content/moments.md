@@ -18,6 +18,52 @@ title: "微信朋友圈内容精选"
 
 ---
 
+### 2020-01-09 {{<permalink "2020-01-09">}}
+
+#### (2) {{<permalink "2020-01-09-2">}}
+
+老叫花只是很幸运而已：幸好他没遇到杠精，幸好没人口口声声要求他给出“恶徒”的准确定义，幸好裘千仞居然还能“气为之夺”。
+
+我们习惯了争先恐后占小便宜，习惯了给自己的侵权行为找更多冠冕堂皇的理由；以至于，公然抄袭者，才能脸皮远厚于铁掌水上漂。
+
+<a href="/images/moments/2020-01/2020-01-09-002.jpg"><img src="/images/moments/2020-01/2020-01-09-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-09-003.jpg"><img src="/images/moments/2020-01/2020-01-09-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (1) {{<permalink "2020-01-09-1">}}
+
+开源≠盗版！
+
+不管公开与否，版权的规则都是存在且需要维护的。也只有尊重版权的行为，才能促进优质原创的持续进行。
+
+很多人可能对此不屑。我也承认这事几乎没人是清白的。但不管出于什么考虑，持这种态度、甚至鼓励这种行为的群或社区，我觉得都是不值得继续为其付出时间精力的[再见]
+
+<a href="/images/moments/2020-01/2020-01-09-001.jpg"><img src="/images/moments/2020-01/2020-01-09-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### 2020-01-08 {{<permalink "2020-01-08">}}
+
+#### (1) {{<permalink "2020-01-08-1">}}
+
+年龄增长，会把人从李白推向杜甫，从金庸推向古龙。
+
+<a href="/images/moments/2020-01/2020-01-08-001.jpg"><img src="/images/moments/2020-01/2020-01-08-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### 2020-01-07 {{<permalink "2020-01-07">}}
+
+#### (1) {{<permalink "2020-01-07-1">}}
+
+今年的年会收获
+
+<a href="/images/moments/2020-01/2020-01-07-001.jpg"><img src="/images/moments/2020-01/2020-01-07-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-07-002.jpg"><img src="/images/moments/2020-01/2020-01-07-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+**评论：** 满三年发笔，多的那一年多，我给手工补了些代码，这段代码能解决重要问题，圆满[耶]
+
+---
+
 ### 2020-01-06 {{<permalink "2020-01-06">}}
 
 #### (2) {{<permalink "2020-01-06-2">}}
