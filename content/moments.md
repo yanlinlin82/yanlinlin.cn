@@ -18,6 +18,29 @@ title: "微信朋友圈内容精选"
 
 ---
 
+### 2020-01-17 {{<permalink "2020-01-17">}}
+
+#### (3) {{<permalink "2020-01-17-3">}}
+
+这测试真火爆，等了好久，结果还是没排上[可怜]
+
+<a href="/images/moments/2020-01/2020-01-17-003.jpg"><img src="/images/moments/2020-01/2020-01-17-003.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+#### (2) {{<permalink "2020-01-17-2">}}
+
+**分享链接：** [【红客官网】Windows10被爆漏洞 通知“打补丁”](https://mp.weixin.qq.com/s/7sbT7eSLfcdej5YXaQtkOA)
+
+#### (1) {{<permalink "2020-01-17-1">}}
+
+不打补丁的Windows 10系统得小心了。
+
+https://techcrunch.com/2020/01/14/microsoft-critical-certificates-bug/
+
+<a href="/images/moments/2020-01/2020-01-17-001.jpg"><img src="/images/moments/2020-01/2020-01-17-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-17-002.jpg"><img src="/images/moments/2020-01/2020-01-17-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2020-01-09 {{<permalink "2020-01-09">}}
 
 #### (2) {{<permalink "2020-01-09-2">}}
