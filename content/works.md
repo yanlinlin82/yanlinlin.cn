@@ -4,6 +4,10 @@ title: "我的作品"
 
 ## 开源软件项目
 
+### C++代码库
+
+* [rational-number](https://github.com/yanlinlin82/rational-number)：封装有理数类型，用于精确表示有理数。
+
 ### R包
 
 * [ggturtle](https://github.com/yanlinlin82/ggturtle)：基于ggplot，实现LOGO语言的绘图功能。
