@@ -10,6 +10,11 @@ title: "我的持续学习"
 * [左耳听风ARTS](/ARTS-Weekly)：《左耳听风》专栏的每周学习的打卡记录，打卡内容详见链接页面。
 * [生物医学ARTS](/ARTS-Weekly-BioMed)：这是我仿照《左耳听风》专栏ARTS每周打卡活动而启动的自学活动，内容面向生物信息/精准医疗。
 
+## 学习笔记
+
+* [技能点滴](/tip)：随时学习并记录计算机相关技能
+* [文献调研](/review)：科研文献学习
+
 ## 前沿专题调研
 
 这部分是我个人比较感兴趣的几个前沿领域，并且我对其倾向于持乐观态度，所以抽时间做一些调研学习。
@@ -20,13 +25,9 @@ title: "我的持续学习"
 * [生物计算](/notes/bio-computing)：关于“生物计算”的学习笔记。
 * [量子计算](/notes/quantum-computing)：
 
-## 课程作业类
+## 专业学科
 
-* [PyTorch-Homework](https://github.com/yanlinlin82/PyTorch-Homework)
-
-## 系统性学习笔记
-
-### 生物医学类
+### 生物医学
 
 * [生物医学](/notes/biomed)
 * [癌症](/notes/cancer)
@@ -35,17 +36,21 @@ title: "我的持续学习"
 * [遗传咨询](/notes/genetic-counselling)
 * [分子生物学](/notes/molecular-biology)
 
-### 生物信息类
+### 生物信息学
 
 * [生物信息学](/notes/bioinformatics)
 * [二代测序技术](/notes/ngs)
 * [结构变异](/notes/sv)
 * [统计学](/notes/statistics)
 
-### 计算机类
+### 计算机
 
 * [PyTorch](/notes/pytorch)
 * [C++新标准](/notes/cpp)：C++11/14/17/20
+
+## 课程作业
+
+* [PyTorch-Homework](https://github.com/yanlinlin82/PyTorch-Homework)
 
 ## 阅读
 
