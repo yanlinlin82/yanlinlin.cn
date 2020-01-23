@@ -120,3 +120,9 @@ CMake还可以用于帮助检查编译环境是否符合要求，比如，检查
 今天还看到另一篇文章，介绍CMake 3中的新特性的：《[Modern CMake is like inheritance](https://kubasejdak.com/modern-cmake-is-like-inheritance)》。文章提到，关于编译目标的属性，可以用面向对象的方式进行属性定义和继承。
 
 CMake系统中，已经集成了很多常见的系统构建相关功能支持，后续继续深入学习，就可以不用每个方面都自己再从头去发明轮子了。
+
+## 参考
+
+1. [CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)
+2. [Wikipedia: CMake](https://en.wikipedia.org/wiki/CMake)
+3. [Modern CMake is like inheritance](https://kubasejdak.com/modern-cmake-is-like-inheritance)
