@@ -18,6 +18,35 @@ title: "微信朋友圈内容精选"
 
 ---
 
+### 2020-01-26 {{<permalink "2020-01-26">}}
+
+#### (1) {{<permalink "2020-01-26-1">}}
+
+庚子伊始，宅不出户，重造轮子，宁静修心。
+
+伴着夜猫子娃的哇哇声和尿不湿，碎片地产出了这一堆commits，终于把这个命令行下的数据分析小工具，推进到了v0.2。
+
+https://github.com/yanlinlin82/tsv
+
+<a href="/images/moments/2020-01/2020-01-26-001.jpg"><img src="/images/moments/2020-01/2020-01-26-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+<a href="/images/moments/2020-01/2020-01-26-002.jpg"><img src="/images/moments/2020-01/2020-01-26-002.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
+### 2020-01-25 {{<permalink "2020-01-25">}}
+
+#### (1) {{<permalink "2020-01-25-1">}}
+
+切换新一轮十二生肖，撸码以庆祝！
+
+跨年不到一天，微信群聊竟累计了好几千条未读消息，逐条翻下来，发现其中绝大多数都是情绪宣泄，以及难以识别真伪的各式消息。
+
+鼠年，当以寸光之目，求专注于心。
+
+<a href="/images/moments/2020-01/2020-01-25-001.jpg"><img src="/images/moments/2020-01/2020-01-25-001.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+---
+
 ### 2020-01-17 {{<permalink "2020-01-17">}}
 
 #### (3) {{<permalink "2020-01-17-3">}}
