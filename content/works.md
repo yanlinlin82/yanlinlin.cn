@@ -6,6 +6,8 @@ title: "我的作品"
 
 ### C++代码库
 
+* [color-printf](https://github.com/yanlinlin82/color-printf)：提供彩色文本打印。
+* [cpp-webui](https://github.com/yanlinlin82/cpp-webui)：借用HTML/JS前端技术，帮助C++实现图形界面。
 * [rational-number](https://github.com/yanlinlin82/rational-number)：封装有理数类型，用于精确表示有理数。
 
 ### R包
@@ -30,6 +32,8 @@ title: "我的作品"
 
 ### 其他
 
+* [icpp](https://github.com/yanlinlin82/icpp)：解释执行C++代码。
+* [eval-exp](https://github.com/yanlinlin82/eval-exp)：表达式字符串解析实例代码。
 * [yanll-gentoo-overlay](https://github.com/yanlinlin82/yanll-gentoo-overlay)：我自己使用的gentoo软件仓库overlay，用于加入一些官方portage tree中未收录的软件包。
 
 ## 数据分析
