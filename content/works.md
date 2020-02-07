@@ -28,12 +28,14 @@ title: "我的作品"
 
 ### 不务正业类
 
-* [link-game-in-r](https://github.com/yanlinlin82/link-game-in-r)：连连看R语言版。
+* [link-game-in-r](https://github.com/yanlinlin82/link-game-in-r)：R语言版连连看游戏。
+* [r-2048](https://github.com/yanlinlin82/r-2048)：R语言版2048游戏。
 
 ### 其他
 
 * [icpp](https://github.com/yanlinlin82/icpp)：解释执行C++代码。
 * [eval-exp](https://github.com/yanlinlin82/eval-exp)：表达式字符串解析实例代码。
+* [x86-debug](https://github.com/yanlinlin82/x86-debug)：仿写MS-DOS下的DEBUG.EXE程序，解释执行x86机器指令。
 * [yanll-gentoo-overlay](https://github.com/yanlinlin82/yanll-gentoo-overlay)：我自己使用的gentoo软件仓库overlay，用于加入一些官方portage tree中未收录的软件包。
 
 ## 数据分析
