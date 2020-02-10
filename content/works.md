@@ -4,38 +4,49 @@ title: "我的作品"
 
 ## 开源软件项目
 
-### C++代码库
-
-* [color-printf](https://github.com/yanlinlin82/color-printf)：提供彩色文本打印。
-* [cpp-webui](https://github.com/yanlinlin82/cpp-webui)：借用HTML/JS前端技术，帮助C++实现图形界面。
-* [rational-number](https://github.com/yanlinlin82/rational-number)：封装有理数类型，用于精确表示有理数。
-
-### R包
-
-* [ggturtle](https://github.com/yanlinlin82/ggturtle)：基于ggplot，实现LOGO语言的绘图功能。
-* [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包，doi: [10.5281/zenodo.3521775](https://doi.org/10.5281/zenodo.3521775)。
-
-### 工具类
+### 命令行工具
 
 * [dup-file-scanner](https://github.com/yanlinlin82/dup-file-scanner)：用于搜索本地磁盘上的文件，通过计算md5sum，判断文件是否重复，并生成bash语句，可对重复文件进行去重。
 * [seqpipe](https://github.com/yanlinlin82/seqpipe)：自动对分析过程命令行及结果做详细记录的流程框架，doi: [10.5281/zenodo.3570939](https://doi.org/10.5281/zenodo.3570939)。
 * [tsv](https://github.com/yanlinlin82/tsv)：一个处理TSV格式文件的命令行工具。
 
-### 网页类
+### R
 
-* [webpage-templates](https://github.com/yanlinlin82/webpage-templates)：手写HTML页面模板，用以学习HTML5，同时完成一些页面样式的模板。
-* [simple-style](https://github.com/yanlinlin82/simple-style)：一个自己从头手写的极简风格的Hugo主题，也是本网站目前采用的风格。
+R包：
 
-### 不务正业类
+* [ggturtle](https://github.com/yanlinlin82/ggturtle)：基于ggplot，实现LOGO语言的绘图功能。
+* [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包，doi: [10.5281/zenodo.3521775](https://doi.org/10.5281/zenodo.3521775)。
+
+游戏：
 
 * [link-game-in-r](https://github.com/yanlinlin82/link-game-in-r)：R语言版连连看游戏。
 * [r-2048](https://github.com/yanlinlin82/r-2048)：R语言版2048游戏。
 
-### 其他
+### C++
+
+软件：
 
 * [icpp](https://github.com/yanlinlin82/icpp)：解释执行C++代码。
-* [eval-exp](https://github.com/yanlinlin82/eval-exp)：表达式字符串解析实例代码。
 * [x86-debug](https://github.com/yanlinlin82/x86-debug)：仿写MS-DOS下的DEBUG.EXE程序，解释执行x86机器指令。
+
+类库：
+
+* [color-printf](https://github.com/yanlinlin82/color-printf)：提供彩色文本打印。
+* [cpp-webui](https://github.com/yanlinlin82/cpp-webui)：借用HTML/JS前端技术，帮助C++实现图形界面。
+* [rational-number](https://github.com/yanlinlin82/rational-number)：封装有理数类型，用于精确表示有理数。
+
+代码片段：
+
+* [cpp-apply](https://github.com/yanlinlin82/cpp-apply)：在C++中对函数向量化，以简化调用代码的写法。
+* [eval-exp](https://github.com/yanlinlin82/eval-exp)：表达式字符串解析实例代码。
+
+### 网页
+
+* [webpage-templates](https://github.com/yanlinlin82/webpage-templates)：手写HTML页面模板，用以学习HTML5，同时完成一些页面样式的模板。
+* [simple-style](https://github.com/yanlinlin82/simple-style)：一个自己从头手写的极简风格的Hugo主题，也是本网站目前采用的风格。
+
+### 其他
+
 * [yanll-gentoo-overlay](https://github.com/yanlinlin82/yanll-gentoo-overlay)：我自己使用的gentoo软件仓库overlay，用于加入一些官方portage tree中未收录的软件包。
 
 ## 数据分析
