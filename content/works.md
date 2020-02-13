@@ -7,7 +7,7 @@ title: "我的作品"
 ### 命令行工具
 
 * [dup-file-scanner](https://github.com/yanlinlin82/dup-file-scanner)：用于搜索本地磁盘上的文件，通过计算md5sum，判断文件是否重复，并生成bash语句，可对重复文件进行去重。
-* [seqpipe](https://github.com/yanlinlin82/seqpipe)：自动对分析过程命令行及结果做详细记录的流程框架，doi: [10.5281/zenodo.3570939](https://doi.org/10.5281/zenodo.3570939)。
+* [seqpipe](https://github.com/yanlinlin82/seqpipe)：自动对分析过程命令行及结果做详细记录的流程框架。
 * [tsv](https://github.com/yanlinlin82/tsv)：一个处理TSV格式文件的命令行工具。
 
 ### R
@@ -15,12 +15,13 @@ title: "我的作品"
 R包：
 
 * [ggturtle](https://github.com/yanlinlin82/ggturtle)：基于ggplot，实现LOGO语言的绘图功能。
-* [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包，doi: [10.5281/zenodo.3521775](https://doi.org/10.5281/zenodo.3521775)。
+* [ggvenn](https://github.com/yanlinlin82/ggvenn)：基于ggplot的维恩图绘制R包。
 
 游戏：
 
 * [link-game-in-r](https://github.com/yanlinlin82/link-game-in-r)：R语言版连连看游戏。
 * [r-2048](https://github.com/yanlinlin82/r-2048)：R语言版2048游戏。
+* [kids.typing](https://github.com/yanlinlin82/kids.typing)：用R语言手工打造的供娃练指法的小程序。
 
 ### C++
 
