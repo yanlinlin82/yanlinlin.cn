@@ -3,7 +3,7 @@ title = "颜林林的个人网站"
 theme = "simple-style"
 paginate = 20
 googleAnalytics = "UA-74397492-1"
-copyright = "2007-2020 Linlin Yan. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)"
+copyright = "2007-2020 Linlin Yan. [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.zh) | [京ICP备18031542号-1](http://www.beian.miit.gov.cn/)"
 
 [markup.goldmark.renderer]
 unsafe = true
