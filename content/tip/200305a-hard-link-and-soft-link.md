@@ -74,7 +74,7 @@ $ ls -i -l  # 查看原文件
 total 4
 106829508 -rw-r--r-- 3 yanll yanll    0 2020-03-04 21:29:32 a.txt
 106829511 drwxr-xr-x 2 yanll yanll 4096 2020-03-04 22:19:02 sub
-# 其inode与计数仍保持不变
+# 其inode与计数仍保持不变。
 
 $ ls -i -l sub/  # 查看子目录中的文件
 total 0
@@ -83,6 +83,8 @@ total 0
 106829508 -rw-r--r-- 3 yanll yanll 0 2020-03-04 21:29:32 d.txt
 106829510 lrwxrwxrwx 1 yanll yanll 5 2020-03-04 21:30:58 e.txt -> a.txt
 # 其inode与计数，以及软链接的“文本内容”也都不变
+# 注意：这里第一行给出的（total）数字是列举文件占用磁盘空间的总数（单位是kB），所以，在我的磁盘上，
+#  这几个空文件占用的空间是0，全部加起来还不如一个目录所占用的空间（4096字节）大。
 
 $ file sub/*  # 尝试用`file`命令访问文件内容
 sub/b.txt: empty
