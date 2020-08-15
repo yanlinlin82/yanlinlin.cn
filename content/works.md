@@ -2,7 +2,8 @@
 title: "我的作品"
 ---
 
-![Linlin Yan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yanlinlin82&show_icons=true)
+[![Linlin Yan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yanlinlin82&show_icons=true)](https://github.com/yanlinlin82)
+<center><small><i>（此统计由<a href="https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_cn.md">github-readme-stats</a>支持实现）</i></small></center>
 
 ## 开源软件项目
 
