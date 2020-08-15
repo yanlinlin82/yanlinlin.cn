@@ -2,6 +2,8 @@
 title: "我的作品"
 ---
 
+![Linlin Yan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=yanlinlin82&show_icons=true)
+
 ## 开源软件项目
 
 ### 命令行工具
