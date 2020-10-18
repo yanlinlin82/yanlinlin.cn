@@ -39,6 +39,187 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-10-16
+
+* [Bits and bytes in bacteria: DNA data storage in living cells](https://blocksandfiles.com/2020/10/16/bits-and-bytes-in-bacteria-dna-data-storage-in-living-cells/)
+* [Enzymatic DNA synthesis sees the light](https://phys.org/news/2020-10-enzymatic-dna-synthesis.html)
+
+### 2020-09-29
+
+* [A DNA “printer”, the futuristic vision of a small French company](https://seaviewroad.com/2020/09/29/a-dna-printer-the-futuristic-vision-of-a-small-french-company/)
+* [When Will DNA Solve the Data Storage Crisis?](https://www.jdsupra.com/legalnews/when-will-dna-solve-the-data-storage-68995/)
+* [World's First Petabyte Hard Disk Drive Contains Glass for Better Storage Capacity](https://www.sciencetimes.com/articles/27396/20200921/petabyte-hard-disk-drive-glass.htm)
+
+### 2020-09-15
+
+* [Storing information and designing uncrackable codes with DNA](https://asunow.asu.edu/20200915-storing-information-and-designing-uncrackable-codes-dna)
+* [A peek into the future of storage](https://www.computerweekly.com/feature/A-peek-into-the-future-of-storage)
+
+### 2020-09-11
+
+* [HPC Strategist Dave Turek Joins DNA Storage (and Computing) Company Catalog](https://www.hpcwire.com/2020/09/11/hpc-strategist-dave-turek-joins-catalog/)
+
+### 2020-09-09
+
+* [DNA-based Data Storage and Computation Provider CATALOG, Founded by MIT Scientists, Raises $10 Million](https://www.globenewswire.com/news-release/2020/09/09/2090846/0/en/DNA-based-Data-Storage-and-Computation-Provider-CATALOG-Founded-by-MIT-Scientists-Raises-10-Million.html)
+
+### 2020-09-08
+
+* [Catalog bags $10 mil to fund DNA storage tech](https://blocksandfiles.com/2020/09/08/catalog-10m-funding/)
+* [Biohackers and the glass bead DNA storage game](https://blocksandfiles.com/2020/09/08/biohackers-and-the-glass-bead-dna-storage-game/)
+* [A New Type of Meta-DNA Structure](https://www.technologynetworks.com/tn/news/a-new-type-of-meta-dna-structure-340213)
+
+### 2020-09-04
+
+* [Video: Former IBMer Dave Turek Explains DNA-based Storage and its Place in the Compute Landscape to Come](https://insidehpc.com/2020/09/former-ibmer-dave-turek-explains-dna-based-storage-and-its-place-in-the-compute-landscape-to-come/)
+* [‘Just a Small Bit of DNA Theoretically Fits 200 Exabytes of Data’](https://onezero.medium.com/just-a-small-bit-of-dna-theoretically-fits-200-exabytes-of-data-5889f632925b)
+
+### 2020-09-03
+
+* [The future of data storage: Biohackers is first Netflix show to be stored in Twist DNA](https://www.medicaldevice-network.com/features/dna-data-storage/)
+
+### 2020-09-01
+
+* ['Biohackers' TV series stored on synthetic DNA](https://www.nanowerk.com/nanotechnology-news2/newsid=56031.php)
+
+### 2020-08-20
+
+* [Twist Bioscience Synthetic DNA Stores New Netflix Original Series ‘BIOHACKERS’](https://www.biospace.com/article/releases/twist-bioscience-synthetic-dna-stores-new-netflix-original-series-biohackers-/)
+* [Resero Genomics Launches Customer-focused DNA Banking](https://www.drovers.com/article/resero-genomics-launches-customer-focused-dna-banking)
+
+### 2020-08-18
+
+* [UK Biobank to build AWS-hosted data analysis platform with DNAnexus to speed research](https://www.computerweekly.com/news/252487787/UK-Biobank-to-build-AWS-hosted-data-analysis-platform-with-DNAnexus-to-speed-research)
+
+### 2020-08-14
+
+* [Netflix’s ‘Biohackers’ – The First Episode To Be Stored In DNA!](https://dailysoapdish.com/2020/08/netflixs-biohackers-the-first-episode-to-be-stored-in-dna/)
+
+### 2020-07-15
+
+* [Designing DNA From Scratch: Engineering Functions of Micrometer-Sized DNA Droplets](https://www.miragenews.com/designing-dna-from-scratch-engineering-functions-of-micrometer-sized-dna-droplets/)
+
+### 2020-07-14
+
+* [Power of DNA to Store Information Gets an Upgrade](https://news.utexas.edu/2020/07/14/power-of-dna-to-store-information-gets-an-upgrade/)
+
+### 2020-06-24
+
+* [Industry News: Codexis and Molecular Assemblies partner to transform the field of DNA synthesis](https://www.selectscience.net/industry-news/codexis-and-molecular-assemblies-partner-to-transform-the-field-of-dna-synthesis/?artID=51802)
+
+### 2020-06-16
+
+* [University of Washington and Microsoft researchers win award for DNA-based data storage](https://www.geekwire.com/2020/univ-washington-microsoft-researchers-win-award-dna-based-data-storage/)
+* [Scientists Develop New Scalable DNA-Based Data Storage System](https://interestingengineering.com/scientists-develop-new-scalable-dna-based-data-storage-system)
+
+### 2020-06-13
+
+* [New way to deal with DNA data stockpiling makes framework progressively powerful, adaptable](https://microbiozindia.com/health-news/new-way-to-deal-with-dna-data-stockpiling-makes-framework-progressively-powerful-adaptable/)
+
+### 2020-06-12
+
+* [New approach to DNA data storage makes system more dynamic, scalable](https://www.sciencedaily.com/releases/2020/06/200612111427.htm)
+
+### 2020-05-19
+
+* [Another step towards successful data storage in DNA](https://phonemantra.com/another-step-towards-successful-data-storage-in-dna/)
+
+### 2020-05-05
+
+* [Is DNA the Next Generation of Data Backup?](https://www.ameinfo.com/industry/tech-and-mobility/is-dna-the-next-generation-of-data-backup)
+
+### 2020-04-15
+
+* [Using DNA-like punch cards to store data](https://phys.org/news/2020-04-dna-like-cards.html)
+* [Molecular Assemblies Appoints Todd C. Peterson to Board of Directors](https://finance.yahoo.com/news/molecular-assemblies-appoints-todd-c-131300525.html)
+
+### 2020-04-08
+
+* [“Punch Card” DNA Could Mean Cheaper High-Capacity Data Storage](https://www.scientificamerican.com/article/punch-card-dna-could-mean-cheaper-high-capacity-data-storage/)
+* [Faster Rewritable Data Storage Made Possible by DNA Lego Bricks](https://www.tasnimnews.com/en/news/2020/04/08/2239277/faster-rewritable-data-storage-made-possible-by-dna-lego-bricks)
+
+### 2020-04-07
+
+* [DNA Lego bricks enable fast rewritable data storage](https://phys.org/news/2020-04-dna-lego-bricks-enable-fast.html)
+
+### 2020-03-06
+
+* [Fossilised bones inspire long-term DNA data storage](https://www.chemistryworld.com/news/fossilised-bones-inspire-long-term-dna-data-storage/4011296.article)
+
+### 2020-02-26
+
+* [Twist Bioscience secures $140M plus a slew of new DNA partnerships](https://www.fiercebiotech.com/medtech/twist-bioscience-nets-140m-plus-a-slew-new-dna-partnerships)
+
+### 2020-02-24
+
+* [Artist pays tribute to DNA pioneer Rosalind Franklin with DNA-laced paint and DNA-coded images](https://www.geekwire.com/2020/artist-dna-pioneer-rosalind-franklin/)
+
+### 2020-02-20
+
+* [The future of memory storage could reside within DNA](http://www.ecns.cn/news/2020-02-20/detail-ifztvsqr0570895.shtml)
+
+### 2020-02-18
+
+* [Hardy microbe’s DNA could be a time capsule for the ages](https://www.sciencemag.org/news/2020/02/hardy-microbe-s-dna-could-be-time-capsule-ages)
+
+### 2020-02-16
+
+* [Scientists Develop A New Method To Store Tons Of Data In A Single Drop Of DNA](https://wonderfulengineering.com/tiny-drop-dna-enormous-data-storage-capability/)
+
+### 2020-02-11
+
+* [What could replace our hard drives for data storage?](https://www.govtech.com/question-of-the-day/Question-of-the-Day-for-02112020.html)
+
+### 2020-02-05
+
+* [A Smear of DNA Can Hold 10,000 Gigabytes of Data](https://onezero.medium.com/a-smear-of-dna-can-hold-10-000-gigabytes-of-data-f32fc4866fcb)
+* [Alternative Computing](https://www.genomeweb.com/alternative-computing#.X4xIm50zaV4)
+* [Where Computing Is Headed—Beyond Quantum](https://www.wsj.com/articles/where-computing-is-headedbeyond-quantum-11580837001)
+* [Researchers report progress on molecular data storage system](https://www.miragenews.com/researchers-report-progress-on-molecular-data-storage-system/)
+
+### 2020-02-04
+
+* [Progress on molecular data storage system](https://www.sciencedaily.com/releases/2020/02/200204163650.htm)
+* [Researchers report progress on molecular data storage system](https://www.nanowerk.com/nanotechnology-news2/newsid=54491.php)
+* [Researchers report progress on molecular data storage system](https://www.eurekalert.org/pub_releases/2020-02/bu-rrp020420.php)
+
+### 2020-02-03
+
+* [Rise of DNA storage](https://www.iol.co.za/capeargus/opinion/rise-of-dna-storage-41947442)
+
+### 2020-01-27
+
+* [Synthetic DNA Being Developed to Store Excess Intelligence Data](https://i-hls.com/archives/98479)
+
+### 2020-01-23
+
+* [DNA-Based Computer Can Compute the Square Root of 900](https://www.natureworldnews.com/articles/43286/20200123/dna-based-computer-can-compute-the-square-root-of-900.htm)
+
+### 2020-01-21
+
+* [DNA-Based Storage Nears Scalable Reality with New $25 Million Project](https://www.hpcwire.com/2020/01/21/dna-based-storage-nears-scalable-reality-with-new-25-million-project/)
+
+### 2020-01-18
+
+* [DNA Data Storage Project Receives €20.7M from US Intelligence Agency](https://www.labiotech.eu/synbio/dna-data-storage-project/)
+
+### 2020-01-17
+
+* [Microsoft and Univ. of Washington join Georgia Tech team in $25M DNA data storage project](https://www.geekwire.com/2020/microsoft-univ-washington-join-georgia-tech-team-25m-dna-data-storage-project/)
+
+### 2020-01-16
+
+* [$25 Million Project Will Advance DNA-Based Archival Data Storage](https://www.news.gatech.edu/2020/01/15/25-million-project-will-advance-dna-based-archival-data-storage)
+
+### 2020-01-15
+
+* [IARPA Commits $48M to DNA Data Storage](https://www.genomeweb.com/informatics/iarpa-commits-48m-dna-data-storage#.X4xJhZ0zaV4)
+* [Where to store all this intelligence data? How about DNA?](https://www.c4isrnet.com/battlefield-tech/it-networks/2020/01/15/where-to-store-all-this-intelligence-data-how-about-dna/)
+
+### 2020-01-11
+
+* [All of YouTube's data stored in teaspoon of DNA](https://www.straitstimes.com/singapore/all-of-youtubes-data-stored-in-teaspoon-of-dna)
+
 ### 2020-01-06
 
 * [Storing Data in Everyday Objects](https://www.3dprintingprogress.com/articles/19327/storing-data-in-everyday-objects)
@@ -156,6 +337,14 @@ slug: dna-storage
 ### 2017-05-22
 
 * MIT Technology Review - [Microsoft Has a Plan to Add DNA Data Storage to Its Cloud](https://www.technologyreview.com/s/607880/microsoft-has-a-plan-to-add-dna-data-storage-to-its-cloud/) 
+
+### 2015-03-10
+
+* [YouTube: Future Computing: DNA Hard Drives | Nick Goldman](https://www.youtube.com/watch?v=tBvd7OSDGgQ)
+
+### 2015-02-11
+
+* [Glassed-in DNA makes the ultimate time capsule](https://www.newscientist.com/article/mg22530084-300-glassed-in-dna-makes-the-ultimate-time-capsule/)
 
 ## 其他相关
 
