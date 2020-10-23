@@ -39,6 +39,18 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-10-23
+
+* [Synthetic DNA Holds Great Promise For Data Storage](https://scienceblog.com/519155/synthetic-dna-holds-great-promise-for-data-storage/)
+* [Gartner's predictions show CIOs' expanding responsibility — and authority](https://www.ciodive.com/news/gartner-strategic-predictions-2021-daryl-plummer/587578/)
+* [Gartner reveals its top IT predictions for 2021 and beyond](https://www.information-age.com/gartner-reveals-top-it-predictions-2021-beyond-123492292/)
+
+### 2020-10-20
+
+* [Microsoft: Your Cloud Data May Soon Be Stored in DNA and Holograms](https://datacenterfrontier.com/microsoft-your-cloud-data-may-soon-be-stored-in-dna-and-holograms/)
+* [Molecular computing: DNA-inspired advanced computers](https://www.thehindu.com/sci-tech/technology/molecular-computing-dna-inspired-advanced-computers/article32892951.ece)
+* [Cellular 'pantry' of sorts, lipid droplets double as home security system](https://www.bioworld.com/articles/499088-cellular-pantry-of-sorts-lipid-droplets-double-as-home-security-system?v=preview)
+
 ### 2020-10-16
 
 * [Bits and bytes in bacteria: DNA data storage in living cells](https://blocksandfiles.com/2020/10/16/bits-and-bytes-in-bacteria-dna-data-storage-in-living-cells/)
