@@ -13,6 +13,8 @@ slug: dna-storage
 
 ## 研究论文
 
+* 2020 - Nature Communications - Low cost DNA data storage using photolithographic synthesis and advanced information reconstruction and error correction. (doi: [10.1038/s41467-020-19148-3](https://doi.org/10.1038/s41467-020-19148-3))
+
 * [An Efficient and Secure Forward Error Correcting Scheme for DNA Data Storage](https://www.researchgate.net/publication/332330857_An_Efficient_and_Secure_Forward_Error_Correcting_Scheme_for_DNA_Data_Storage)
 
 * [High capacity DNA data storage with variable-length Oligonucleotides using repeat accumulate code and hybrid mapping](https://doi.org/10.1186/s13036-019-0211-2)
@@ -38,6 +40,11 @@ slug: dna-storage
 * 2012-08-16 - Nature | News - DNA data storage breaks records (doi:[10.1038/nature.2012.11194](https://doi.org/10.1038/nature.2012.11194))
 
 ## 业界新闻
+
+### 2020-10-27
+
+* [Gartner: Top 10 Strategic Predictions for 2021 and Beyond](https://www.pcmag.com/news/gartner-top-10-strategic-predictions-for-2021-and-beyond)
+* [What are the New Trends and Opportunities in Video Storage?](https://www.securityinformed.com/insights/trends-opportunities-video-storage-co-2566-ga-co-2900-ga-co-8173-ga-co-8925-ga-co-9887-ga-co-1538138049-ga-off.1603707387.html)
 
 ### 2020-10-23
 
