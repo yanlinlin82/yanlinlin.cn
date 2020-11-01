@@ -41,6 +41,21 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-11-01
+
+* [Scientists Use DNA To Store Digital Data](https://www.forbes.com/sites/annapowers/2020/10/31/scientist-use-dna-to-store-digital-data/?sh=24345d2b221f)
+
+### 2020-10-31
+
+* [Magic: The Wizard of Oz successfully stored and retrieved on DNA](http://www.digitaljournal.com/tech-and-science/science/magic-the-wizard-of-oz-successfully-stored-and-retrived-on-dna/article/580005)
+* [Top 5 predictions that will shape IT industry in 2021](https://www.analyticsinsight.net/top-5-predictions-that-will-shape-it-industry-in-2021/)
+
+### 2020-10-28
+
+* [Twist Bioscience Collaborates With Beyond Earth to Launch Artwork Stored in DNA Into Space](https://www.oaoa.com/news/business/twist-bioscience-collaborates-with-beyond-earth-to-launch-artwork-stored-in-dna-into-space/article_f1d235ac-408a-5e5a-8746-3e9a0307d5aa.html)
+* [Gartner: 10 predictions for the next decade of IT](https://www.idgconnect.com/article/3587141/gartner-10-predictions-for-the-next-decade-of-it.html)
+* [Biotech future of promise and peril looms larger and closer](https://www.japantimes.co.jp/opinion/2020/10/27/commentary/world-commentary/biotech-ai-nanotech-robotics/)
+
 ### 2020-10-27
 
 * [Gartner: Top 10 Strategic Predictions for 2021 and Beyond](https://www.pcmag.com/news/gartner-top-10-strategic-predictions-for-2021-and-beyond)
