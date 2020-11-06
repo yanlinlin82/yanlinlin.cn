@@ -41,6 +41,16 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-11-06
+
+* [Revolutionary synthetic DNA disk could hold key to future of storage](https://www.techradar.com/news/revolutionary-synthetic-dna-disk-could-hold-key-to-future-of-storage)
+* [DNA-Based Molecular Tagging System, “Porcupine,” Could Feasibly Replace Printed or Plastic Barcodes](https://www.genengnews.com/news/dna-based-molecular-tagging-system-porcupine-could-feasibly-replace-printed-or-plastic-barcodes/)
+* [Europe furthers the excellence of CIC biomaGUNE](https://cordis.europa.eu/article/id/422667-europe-furthers-the-excellence-of-cic-biomagune)
+
+### 2020-11-03
+
+* [A DNA-based molecular tagging system that could take the place of printed barcodes](https://phys.org/news/2020-11-dna-based-molecular-tagging-barcodes.html)
+
 ### 2020-11-01
 
 * [Scientists Use DNA To Store Digital Data](https://www.forbes.com/sites/annapowers/2020/10/31/scientist-use-dna-to-store-digital-data/?sh=24345d2b221f)
