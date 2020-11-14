@@ -41,6 +41,16 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-11-14
+
+* [Firms partner with Microsoft to advance DNA data storage](https://www.scienceboard.net/index.aspx?sec=sup&sub=gen&pag=dis&ItemID=1681)
+* [Microsoft, Illumina & Twist ally to make big data small, by weaving it into DNA archives](https://www.fiercebiotech.com/medtech/microsoft-illumina-twist-work-to-make-big-data-small-weaving-it-into-dna-archives)
+
+### 2020-11-13
+
+* [Microsoft helps found an industry alliance to advance DNA data storage systems](https://www.geekwire.com/2020/microsoft-joins-new-industry-alliance-aimed-advancing-dna-data-storage-systems/)
+* [Twist Bioscience and Illumina part of alliance to advance DNA data storage](https://seekingalpha.com/news/3635685-twist-bioscience-and-illumina-part-of-alliance-to-advance-dna-data-storage)
+
 ### 2020-11-06
 
 * [Revolutionary synthetic DNA disk could hold key to future of storage](https://www.techradar.com/news/revolutionary-synthetic-dna-disk-could-hold-key-to-future-of-storage)
