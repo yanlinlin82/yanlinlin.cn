@@ -41,6 +41,10 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-11-15
+
+* [New world. A solution to face the explosion of digital data: DNA storage](https://pledgetimes.com/new-world-a-solution-to-face-the-explosion-of-digital-data-dna-storage/)
+
 ### 2020-11-14
 
 * [Firms partner with Microsoft to advance DNA data storage](https://www.scienceboard.net/index.aspx?sec=sup&sub=gen&pag=dis&ItemID=1681)
