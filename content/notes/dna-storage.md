@@ -41,6 +41,20 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2020-11-22
+
+* [A huge true random number using DNA synthesis](https://www.techexplorist.com/huge-true-random-number-using-dna-synthesis/36297/)
+* [Researchers have generated a huge true random number using DNA synthesis](https://www.futurity.org/true-random-numbers-dna-synthesis-method-2475862-2/)
+
+### 2020-11-17
+
+* [Molecular Tagging System With Real-World Potential](https://www.bio-itworld.com/news/2020/11/17/molecular-tagging-system-with-real-world-potential)
+
+### 2020-11-16
+
+* [Western Digital, Microsoft and all that DNA storage jazz](https://blocksandfiles.com/2020/11/16/dna-data-storage-alliance-debut/)
+* [Microsoft opens up new alliance to spur on data storage on DNA](https://www.techradar.com/news/microsoft-opens-up-new-alliance-to-spur-on-data-storage-on-dna)
+
 ### 2020-11-15
 
 * [New world. A solution to face the explosion of digital data: DNA storage](https://pledgetimes.com/new-world-a-solution-to-face-the-explosion-of-digital-data-dna-storage/)
