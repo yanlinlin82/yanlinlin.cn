@@ -13,6 +13,11 @@ slug: bio-computing
 
 ## 新闻
 
+### 2020-12-05
+
+* [Future already here, and it’s way beyond science fiction, EconAlliance forum speaker says](https://lompocrecord.com/news/local/future-already-here-and-it-s-way-beyond-science-fiction-econalliance-forum-speaker-says/article_fcc97946-72e0-5eb5-866a-eb185424c46f.html)
+* [Huawei’s Liang Hua: open innovation and collaboration powers the digital era](https://irishtechnews.ie/huaweis-liang-hua-open-innovation-collaboration/)
+
 ### 2020-01-05
 
 * [Research continues showing gains in DNA computing](https://techxplore.com/news/2020-01-gains-dna.html)
