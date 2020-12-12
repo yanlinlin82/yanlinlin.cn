@@ -29,6 +29,7 @@ slug: dna-storage
 
 ## 综述报道
 
+* 2020-12-09 - Science Advances - Aerolysin nanopores decode digital information stored in tailored macromolecular analytes (doi:[10.1126/sciadv.abc2661](https://doi.org/10.1126/sciadv.abc2661))
 * 2019-03-21 - Nature | Scientific Reports - Demonstration of End-to-End Automation of DNA Data Storage (doi:[10.1038/s41598-019-41228-8](https://doi.org/10.1038/s41598-019-41228-8))
 * 2018-05-04 - [3 Biotech](https://link.springer.com/journal/13205) | DNA as a digital information storage device: hope or hype? (doi:[10.1007/s13205-018-1246-7](https://doi.org/10.1007/s13205-018-1246-7))
 * 2017-05-03 - Science | This Week in Science - A reliable and efficient DNA storage architecture (doi:[10.1126/science.355.6328.920-e](https://doi.org/10.1126/science.355.6328.920-e))
@@ -40,6 +41,29 @@ slug: dna-storage
 * 2012-08-16 - Nature | News - DNA data storage breaks records (doi:[10.1038/nature.2012.11194](https://doi.org/10.1038/nature.2012.11194))
 
 ## 业界新闻
+
+### 2020-12-09
+
+* [Bacterial nanopores open the future of data storage](https://phys.org/news/2020-12-bacterial-nanopores-future-storage.html)
+* [DNA Revolution Is Here — One Small Stock Set for 10X Gains](https://moneyandmarkets.com/dna-stock-to-buy/)
+
+### 2020-12-07
+
+* [Microsoft may store cloud data in DNA storage soon](https://www.analyticsinsight.net/microsoft-may-store-cloud-data-in-dna-storage-soon/)
+
+### 2020-12-05
+
+* [Twist Bioscience: A Breakout Year For Its Synthetic DNA Platform](https://seekingalpha.com/article/4393132-twist-bioscience-breakout-year-for-synthetic-dna-platform)
+* [Twist Bioscience Corporation (TWST) Prices 2.8M Share Upsized Common Offering at $110/Sh](https://www.streetinsider.com/Corporate+News/Twist+Bioscience+Corporation+%28TWST%29+Prices+2.8M+Share+Upsized+Common+Offering+at+%24110Sh/17676677.html)
+
+### 2020-12-01
+
+* [DNA Data Storage Alliance Launches With Illumina, Microsoft, Twist Bioscience, Western Digital](https://www.bio-itworld.com/news/2020/12/01/dna-data-storage-alliance-launches-with-illumina-microsoft-twist-bioscience-western-digital)
+
+### 2020-11-25
+
+* [Scientists Put The Wizard Of Oz On A Strand Of DNA](https://www.unilad.co.uk/technology/scientists-put-the-wizard-of-oz-on-a-strand-of-dna/)
+* [Twist Bioscience Reports Fourth Quarter and Full Year Fiscal 2020 Financial Results](https://baytownsun.com/coronavirus/article_3fa0753f-1f5f-5a69-8d24-cf4123490e87.html)
 
 ### 2020-11-22
 
