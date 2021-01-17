@@ -23,3 +23,9 @@ slug: quantum-computing
 * 《量子编程基础》
 
     <a href="/images/moments/2019-12/2019-12-12-004.jpg"><img src="/images/moments/2019-12/2019-12-12-004.thumb.jpg" style="display:inline;width:25%;max-width:200px;border:1px solid #333"></a>
+
+## 业界新闻
+
+### 2021-01-14
+
+* [EurekAlert: Quantum computers to study the functioning of the molecules of life](https://www.eurekalert.org/pub_releases/2021-01/udt-qct011421.php)

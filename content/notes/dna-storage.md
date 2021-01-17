@@ -42,6 +42,48 @@ slug: dna-storage
 
 ## 业界新闻
 
+### 2021-01-15
+
+* [Scientists Write ‘Hello World’ in Bacterial DNA With Electricity and CRISPR](https://www.smithsonianmag.com/smart-news/scientists-write-hello-world-bacterial-dna-electricity-and-crispr-180976763/)
+
+### 2021-01-14
+
+* [Digital information written directly into cells’ genomes using CRISPR](https://cen.acs.org/biological-chemistry/synthetic-biology/Digital-information-written-directly-cells-genomes-using-CRISPR/99/web/2021/01)
+
+### 2021-01-13
+
+* [Direct digital-to-biological data storage in DNA in living cells](https://www.eenewseurope.com/news/direct-digital-biological-data-storage-dna-living-cells)
+* [DNA hard drives? Scientists hide a coded digital message in bacterial DNA](https://www.salon.com/2021/01/13/dna-hard-drives-scientists-hide-a-coded-digital-message-in-bacterial-dna/)
+
+### 2021-01-12
+
+* [Scientists store data inside living bacterial DNA for the first time](https://www.theburnin.com/science/scientists-store-data-inside-living-bacterial-dna-2021-01-12/)
+* [Scientists Developing Ways To Store Data in Living Bacteria](https://www.sciencetimes.com/articles/29053/20210112/scientists-are-developing-how-to-store-data-in-living-bacteria.htm)
+
+### 2021-01-11
+
+* [CRISPR gene editing used to store data in DNA inside living cells](https://www.newscientist.com/article/2264383-crispr-gene-editing-used-to-store-data-in-dna-inside-living-cells/)
+
+### 2021-01-09
+
+* [Sustainability and the Synthetic Biology Revolution](https://www.genengnews.com/commentary/point-of-view/sustainability-and-the-synthetic-biology-revolution/)
+
+### 2021-01-07
+
+* [NEMS IDs: Secure nanoelectromechanical tags for identification and authentication](https://techxplore.com/news/2021-01-nems-ids-nanoelectromechanical-tags-identification.html)
+
+### 2021-01-06
+
+* [Enterprise data storage startups to watch in 2021](https://searchstorage.techtarget.com/news/252494423/Enterprise-data-storage-startups-to-watch)
+
+### 2021-01-05
+
+* [DNA Data Storage Market is Expected to Grow in 2021 by Top Companies- Illumina, Inc, Thermo Fisher Scientific, Inc, Siemens AG, Microsoft, Beckman Coulter, 454 Life Sciences Corporation, Agilent Technologies, Inc, Eurofins Scientific, Catalog](https://factorygate.co.uk/uncategorized/896866/dna-data-storage-market-is-expected-to-grow-in-2021-by-top-companies-illumina-inc-thermo-fisher-scientific-inc-siemens-ag-microsoft-beckman-coulter-454-life-sciences-corporation-agilent-tech/)
+
+### 2020-12-14
+
+* [Bacterial nanopores open future of data storage](https://www.miragenews.com/bacterial-nanopores-open-future-of-data-storage/)
+
 ### 2020-12-09
 
 * [Bacterial nanopores open the future of data storage](https://phys.org/news/2020-12-bacterial-nanopores-future-storage.html)
