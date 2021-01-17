@@ -12,3 +12,9 @@ slug: bioinformatics
 ### 数据库
 
 * [DEPOD](http://www.depod.org/)：人类的去磷酸化位点数据库。文献：[10.1016/j.jmoldx.2019.10.008](https://doi.org/10.1016/j.jmoldx.2019.10.008)
+
+## 业界新闻
+
+### 2020-12-23
+
+* [U.S. Army will use AI to develop chemical-biological defense systems](https://defence-blog.com/news/army/u-s-army-will-use-ai-to-develop-chemical-biological-defense-systems.html)
