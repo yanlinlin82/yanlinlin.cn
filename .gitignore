@@ -2,3 +2,4 @@
 .Rhistory
 public/
 drafts/
+.hugo_build.lock
