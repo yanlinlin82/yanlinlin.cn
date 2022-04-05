@@ -1,5 +1,5 @@
+/public/
+/drafts/
+/.hugo_build.lock
 .RData
 .Rhistory
-public/
-drafts/
-.hugo_build.lock
