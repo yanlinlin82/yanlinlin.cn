@@ -22,6 +22,7 @@ description = """\
     """
 keywords = "博客, 技术, 生物信息，精准医疗, 遗传咨询, 高通量技术, 算法, 学习, 作品, 写作, C++, Perl"
 mainSections = [ "post", "tip" ]
+search = "baidu"
 
 [markup.highlight]
 codeFences = true
