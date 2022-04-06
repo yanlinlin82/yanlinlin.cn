@@ -21,7 +21,7 @@ description = """\
     Linlin Yan's Personal Website: a scientific researcher and software programmer. My major is bioinformatics. I received PhD from School of Life Sciences, Peking University. I have more than 20 years experience on programming. My current work is research and development on precision medicine, including data analysis of high-throughput technology, such as next-generation sequencing. I am also interested in genomics and other -omics.
     """
 keywords = "博客, 技术, 生物信息，精准医疗, 遗传咨询, 高通量技术, 算法, 学习, 作品, 写作, C++, Perl"
-mainSections = [ "post", "public", "tip", "notes" ]
+mainSections = [ "post", "archive", "public", "tip", "notes" ]
 search = "baidu"
 
 [markup.highlight]
@@ -31,6 +31,7 @@ style = "monokailight"
 
 [permalinks]
 post = "/:year/:month/:day/:slug/"
+archive = "/:year/:month/:day/:slug/"
 public = "/:year/:month/:day/:slug/"
 tip = "/:year/:month/:day/:slug/"
 page = "/:slug/"
