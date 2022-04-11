@@ -1,4 +1,4 @@
-baseurl = "https://yanlinlin.cn/"
+baseurl = "https://yanlinlin.cn/blog"
 title = "颜林林的个人网站"
 theme = "simple-style"
 paginate = 20

@@ -68,7 +68,7 @@ slug: resume
 
 ## 专业认证
 
-* 遗传咨询：2018年10月-2019年3月期，第三届国际临床遗传学及遗传咨询培训课程结业，由香港中文大学、美国贝勒医学院、北京协和医院与中国优生科学协会联合主办并认证。<http://www.cigcc.cn/> （[查看证书](/images/genetic-counseling-certification.jpg)）
+* 遗传咨询：2018年10月-2019年3月期，第三届国际临床遗传学及遗传咨询培训课程结业，由香港中文大学、美国贝勒医学院、北京协和医院与中国优生科学协会联合主办并认证。<http://www.cigcc.cn/> （[查看证书](images/genetic-counseling-certification.jpg)）
 
 ## 外语能力与获奖
 

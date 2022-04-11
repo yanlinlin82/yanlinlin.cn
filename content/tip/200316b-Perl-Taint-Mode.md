@@ -7,7 +7,7 @@ tags: [ perl, taint ]
 
 ## 背景
 
-最近修改过去写的一些perl脚本，将其[释伴](/tip/shebang/)（即解释器定义行）修改为更加具备可移植性的“#!/usr/bin/env perl”写法。在这个过程中，看到了这样一种推荐写法：
+最近修改过去写的一些perl脚本，将其[释伴](tip/shebang/)（即解释器定义行）修改为更加具备可移植性的“#!/usr/bin/env perl”写法。在这个过程中，看到了这样一种推荐写法：
 
 ```perl
 #!/usr/bin/env -S perl -T -w

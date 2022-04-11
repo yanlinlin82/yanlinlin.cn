@@ -12,7 +12,7 @@ draft: true
 
 ---
 
-<img src="/images/2020-06-29/code.png" style="max-width:300px"/>
+<img src="images/2020-06-29/code.png" style="max-width:300px"/>
 
 ……
 
