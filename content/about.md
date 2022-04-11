@@ -12,8 +12,8 @@ This site is written in Chinese mostly. For readers who use English only, online
 
 * **微信号**：yanlinlin82
 
-    <a href="/images/weixin_scancode.jpg" style="text-align:center">
-    <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto">
+    <a href="images/weixin_scancode.jpg" style="text-align:center">
+    <img alt="yanlinlin82" src="images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto">
     </a>
 
 * **Email**：<yanlinlin82@gmail.com>
@@ -32,11 +32,11 @@ This site is written in Chinese mostly. For readers who use English only, online
 
 * **不靠谱颜论**
 
-    <a href="/images/bukaopuyanlun-qrcode.jpg" style="text-align:center">
-    <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
+    <a href="images/bukaopuyanlun-qrcode.jpg" style="text-align:center">
+    <img alt="不靠谱颜论" src="images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
     </a>
 
-其中的一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介（或查看我更正式些的[个人简历](/resume/)），可帮助您了解我。
+其中的一篇《[厚积当如雪：复盘我的20年技术生涯](https://mp.weixin.qq.com/s/jKB6nOuVZlnu6giYc7N1Qg)》，有我近20年的主要经历简介（或查看我更正式些的[个人简历](resume/)），可帮助您了解我。
 
 欢迎关注和交流！
 
@@ -47,13 +47,13 @@ This site is written in Chinese mostly. For readers who use English only, online
 最后，如果您觉得我的分享有用，不妨赞赏一下，这将是对我最大的鼓励和帮助：
 
 <div style="text-align:center">
-  <a href="/images/weixin-zanshang.png">
-    <img alt="微信赞赏码" src="/images/weixin-zanshang.png" style="width:60%;height:auto;display:inline-block">
+  <a href="images/weixin-zanshang.png">
+    <img alt="微信赞赏码" src="images/weixin-zanshang.png" style="width:60%;height:auto;display:inline-block">
   </a>
-  <a href="/images/weixin-shoukuan.png">
-    <img alt="微信付款码" src="/images/weixin-shoukuan.png" style="width:40%;height:auto;display:inline-block">
+  <a href="images/weixin-shoukuan.png">
+    <img alt="微信付款码" src="images/weixin-shoukuan.png" style="width:40%;height:auto;display:inline-block">
   </a>
-  <a href="/images/zhifubao-shoukuan.jpg">
-    <img alt="支付宝付款码" src="/images/zhifubao-shoukuan.jpg" style="width:40%;height:auto;display:inline-block">
+  <a href="images/zhifubao-shoukuan.jpg">
+    <img alt="支付宝付款码" src="images/zhifubao-shoukuan.jpg" style="width:40%;height:auto;display:inline-block">
   </a>
 </div>
