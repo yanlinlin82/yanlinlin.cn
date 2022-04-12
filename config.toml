@@ -25,6 +25,7 @@ mainSections = [ "post", "archive", "public", "tip", "notes" ]
 search = "baidu"
 externalLinkIcon = true
 externalLinkNewWindow = true
+googleTagManager = "GTM-M63QWS6"
 
 [markup.highlight]
 codeFences = true
