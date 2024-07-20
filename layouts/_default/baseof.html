@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{- partial "meta.html" . }}
+    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+    <script src="{{ "js/jquery-3.7.1.min.js" | relURL }}"></script>
+    <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet">
+    <script src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
+    <style>
+      a {text-decoration: none;}
+      a:hover {text-decoration: underline;}
+      .external-link::after {content: ' \2197'; font-size: 0.8em; margin-left: 0.2em; display: inline-block;}
+    </style>
+  </head>
+  <body class="container" style="max-width: 960px;">
+    <header class="border-bottom border-secondary-subtle">
+      {{ block "header" . }}
+      <h2 class="pt-3">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ site.Title }}</a>
+      </h2>
+      <div class="d-flex justify-content-end">
+        <nav class="nav">
+          {{- range .Site.Menus.main -}}
+          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+          {{- end -}}
+          {{- partial "search.html" . -}}
+        </nav>
+      </div>
+      {{ end }}
+    </header>
+    <main class="py-3">
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="border-top border-secondary-subtle py-3 text-center">
+      {{ block "footer" . }}
+      <div class="py-1">
+        &copy; 2007-{{ now.Year }}，颜林林 |
+        <a class="external-link" href="https://beian.miit.gov.cn/">京ICP备18031542号-1</a> |
+        遵循 <a class="external-link" href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> 协议
+      </div>
+      <div class="py-1">
+        本站使用 <a class="external-link" href="https://gohugo.io/">Hugo</a> 和 <a href="https://getbootstrap.com/">Bootstrap.js</a> 开发 |
+        <a class="external-link" href="https://github.com/yanlinlin82/yanlinlin.cn">GitHub源码</a>
+      </div>
+      {{ end }}
+    </footer>
+    <script>
+      $(function() {
+        $('a[class="external-link"]').attr('target', '_blank');
+      });
+    </script>
+    {{- template "_internal/google_analytics.html" . }}
+  </body>
+</html>

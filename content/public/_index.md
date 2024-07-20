@@ -8,8 +8,8 @@ title: 微信公众号：不靠谱颜论
 
 可在微信中搜索“不靠谱颜论”或“bukaopuyanlun”（拼音全拼）找到本公众号，或通过如下扫码并关注：
 
-<a href="images/bukaopuyanlun-qrcode.jpg" style="text-align:center">
-<img alt="不靠谱颜论" src="images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
-</a>
+<div class="text-center p-2">
+<img alt="微信公众号：不靠谱颜论" src="/images/bukaopuyanlun-qrcode-160x160.jpg">
+</div>
 
 文章目录列表如下：
