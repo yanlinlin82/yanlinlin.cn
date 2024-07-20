@@ -1,0 +1,40 @@
+{{ define "main" -}}
+<article>
+  <div class="pt-3">
+    <h1>{{ .Title }}</h1>
+  </div>
+  {{ if .Date -}}
+    <div class="pt-3">
+      {{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02 15:04") }}
+    </div>
+  {{ end -}}
+
+  {{ $taxo := "tags" -}}
+  {{ if .Param $taxo -}}
+    <div class="pt-3">
+    {{ $data := newScratch }}
+    {{ range .Param $taxo -}}
+      {{ $name := . -}}
+      {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | anchorize)) }}
+        {{ $data.Set "url" .Permalink }}
+      {{ end }}
+      {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+        {{ $data.Set "url" .Permalink }}
+      {{ end }}
+      <div class="d-inline me-3"><a href="{{ $data.Get "url" }}">#{{ $name }}</a></div>
+    {{ end -}}
+    </div>
+  {{ end -}}
+
+  {{ if .TableOfContents }}
+    <nav class="pt-3">
+      <h2>目录</h2>
+      {{ .TableOfContents }}
+    </nav>
+  {{ end }}
+
+  <div class="py-3">
+    {{ .Content -}}
+  </div>
+</article>
+{{ end -}}
