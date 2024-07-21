@@ -31,7 +31,7 @@
     </div>
   {{ end -}}
 
-  {{ if .TableOfContents }}
+  {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
     <nav class="pt-3">
       <h2>目录</h2>
       {{ .TableOfContents }}
