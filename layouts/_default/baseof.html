@@ -9,11 +9,7 @@
     <script src="{{ "js/jquery-3.7.1.min.js" | relURL }}"></script>
     <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet">
     <script src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
-    <style>
-      a {text-decoration: none;}
-      a:hover {text-decoration: underline;}
-      .external-link::after {content: ' \2197'; font-size: 0.8em; margin-left: 0.2em; display: inline-block;}
-    </style>
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
   </head>
   <body class="container" style="max-width: 960px;">
     <header class="border-bottom border-secondary-subtle">
@@ -49,6 +45,9 @@
     </footer>
     <script>
       $(function() {
+        $('main a[href^="http"]').each(function() {
+          $(this).addClass('external-link');
+        });
         $('a[class="external-link"]').attr('target', '_blank');
       });
     </script>

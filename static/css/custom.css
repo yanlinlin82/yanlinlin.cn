@@ -1,0 +1,86 @@
+/* assets/css/custom.css */
+
+/* Common styles */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.external-link::after {
+    content: ' \2197';
+    font-size: 0.8em;
+    margin-left: 0.2em;
+    display: inline-block;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main th,
+main td {
+    border: 1px solid #dee2e6;
+    padding: 0.5em;
+}
+
+main th {
+    background-color: #f8f9fa;
+}
+
+main blockquote {
+    border-left: 0.25em solid #007bff;
+    padding-left: 1em;
+    margin-left: 0;
+}
+
+main pre {
+    white-space: pre-wrap;
+    padding: 0.5em;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25em;
+}
+
+main code {
+    background-color: #f8f9fa;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    a {
+        color: #bb86fc;
+    }
+
+    a:hover {
+        color: #3700b3;
+    }
+
+    main th {
+        background-color: #333333;
+    }
+
+    main blockquote {
+        border-left-color: #bb86fc;
+    }
+
+    main pre,
+    main code {
+        background-color: #333333;
+        border-color: #444444;
+    }
+}

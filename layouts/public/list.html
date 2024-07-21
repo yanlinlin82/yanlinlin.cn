@@ -3,7 +3,7 @@
   {{ .Content -}}
 </div>
 <ul>
-  {{ range .Site.Taxonomies.types.public }}
+  {{ range (.Paginate ( .Site.Taxonomies.types.public )).Pages -}}
   <li>
     <div class="d-inline">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02 15:04") }}</div>
     <div class="d-inline ms-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
