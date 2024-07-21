@@ -9,6 +9,9 @@
     </div>
   {{ end -}}
 
+  <div class="pt-3">
+    {{ partial "article-badges.html" . }}
+  </div>
   {{ $taxo := "tags" -}}
   {{ if .Param $taxo -}}
     <div class="pt-3">
@@ -21,7 +24,9 @@
       {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
         {{ $data.Set "url" .Permalink }}
       {{ end }}
-      <div class="d-inline me-3"><a href="{{ $data.Get "url" }}">#{{ $name }}</a></div>
+      <div class="d-inline">
+        <a class="ms-2" href="{{ $data.Get "url" }}">#{{ $name }}</a>
+      </div>
     {{ end -}}
     </div>
   {{ end -}}
