@@ -2,7 +2,7 @@
 ---
 title: "《C++ Primer》书评"
 date: 2023-01-25T00:00:00+08:00
-types: ["book-review"]
+categories: ["book-review"]
 tags: [ 书评, 响马读书 ]
 ---
 

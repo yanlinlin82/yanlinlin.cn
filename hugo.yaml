@@ -5,7 +5,6 @@ googleAnalytics: "G-P6SH63QQPQ"
 
 taxonomies:
   category: categories
-  type: types
   tag: tags
 
 markup:

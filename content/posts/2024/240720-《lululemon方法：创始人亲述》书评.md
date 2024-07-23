@@ -2,7 +2,7 @@
 ---
 title: "《lululemon方法：创始人亲述》书评"
 date: 2024-07-20T00:00:00+08:00
-types: ["book-review"]
+categories: ["book-review"]
 tags: [ 书评, 响马读书 ]
 ---
 
