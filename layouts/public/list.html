@@ -3,9 +3,9 @@
   {{ .Content -}}
 </div>
 <ul>
-  {{ range (.Paginate ( .Site.Taxonomies.categories.public )).Pages -}}
+  {{ range (.Paginate ( .Site.Taxonomies.categories.公众号文章 )).Pages -}}
   <li>
-    <div class="d-inline">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02 15:04") }}</div>
+    <div class="d-inline">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
     <div class="d-inline ms-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
   </li>
   {{ end -}}

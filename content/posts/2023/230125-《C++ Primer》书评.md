@@ -2,8 +2,8 @@
 ---
 title: "《C++ Primer》书评"
 date: 2023-01-25T00:00:00+08:00
-categories: ["book-review"]
-tags: [ 书评, 响马读书 ]
+categories: [ 书评 ]
+tags: [ 响马读书 ]
 ---
 
  《C++ Primer》中文版（第5版），[美] Stanley B. Lippman、Josée Lajoie、Barbara E. Moo著，王刚、杨巨峰 译，电子工业出版社 2013年9月出版。
