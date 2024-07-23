@@ -1,0 +1,48 @@
+baseurl: https://yanlinlin.cn/
+title: 颜林林的个人网站
+paginate: 20
+googleAnalytics: "G-P6SH63QQPQ"
+
+taxonomies:
+  category: categories
+  type: types
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+markup:
+  highlight:
+    codeFences: true
+    lineNos: true
+    style: monokailight
+
+permalinks:
+  posts: /:year/:month/:day/:slug/
+  page: /:slug/
+
+menu:
+  main:
+  - name: 博客
+    url: /
+    weight: 10
+  - name: 公众号
+    url: /public/
+    weight: 20
+  - name: 朋友圈
+    url: /moments/
+    weight: 30
+  - name: 作品
+    url: /works/
+    weight: 40
+  - name: 学习
+    url: /study/
+    weight: 50
+  - name: 简历
+    url: /cv/
+    weight: 60
+  - name: 关于
+    url: /about/
+    weight: 90
