@@ -42,4 +42,7 @@ menu:
     weight: 60
   - name: 关于
     url: /about/
+    weight: 80
+  - name: English
+    url: https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://yanlinlin.cn/
     weight: 90
