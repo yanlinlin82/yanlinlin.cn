@@ -28,9 +28,9 @@ menu:
   - name: 公众号
     url: /public/
     weight: 20
-  - name: 朋友圈
-    url: /moments/
-    weight: 30
+#  - name: 朋友圈
+#    url: /moments/
+#    weight: 30
   - name: 作品
     url: /works/
     weight: 40
