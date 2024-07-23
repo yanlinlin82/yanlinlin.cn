@@ -4,7 +4,7 @@
 </div>
 <ul>
   {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
-  <li>
+  <li class="my-1">
     <div class="d-inline">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
     <div class="d-inline ms-3">
       <a href="{{ .RelPermalink }}">

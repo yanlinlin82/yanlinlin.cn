@@ -11,21 +11,21 @@ tags: [ virtualbox, windows, cpu, htop ]
 
 今天终于逮到一个机会，电脑刚开始发热，但还不至于完全卡死，用`htop`命令检查了一下Linux主机的状态，发现如下图所示：
 
-![](images/2019-12-16/screenshot-1.png)
+![](images/2019/1216/screenshot-1.png)
 
 八个CPU核（其实是四核超线程的结果），其实只有一个被kernel thread完全占满（右上角红色显示的那条柱子）。而系统日志（`dmesg -T | less`）则显示了“`CPUn: Package temperature above threshold, cpu clock throttled (total events = xxxx)`”的错误：
 
-![](images/2019-12-16/screenshot-2.png)
+![](/images/2019/1216/screenshot-2.png)
 
 于是进入虚拟机界面，在Windows桌面上打开了任务管理器，终于找到了罪魁祸首“Microsoft Office SDX Helper”：
 
-![](images/2019-12-16/screenshot-3.png)
+![](/images/2019/1216/screenshot-3.png)
 
 在网上搜索了一下，发现这个程序果然坑害了许多人，大家都纷纷控诉CPU被它吃掉。
 
 最终，杀掉该进程，并在任务计划程序（开始菜单，输入“task”可找到）中，将对应进程禁用掉（避免它再次悄悄启动），问题解决：
 
-![](images/2019-12-16/screenshot-4.png)
+![](/images/2019/1216/screenshot-4.png)
 
 不过该程序应该是Microsoft Office的自动更新检查程序，所以，相应地，后续升级，就得靠手动检查并更新了。
 
