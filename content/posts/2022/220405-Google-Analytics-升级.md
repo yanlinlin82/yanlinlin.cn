@@ -1,7 +1,6 @@
 ---
 title: "Google Analytics升级至v4"
 date: 2022-04-05T19:26:37+08:00
-slug: upgrade-to-google-analytics-v4
 tags: [ 网站, "Google Analytics" ]
 ---
 

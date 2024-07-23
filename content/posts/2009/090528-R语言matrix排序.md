@@ -1,6 +1,5 @@
 ---
 title: R语言中matrix的排序
-slug: matrix-sorting-in-r-language
 date: 2009-05-28T00:34:00+08:00
 place: 北京
 tags: [ 编程, 排序, R ]

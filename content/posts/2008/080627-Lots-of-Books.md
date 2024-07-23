@@ -1,6 +1,5 @@
 ---
 title: Books! Lots of Books!
-slug: books-lots-of-books
 date: 2008-06-27T18:42:00+08:00
 place: 北京
 tags: [ 图书, 购物 ]

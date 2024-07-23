@@ -1,7 +1,6 @@
 ---
 title: "Linux交换分区的调优"
 date: 2020-03-05T08:48:48+08:00
-slug: adjust-swappiness
 tags: [ linux, swappiness, memory ]
 ---
 

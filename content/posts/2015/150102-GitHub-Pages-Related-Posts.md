@@ -1,6 +1,5 @@
 ---
 title: Plugin-free Related Posts on GitHub Pages
-slug: plugin-free-related-posts-on-github-pages
 date: 2015-01-02T01:20:00+08:00
 tags: [ GitHub, Jekyll ]
 host-at: GitHub

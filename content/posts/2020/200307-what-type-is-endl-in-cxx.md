@@ -1,7 +1,6 @@
 ---
 title: "C++中的std::endl是什么类型？"
 date: 2020-03-07T08:25:20+08:00
-slug: what-type-is-endl-in-cxx
 tags: [ C++, endl, 函数 ]
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Watching from the Other Side
-slug: watching-from-the-other-side
 date: 2008-06-13T00:40:00+08:00
 place: 北京
 tags: [ 学习, 观察, 思考 ]

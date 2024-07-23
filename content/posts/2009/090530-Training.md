@@ -1,6 +1,5 @@
 ---
 title: Training
-slug: training
 date: 2009-05-30T09:17:00+08:00
 place: 北京
 tags: [ 学习 ]

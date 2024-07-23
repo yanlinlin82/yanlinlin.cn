@@ -1,7 +1,6 @@
 ---
 title: "如何恢复Linux误删文件"
 date: 2020-02-12T19:06:00+08:00
-slug: rescue-deleted-files
 tags: [ linux, restore, deleted ]
 ---
 
