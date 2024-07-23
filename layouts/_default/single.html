@@ -34,11 +34,13 @@
   {{ end -}}
   </div>
 
-  {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
-    <nav class="pt-3">
-      <h2>目录</h2>
-      {{ .TableOfContents }}
-    </nav>
+  {{ if .Params.toc }}
+    {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
+      <nav class="pt-3">
+        <h2>目录</h2>
+        {{ .TableOfContents }}
+      </nav>
+    {{ end }}
   {{ end }}
 
   <div class="py-3">
