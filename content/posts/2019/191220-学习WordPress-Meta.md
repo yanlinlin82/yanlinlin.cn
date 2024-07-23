@@ -9,8 +9,8 @@ tags: [ HTML5, WordPress, meta ]
 
 这个学习需求，来自冯大辉老师在其免费知识星球“[互联网消息](https://wx.zsxq.com/mweb/views/topic/topic.html?group_id=452441454848&d=09166029)”中，对一个年轻小朋友关于工作和成长的问题，给出的回答：“**给别人讲一下页面头部的那些Meta都是干啥的**”。见下图摘录：
 
-<a href="images/2019-12-20/ZSXQ_20191219_232341129.png">
-<img src="images/2019-12-20/ZSXQ_20191219_232341129.png" style="text-align:center;width:300px;height:auto">
+<a href="/images/2019/1220/ZSXQ_20191219_232341129.png">
+<img src="/images/2019/1220/ZSXQ_20191219_232341129.png" style="text-align:center;width:300px;height:auto">
 </a>
 
 于是我悄悄在浏览器中输入了“wordpress.com”网址，然后打开源代码瞄了一眼。果然，我这样的过时程序员，立马就在现代 HTML5 代码面前完全迷失了方向。

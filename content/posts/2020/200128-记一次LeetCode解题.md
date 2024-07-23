@@ -14,7 +14,7 @@ tags: [ leetcode, algorithm, 递归 ]
 * 执行用时4 ms，排名超过97.87%的C++提交者。
 * 内存消耗8.4MB，排名超过95.70%的C++提交者。
 
-[![](images/2020-01-28/leetcode.png)](images/2020-01-28/leetcode.png)
+[![](200128-leetcode.png)](images/2020-01-28/leetcode.png)
 
 解题尝试的具体代码（包含中间版本和最终版本）详见于：<https://github.com/yanlinlin82/leetcode/blob/master/00087_scramble-string/>
 
