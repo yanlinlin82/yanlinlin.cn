@@ -11,8 +11,6 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-markup:
   highlight:
     codeFences: true
     lineNos: true
