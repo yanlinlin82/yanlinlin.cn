@@ -2,7 +2,7 @@
 title: "如何在Windows环境中使用Linux？"
 date: 2022-01-09T17:28:00+08:00
 slug: ...
-categories: ["public"]
+categories: [ 公众号文章 ]
 tags: [ 不靠谱颜论 ]
 draft: true
 ---

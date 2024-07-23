@@ -9,7 +9,9 @@
     <div class="d-inline ms-3">
       <a href="{{ .RelPermalink }}">
         {{ .Title }}
-        {{ partial "article-badges.html" . }}
+        {{ range .Params.categories }}
+        <span class="badge border fw-normal text-secondary text-bg-light ms-2">{{ . }}</span>
+        {{ end }}
       </a>
     </div>
   </li>

@@ -10,11 +10,14 @@
   {{ end -}}
 
   <div class="pt-3">
-    {{ partial "article-badges.html" . }}
-  </div>
+  {{ range .Params.categories }}
+    <div class="d-inline">
+      <a class="ms-2" href="/categories/{{ . }}">#{{ . }}</a>
+    </div>
+  {{ end }}
+
   {{ $taxo := "tags" -}}
   {{ if .Param $taxo -}}
-    <div class="pt-3">
     {{ $data := newScratch }}
     {{ range .Param $taxo -}}
       {{ $name := . -}}
@@ -25,11 +28,11 @@
         {{ $data.Set "url" .Permalink }}
       {{ end }}
       <div class="d-inline">
-        <a class="ms-2" href="{{ $data.Get "url" }}">#{{ $name }}</a>
+        <a class="ms-2" href="{{ $data.Get "url" | relURL }}">#{{ $name }}</a>
       </div>
     {{ end -}}
-    </div>
   {{ end -}}
+  </div>
 
   {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
     <nav class="pt-3">
