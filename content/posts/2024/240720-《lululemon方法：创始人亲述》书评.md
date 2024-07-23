@@ -4,7 +4,7 @@ title: "《lululemon方法：创始人亲述》书评"
 date: 2024-07-20T00:00:00+08:00
 slug: book-review-lululemon-story
 categories: [ 书评 ]
-tags: [ 响马读书 ]
+tags: [ 响马读书, 创业, 小而美 ]
 ---
 
 <center class="p-3">
