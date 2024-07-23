@@ -1,6 +1,5 @@
 ---
 title: The Beginning of FlatTracker
-slug: the-beginning-of-flat-tracker
 date: 2009-08-04T00:23:00+08:00
 place: 北京
 tags: [ 开源, 问题跟踪系统, TortoiseSVN, FlatTracker ]

@@ -1,7 +1,6 @@
 ---
 title: "CMake快速入门"
 date: 2020-01-23T23:20:26+08:00
-slug: cmake-quick-start
 tags: [ cmake ]
 ---
 

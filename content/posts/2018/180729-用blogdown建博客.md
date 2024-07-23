@@ -1,7 +1,6 @@
 ---
 title: 如何用blogdown快速搭建博客
 date: '2018-07-29T17:59:50+08:00'
-slug: how-to-establish-a-blog
 tags: [ blogdown, 博客 ]
 ---
 

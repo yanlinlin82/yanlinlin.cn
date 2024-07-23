@@ -1,7 +1,6 @@
 ---
 title: "理解Bash中的协程"
 date: 2020-03-06T07:41:32+08:00
-slug: bash-coproc
 tags: [ bash, coproc, pipe, 并发编程, 协程 ]
 ---
 

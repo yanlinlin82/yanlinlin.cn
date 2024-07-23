@@ -1,6 +1,5 @@
 ---
 title: New Beginning
-slug: new-beginning
 date: 2013-07-24T03:26:00+08:00
 place: 北京
 tags: [ 博客, Blogspot ]

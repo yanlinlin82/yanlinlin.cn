@@ -1,7 +1,6 @@
 ---
 title: "GDB基本用法"
 date: 2020-03-23T06:29:46+08:00
-slug: gdb-basic
 tags: [ gdb ]
 ---
 

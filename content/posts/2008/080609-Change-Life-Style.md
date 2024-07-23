@@ -1,6 +1,5 @@
 ---
 title: Changing the Life Style
-slug: changing-the-life-style
 date: 2008-06-09T13:19:00+08:00
 place: 北京
 tags: [ 考研, 梦想, 学习 ]

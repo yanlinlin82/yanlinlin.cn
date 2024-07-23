@@ -1,7 +1,6 @@
 ---
 title: "如何在Linux下查看网卡带宽"
 date: 2020-01-23T17:52:33+08:00
-slug: network-card-speed
 tags: [ linux, network ]
 ---
 
