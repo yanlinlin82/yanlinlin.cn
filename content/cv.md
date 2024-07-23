@@ -5,11 +5,7 @@ slug: cv
 
 ## 基本情况
 
-本人颜林林，自2010年攻读博士学位起，从事生物信息研究开发，在组学数据分析和生物信息软件开发等方面积累了一些经验、取得了一定成果。
-
-在北京大学生物信息中心主任魏丽萍教授指导下，本人博士学位论文“基于新一代测序与光学图谱的个人基因组变异分析工具开发与应用”，开发了个人基因组变异分析工具，并提出了基于直接比较测序数据的全新基因组变异鉴定方法。同时还负责北大生命科学学院的高性能计算服务器管理和运维。
-
-博士毕业后，先后受聘于两家精准医学企业，带领团队开发临床肿瘤基因检测产品、优化其生物信息工具算法，并于2023年创建了北京生信助力公司。
+本人是一名生物信息学专业方向的从业者，拥有丰富的高通量测序、软件开发和数据分析经验。自2010年在北京大学攻读博士学位起，就一直在从事生信研究、组学数据分析和生信软件开发等工作。博士毕业后，先后受聘于两家精准医学企业，带领团队开发临床肿瘤基因检测产品、优化其生信工具算法，并于2023年创建了北京生信助力科技有限公司，致力于充分发挥生信专业所长，助力生命科学相关研究。
 
 ## 教育背景
 
@@ -19,17 +15,17 @@ slug: cv
 ## 工作经历
 
 2023年10月 – 现在
-- 北京生信助力科技有限公司, 创始人兼首席执行官
+- 北京生信助力科技有限公司，任创始人兼首席执行官
 - 创立并运行一家专注于生物信息学数据分析、临床数据挖掘和软件开发的公司
 - 开发用于科学和医学项目的高性能计算和深度学习算法
 
 2020年3月 – 2023年9月
-- 北京先声医学检验实验室有限公司，特聘生物信息学专家
+- 北京先声医学检验实验室有限公司，任生物信息学专家
 - 领导一个由20多名研究人员组成的科研团队，与郑州大学第一附属医院、中国医学科学院肿瘤医院、南方医科大学南方医院等单位合作，从事癌症基因组、免疫治疗、数字病理学等临床应用研究
 - 开发和优化生物信息学算法和流程，用于基因组、转录组、代谢组、甲基化组等多组学数据整合和生物标志物发现
 
 2015年9月 – 2020年2月
-- 北京臻和科技有限公司，生物信息学研发经理
+- 北京臻和科技有限公司，任生物信息学研发经理
 - 领导生物信息学团队开展临床肿瘤基因检测产品的研发和应用，开发低频体细胞突变检测、基因融合检测等算法
 
 ## 主要技能
@@ -47,12 +43,12 @@ slug: cv
 
 ## 主要论文
 
-1. Wu X, Yan H, Qiu M, Qu X, Wang J, Xu S, Zheng Y, Ge M, **Yan L**, and Liang L. Comprehensive characterization of tumor microenvironment in colorectal cancer via molecular analysis. *eLife*. 2023;12:e86032.
-2. Shan N, Lu Y, Guo H, Li D, Jiang J, **Yan L**, Gao J, Ren Y, Zhao X, Hou L. CITEdb: a manually curated database of cell-cell interactions in human. *Bioinformatics*. 2022;38(22):5144-5148.
-3. Liu M, Xia S, Zhang X, Zhang B, **Yan L**, Yang M, Ren Y, Guo H, Zhao J. Development and validation of a blood-based genomic mutation signature to predict the clinical outcomes of atezolizumab therapy in NSCLC. *Lung Cancer*. 2022;170:148-155.
-4. Wang S, Yang Y, Li L, Ma P, Jiang Y, Ge M, Yu Y, Huang H, Fang Y, Jiang N, Miao H, Guo H, **Yan L**, Ren Y, Sun L, Zha Y, Li N. *Identification of Tumor Antigens and Immune Subtypes of Malignant Mesothelioma for mRNA Vaccine Development. Vaccines*. 2022;10(8):1168.
-5. Xu B, Lu M, **Yan L**, Ge M, Ren Y, Wang R, Shu Y, Hou L, Guo H. A Pan-Cancer Analysis of Predictive Methylation Signatures of Response to Cancer Immunotherapy. *Frontiers in Immunology*. 2021;12.
-6. Zhao B, Wu Q, Ye AY, Guo J, Zheng X, Yang X, **Yan L**, Liu Q, Hyde TM, Wei L, Huang AY. Somatic LINE-1 retrotransposition in cortical neurons and non-brain tissues of Rett patients and healthy individuals. *PLOS Genetics*. 2019;15(4):e1008043.
+1. Wu X，Yan H，Qiu M，Qu X，Wang J，Xu S，Zheng Y，Ge M，**Yan L**，and Liang L. Comprehensive characterization of tumor microenvironment in colorectal cancer via molecular analysis. *eLife*. 2023;12:e86032.
+2. Shan N，Lu Y，Guo H，Li D，Jiang J，**Yan L**，Gao J，Ren Y，Zhao X，Hou L. CITEdb: a manually curated database of cell-cell interactions in human. *Bioinformatics*. 2022;38(22):5144-5148.
+3. Liu M，Xia S，Zhang X，Zhang B，**Yan L**，Yang M，Ren Y，Guo H，Zhao J. Development and validation of a blood-based genomic mutation signature to predict the clinical outcomes of atezolizumab therapy in NSCLC. *Lung Cancer*. 2022;170:148-155.
+4. Wang S，Yang Y，Li L，Ma P，Jiang Y，Ge M，Yu Y，Huang H，Fang Y，Jiang N，Miao H，Guo H，**Yan L**，Ren Y，Sun L，Zha Y，Li N. *Identification of Tumor Antigens and Immune Subtypes of Malignant Mesothelioma for mRNA Vaccine Development. Vaccines*. 2022;10(8):1168.
+5. Xu B，Lu M，**Yan L**，Ge M，Ren Y，Wang R，Shu Y，Hou L，Guo H. A Pan-Cancer Analysis of Predictive Methylation Signatures of Response to Cancer Immunotherapy. *Frontiers in Immunology*. 2021;12.
+6. Zhao B，Wu Q，Ye AY，Guo J，Zheng X，Yang X，**Yan L**，Liu Q，Hyde TM，Wei L，Huang AY. Somatic LINE-1 retrotransposition in cortical neurons and non-brain tissues of Rett patients and healthy individuals. *PLOS Genetics*. 2019;15(4):e1008043.
 
 ## 联系方式
 
