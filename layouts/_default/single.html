@@ -46,21 +46,31 @@
   <div class="py-3">
     {{ .Content -}}
   </div>
-
-  {{ if eq .Section "posts" }}
-  <div class="row">
-  {{ with .PrevInSection -}}
-    <div class="col pt-3 text-start">
-      <a href="{{ .Permalink | relURL }}">← {{ .Title }}</a>
-    </div>
-  {{ end -}}
-  {{ with .NextInSection -}}
-    <div class="col pt-3 text-end">
-      <a href="{{ .Permalink | relURL }}">{{ .Title }} →</a>
-    </div>
-  {{ end -}}
-  </div>
-  {{ end }}
-
 </article>
+
+{{ if eq .Section "posts" }}
+<div class="row">
+{{ with .PrevInSection -}}
+  <div class="col pt-3 text-start">
+    <a href="{{ .Permalink | relURL }}">← {{ .Title }}</a>
+  </div>
+{{ end -}}
+{{ with .NextInSection -}}
+  <div class="col pt-3 text-end">
+    <a href="{{ .Permalink | relURL }}">{{ .Title }} →</a>
+  </div>
+{{ end -}}
+</div>
+<div class="mt-3">
+  {{ $related := .Site.RegularPages.Related . | first 5 }}
+  {{ with $related }}
+  <h3>相关文章</h3>
+  <ul>
+   {{ range . }}
+   <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+   {{ end }}
+  </ul>
+  {{ end }}
+</div>
+{{ end -}}
 {{ end -}}
