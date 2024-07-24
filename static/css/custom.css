@@ -49,17 +49,8 @@ main blockquote {
 }
 
 main pre {
-    white-space: pre-wrap;
     padding: 0.5em;
-    background-color: #f8f9fa;
     border: 1px solid #dee2e6;
-    border-radius: 0.25em;
-}
-
-main code {
-    background-color: #f8f9fa;
-    padding: 0.2em 0.4em;
-    border-radius: 0.25em;
 }
 
 /* Dark mode styles */
@@ -83,11 +74,5 @@ main code {
 
     main blockquote {
         border-left-color: #bb86fc;
-    }
-
-    main pre,
-    main code {
-        background-color: #333333;
-        border-color: #444444;
     }
 }

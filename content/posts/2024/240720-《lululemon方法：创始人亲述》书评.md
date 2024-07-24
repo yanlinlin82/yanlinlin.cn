@@ -1,4 +1,3 @@
-
 ---
 title: "《lululemon方法：创始人亲述》书评"
 date: 2024-07-20T00:00:00+08:00
@@ -6,9 +5,9 @@ categories: [ 书评 ]
 tags: [ 响马读书, 创业, 小而美 ]
 ---
 
-<center class="p-3">
+<div class="p-3 text-center">
   <img class="img-fluid" src="/images/2024/0720/book-cover.png" alt="图书封面">
-</center>
+</div>
 
  《lululemon方法：创始人亲述》，[加]奇普·威尔逊 著，赵磊 译，中信出版集团，2024年4月出版。
 
