@@ -1,0 +1,20 @@
+{{ define "main" -}}
+<div>
+  <h1>{{ .Title }}</h1>
+</div>
+<div>
+  {{ .Content -}}
+</div>
+<div class="py-3">
+  总计有 {{ len .Pages }} 篇文章。
+</div>
+<ul>
+  {{ range .Paginator.Pages -}}
+  <li class="my-1">
+    <div class="d-inline">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
+    <div class="d-inline ms-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+  </li>
+  {{ end -}}
+</ul>
+{{ template "_internal/pagination.html" . -}}
+{{ end -}}
