@@ -1,0 +1,15 @@
+{{ define "main" -}}
+<div>
+  <h1>{{ .Title }}</h1>
+</div>
+<div>
+  {{ .Content -}}
+</div>
+<div class="py-3">
+{{ range .Data.Terms.ByCount }}
+  <div class="d-inline text-nowrap me-3">
+    <a href="{{ .Page.RelPermalink }}">#{{ .Term }} ({{ .Count }})</a>
+  </div>
+{{ end }}
+</div>
+{{ end -}}
