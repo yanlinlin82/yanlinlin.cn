@@ -10,7 +10,7 @@ tags: [ virtualbox, windows, cpu, htop ]
 
 今天终于逮到一个机会，电脑刚开始发热，但还不至于完全卡死，用`htop`命令检查了一下Linux主机的状态，发现如下图所示：
 
-![](images/2019/1216/screenshot-1.png)
+![](/images/2019/1216/screenshot-1.png)
 
 八个CPU核（其实是四核超线程的结果），其实只有一个被kernel thread完全占满（右上角红色显示的那条柱子）。而系统日志（`dmesg -T | less`）则显示了“`CPUn: Package temperature above threshold, cpu clock throttled (total events = xxxx)`”的错误：
 
