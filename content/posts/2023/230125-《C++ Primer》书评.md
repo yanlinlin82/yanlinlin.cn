@@ -6,7 +6,12 @@ categories: [ 书评 ]
 tags: [ 响马读书 ]
 ---
 
- 《C++ Primer》中文版（第5版），[美] Stanley B. Lippman、Josée Lajoie、Barbara E. Moo著，王刚、杨巨峰 译，电子工业出版社 2013年9月出版。
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/images/2023/0125/01.png" alt="题图" style="max-width:640px">
+  <div><small>（题图由AI生成）</small></div>
+</div>
+
+《C++ Primer》中文版（第5版），[美] Stanley B. Lippman、Josée Lajoie、Barbara E. Moo著，王刚、杨巨峰 译，电子工业出版社 2013年9月出版。
 
 这是一本非常经典的C++教程。此第5版的英文版原书，撰写于2012年7月，相较于前几版，它采用当时最新版的C++11标准重新撰写。该标准是C++社群历经十多年、千呼万唤始出来的重磅产物（上一个标准为1998年标准，该标准2003年进行勘误和重新发布），为C++这门语言注入了全新的活力，也开启了后续三年一次的新标准发布（至此，已经发布了C++14、C++17、C++20版本，今年还将发布C++23）。
 
