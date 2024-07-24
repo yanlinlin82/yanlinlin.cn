@@ -34,9 +34,9 @@ menu:
   - name: 作品
     url: /works/
     weight: 40
-  - name: 学习
-    url: /study/
-    weight: 50
+#  - name: 学习
+#    url: /study/
+#    weight: 50
   - name: 简历
     url: /cv/
     weight: 60
