@@ -6,7 +6,7 @@ title: "我的作品"
 
 ### 1.1 网站系统
 
-* [paper-hub.cn](https://github.com/yanlinlin82/paper-hub.cn): 一个在线文献管理系统
+* [paper-hub.cn](https://paper-hub.cn/): 一个在线文献收藏与分享平台 [[源码](https://github.com/yanlinlin82/paper-hub.cn)]
 
 ### 1.2 命令行工具
 
