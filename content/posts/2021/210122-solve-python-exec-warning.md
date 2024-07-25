@@ -1,5 +1,5 @@
 ---
-title: "解决python-exec的报错信息"
+title: 解决python-exec的报错信息
 date: 2021-01-22T04:21:40+08:00
 tags: [ python, eselect, gentoo ]
 ---

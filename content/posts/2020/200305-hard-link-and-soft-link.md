@@ -1,5 +1,5 @@
 ---
-title: "理解Linux下的硬链接与软链接"
+title: 理解Linux下的硬链接与软链接
 date: 2020-03-05T07:02:12+08:00
 tags: [ linux, hard link, soft link, inode ]
 ---

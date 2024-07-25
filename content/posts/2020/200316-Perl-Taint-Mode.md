@@ -1,5 +1,5 @@
 ---
-title: "Perl Taint Mode"
+title: Perl Taint Mode
 date: 2020-03-16T11:38:12+08:00
 tags: [ perl, taint ]
 ---

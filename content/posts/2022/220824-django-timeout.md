@@ -1,5 +1,5 @@
 ---
-title: "解决Django Timeout问题"
+title: 解决Django Timeout问题
 date: 2022-08-24T06:44:00+08:00
 ---
 

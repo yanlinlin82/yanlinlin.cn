@@ -1,5 +1,5 @@
 ---
-title: "GDB基本用法"
+title: GDB基本用法
 date: 2020-03-23T06:29:46+08:00
 tags: [ gdb ]
 ---
