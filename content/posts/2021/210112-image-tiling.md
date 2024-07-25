@@ -1,5 +1,5 @@
 ---
-title: "使用Linux命令进行拼图"
+title: 使用Linux命令进行拼图
 date: 2021-01-12T19:34:52+08:00
 tags: [ linux, image-magik ]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "VirtualBox占满CPU的问题及解决"
+title: VirtualBox占满CPU的问题及解决
 date: 2019-12-16T23:10:27+08:00
 tags: [ virtualbox, windows, cpu, htop ]
 ---

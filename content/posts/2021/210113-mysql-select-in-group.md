@@ -1,5 +1,5 @@
 ---
-title: "MySQL中分组后选择首行"
+title: MySQL中分组后选择首行
 date: 2021-01-13T08:31:15+08:00
 tags: [ mysql, partition, group-by ]
 ---

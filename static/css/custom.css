@@ -23,6 +23,11 @@ main h6 {
     padding-bottom: 0em;
 }
 
+main p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 main img {
     max-width: 100%;
 }
