@@ -1,8 +1,8 @@
 ---
 title: 《C++ Primer》书评
 date: 2023-01-25T08:00:00+08:00
-categories: [ 书评 ]
-tags: [ 响马读书 ]
+categories: [ 书评, 编程 ]
+tags: [ 响马读书, C++ ]
 ---
 
 <div class="p-3 text-center">

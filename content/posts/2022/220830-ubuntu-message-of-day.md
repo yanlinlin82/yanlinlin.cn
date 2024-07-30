@@ -1,6 +1,7 @@
 ---
 title: 登录Ubuntu时显示的启动文本信息
 date: 2022-08-30T07:14:00+08:00
+categories: [ IT技巧 ]
 tags: ["Ubuntu"]
 ---
 

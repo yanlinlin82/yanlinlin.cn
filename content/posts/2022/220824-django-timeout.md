@@ -1,6 +1,7 @@
 ---
 title: 解决Django Timeout问题
 date: 2022-08-24T06:44:00+08:00
+categories: [ 编程 ]
 ---
 
 昨天把网站服务器的Ubuntu系统做了大版本升级（升级到22.04.1 LTS），结果导致基于Django开发的[PaperHub](https://paper-hub.cn/)出现卡死。
