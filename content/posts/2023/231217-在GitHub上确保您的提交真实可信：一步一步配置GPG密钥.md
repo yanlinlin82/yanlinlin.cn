@@ -1,8 +1,8 @@
 ---
 title: 在GitHub上确保您的提交真实可信：一步一步配置GPG密钥
 date: 2023-12-17T22:17:00+08:00
-categories: [ 公众号文章 ]
-tags: [ 不靠谱颜论 ]
+badges: [ 公众号 ]
+categories: [ 不靠谱颜论 ]
 ---
 
 <div class="p-3 text-center">

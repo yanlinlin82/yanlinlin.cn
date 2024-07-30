@@ -1,8 +1,7 @@
 ---
 title: 记一次LeetCode解题（087-扰乱字符串）
 date: 2020-01-28T08:00:27+08:00
-categories: [ 编程 ]
-tags: [ leetcode, algorithm, 递归 ]
+tags: [ leetcode, algorithm, 递归, 编程 ]
 ---
 
 ## 背景
