@@ -1,7 +1,7 @@
 ---
 title: 使用Let's Encrypt免费配置HTTPS
 date: 2024-01-26T21:41:00+08:00
-categories: [ 公众号文章 ]
+categories: [ 公众号文章, IT技巧 ]
 tags: [ 不靠谱颜论 ]
 ---
 
