@@ -1,0 +1,27 @@
+{{ define "main" -}}
+<div>
+  <h1>{{ .Title }}</h1>
+</div>
+<div>
+  {{ .Content -}}
+</div>
+{{ $categories := slice }}
+{{ range .Data.Terms.ByCount }}
+  {{ $term := .Page.Title }}
+  {{ $pages := where .Pages "Type" "!=" "taxonomy" }}
+  {{ $latestPost := index (sort $pages "Date" "desc") 0 }}
+  {{ if $latestPost }}
+    {{ $categories = $categories | append (dict "term" $term "count" .Count "latestPost" $latestPost "permalink" .Page.RelPermalink) }}
+  {{ end }}
+{{ end }}
+{{ $sortedCategories := sort $categories "latestPost.Date" "desc" }}
+<ul>
+  {{ range $sortedCategories }}
+  <li class="my-1">
+    <div class="d-inline">
+      <a href="{{ .permalink }}">{{ .term }} (共 {{ .count }} 篇，{{ .latestPost.Date.Format "2006-01-02" }} 更新)</a></div>
+    </div>
+  </li>
+  {{ end -}}
+</ul>
+{{ end -}}
