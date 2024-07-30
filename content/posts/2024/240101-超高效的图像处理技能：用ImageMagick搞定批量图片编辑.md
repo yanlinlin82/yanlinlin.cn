@@ -1,8 +1,8 @@
 ---
 title: 超高效的图像处理技能：用ImageMagick搞定批量图片编辑
 date: 2024-01-01T23:19:00+08:00
-categories: [ 公众号文章, IT技巧 ]
-tags: [ 不靠谱颜论, ImageMagick ]
+categories: [ 不靠谱颜论, IT技巧 ]
+tags: [ ImageMagick ]
 ---
 
 <div class="p-3 text-center">

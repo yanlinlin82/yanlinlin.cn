@@ -1,8 +1,8 @@
 ---
 title: Promise- 异步编程的强大工具
 date: 2024-01-06T22:07:00+08:00
-categories: [ 公众号文章, 编程 ]
-tags: [ 不靠谱颜论, javascript ]
+categories: [ 不靠谱颜论, 编程 ]
+tags: [ javascript ]
 ---
 
 <div class="p-3 text-center">
