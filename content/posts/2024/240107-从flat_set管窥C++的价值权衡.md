@@ -1,6 +1,7 @@
 ---
 title: 从flat_set管窥C++的价值权衡
 date: 2024-01-07T03:31:00+08:00
+badges: [ 公众号 ]
 categories: [ 不靠谱颜论, 编程 ]
 tags: [ C++ ]
 ---
