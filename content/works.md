@@ -7,6 +7,8 @@ title: "我的作品"
 ### 1.1 网站系统
 
 - [paper-hub.cn](https://paper-hub.cn/): 一个在线文献收藏与分享平台 [[源码](https://github.com/yanlinlin82/paper-hub.cn)]
+- [biomed-dl.bioinfo-assist.com](https://biomed-dl.bioinfo-assist.com/): 一个持续更新的专有领域知识库，聚焦深度学习技术在生物医药领域的具体应用，通过收集和整理最新科研文献提供信息。[[源码](https://github.com/yanlinlin82/what-deep-learning-does-in-biomedicine/)]
+- [single-cell-papers.bioinfo-assist.com](https://single-cell-papers.bioinfo-assist.com/): 一个持续更新的专有领域知识库，聚焦单细胞与空转测序，通过收集和整理最新科研文献提供信息。[[源码](https://github.com/yanlinlin82/single-cell-papers)]
 
 ### 1.2 命令行工具
 
