@@ -9,10 +9,10 @@ title: "我的作品"
 - [paper-hub.cn](https://paper-hub.cn/): 一个在线文献收藏与分享平台 [[源码](https://github.com/yanlinlin82/paper-hub.cn)]
 
 - 专题文献自动跟踪系统（根据PubMed数据持续自动更新，用于聚焦领域前沿进展）：
-    - [biomed-dl.bioinfo-assist.com](https://biomed-dl.bioinfo-assist.com/): 深度学习技术在生物医药领域的具体应用 [[源码](https://github.com/yanlinlin82/what-deep-learning-does-in-biomedicine/)]
-    - [single-cell-papers.bioinfo-assist.com](https://single-cell-papers.bioinfo-assist.com/): 单细胞与空转测序 [[源码](https://github.com/yanlinlin82/single-cell-papers)]
-    - [synthetic-biology-papers.bioinfo-assist.com](https://synthetic-biology-papers.bioinfo-assist.com/): 单细胞与空转测序 [[源码](https://github.com/yanlinlin82/synthetic-biology-papers)]
-    - [biological-computing-papers.bioinfo-assist.com](https://biological-computing-papers.bioinfo-assist.com/): 单细胞与空转测序 [[源码](https://github.com/yanlinlin82/biological-computing-papers)]
+    - [biomed-dl.bioinfo-assist.com](https://biomed-dl.bioinfo-assist.com/): 深度学习在生物医药领域中的应用[[源码](https://github.com/yanlinlin82/what-deep-learning-does-in-biomedicine/)]
+    - [single-cell-papers.bioinfo-assist.com](https://single-cell-papers.bioinfo-assist.com/): 单细胞与空转测序相关文章 [[源码](https://github.com/yanlinlin82/single-cell-papers)]
+    - [synthetic-biology-papers.bioinfo-assist.com](https://synthetic-biology-papers.bioinfo-assist.com/): 合成生物学相关文章 [[源码](https://github.com/yanlinlin82/synthetic-biology-papers)]
+    - [biological-computing-papers.bioinfo-assist.com](https://biological-computing-papers.bioinfo-assist.com/):生物计算机与DNA存储相关文章 [[源码](https://github.com/yanlinlin82/biological-computing-papers)]
 
 ### 1.2 命令行工具
 
