@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize search functionality
   if (typeof window.searchIndex !== 'undefined') {
     const fuseOptions = {
-      keys: ['title', 'content', 'tags', 'categories'],
+      keys: ['title', 'summary', 'tags', 'categories'],
       threshold: 0.3,
       includeScore: true,
       includeMatches: true
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
           // Highlight matched text
           let title = item.title;
-          let content = item.content.substring(0, 200) + '...';
+          let content = item.summary ? item.summary.substring(0, 200) + '...' : '';
           
           if (matches) {
             matches.forEach(match => {

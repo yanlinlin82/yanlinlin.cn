@@ -1,25 +1,29 @@
 {{ define "main" -}}
-<div>
+<div class="home-intro">
   {{ .Content -}}
 </div>
-<ul class="article-list">
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-  {{ range $paginator.Pages -}}
-  <li class="article-item">
-    <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
-    <div class="article-title">
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-        {{ range .Params.badges }}
-        <span class="article-badge">{{ . }}</span>
-        {{ end }}
-      </a>
-    </div>
-  </li>
-  {{ end -}}
-</ul>
 
-{{ if gt $paginator.TotalPages 1 }}
-  {{ partial "pagination.html" . }}
-{{ end }}
+<div class="recent-posts">
+  <h2 class="section-title">最新文章</h2>
+  <ul class="article-list">
+    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ $recent := first 6 $pages }}
+    {{ range $recent }}
+    <li class="article-item">
+      <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
+      <div class="article-title">
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+          {{ range .Params.badges }}
+          <span class="article-badge">{{ . }}</span>
+          {{ end }}
+        </a>
+      </div>
+    </li>
+    {{ end -}}
+  </ul>
+  <div class="text-center mt-4">
+    <a href="/posts/" class="btn btn-more-posts">查看更多文章</a>
+  </div>
+</div>
 {{ end -}}

@@ -3,7 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- 基础Meta信息 -->
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .IsHome }}颜林林的个人主页，记录技术探索、学术研究、生活感悟。专注于精准医疗、生物信息学、AI/LLM应用等领域。{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
+  <meta name="keywords" content="颜林林,生物信息学,精准医疗,AI,LLM,编程,个人主页,不靠谱颜论">
+  <meta name="author" content="颜林林">
+  
+  <!-- Open Graph标签 -->
+  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
+  <meta property="og:description" content="{{ if .IsHome }}记录技术探索、学术研究、生活感悟的个人数字空间{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="不靠谱颜论">
+  <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}https://yanlinlin.cn/static/images/og-image.jpg{{ end }}">
+  <meta property="og:locale" content="zh_CN">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
+  <meta name="twitter:description" content="{{ if .IsHome }}记录技术探索、学术研究、生活感悟的个人数字空间{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
+  <meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}https://yanlinlin.cn/static/images/twitter-card.jpg{{ end }}">
+  <meta name="twitter:creator" content="@yanlinlin82">
+  
+  <!-- 其他Meta信息 -->
+  <link rel="canonical" href="{{ .Permalink }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,17 +37,21 @@
   <div class="container">
   <header class="navbar navbar-expand-lg navbar-dark navbar-geek">
     {{ block "header" . }}
-    <div class="container">
-      <a class="navbar-brand navbar-brand-geek fw-bold" href="{{ .Site.BaseURL }}">{{ site.Title }}</a>
-      <nav class="navbar-nav ms-auto">
-        {{- range .Site.Menus.main -}}
-        <a class="nav-link nav-link-geek" href="{{ .URL }}">{{ .Name }}</a>
-        {{- end -}}
-        <button class="btn btn-outline-primary btn-search-geek ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-          <i class="fas fa-search me-1"></i> 搜索
-        </button>
-      </nav>
+    <div class="navbar-brand-wrapper">
+      <a class="navbar-brand navbar-brand-geek fw-bold d-flex align-items-center" href="{{ .Site.BaseURL }}">
+        <img src="{{ "logo/geek-logo.svg" | relURL }}" alt="Logo" class="me-2" width="48" height="48">
+        {{ site.Title }}
+      </a>
+      <div class="navbar-subtitle">用代码构建世界，用文字记录人生</div>
     </div>
+    <nav class="navbar-nav ms-auto">
+      {{- range .Site.Menus.main -}}
+      <a class="nav-link nav-link-geek" href="{{ .URL }}">{{ .Name }}</a>
+      {{- end -}}
+      <button class="btn btn-outline-primary btn-search-geek ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+        <i class="fas fa-search me-1"></i> 搜索
+      </button>
+    </nav>
     {{ end }}
   </header>
 
@@ -32,8 +60,7 @@
   </main>
 
   <footer class="footer-geek">
-    <div class="py-1">© 2007-2025, 颜林林</div>
-    <div class="py-1">京ICP备2024061234号-1</div>
+    <div class="py-1">© 2007-2025 颜林林 | <a href="https://beian.miit.gov.cn/" target="_blank" class="external-link">京ICP备18031542号-1</a></div>
     <div class="py-1">
       <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="external-link">CC-BY-4.0</a> |
       <a href="https://gohugo.io/" target="_blank" class="external-link">Hugo</a> |

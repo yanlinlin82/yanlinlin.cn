@@ -1,4 +1,4 @@
-# 颜林林的个人网站（Linlin Yan's Personal Website）
+# 不靠谱颜论（Linlin Yan's Personal Website）
 
 **http://yanlinlin.cn/**
 

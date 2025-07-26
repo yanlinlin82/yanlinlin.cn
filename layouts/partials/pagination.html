@@ -1,6 +1,10 @@
 {{ $paginator := .Paginator }}
 {{ $currentPage := $paginator.PageNumber }}
 {{ $totalPages := $paginator.TotalPages }}
+{{ $base := "/" }}
+{{ if eq .Section "posts" }}
+  {{ $base = "/posts/" }}
+{{ end }}
 
 <nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
   <ul class="pagination pagination-geek">
@@ -8,9 +12,9 @@
     {{ if gt $prevPage 0 }}
       {{ $prevURL := "" }}
       {{ if eq $prevPage 1 }}
-        {{ $prevURL = "/" }}
+        {{ $prevURL = $base }}
       {{ else }}
-        {{ $prevURL = printf "/page/%d/" $prevPage }}
+        {{ $prevURL = printf "%spage/%d/" $base $prevPage }}
       {{ end }}
       <li class="page-item">
         <a class="page-link" href="{{ $prevURL }}" aria-label="Previous 5 pages">
@@ -18,7 +22,7 @@
         </a>
       </li>
     {{ else }}
-      {{ $firstURL := "/" }}
+      {{ $firstURL := $base }}
       <li class="page-item">
         <a class="page-link" href="{{ $firstURL }}" aria-label="Go to first page">
           <span aria-hidden="true">&laquo;</span>
@@ -37,9 +41,9 @@
       {{ if $showPage }}
         {{ $pageURL := "" }}
         {{ if eq $pageNum 1 }}
-          {{ $pageURL = "/" }}
+          {{ $pageURL = $base }}
         {{ else }}
-          {{ $pageURL = printf "/page/%d/" $pageNum }}
+          {{ $pageURL = printf "%spage/%d/" $base $pageNum }}
         {{ end }}
         <li class="page-item {{ if eq $pageNum $currentPage }}active{{ end }}">
           <a class="page-link" href="{{ $pageURL }}">{{ $pageNum }}</a>
@@ -49,14 +53,14 @@
 
     {{ $nextPage := add $currentPage 5 }}
     {{ if le $nextPage $totalPages }}
-      {{ $nextURL := printf "/page/%d/" $nextPage }}
+      {{ $nextURL := printf "%spage/%d/" $base $nextPage }}
       <li class="page-item">
         <a class="page-link" href="{{ $nextURL }}" aria-label="Next 5 pages">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
     {{ else }}
-      {{ $lastURL := printf "/page/%d/" $totalPages }}
+      {{ $lastURL := printf "%spage/%d/" $base $totalPages }}
       <li class="page-item">
         <a class="page-link" href="{{ $lastURL }}" aria-label="Go to last page">
           <span aria-hidden="true">&raquo;</span>
