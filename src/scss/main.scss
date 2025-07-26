@@ -1,8 +1,8 @@
-// Import Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// Import Bootstrap using modern @use syntax
+@use "../../node_modules/bootstrap/scss/bootstrap" as *;
 
 // Custom styles
-@import "custom";
+@use "custom" as *;
 
 // Pagination centering
 .pagination-wrapper {
