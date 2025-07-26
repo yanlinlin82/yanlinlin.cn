@@ -28,6 +28,7 @@
   
   <!-- 其他Meta信息 -->
   <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "index.xml" | relURL }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -68,7 +69,8 @@
       <a href="https://gohugo.io/" target="_blank" class="external-link">Hugo</a> |
       <a href="https://getbootstrap.com/" target="_blank" class="external-link">Bootstrap.js</a> |
       <a href="https://www.zhihu.com/people/yan-lin-lin-76" target="_blank" class="external-link">博友圈</a> |
-      <a href="https://github.com/yanlinlin/yanlinlin.cn" target="_blank" class="external-link">GitHub源码</a>
+      <a href="https://github.com/yanlinlin/yanlinlin.cn" target="_blank" class="external-link">GitHub源码</a> |
+      <a href="{{ "index.xml" | relURL }}" target="_blank" class="external-link">RSS订阅</a>
     </div>
   </footer>
   </div>
