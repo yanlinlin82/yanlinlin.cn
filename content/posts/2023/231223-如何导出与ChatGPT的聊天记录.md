@@ -1,8 +1,11 @@
 ---
 title: 如何导出与ChatGPT的聊天记录
-date: 2023-12-23T22:31:00+08:00
-badges: [ 公众号 ]
-categories: [ 不靠谱颜论 ]
+date: 2023-12-23 22:31:00+08:00
+badges:
+- 公众号
+categories: [不靠谱颜论]
+tags: [ChatGPT, 浏览器插件, 数据导出, 工具, 教程]
+slug: how-to-export-chatgpt-history
 ---
 
 <div class="p-3 text-center">

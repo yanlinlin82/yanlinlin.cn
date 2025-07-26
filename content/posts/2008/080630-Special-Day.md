@@ -1,9 +1,10 @@
 ---
 title: Special Day
-date: 2008-06-30T21:14:00+08:00
+date: 2008-06-30 21:14:00+08:00
 place: 北京
-tags: [ 考研, 学习, 离职, 梦想 ]
+tags: [考研, 学习, 离职, 梦想]
 host-at: LiveSpace
+slug: special-day
 ---
 Today, June 30th, 2008, is a very special day. It is the last day of the first half-year, and also the last day of my IT career. Because all my demission procedures, at last, have been finished.
 

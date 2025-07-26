@@ -1,7 +1,8 @@
 ---
 title: Linux交换分区的调优
-date: 2020-03-05T08:48:48+08:00
-tags: [ linux, swappiness, memory ]
+date: 2020-03-05 08:48:48+08:00
+tags: [linux, swappiness, memory]
+slug: linux-swap-partition-tuning
 ---
 
 最近新安装的Linux系统，在运行一个较大的程序时，性能就明显下降。经检查，瓶颈似乎落到了磁盘读写上，这才意识到忘记对Linux交换分区（swap）做调整了。

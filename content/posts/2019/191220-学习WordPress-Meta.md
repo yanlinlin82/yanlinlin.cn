@@ -1,7 +1,8 @@
 ---
 title: 学习WordPress页面头部的Meta信息
-date: 2019-12-20T13:09:23+08:00
-tags: [ HTML5, WordPress, meta ]
+date: 2019-12-20 13:09:23+08:00
+tags: [HTML5, WordPress, meta]
+slug: learning-wordpress-page-header-meta-information
 ---
 
 ## 引言

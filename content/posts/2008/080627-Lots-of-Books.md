@@ -1,9 +1,10 @@
 ---
 title: Books! Lots of Books!
-date: 2008-06-27T18:42:00+08:00
+date: 2008-06-27 18:42:00+08:00
 place: 北京
-tags: [ 图书, 购物 ]
+tags: [图书, 购物]
 host-at: LiveSpace
+slug: books-lots-of-books
 ---
 I went to bookstore again, spent moneys nearly as my daily consume in half month, just when quitting my job. Like the saying goes, the torments of passion can drive a man to wild ideas. How am i weak-minded when hearing the calling from the interesting books. Now I am dreaming the scenario as in movie Matrix that huge racks slided in while Neo said “Guns! Lots of Guns!”
 

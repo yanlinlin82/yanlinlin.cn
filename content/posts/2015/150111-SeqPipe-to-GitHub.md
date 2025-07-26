@@ -1,8 +1,9 @@
 ---
 title: Migrate SeqPipe onto GitHub
-date: 2015-01-11T21:00:51+08:00
-tags: [ SeqPipe, GoogleCode, GitHub ]
+date: 2015-01-11 21:00:51+08:00
+tags: [SeqPipe, GoogleCode, GitHub]
 host-at: GitHub
+slug: migrate-seqpipe-onto-github
 ---
 Finally, I have migrated SeqPipe from [Google Code] to [GitHub].
 

@@ -1,7 +1,8 @@
 ---
 title: MySQL中分组后选择首行
-date: 2021-01-13T08:31:15+08:00
-tags: [ mysql, partition, group-by ]
+date: 2021-01-13 08:31:15+08:00
+tags: [mysql, partition, group-by]
+slug: mysql-select-first-row-after-grouping
 ---
 
 在数据库表操作中，一个常见的需求是：如何按照创建时间，取出每天的第一条的记录。

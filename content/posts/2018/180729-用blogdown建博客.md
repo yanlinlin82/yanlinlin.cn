@@ -1,7 +1,8 @@
 ---
 title: 如何用blogdown快速搭建博客
 date: '2018-07-29T17:59:50+08:00'
-tags: [ blogdown, 博客 ]
+tags: [blogdown, 博客]
+slug: how-to-build-blog-with-blogdown
 ---
 
 使用[blogdown](https://bookdown.org/yihui/blogdown/)搭建博客网站是一个很简单的过程。

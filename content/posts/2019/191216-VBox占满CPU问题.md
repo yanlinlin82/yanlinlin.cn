@@ -1,7 +1,8 @@
 ---
 title: VirtualBox占满CPU的问题及解决
-date: 2019-12-16T23:10:27+08:00
-tags: [ virtualbox, windows, cpu, htop ]
+date: 2019-12-16 23:10:27+08:00
+tags: [virtualbox, windows, cpu, htop]
+slug: virtualbox-cpu-usage-issue-and-solution
 ---
 
 由于我日常使用的是Linux操作系统，但偶尔又需要使用Microsoft Office，于是就只好在VirtualBox中安装了Windows 10，在需要的时候打开来使用。

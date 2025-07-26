@@ -1,7 +1,8 @@
 ---
 title: 如何在Linux下查看网卡带宽
-date: 2020-01-23T17:52:33+08:00
-tags: [ linux, network ]
+date: 2020-01-23 17:52:33+08:00
+tags: [linux, network]
+slug: how-to-check-network-card-bandwidth-in-linux
 ---
 
 在Linux命令行下，想要查看网卡的带宽上限，可以使用如下命令：

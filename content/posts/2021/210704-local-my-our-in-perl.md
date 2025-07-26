@@ -1,6 +1,7 @@
 ---
 title: Perl中的关键字local、my与our的区别
-date: 2021-07-04T21:28:03+08:00
+date: 2021-07-04 21:28:03+08:00
+slug: difference-between-local-my-and-our-keywords-in-perl
 ---
 
 在Perl中，定义变量，可以使用关键字`local`、`my`或`our`。然而，它们之间究竟有什么区别呢，使用的时候，又该注意什么呢？

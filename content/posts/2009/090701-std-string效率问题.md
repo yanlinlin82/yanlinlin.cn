@@ -1,9 +1,10 @@
 ---
 title: 关于std::string的效率问题
-date: 2009-07-01T10:39:00+08:00
+date: 2009-07-01 10:39:00+08:00
 place: 北京
-tags: [ 编程, C++, std::string, 传参方式 ]
+tags: [编程, C++, std::string, 传参方式]
 host-at: Oray
+slug: std-string-efficiency-issue
 ---
 受CString的影响，我一直以为`std::string`也是Copy On Write机制的。可实际测试下来却不太一样：
 

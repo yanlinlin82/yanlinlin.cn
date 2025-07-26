@@ -1,8 +1,9 @@
 ---
 title: Plugin-free Related Posts on GitHub Pages
-date: 2015-01-02T01:20:00+08:00
-tags: [ GitHub, Jekyll ]
+date: 2015-01-02 01:20:00+08:00
+tags: [GitHub, Jekyll]
 host-at: GitHub
+slug: plugin-free-related-posts-on-github-pages
 ---
 It seems geeky to host a personal blog on [GitHub Pages]. Suffered too much pain with other blog services as well as the huge [wordpress], I have finally migrated [my blog here].
 

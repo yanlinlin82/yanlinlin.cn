@@ -1,7 +1,8 @@
 ---
 title: 升级云服务器Ubuntu LTS版本时遇到的问题及解决
-date: 2019-12-12T22:59:51+08:00
-tags: [ Ubuntu, upgrade ]
+date: 2019-12-12 22:59:51+08:00
+tags: [Ubuntu, upgrade]
+slug: issues-and-solutions-when-upgrading-ubuntu-lts-on-cloud-server
 ---
 
 我的个人网站现在跑在云服务器上，由于安装时间稍早，使用的还是上一个LTS版本，最近登录提示：
