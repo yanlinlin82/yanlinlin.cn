@@ -1,54 +1,98 @@
-<div id="search-dropdown" class="dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    搜索
-  </a>
-  <div class="dropdown-menu">
-    <form id="search-form" class="row g-3 p-3" style="min-width: 300px;" method="get" target="_blank">
-      <div class="col-12">
-        <input id="search-text" type="text" class="form-control" placeholder="搜索本站..." required>
-        <input id="hidden-query" type="hidden">
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">
+          <i class="fas fa-search me-2"></i>搜索文章
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="col-8">
-        <select id="search-engine" class="form-select mb-3">
-          <option value="google" selected>Google</option>
-          <option value="baidu">百度</option>
-          <option value="bing">必应</option>
-          <option value="duckduckgo">DuckDuckGo</option>
-        </select>
+      <div class="modal-body">
+        <div class="mb-3">
+          <input type="text" class="form-control form-control-lg" id="searchInput" placeholder="输入关键词搜索文章..." autocomplete="off">
+        </div>
+        <div id="searchResults">
+          <p class="text-muted">输入至少2个字符开始搜索...</p>
+        </div>
       </div>
-      <div class="col-4 text-end">
-        <button id="search-button" type="submit" class="from-control-inline btn btn-primary">搜索</button>
-      </div>
-    </form>
-    <script>
-      $(document).ready(function() {
-        $('#search-dropdown').on('shown.bs.dropdown', function () {
-          $('#search-text').focus();
-        });
-
-        $('#search-button').click(function(e) {
-          const siteUrl = '{{ .Site.BaseURL }}';
-          const query = $('#search-text').val();
-          const searchEngine = $('#search-engine').val();
-          if (searchEngine == 'google') {
-            $('#search-form').attr('action', 'https://www.google.com/search');
-            $('#hidden-query').attr('name', 'q');
-            $('#hidden-query').val('site:' + siteUrl + ' ' + query);
-          } else if (searchEngine == 'baidu') {
-            $('#search-form').attr('action', 'https://www.baidu.com/s');
-            $('#hidden-query').attr('name', 'wd');
-            $('#hidden-query').val('site:' + siteUrl + ' ' + query);
-          } else if (searchEngine == 'bing') {
-            $('#search-form').attr('action', 'https://www.bing.com/search');
-            $('#hidden-query').attr('name', 'q');
-            $('#hidden-query').val('site:' + siteUrl + ' ' + query);
-          } else if (searchEngine == 'duckduckgo') {
-            $('#search-form').attr('action', 'https://duckduckgo.com/');
-            $('#hidden-query').attr('name', 'q');
-            $('#hidden-query').val('site:' + siteUrl + ' ' + query);
-          }
-        });
-      });
-    </script>
+    </div>
   </div>
 </div>
+
+<!-- Load search index -->
+<script>
+window.searchIndex = [
+{{ $pages := where .Site.RegularPages "Type" "posts" }}
+{{ range $index, $page := $pages }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.Permalink | jsonify }},
+    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
+    "summary": {{ $page.Summary | jsonify }},
+    "tags": {{ $page.Params.tags | default (slice) | jsonify }},
+    "categories": {{ $page.Params.categories | default (slice) | jsonify }}
+  }{{ if ne $index (sub (len $pages) 1) }},{{ end }}
+{{ end }}
+];
+</script>
+
+<style>
+/* 极端 z-index 修复 */
+#searchModal {
+  z-index: 999999 !important;
+}
+
+#searchModal .modal-backdrop {
+  z-index: 999998 !important;
+}
+
+#searchModal .modal-dialog {
+  z-index: 1000000 !important;
+  position: relative;
+}
+
+#searchModal .modal-content {
+  z-index: 1000001 !important;
+  position: relative;
+}
+
+/* 确保所有模态框内容都在最顶层 */
+#searchModal * {
+  position: relative;
+  z-index: 1000002 !important;
+}
+
+/* 特别确保输入框和按钮可以交互 */
+#searchModal input,
+#searchModal button,
+#searchModal .btn,
+#searchModal .btn-close {
+  position: relative !important;
+  z-index: 1000003 !important;
+  pointer-events: auto !important;
+}
+
+/* 搜索相关样式 */
+.search-result-item {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-result-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.search-result-item mark {
+  background-color: #ea580c;
+  color: white;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+#searchInput:focus {
+  border-color: #ea580c;
+  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25);
+}
+</style>

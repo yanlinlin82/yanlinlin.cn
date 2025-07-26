@@ -1,38 +1,39 @@
 {{ $paginator := .Paginator }}
 {{ $currentPage := $paginator.PageNumber }}
 {{ $totalPages := $paginator.TotalPages }}
-<nav aria-label="Page navigation" class="pagination-wrapper">
-  <ul class="pagination">
-    {{ if $paginator.HasPrev }}
+
+<nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
+  <ul class="pagination pagination-geek">
+    {{ $prevPage := sub $currentPage 5 }}
+    {{ if gt $prevPage 0 }}
       {{ $prevURL := "" }}
-      {{ if eq (sub $currentPage 1) 1 }}
+      {{ if eq $prevPage 1 }}
         {{ $prevURL = "/" }}
       {{ else }}
-        {{ $prevURL = printf "/page/%d/" (sub $currentPage 1) }}
+        {{ $prevURL = printf "/page/%d/" $prevPage }}
       {{ end }}
       <li class="page-item">
-        <a class="page-link" href="{{ $prevURL }}" aria-label="Previous">
+        <a class="page-link" href="{{ $prevURL }}" aria-label="Previous 5 pages">
           <span aria-hidden="true">&laquo;</span>
         </a>
       </li>
     {{ else }}
-      <li class="page-item disabled">
-        <span class="page-link" aria-label="Previous">
+      {{ $firstURL := "/" }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $firstURL }}" aria-label="Go to first page">
           <span aria-hidden="true">&laquo;</span>
-        </span>
+        </a>
       </li>
     {{ end }}
 
     {{ range seq 1 $totalPages }}
       {{ $pageNum := . }}
       {{ $showPage := false }}
-      
-      {{ if or (eq $pageNum 1) (eq $pageNum $totalPages) }}
-        {{ $showPage = true }}
-      {{ else if and (ge $pageNum (sub $currentPage 1)) (le $pageNum (add $currentPage 1)) }}
+
+      {{ if and (ge $pageNum (sub $currentPage 2)) (le $pageNum (add $currentPage 2)) }}
         {{ $showPage = true }}
       {{ end }}
-      
+
       {{ if $showPage }}
         {{ $pageURL := "" }}
         {{ if eq $pageNum 1 }}
@@ -43,29 +44,23 @@
         <li class="page-item {{ if eq $pageNum $currentPage }}active{{ end }}">
           <a class="page-link" href="{{ $pageURL }}">{{ $pageNum }}</a>
         </li>
-      {{ else if and (eq $pageNum 2) (gt $currentPage 3) }}
-        <li class="page-item disabled">
-          <span class="page-link">...</span>
-        </li>
-      {{ else if and (eq $pageNum (sub $totalPages 1)) (lt $currentPage (sub $totalPages 2)) }}
-        <li class="page-item disabled">
-          <span class="page-link">...</span>
-        </li>
       {{ end }}
     {{ end }}
 
-    {{ if $paginator.HasNext }}
-      {{ $nextURL := printf "/page/%d/" (add $currentPage 1) }}
+    {{ $nextPage := add $currentPage 5 }}
+    {{ if le $nextPage $totalPages }}
+      {{ $nextURL := printf "/page/%d/" $nextPage }}
       <li class="page-item">
-        <a class="page-link" href="{{ $nextURL }}" aria-label="Next">
+        <a class="page-link" href="{{ $nextURL }}" aria-label="Next 5 pages">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
     {{ else }}
-      <li class="page-item disabled">
-        <span class="page-link" aria-label="Next">
+      {{ $lastURL := printf "/page/%d/" $totalPages }}
+      <li class="page-item">
+        <a class="page-link" href="{{ $lastURL }}" aria-label="Go to last page">
           <span aria-hidden="true">&raquo;</span>
-        </span>
+        </a>
       </li>
     {{ end }}
   </ul>

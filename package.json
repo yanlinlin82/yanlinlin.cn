@@ -4,10 +4,11 @@
   "description": "**http://yanlinlin.cn/**",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass src/scss/main.scss static/css/main.css --style compressed --quiet-deps",
+    "copy-fonts": "mkdir -p static/webfonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/webfonts/",
+    "build:css": "npm run copy-fonts && sass src/scss/main.scss static/css/main.css --style compressed --quiet-deps",
     "build:js": "webpack",
     "build": "npm run build:css && npm run build:js",
-    "dev:css": "sass src/scss/main.scss static/css/main.css --watch --quiet-deps",
+    "dev:css": "npm run copy-fonts && sass src/scss/main.scss static/css/main.css --watch --quiet-deps",
     "dev:js": "webpack --watch",
     "dev": "npm run dev:css & npm run dev:js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,7 +30,9 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.7"
+    "bootstrap": "^5.3.7",
+    "fuse.js": "^7.1.0"
   }
 }

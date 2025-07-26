@@ -1,82 +1,442 @@
-// Custom styles
-a {
+// 极客橙红配色方案 - 增强版
+// 外部链接指示器
+.external-link::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+
+.external-link:hover::after {
+  opacity: 1;
+}
+
+// 导航栏极客风格 - 使用自定义类
+.navbar-geek {
+  background: linear-gradient(135deg, var(--bs-body-bg) 0%, rgba(234, 88, 12, 0.05) 100%) !important;
+  border-bottom: 1px solid var(--bs-border-color);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  position: relative;
+}
+
+.navbar-geek::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--bs-primary), transparent);
+}
+
+.navbar-brand-geek {
+  color: var(--bs-primary) !important;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: color 0.2s ease;
+  position: relative;
+  letter-spacing: -0.025em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-brand-geek::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--bs-primary);
+  transition: width 0.3s ease;
+}
+
+.navbar-brand-geek:hover {
+  color: var(--bs-link-hover-color) !important;
+}
+
+.navbar-brand-geek:hover::after {
+  width: 100%;
+}
+
+.nav-link-geek {
+  color: var(--bs-secondary-color) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin: 0 0.25rem;
+  transition: all 0.2s ease;
+  position: relative;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-link-geek::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--bs-primary);
+  transition: all 0.2s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link-geek:hover {
+  color: var(--bs-primary) !important;
+  background: rgba(234, 88, 12, 0.1);
+}
+
+.nav-link-geek:hover::before {
+  width: 80%;
+}
+
+.nav-link-geek.active {
+  color: var(--bs-primary) !important;
+  background: rgba(234, 88, 12, 0.15);
+}
+
+.nav-link-geek.active::before {
+  width: 80%;
+}
+
+// 搜索按钮极客风格
+.btn-search-geek {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+  background: transparent;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-search-geek::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
+  transition: left 0.3s ease;
+}
+
+.btn-search-geek:hover {
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.btn-search-geek:hover::before {
+  left: 100%;
+}
+
+// 页脚极客风格
+.footer-geek {
+  background: linear-gradient(135deg, var(--bs-secondary-bg) 0%, rgba(234, 88, 12, 0.02) 100%);
+  border-top: 1px solid var(--bs-border-color);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  position: relative;
+  text-align: center;
+  color: var(--bs-secondary-color);
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footer-geek::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--bs-primary), transparent);
+}
+
+.footer-geek a {
+  color: var(--bs-primary);
+  font-weight: 500;
   text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
 
-  &:hover {
-    text-decoration: underline;
+.footer-geek a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--bs-primary);
+  transition: width 0.2s ease;
+}
+
+.footer-geek a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+.footer-geek a:hover::after {
+  width: 100%;
+}
+
+.footer-geek .py-1 {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+// 主要内容区域
+.main-content-geek {
+  padding: 2rem 0;
+  min-height: 60vh;
+}
+
+// 极客风格增强
+// 文章列表卡片样式
+.article-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.article-item {
+  background: linear-gradient(135deg, var(--bs-body-bg) 0%, rgba(234, 88, 12, 0.02) 100%);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.article-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--bs-primary) 0%, rgba(234, 88, 12, 0.6) 100%);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.article-item:hover {
+  border-color: var(--bs-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 88, 12, 0.15);
+}
+
+.article-item:hover::before {
+  transform: scaleY(1);
+}
+
+.article-date {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--bs-secondary-color);
+  background: rgba(234, 88, 12, 0.1);
+  border: 1px solid rgba(234, 88, 12, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: 'Noto Serif SC', 'Noto Sans SC', 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-title a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  flex: 1;
+  min-width: 0;
+}
+
+.article-title a:hover {
+  color: var(--bs-primary);
+}
+
+.article-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background: rgba(234, 88, 12, 0.08);
+  border: 1px solid rgba(234, 88, 12, 0.15);
+  color: var(--bs-primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 分页器极客风格
+.pagination-geek {
+  gap: 0.25rem;
+}
+
+.pagination-geek .page-link {
+  border: 1px solid var(--bs-border-color);
+  background: transparent;
+  color: var(--bs-secondary-color);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  min-width: 2.5rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pagination-geek .page-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
+  transition: left 0.3s ease;
+}
+
+.pagination-geek .page-link:hover {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+  transform: translateY(-1px);
+}
+
+.pagination-geek .page-link:hover::before {
+  left: 100%;
+}
+
+.pagination-geek .page-item.active .page-link {
+  background: linear-gradient(135deg, var(--bs-primary) 0%, rgba(234, 88, 12, 0.9) 100%);
+  border-color: var(--bs-primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.pagination-geek .page-item.disabled .page-link {
+  background: transparent;
+  border-color: var(--bs-border-color);
+  color: var(--bs-secondary-color);
+  opacity: 0.5;
+}
+
+// 响应式优化
+@media (max-width: 768px) {
+  .navbar-geek {
+    padding: 0.75rem 0;
+  }
+  
+  .navbar-brand-geek {
+    font-size: 1.1rem;
+  }
+  
+  .nav-link-geek {
+    padding: 0.375rem 0.75rem;
+    margin: 0.125rem 0;
+    font-size: 0.85rem;
+  }
+  
+  .footer-geek {
+    padding: 1.5rem 0;
+    font-size: 0.8rem;
+  }
+  
+  .article-item {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .article-title {
+    font-size: 1rem;
+  }
+  
+  .pagination-geek .page-link {
+    padding: 0.375rem 0.5rem;
+    min-width: 2rem;
+    font-size: 0.875rem;
   }
 }
 
-.external-link {
-  &::after {
-    content: ' \2197';
-    font-size: 0.8em;
-    margin-left: 0.2em;
-    display: inline-block;
+@media (max-width: 576px) {
+  .navbar-brand-geek {
+    font-size: 1rem;
+  }
+  
+  .btn-search-geek {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .footer-geek {
+    padding: 1rem 0;
+    font-size: 0.75rem;
+  }
+  
+  .article-item {
+    padding: 0.75rem;
+  }
+  
+  .article-date {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  .pagination-geek .page-link {
+    padding: 0.25rem 0.375rem;
+    min-width: 1.75rem;
+    font-size: 0.8rem;
   }
 }
-
-main {
-  h1, h2, h3, h4, h5, h6 {
-    padding-top: 0.5em;
-    padding-bottom: 0;
-  }
-
-  p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th, td {
-    border: 1px solid #dee2e6;
-    padding: 0.5em;
-  }
-
-  th {
-    background-color: #f8f9fa;
-  }
-
-  blockquote {
-    border-left: 0.25em solid #007bff;
-    padding-left: 1em;
-    margin-left: 0;
-  }
-
-  pre {
-    padding: 0.5em;
-    border: 1px solid #dee2e6;
-  }
-}
-
-// Dark mode styles
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #ffffff;
-  }
-
-  a {
-    color: #bb86fc;
-
-    &:hover {
-      color: #3700b3;
-    }
-  }
-
-  main th {
-    background-color: #333333;
-  }
-
-  main blockquote {
-    border-left-color: #bb86fc;
-  }
-} 
