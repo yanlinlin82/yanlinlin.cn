@@ -1,0 +1,35 @@
+{
+  "name": "yanlinlin.cn",
+  "version": "1.0.0",
+  "description": "**http://yanlinlin.cn/**",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/scss/main.scss static/css/main.css --style compressed",
+    "build:js": "webpack",
+    "build": "npm run build:css && npm run build:js",
+    "dev:css": "sass src/scss/main.scss static/css/main.css --watch",
+    "dev:js": "webpack --watch",
+    "dev": "npm run dev:css & npm run dev:js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanlinlin82/yanlinlin.cn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanlinlin82/yanlinlin.cn/issues"
+  },
+  "homepage": "https://github.com/yanlinlin82/yanlinlin.cn#readme",
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.7"
+  }
+}

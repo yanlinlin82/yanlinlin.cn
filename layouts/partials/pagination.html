@@ -1,7 +1,7 @@
 {{ $paginator := .Paginator }}
 {{ $currentPage := $paginator.PageNumber }}
 {{ $totalPages := $paginator.TotalPages }}
-<nav aria-label="Page navigation" class="d-flex justify-content-center">
+<nav aria-label="Page navigation" class="pagination-wrapper">
   <ul class="pagination">
     {{ if $paginator.HasPrev }}
       {{ $prevURL := "" }}
