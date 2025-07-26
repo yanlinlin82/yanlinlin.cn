@@ -11,6 +11,10 @@
     "dev:css": "npm run copy-fonts && sass src/scss/main.scss static/css/main.css --watch --quiet-deps",
     "dev:js": "webpack --watch",
     "dev": "npm run dev:css & npm run dev:js",
+    "hugo:fast": "npm run build && hugo --config hugo-fast.yaml",
+    "hugo:full": "npm run build && hugo",
+    "hugo:fast:server": "npm run build && hugo server --config hugo-fast.yaml --port 13131",
+    "hugo:full:server": "npm run build && hugo server --port 13131",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

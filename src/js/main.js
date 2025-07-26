@@ -33,8 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Search functionality
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
+    const searchModal = document.getElementById('searchModal');
     
-    if (searchInput && searchResults) {
+    if (searchInput && searchResults && searchModal) {
       searchInput.addEventListener('input', function() {
         const query = this.value.trim();
         
@@ -87,6 +88,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }).join('');
         
         searchResults.innerHTML = resultsHtml;
+      });
+      
+      // 搜索框自动聚焦和焦点管理
+      searchModal.addEventListener('shown.bs.modal', function() {
+        // 模态框显示后自动聚焦到输入框
+        setTimeout(() => {
+          searchInput.focus();
+        }, 100);
+      });
+      
+      searchModal.addEventListener('hide.bs.modal', function() {
+        // 模态框关闭前清除输入框内容
+        searchInput.value = '';
+        searchResults.innerHTML = '<p class="text-muted">输入至少2个字符开始搜索...</p>';
+      });
+      
+      searchModal.addEventListener('hidden.bs.modal', function() {
+        // 模态框完全关闭后，移除aria-hidden属性以避免可访问性错误
+        searchModal.removeAttribute('aria-hidden');
+        // 将焦点返回到触发搜索框的元素
+        const searchButton = document.querySelector('[data-bs-target="#searchModal"]');
+        if (searchButton) {
+          searchButton.focus();
+        }
       });
     }
   }
