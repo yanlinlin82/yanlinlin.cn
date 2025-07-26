@@ -1,4 +1,8 @@
 // 极客橙红配色方案 - 增强版
+body {
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
 // 外部链接指示器
 .external-link::after {
   content: " ↗";
@@ -18,7 +22,7 @@
 }
 
 .navbar-subtitle {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-weight: 700;
   font-size: 0.85rem;
   color: var(--bs-secondary-color);
   font-weight: 400;
@@ -48,7 +52,6 @@
 
 .navbar-brand-geek {
   color: var(--bs-primary) !important;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   transition: color 0.2s ease;
@@ -95,7 +98,6 @@
   margin: 0 0.25rem;
   transition: all 0.2s ease;
   position: relative;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -142,7 +144,6 @@
   transition: all 0.2s ease;
   position: relative;
   overflow: hidden;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -193,7 +194,6 @@
 
 // 首页样式
 .section-title {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--bs-body-color);
@@ -214,7 +214,6 @@
   border-radius: 6px;
   font-weight: 500;
   transition: all 0.2s ease;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   text-decoration: none;
@@ -255,7 +254,6 @@
   position: relative;
   text-align: center;
   color: var(--bs-secondary-color);
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -383,7 +381,6 @@
 }
 
 .article-date {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--bs-secondary-color);
@@ -407,10 +404,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-  letter-spacing: 0.01em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .article-title a {
@@ -435,10 +428,6 @@
   color: var(--bs-primary);
   white-space: nowrap;
   flex-shrink: 0;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-  letter-spacing: 0.01em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 // 分页器极客风格
@@ -457,7 +446,6 @@
   border-radius: 6px;
   font-weight: 500;
   transition: all 0.2s ease;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -527,8 +515,6 @@
 }
 
 .article-header h1 {
-  font-family: 'Noto Serif SC', 'Noto Sans SC', 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', serif;
-  font-weight: 700;
   color: var(--bs-body-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -542,12 +528,9 @@
 }
 
 .article-body {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-size: 1.05rem;
   line-height: 1.7;
   color: var(--bs-body-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .article-body h1,
@@ -556,13 +539,10 @@
 .article-body h4,
 .article-body h5,
 .article-body h6 {
-  font-family: 'Noto Serif SC', 'Noto Sans SC', 'Inter', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', serif;
   font-weight: 600;
   color: var(--bs-body-color);
   margin-top: 2rem;
   margin-bottom: 1rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .article-body h1 {
@@ -670,7 +650,6 @@
 }
 
 .toc-section h2 {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-weight: 600;
   color: var(--bs-primary);
   margin-bottom: 1rem;
@@ -729,7 +708,6 @@
 
 // 相关文章样式
 .related-posts h3 {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   font-weight: 600;
   color: var(--bs-body-color);
   -webkit-font-smoothing: antialiased;
@@ -737,77 +715,123 @@
 }
 
 .related-posts .article-list {
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .related-posts .article-item {
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: var(--bs-secondary-bg);
+  border: 1px solid rgba(234, 88, 12, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.related-posts .article-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--bs-primary) 0%, rgba(234, 88, 12, 0.6) 100%);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.related-posts .article-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 88, 12, 0.15);
+  border-color: rgba(234, 88, 12, 0.3);
+}
+
+.related-posts .article-item:hover::before {
+  transform: scaleY(1);
 }
 
 .related-posts .article-title {
   font-size: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.related-posts .article-date {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 0.75rem;
 }
 
 // 响应式优化
 @media (max-width: 768px) {
+  .related-posts .article-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .related-posts .article-item {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
   .navbar-geek {
     padding: 0.75rem 0;
   }
-  
+
   .navbar-brand-geek {
     font-size: 1.3rem;
   }
-  
+
   .navbar-subtitle {
     font-size: 0.8rem;
   }
-  
+
   .nav-link-geek {
     padding: 0.375rem 0.75rem;
     margin: 0.125rem 0;
     font-size: 0.95rem;
   }
-  
+
   .footer-geek {
     padding: 1.5rem 0;
     font-size: 0.8rem;
   }
-  
+
   .article-item {
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 0.75rem;
   }
-  
+
   .article-title {
     font-size: 0.95rem;
   }
-  
+
   .pagination-geek .page-link {
     padding: 0.4rem 0.6rem;
     min-width: 2.5rem;
     font-size: 0.95rem;
   }
-  
+
   .article-body {
     font-size: 1rem;
   }
-  
+
   .article-body h1 {
     font-size: 1.6rem;
   }
-  
+
   .article-body h2 {
     font-size: 1.4rem;
   }
-  
+
   .article-body h3 {
     font-size: 1.2rem;
   }
-  
+
   .section-title {
     font-size: 1.4rem;
     margin-top: 1.5rem;
@@ -815,7 +839,7 @@
     padding-top: 0.75rem;
     padding-bottom: 0.6rem;
   }
-  
+
   .btn-more-posts {
     font-size: 0.9rem;
     padding: 0.4rem 1.25rem;
@@ -823,69 +847,88 @@
 }
 
 @media (max-width: 576px) {
+  .related-posts .article-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .related-posts .article-item {
+    padding: 0.875rem;
+    border-radius: 6px;
+  }
+
+  .related-posts .article-title {
+    font-size: 0.9rem;
+  }
+
+  .related-posts .article-date {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.35rem;
+  }
+
   .navbar-brand-geek {
     font-size: 1.2rem;
   }
-  
+
   .navbar-subtitle {
     font-size: 0.75rem;
   }
-  
+
   .btn-search-geek {
     padding: 0.375rem 0.75rem;
     font-size: 0.95rem;
   }
-  
+
   .footer-geek {
     padding: 1rem 0;
     font-size: 0.75rem;
   }
-  
+
   .article-item {
     padding: 0.875rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .article-date {
     font-size: 0.7rem;
     padding: 0.2rem 0.4rem;
   }
-  
+
   .article-title {
     font-size: 0.9rem;
   }
-  
+
   .pagination-geek .page-link {
     padding: 0.35rem 0.5rem;
     min-width: 2.25rem;
     font-size: 0.9rem;
   }
-  
+
   .article-body {
     font-size: 0.95rem;
   }
-  
+
   .article-body h1 {
     font-size: 1.4rem;
   }
-  
+
   .article-body h2 {
     font-size: 1.3rem;
   }
-  
+
   .article-body h3 {
     font-size: 1.1rem;
   }
-  
+
   .toc-section {
     padding: 1rem;
   }
-  
+
   .article-navigation .nav-link-geek {
     padding: 0.5rem 0.75rem;
     font-size: 0.9rem;
   }
-  
+
   .section-title {
     font-size: 1.3rem;
     margin-top: 1.25rem;
@@ -893,7 +936,7 @@
     padding-top: 0.6rem;
     padding-bottom: 0.5rem;
   }
-  
+
   .btn-more-posts {
     font-size: 0.85rem;
     padding: 0.35rem 1rem;

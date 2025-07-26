@@ -1,8 +1,7 @@
 {{ define "main" -}}
 <article class="article-content">
   <header class="article-header mb-4">
-    <h1 class="h1 mb-3">{{ .Title }}</h1>
-    
+    <h1 class="h2 mb-3">{{ .Title }}</h1>
     {{ if .Date -}}
       <div class="article-date mb-3">
         {{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02 15:04") }}
@@ -70,14 +69,20 @@
 </div>
 
 <div class="related-posts mt-5">
-  {{ $related := .Site.RegularPages.Related . | first 5 }}
+  {{ $related := .Site.RegularPages.Related . | first 6 }}
   {{ with $related }}
-  <h3 class="h4 mb-3">相关文章</h3>
+  <h2 class="section-title">相关文章</h2>
   <ul class="article-list">
    {{ range . }}
    <li class="article-item">
+     <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
      <div class="article-title">
-       <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+       <a href="{{ .RelPermalink }}">
+         {{ .Title }}
+         {{ range .Params.badges }}
+         <span class="article-badge">{{ . }}</span>
+         {{ end }}
+       </a>
      </div>
    </li>
    {{ end }}
