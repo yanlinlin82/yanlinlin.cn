@@ -1,6 +1,8 @@
 baseurl: https://yanlinlin.cn/
 title: 不靠谱颜论
 subtitle: 颜林林的个人主页
+
+rssLimit: 20
 pagination:
   pagerSize: 12
 mainSections:
