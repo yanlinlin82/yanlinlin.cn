@@ -1,55 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{- partial "meta.html" . }}
-    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
-    
-    <!-- Bootstrap CSS (local build) -->
-    <link href="{{ "css/main.css" | relURL }}" rel="stylesheet">
-    
-    <!-- Bootstrap JS + Custom JS (local build) -->
-    <script src="{{ "js/main.js" | relURL }}"></script>
-  </head>
-  <body class="container" style="max-width: 960px;">
-    <header class="border-bottom border-secondary-subtle">
-      {{ block "header" . }}
-      <h2 class="pt-3">
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ site.Title }}</a>
-      </h2>
-      <div class="d-flex justify-content-end">
-        <nav class="nav">
-          {{- range .Site.Menus.main -}}
-          <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-          {{- end -}}
-          {{- partial "search.html" . -}}
-        </nav>
-      </div>
-      {{ end }}
-    </header>
-    <main class="py-3">
-      {{ block "main" . }}{{ end }}
-    </main>
-    <footer class="border-top border-secondary-subtle py-3 text-center">
-      {{ block "footer" . }}
-      <div class="py-1">
-        &copy; 2007-{{ now.Year }}，颜林林 |
-        <a class="external-link" href="https://beian.miit.gov.cn/">京ICP备18031542号-1</a> |
-        遵循 <a class="external-link" href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> 协议
-      </div>
-      <div class="py-1">
-        本站使用 <a class="external-link" href="https://gohugo.io/">Hugo</a> 和 <a href="https://getbootstrap.com/">Bootstrap.js</a> 开发 |
-        已收录于
-        <a class="external-link" href="https://www.boyouquan.com/">
-          <img class="img-fluid" src="https://www.boyouquan.com/assets/images/sites/logo/logo-medium.png" alt="博友圈" style="max-width: 60px;">
-        </a> |
-        <a class="external-link" href="https://github.com/yanlinlin82/yanlinlin.cn">GitHub源码</a>
-      </div>
-      {{ end }}
-    </footer>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+  <div class="container">
+  <header class="navbar navbar-expand-lg navbar-dark navbar-geek">
+    {{ block "header" . }}
+    <div class="container">
+      <a class="navbar-brand navbar-brand-geek fw-bold" href="{{ .Site.BaseURL }}">{{ site.Title }}</a>
+      <nav class="navbar-nav ms-auto">
+        {{- range .Site.Menus.main -}}
+        <a class="nav-link nav-link-geek" href="{{ .URL }}">{{ .Name }}</a>
+        {{- end -}}
+        <button class="btn btn-outline-primary btn-search-geek ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <i class="fas fa-search me-1"></i> 搜索
+        </button>
+      </nav>
+    </div>
+    {{ end }}
+  </header>
 
-    {{- template "_internal/google_analytics.html" . }}
-  </body>
+  <main class="main-content-geek">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="footer-geek">
+    <div class="py-1">© 2007-2025, 颜林林</div>
+    <div class="py-1">京ICP备2024061234号-1</div>
+    <div class="py-1">
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="external-link">CC-BY-4.0</a> |
+      <a href="https://gohugo.io/" target="_blank" class="external-link">Hugo</a> |
+      <a href="https://getbootstrap.com/" target="_blank" class="external-link">Bootstrap.js</a> |
+      <a href="https://www.zhihu.com/people/yan-lin-lin-76" target="_blank" class="external-link">博友圈</a> |
+      <a href="https://github.com/yanlinlin/yanlinlin.cn" target="_blank" class="external-link">GitHub源码</a>
+    </div>
+  </footer>
+  </div>
+
+  {{- partial "search.html" . -}}
+  <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
 </html>

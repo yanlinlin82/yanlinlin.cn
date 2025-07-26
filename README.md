@@ -139,6 +139,7 @@ yanlinlin.cn/
 
 - ✅ **现代化构建**：使用 Sass 和 Webpack
 - ✅ **无 jQuery 依赖**：纯原生 JavaScript
+- ✅ **内置搜索**：Fuse.js 客户端搜索
 - ✅ **响应式设计**：Bootstrap 5 框架
 - ✅ **SEO 友好**：Hugo 静态站点生成
 - ✅ **快速加载**：压缩和优化的资源

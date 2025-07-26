@@ -1,7 +1,7 @@
 baseurl: https://yanlinlin.cn/
 title: 颜林林的个人网站
 pagination:
-  pagerSize: 20
+  pagerSize: 12
 mainSections:
   - posts
 googleAnalytics: "G-P6SH63QQPQ"
@@ -46,6 +46,3 @@ menu:
   - name: 关于
     url: /about/
     weight: 80
-  - name: English
-    url: https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://yanlinlin.cn/
-    weight: 90
