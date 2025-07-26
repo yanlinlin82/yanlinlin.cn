@@ -1,5 +1,5 @@
 <!-- Search Modal -->
-<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="false">
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" data-bs-backdrop="true" data-bs-keyboard="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -22,6 +22,7 @@
 
 <!-- Load search index -->
 <script>
+{{ if not .Site.Params.fastBuild }}
 window.searchIndex = [
 {{ $pages := where .Site.RegularPages "Type" "posts" }}
 {{ range $index, $page := $pages }}
@@ -35,6 +36,11 @@ window.searchIndex = [
   }{{ if ne $index (sub (len $pages) 1) }},{{ end }}
 {{ end }}
 ];
+{{ else }}
+// 快速构建模式 - 搜索功能已禁用
+window.searchIndex = [];
+console.log('快速构建模式：搜索索引已跳过');
+{{ end }}
 </script>
 
 <style>
@@ -55,6 +61,30 @@ window.searchIndex = [
 #searchModal .modal-content {
   z-index: 1000001 !important;
   position: relative;
+  border: 2px solid rgba(234, 88, 12, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(234, 88, 12, 0.2), 0 0 0 1px rgba(234, 88, 12, 0.1);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(41, 37, 36, 0.95) 0%, rgba(28, 25, 23, 0.95) 100%);
+}
+
+/* 模态框头部样式增强 */
+#searchModal .modal-header {
+  border-bottom: 1px solid rgba(234, 88, 12, 0.2);
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%);
+  border-radius: 10px 10px 0 0;
+}
+
+#searchModal .modal-title {
+  color: var(--bs-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* 模态框背景增强 */
+#searchModal .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
 }
 
 /* 确保所有模态框内容都在最顶层 */
@@ -94,5 +124,64 @@ window.searchIndex = [
 #searchInput:focus {
   border-color: #ea580c;
   box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25);
+}
+
+/* 搜索框激活状态样式 - 使用网站统一的橙色主题 */
+#searchInput:focus,
+#searchInput:active {
+  border-color: #ea580c !important;
+  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
+}
+
+/* 覆盖Bootstrap默认的focus样式 */
+#searchInput:focus:not(:focus-visible) {
+  border-color: #ea580c !important;
+  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
+}
+
+/* 确保在所有状态下都使用橙色主题 */
+#searchInput:focus-visible {
+  border-color: #ea580c !important;
+  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
+  outline: none !important;
+}
+
+/* 搜索框字体大小调整 */
+#searchModal .modal-body {
+  font-size: 0.9rem;
+}
+
+#searchModal .form-control {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+}
+
+#searchModal .form-control-lg {
+  font-size: 0.9rem !important;
+  padding: 0.5rem 0.75rem !important;
+  height: auto !important;
+}
+
+#searchModal .text-muted {
+  font-size: 0.85rem;
+}
+
+#searchModal .search-result-item h6 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+#searchModal .search-result-item p {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+#searchModal .search-result-item .small {
+  font-size: 0.8rem;
+}
+
+#searchModal .search-result-item .badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
 }
 </style>

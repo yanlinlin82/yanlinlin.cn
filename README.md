@@ -44,10 +44,16 @@ I am a scientific researcher and software programmer. My major is bioinformatics
 4. **启动开发服务器**
 
    ```bash
-   hugo server --port 13131
+   # 快速构建模式（推荐用于样式调整）
+   npm run hugo:fast:server
+   
+   # 完整构建模式（推荐用于内容更新）
+   npm run hugo:full:server
    ```
 
    访问 http://localhost:13131 查看网站
+
+   > 💡 **提示**：日常样式调整时使用快速构建模式，添加新文章时使用完整构建模式
 
 ## 🛠️ 开发指南
 
@@ -105,8 +111,11 @@ static/
 1. **构建生产版本**
 
    ```bash
-   npm run build
-   hugo --minify
+   # 快速构建（不包含搜索索引）
+   npm run hugo:fast
+   
+   # 完整构建（包含搜索索引，推荐用于部署）
+   npm run hugo:full
    ```
 
 2. **部署到服务器**

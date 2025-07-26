@@ -172,6 +172,25 @@
   left: 100%;
 }
 
+/* 搜索按钮按下状态 - 使用网站统一的橙色主题 */
+.btn-search-geek:active,
+.btn-search-geek:focus:active {
+  background: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: white !important;
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.4) !important;
+}
+
+/* 覆盖Bootstrap默认的active状态 */
+.btn-search-geek.btn-outline-primary:active,
+.btn-search-geek.btn-outline-primary:focus:active {
+  background: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.4) !important;
+}
+
 // 首页样式
 .section-title {
   font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
