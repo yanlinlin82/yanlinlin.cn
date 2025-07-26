@@ -1,9 +1,17 @@
 {{ $paginator := .Paginator }}
-<nav aria-label="Page navigation">
+{{ $currentPage := $paginator.PageNumber }}
+{{ $totalPages := $paginator.TotalPages }}
+<nav aria-label="Page navigation" class="d-flex justify-content-center">
   <ul class="pagination">
     {{ if $paginator.HasPrev }}
+      {{ $prevURL := "" }}
+      {{ if eq (sub $currentPage 1) 1 }}
+        {{ $prevURL = "/" }}
+      {{ else }}
+        {{ $prevURL = printf "/page/%d/" (sub $currentPage 1) }}
+      {{ end }}
       <li class="page-item">
-        <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
+        <a class="page-link" href="{{ $prevURL }}" aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
         </a>
       </li>
@@ -15,15 +23,41 @@
       </li>
     {{ end }}
 
-    {{ range $index, $page := $paginator.Pages }}
-      <li class="page-item {{ if eq $page $paginator.Page }}active{{ end }}">
-        <a class="page-link" href="{{ $page.URL }}">{{ $index }}</a>
-      </li>
+    {{ range seq 1 $totalPages }}
+      {{ $pageNum := . }}
+      {{ $showPage := false }}
+      
+      {{ if or (eq $pageNum 1) (eq $pageNum $totalPages) }}
+        {{ $showPage = true }}
+      {{ else if and (ge $pageNum (sub $currentPage 1)) (le $pageNum (add $currentPage 1)) }}
+        {{ $showPage = true }}
+      {{ end }}
+      
+      {{ if $showPage }}
+        {{ $pageURL := "" }}
+        {{ if eq $pageNum 1 }}
+          {{ $pageURL = "/" }}
+        {{ else }}
+          {{ $pageURL = printf "/page/%d/" $pageNum }}
+        {{ end }}
+        <li class="page-item {{ if eq $pageNum $currentPage }}active{{ end }}">
+          <a class="page-link" href="{{ $pageURL }}">{{ $pageNum }}</a>
+        </li>
+      {{ else if and (eq $pageNum 2) (gt $currentPage 3) }}
+        <li class="page-item disabled">
+          <span class="page-link">...</span>
+        </li>
+      {{ else if and (eq $pageNum (sub $totalPages 1)) (lt $currentPage (sub $totalPages 2)) }}
+        <li class="page-item disabled">
+          <span class="page-link">...</span>
+        </li>
+      {{ end }}
     {{ end }}
 
     {{ if $paginator.HasNext }}
+      {{ $nextURL := printf "/page/%d/" (add $currentPage 1) }}
       <li class="page-item">
-        <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
+        <a class="page-link" href="{{ $nextURL }}" aria-label="Next">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
@@ -35,4 +69,4 @@
       </li>
     {{ end }}
   </ul>
-</nav>
+</nav> 
