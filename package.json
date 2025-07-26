@@ -4,10 +4,10 @@
   "description": "**http://yanlinlin.cn/**",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass src/scss/main.scss static/css/main.css --style compressed",
+    "build:css": "sass src/scss/main.scss static/css/main.css --style compressed --quiet-deps",
     "build:js": "webpack",
     "build": "npm run build:css && npm run build:js",
-    "dev:css": "sass src/scss/main.scss static/css/main.css --watch",
+    "dev:css": "sass src/scss/main.scss static/css/main.css --watch --quiet-deps",
     "dev:js": "webpack --watch",
     "dev": "npm run dev:css & npm run dev:js",
     "test": "echo \"Error: no test specified\" && exit 1"
