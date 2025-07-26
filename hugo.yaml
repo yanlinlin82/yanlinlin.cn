@@ -1,5 +1,6 @@
 baseurl: https://yanlinlin.cn/
-title: 颜林林的个人网站
+title: 不靠谱颜论
+subtitle: 颜林林的个人主页
 pagination:
   pagerSize: 12
 mainSections:
@@ -26,23 +27,14 @@ permalinks:
 menu:
   main:
   - name: 博客
-    url: /
+    url: /posts/
     weight: 10
-  - name: 公众号
-    url: /public/
-    weight: 20
-  - name: 专栏
-    url: /categories/
-    weight: 30
-  - name: 标签
-    url: /tags/
-    weight: 40
-  - name: 作品
-    url: /works/
-    weight: 50
-  - name: 简历
-    url: /cv/
-    weight: 60
   - name: 关于
     url: /about/
-    weight: 80
+    weight: 20
+  - name: 作品
+    url: /works/
+    weight: 30
+  - name: 简历
+    url: /cv/
+    weight: 40

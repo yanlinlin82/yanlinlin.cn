@@ -1,21 +1,39 @@
 ---
-title: "关于本人及本站"
+title: "关于我"
+subtitle: "关于不靠谱颜论"
 ---
 
-## 关于本人
+## 个人简介
 
-我是一名科研工作者兼软件程序员，主攻生物信息学专业，毕业于北京大学生命科学学院，获得博士学位。拥有超过20年的编程经验，目前主要从事精准医疗领域的研究与开发工作，专注于高通量技术的数据分析，如下一代测序。同时，我也对基因组学及其他组学领域充满兴趣。
+我是颜林林，一名科学研究者兼程序员。
 
-## 本站简介
+在北大取得生物信息学博士学位后，我一直在精准医疗领域深耕，专注于高通量组学数据分析和技术研发。20多年的编程经验让我在多个技术领域都有所涉猎，从传统的生物信息学算法到新兴的AI/LLM应用，我始终保持着对新技术的好奇和探索精神。
 
-本站主要以中文为主，供记录平时的心得体会和收集整理个人作品之用。本人从十多年前开始写博客，历经多个平台的变迁和频繁的中断，但大部分文字依然保存至今。本站的所有博客内容，除少量引文外，均为个人原创。文中观点仅代表当时的个人想法，作为记忆珍藏于此，不做对错争辩。因此，本站不设留言功能。如需沟通交流，欢迎通过以下方式联系我：
+除了专业研究，我也喜欢写作和分享。这个网站就是我的数字花园，记录着技术探索、学术思考、生活感悟，以及那些"不靠谱"却有趣的发现。
 
-- 电子邮件：linlin.yan@bioinfo.app
-- 微信号：yanlinlin82
-    <div class="text-center">
-      <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto">
-    </div>
-- 其他平台：
+我相信技术应该服务于生活，而生活也应该充满探索的乐趣。
+
+## 专业领域
+
+- **精准医疗**：高通量组学数据分析
+- **生物信息学**：基因组学、转录组学等
+- **AI/LLM应用**：大语言模型在生物医学中的应用
+- **编程技术**：Python、R、JavaScript等
+- **开源贡献**：崇尚开源精神，积极参与开源项目
+
+## 联系方式
+
+- **个人微信**：yanlinlin82
+  <div class="text-center">
+    <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto">
+  </div>
+
+- **个人公众号**：不靠谱颜论
+  <div class="text-center">
+    <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
+  </div>
+
+- **其他平台**：
 [ORCID](https://orcid.org/0000-0002-4990-6239) |
 [GitHub](http://github.com/yanlinlin82) |
 [ResearchGate](https://www.researchgate.net/profile/Linlin_Yan4) |

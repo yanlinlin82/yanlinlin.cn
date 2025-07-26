@@ -10,6 +10,23 @@
   opacity: 1;
 }
 
+// 导航栏品牌包装器
+.navbar-brand-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-subtitle {
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 0.85rem;
+  color: var(--bs-secondary-color);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 // 导航栏极客风格 - 使用自定义类
 .navbar-geek {
   background: linear-gradient(135deg, var(--bs-body-bg) 0%, rgba(234, 88, 12, 0.05) 100%) !important;
@@ -41,24 +58,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.navbar-brand-geek::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--bs-primary);
-  transition: width 0.3s ease;
-}
+            .navbar-brand-geek::after {
+              content: '';
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background: var(--bs-primary);
+              transition: width 0.3s ease;
+            }
 
-.navbar-brand-geek:hover {
-  color: var(--bs-link-hover-color) !important;
-}
+            .navbar-brand-geek:hover {
+              color: var(--bs-link-hover-color) !important;
+            }
 
-.navbar-brand-geek:hover::after {
-  width: 100%;
-}
+            .navbar-brand-geek:hover::after {
+              width: 100%;
+            }
+
+            // Logo样式
+            .navbar-brand-geek img {
+              transition: transform 0.3s ease;
+              filter: drop-shadow(0 2px 4px rgba(234, 88, 12, 0.2));
+            }
+
+            .navbar-brand-geek:hover img {
+              transform: scale(1.1) rotate(5deg);
+            }
 
 .nav-link-geek {
   color: var(--bs-secondary-color) !important;
@@ -145,17 +172,73 @@
   left: 100%;
 }
 
+// 首页样式
+.section-title {
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--bs-body-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-more-posts {
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  color: var(--bs-body-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-more-posts::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
+  transition: left 0.3s ease;
+}
+
+.btn-more-posts:hover {
+  background: rgba(234, 88, 12, 0.1);
+  border-color: rgba(234, 88, 12, 0.3);
+  color: var(--bs-primary);
+  transform: translateY(-1px);
+}
+
+.btn-more-posts:hover::before {
+  left: 100%;
+}
+
 // 页脚极客风格
 .footer-geek {
   background: linear-gradient(135deg, var(--bs-secondary-bg) 0%, rgba(234, 88, 12, 0.02) 100%);
   border-top: 1px solid var(--bs-border-color);
   padding: 2rem 0;
-  margin-top: 3rem;
   position: relative;
   text-align: center;
   color: var(--bs-secondary-color);
   font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -175,7 +258,7 @@
 
 .footer-geek a {
   color: var(--bs-primary);
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   transition: all 0.2s ease;
   position: relative;
@@ -220,6 +303,29 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   align-items: start;
+  max-width: 100%;
+}
+
+.article-list {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (min-width: 1200px) {
+  .article-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .article-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .article-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .article-item {
@@ -636,6 +742,10 @@
     font-size: 1.3rem;
   }
   
+  .navbar-subtitle {
+    font-size: 0.8rem;
+  }
+  
   .nav-link-geek {
     padding: 0.375rem 0.75rem;
     margin: 0.125rem 0;
@@ -644,7 +754,7 @@
   
   .footer-geek {
     padding: 1.5rem 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
   .article-item {
@@ -678,11 +788,28 @@
   .article-body h3 {
     font-size: 1.2rem;
   }
+  
+  .section-title {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.6rem;
+  }
+  
+  .btn-more-posts {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.25rem;
+  }
 }
 
 @media (max-width: 576px) {
   .navbar-brand-geek {
     font-size: 1.2rem;
+  }
+  
+  .navbar-subtitle {
+    font-size: 0.75rem;
   }
   
   .btn-search-geek {
@@ -692,7 +819,7 @@
   
   .footer-geek {
     padding: 1rem 0;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
   
   .article-item {
@@ -738,5 +865,18 @@
   .article-navigation .nav-link-geek {
     padding: 0.5rem 0.75rem;
     font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .btn-more-posts {
+    font-size: 0.85rem;
+    padding: 0.35rem 1rem;
   }
 }
