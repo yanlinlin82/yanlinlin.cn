@@ -1,6 +1,9 @@
 baseurl: https://yanlinlin.cn/
 title: 颜林林的个人网站
-paginate: 20
+pagination:
+  pagerSize: 20
+mainSections:
+  - posts
 googleAnalytics: "G-P6SH63QQPQ"
 
 taxonomies:

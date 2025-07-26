@@ -13,5 +13,8 @@
   </li>
   {{ end -}}
 </ul>
-{{ template "_internal/pagination.html" . -}}
+
+{{ if gt .Paginator.TotalPages 1 }}
+  {{ partial "pagination.html" . }}
+{{ end }}
 {{ end -}}
