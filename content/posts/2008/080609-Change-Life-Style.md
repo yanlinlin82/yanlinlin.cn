@@ -1,9 +1,10 @@
 ---
 title: Changing the Life Style
-date: 2008-06-09T13:19:00+08:00
+date: 2008-06-09 13:19:00+08:00
 place: 北京
-tags: [ 考研, 梦想, 学习 ]
+tags: [考研, 梦想, 学习]
 host-at: LiveSpace
+slug: changing-the-life-style
 ---
 I’m changing my life style in these days, for my dreams in the future.
 

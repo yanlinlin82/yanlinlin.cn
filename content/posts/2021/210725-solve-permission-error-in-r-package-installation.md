@@ -1,6 +1,7 @@
 ---
 title: R包安装失败报权限错误的解决
-date: 2021-07-25T13:38:51+08:00
+date: 2021-07-25 13:38:51+08:00
+slug: solve-permission-error-in-r-package-installation
 ---
 
 安装R包时，遇到如下的权限错误问题：

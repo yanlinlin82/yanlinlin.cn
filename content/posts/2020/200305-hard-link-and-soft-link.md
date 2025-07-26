@@ -1,7 +1,8 @@
 ---
 title: 理解Linux下的硬链接与软链接
-date: 2020-03-05T07:02:12+08:00
-tags: [ linux, hard link, soft link, inode ]
+date: 2020-03-05 07:02:12+08:00
+tags: [linux, hard link, soft link, inode]
+slug: understanding-hard-links-and-soft-links-in-linux
 ---
 
 这是一篇简单解释Linux文件系统中关于文件链接（link）的笔记，总结自对`cp`与`ln`命令区别的解释。

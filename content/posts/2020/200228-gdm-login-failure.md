@@ -1,7 +1,8 @@
 ---
 title: 记一次GDM登录失败问题的解决
-date: 2020-02-28T22:56:34+08:00
-tags: [ gnome, gdm, posix ]
+date: 2020-02-28 22:56:34+08:00
+tags: [gnome, gdm, posix]
+slug: solving-a-gdm-login-failure-problem
 ---
 
 ## 问题

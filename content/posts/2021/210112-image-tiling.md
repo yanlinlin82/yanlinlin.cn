@@ -1,7 +1,8 @@
 ---
 title: 使用Linux命令进行拼图
-date: 2021-01-12T19:34:52+08:00
-tags: [ linux, image-magik ]
+date: 2021-01-12 19:34:52+08:00
+tags: [linux, image-magik]
+slug: using-linux-commands-for-image-tiling
 ---
 
 使用`ImageMagick`中的`convert`工具：

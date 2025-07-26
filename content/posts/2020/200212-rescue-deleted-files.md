@@ -1,7 +1,8 @@
 ---
 title: 如何恢复Linux误删文件
-date: 2020-02-12T19:06:00+08:00
-tags: [ linux, restore, deleted ]
+date: 2020-02-12 19:06:00+08:00
+tags: [linux, restore, deleted]
+slug: how-to-recover-accidentally-deleted-files-in-linux
 ---
 
 ## 事件背景

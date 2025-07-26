@@ -1,7 +1,8 @@
 ---
 title: GDB基本用法
-date: 2020-03-23T06:29:46+08:00
-tags: [ gdb ]
+date: 2020-03-23 06:29:46+08:00
+tags: [gdb]
+slug: gdb-basic-usage
 ---
 
 ## 1. 编译及启动

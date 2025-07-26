@@ -1,7 +1,8 @@
 ---
 title: CMake快速入门
-date: 2020-01-23T23:20:26+08:00
-tags: [ cmake ]
+date: 2020-01-23 23:20:26+08:00
+tags: [cmake]
+slug: cmake-quick-start
 ---
 
 我一直习惯于使用GNU Make来构建项目，对于单一Linux环境而言，这种方式基本是足够的。我自己也大致积累了一些固定的技巧写法（可参考我在[项目seqpipe-5中的Makefile](https://github.com/yanlinlin82/seqpipe/blob/cpp-v0.5/Makefile)），包括判断gcc版本、自动判断文件依赖关系、单元测试等。可惜这些技巧多依赖于Linux系统本身，缺乏跨平台的可移植性，为了未雨绸缪，决定了解下诸如CMake的跨平台构建系统。

@@ -1,9 +1,10 @@
 ---
 title: Watching from the Other Side
-date: 2008-06-13T00:40:00+08:00
+date: 2008-06-13 00:40:00+08:00
 place: 北京
-tags: [ 学习, 观察, 思考 ]
+tags: [学习, 观察, 思考]
 host-at: LiveSpace
+slug: watching-from-the-other-side
 ---
 I’m reading a book about the fundamental theories of bioinformatics: Biological sequence analysis – Probabilistic models of proteins and nucleic acids. Thanks to the English book! I chewed and digested it very carefully. Even though I only finished less than four pages in a day, I have acquired some very important things from it.
 

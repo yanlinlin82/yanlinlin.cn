@@ -1,8 +1,11 @@
 ---
 title: 在GitHub上确保您的提交真实可信：一步一步配置GPG密钥
-date: 2023-12-17T22:17:00+08:00
-badges: [ 公众号 ]
-categories: [ 不靠谱颜论 ]
+date: 2023-12-17 22:17:00+08:00
+badges:
+- 公众号
+categories: [不靠谱颜论]
+tags: [GitHub, GPG, 密钥, 网络安全, 教程]
+slug: github-gpg-verified-commit-guide
 ---
 
 <div class="p-3 text-center">

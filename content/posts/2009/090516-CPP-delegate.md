@@ -1,9 +1,10 @@
 ---
 title: C++中的delegate
-date: 2009-05-16T21:15:00+08:00
+date: 2009-05-16 21:15:00+08:00
 place: 北京
-tags: [ 编程, boost, C#, C++, delegate ]
+tags: [编程, boost, C#, C++, delegate]
 host-at: LiveSpace
+slug: cpp-delegate
 ---
 在C#中，一个比较漂亮的语法就是delegate，它的“+=”操作符很优雅地使众多事件订阅者能够被一个调用所触发。如：
 

@@ -1,7 +1,8 @@
 ---
 title: 记一次LeetCode解题（087-扰乱字符串）
-date: 2020-01-28T08:00:27+08:00
-tags: [ leetcode, algorithm, 递归, 编程 ]
+date: 2020-01-28 08:00:27+08:00
+tags: [leetcode, algorithm, 递归, 编程]
+slug: recording-a-leetcode-problem-solving-087-scramble-string
 ---
 
 ## 背景

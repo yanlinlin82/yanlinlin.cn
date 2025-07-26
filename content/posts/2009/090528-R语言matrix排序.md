@@ -1,9 +1,10 @@
 ---
 title: R语言中matrix的排序
-date: 2009-05-28T00:34:00+08:00
+date: 2009-05-28 00:34:00+08:00
 place: 北京
-tags: [ 编程, 排序, R ]
+tags: [编程, 排序, R]
 host-at: LiveSpace
+slug: r-matrix-sorting
 ---
 刚才在R-help的maillist里看到有人求助matrix的排序问题，已知如下一组数据：
 
