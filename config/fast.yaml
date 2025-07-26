@@ -1,0 +1,10 @@
+# 快速构建配置 - 继承 hugo.yaml 并覆盖特定设置
+
+disableKinds:
+  - "RSS"
+  - "sitemap"
+
+# 禁用搜索索引生成
+params:
+  fastBuild: true
+  disableSearchIndex: true

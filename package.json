@@ -1,42 +1,28 @@
 {
-  "name": "yanlinlin.cn",
+  "name": "yanlinlin-cn",
   "version": "1.0.0",
-  "description": "**http://yanlinlin.cn/**",
-  "main": "index.js",
+  "description": "颜林林的个人网站",
   "scripts": {
-    "copy-fonts": "mkdir -p static/webfonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/webfonts/",
-    "build:css": "npm run copy-fonts && sass src/scss/main.scss static/css/main.css --style compressed --quiet-deps",
-    "build:js": "webpack",
-    "build": "npm run build:css && npm run build:js",
-    "dev:css": "npm run copy-fonts && sass src/scss/main.scss static/css/main.css --watch --quiet-deps",
-    "dev:js": "webpack --watch",
-    "dev": "npm run dev:css & npm run dev:js",
-    "hugo:fast": "npm run build && hugo --config hugo-fast.yaml",
-    "hugo:full": "npm run build && hugo",
-    "hugo:fast:server": "npm run build && hugo server --config hugo-fast.yaml --port 13131",
-    "hugo:full:server": "npm run build && hugo server --port 13131",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "help": "echo '可用的构建命令：' && echo '  npm run build      - 完整构建（默认）' && echo '  npm run build:fast - 快速构建（禁用 RSS、sitemap 和搜索索引）' && echo '  npm run build:full - 完整构建（包含所有功能）' && echo '  npm run build:search - 仅构建搜索索引' && echo '  npm run serve      - 启动开发服务器（完整模式）' && echo '  npm run serve:fast - 启动开发服务器（快速模式）' && echo '  npm run clean      - 清理构建目录'",
+    "build": "npm run build:full",
+    "build:fast": "echo '🚀 快速构建模式 - 禁用 RSS、sitemap 和搜索索引' && hugo --config hugo.yaml,config/fast.yaml",
+    "build:full": "echo '📦 完整构建模式 - 包含 RSS、sitemap 和搜索索引' && hugo --config hugo.yaml",
+    "build:search": "echo '🔍 构建搜索索引' && hugo --config hugo.yaml --renderToDisk --renderStaticToDisk --renderStaticToDiskDir public",
+    "serve": "echo '🌐 启动开发服务器（完整模式）' && hugo server --config hugo.yaml --bind 0.0.0.0 --port 1313",
+    "serve:fast": "echo '🌐 启动开发服务器（快速模式）' && hugo server --config hugo.yaml,config/fast.yaml --bind 0.0.0.0 --port 1313",
+    "clean": "echo '🧹 清理构建目录' && rm -rf public/",
+    "dev": "npm run serve:fast",
+    "start": "npm run serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yanlinlin82/yanlinlin.cn.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yanlinlin82/yanlinlin.cn/issues"
-  },
-  "homepage": "https://github.com/yanlinlin82/yanlinlin.cn#readme",
-  "devDependencies": {
-    "sass": "^1.89.2",
-    "webpack": "^5.100.2",
-    "webpack-cli": "^6.0.1"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.0.0",
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.7",
-    "fuse.js": "^7.1.0"
+  "keywords": [
+    "hugo",
+    "static-site",
+    "blog",
+    "personal-website"
+  ],
+  "author": "颜林林",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
