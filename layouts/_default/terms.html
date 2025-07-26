@@ -4,13 +4,222 @@
   {{ .Content -}}
 </div>
 
-<div class="mb-4">
+<div class="categories-grid">
 {{ range .Data.Terms.ByCount }}
-  <div class="d-inline-block me-3 mb-2">
-    <a href="{{ .Page.RelPermalink }}" class="text-decoration-none">
-      <span class="article-badge">#{{ .Term }} ({{ .Count }})</span>
-    </a>
+  <div class="category-card">
+    <div class="category-header">
+      <h3 class="category-title">
+        <a href="{{ .Page.RelPermalink }}" class="text-decoration-none">
+          {{ .Term }}
+        </a>
+      </h3>
+      <span class="category-count">{{ .Count }} 篇文章</span>
+    </div>
+    <div class="category-content">
+      {{ $latestPosts := first 3 .Pages.ByDate.Reverse }}
+      {{ range $latestPosts }}
+        <div class="category-post-item">
+          <a href="{{ .RelPermalink }}" class="text-decoration-none">
+            <span class="post-title">{{ .Title }}</span>
+            <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+          </a>
+        </div>
+      {{ end }}
+      {{ if gt (len .Pages) 3 }}
+        <div class="category-more">
+          <a href="{{ .Page.RelPermalink }}" class="text-decoration-none">
+            还有 {{ sub (len .Pages) 3 }} 篇文章 →
+          </a>
+        </div>
+      {{ end }}
+    </div>
   </div>
 {{ end }}
 </div>
+
+<style>
+/* 专栏页面样式 */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.category-card {
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(234, 88, 12, 0.1);
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--bs-primary) 0%, rgba(234, 88, 12, 0.6) 100%);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(234, 88, 12, 0.15);
+  border-color: rgba(234, 88, 12, 0.3);
+}
+
+.category-card:hover::before {
+  transform: scaleY(1);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(234, 88, 12, 0.1);
+}
+
+.category-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bs-primary);
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: -0.025em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.category-title a {
+  color: var(--bs-primary);
+  transition: color 0.2s ease;
+}
+
+.category-title a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+.category-count {
+  background: rgba(234, 88, 12, 0.1);
+  color: var(--bs-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-post-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.category-post-item:last-child {
+  border-bottom: none;
+}
+
+.category-post-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--bs-body-color);
+  transition: all 0.2s ease;
+}
+
+.category-post-item a:hover {
+  color: var(--bs-primary);
+  transform: translateX(4px);
+}
+
+.post-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  flex: 1;
+  margin-right: 1rem;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  white-space: nowrap;
+}
+
+.category-more {
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(234, 88, 12, 0.1);
+}
+
+.category-more a {
+  color: var(--bs-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.category-more a:hover {
+  color: var(--bs-link-hover-color);
+  transform: translateX(4px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .category-card {
+    padding: 1.25rem;
+  }
+  
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .category-title {
+    font-size: 1.1rem;
+  }
+  
+  .category-post-item a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .post-date {
+    align-self: flex-end;
+  }
+}
+</style>
 {{ end -}}

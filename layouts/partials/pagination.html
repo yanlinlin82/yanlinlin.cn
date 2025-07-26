@@ -2,8 +2,13 @@
 {{ $currentPage := $paginator.PageNumber }}
 {{ $totalPages := $paginator.TotalPages }}
 {{ $base := "/" }}
+
 {{ if eq .Section "posts" }}
   {{ $base = "/posts/" }}
+{{ else if eq .Section "categories" }}
+  {{ $base = .RelPermalink }}
+{{ else if eq .Section "tags" }}
+  {{ $base = .RelPermalink }}
 {{ end }}
 
 <nav aria-label="Page navigation" class="d-flex justify-content-center mt-4">
