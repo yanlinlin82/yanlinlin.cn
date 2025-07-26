@@ -1,15 +1,21 @@
 {{ define "main" -}}
-<div>
-  <h1>{{ .Title }}</h1>
-</div>
-<div>
+<div class="mb-4">
+  <h1 class="h2 mb-3">{{ .Title }}</h1>
   {{ .Content -}}
 </div>
-<ul>
+
+<ul class="article-list">
   {{ range .Paginator.Pages -}}
-  <li class="my-1">
-    <div class="d-inline">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
-    <div class="d-inline ms-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+  <li class="article-item">
+    <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
+    <div class="article-title">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+        {{ range .Params.badges }}
+        <span class="article-badge">{{ . }}</span>
+        {{ end }}
+      </a>
+    </div>
   </li>
   {{ end -}}
 </ul>

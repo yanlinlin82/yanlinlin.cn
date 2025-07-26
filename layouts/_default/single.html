@@ -1,73 +1,85 @@
 {{ define "main" -}}
-<article>
-  <div class="pt-3">
-    <h1>{{ .Title }}</h1>
-  </div>
-  {{ if .Date -}}
-    <div class="pt-3">
-      {{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02 15:04") }}
-    </div>
-  {{ end -}}
-
-  <div class="pt-3">
-  {{ range .Params.categories }}
-    <div class="d-inline">
-      <a class="ms-2" href="/categories/{{ lower . }}">#{{ . }}</a>
-    </div>
-  {{ end }}
-
-  {{ $taxo := "tags" -}}
-  {{ if .Param $taxo -}}
-    {{ $data := newScratch }}
-    {{ range .Param $taxo -}}
-      {{ $name := . -}}
-      {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | anchorize)) }}
-        {{ $data.Set "url" .Permalink }}
-      {{ end }}
-      {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
-        {{ $data.Set "url" .Permalink }}
-      {{ end }}
-      <div class="d-inline">
-        <a class="ms-2" href="{{ $data.Get "url" | relURL }}">#{{ $name }}</a>
+<article class="article-content">
+  <header class="article-header mb-4">
+    <h1 class="h1 mb-3">{{ .Title }}</h1>
+    
+    {{ if .Date -}}
+      <div class="article-date mb-3">
+        {{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02 15:04") }}
       </div>
     {{ end -}}
-  {{ end -}}
-  </div>
+
+    {{ if or .Params.categories .Params.tags }}
+      <div class="article-meta mb-4">
+        {{ range .Params.categories }}
+          <a href="/categories/{{ lower . }}" class="article-badge me-2">#{{ . }}</a>
+        {{ end }}
+
+        {{ $taxo := "tags" -}}
+        {{ if .Param $taxo -}}
+          {{ $data := newScratch }}
+          {{ range .Param $taxo -}}
+            {{ $name := . -}}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | anchorize)) }}
+              {{ $data.Set "url" .Permalink }}
+            {{ end }}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+              {{ $data.Set "url" .Permalink }}
+            {{ end }}
+            <a href="{{ $data.Get "url" | relURL }}" class="article-badge me-2">#{{ $name }}</a>
+          {{ end -}}
+        {{ end -}}
+      </div>
+    {{ end }}
+  </header>
 
   {{ if .Params.toc }}
     {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
-      <nav class="pt-3">
-        <h2>目录</h2>
-        {{ .TableOfContents }}
+      <nav class="toc-section mb-4">
+        <h2 class="h4 mb-3">目录</h2>
+        <div class="toc-content">
+          {{ .TableOfContents }}
+        </div>
       </nav>
     {{ end }}
   {{ end }}
 
-  <div class="py-3">
+  <div class="article-body">
     {{ .Content -}}
   </div>
 </article>
 
 {{ if eq .Section "posts" }}
-<div class="row">
-{{ with .PrevInSection -}}
-  <div class="col pt-3 text-start">
-    <a href="{{ .Permalink | relURL }}">← {{ .Title }}</a>
+<div class="article-navigation mt-5">
+  <div class="row">
+    {{ with .PrevInSection -}}
+      <div class="col text-start">
+        <a href="{{ .Permalink | relURL }}" class="nav-link-geek">
+          <i class="fas fa-arrow-left me-2"></i>{{ .Title }}
+        </a>
+      </div>
+    {{ end -}}
+    {{ with .NextInSection -}}
+      <div class="col text-end">
+        <a href="{{ .Permalink | relURL }}" class="nav-link-geek">
+          {{ .Title }}<i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+    {{ end -}}
   </div>
-{{ end -}}
-{{ with .NextInSection -}}
-  <div class="col pt-3 text-end">
-    <a href="{{ .Permalink | relURL }}">{{ .Title }} →</a>
-  </div>
-{{ end -}}
 </div>
-<div class="mt-3">
+
+<div class="related-posts mt-5">
   {{ $related := .Site.RegularPages.Related . | first 5 }}
   {{ with $related }}
-  <h3>相关文章</h3>
-  <ul>
+  <h3 class="h4 mb-3">相关文章</h3>
+  <ul class="article-list">
    {{ range . }}
-   <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+   <li class="article-item">
+     <div class="article-title">
+       <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+     </div>
+   </li>
    {{ end }}
   </ul>
   {{ end }}
