@@ -1,14 +1,15 @@
 {{ define "main" -}}
-<div>
-  <h1>{{ .Title }}</h1>
-</div>
-<div>
+<div class="mb-4">
+  <h1 class="h2 mb-3">{{ .Title }}</h1>
   {{ .Content -}}
 </div>
-<div class="py-3">
+
+<div class="mb-4">
 {{ range .Data.Terms.ByCount }}
-  <div class="d-inline text-nowrap me-3">
-    <a href="{{ .Page.RelPermalink }}">#{{ .Term }} ({{ .Count }})</a>
+  <div class="d-inline-block me-3 mb-2">
+    <a href="{{ .Page.RelPermalink }}" class="text-decoration-none">
+      <span class="article-badge">#{{ .Term }} ({{ .Count }})</span>
+    </a>
   </div>
 {{ end }}
 </div>
