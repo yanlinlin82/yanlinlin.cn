@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "description": "颜林林的个人网站",
   "scripts": {
-    "help": "echo '可用的构建命令：' && echo '  npm run build      - 完整构建（默认）' && echo '  npm run build:fast - 快速构建（禁用 RSS、sitemap 和搜索索引）' && echo '  npm run build:full - 完整构建（包含所有功能）' && echo '  npm run build:search - 仅构建搜索索引' && echo '  npm run serve      - 启动开发服务器（完整模式）' && echo '  npm run serve:fast - 启动开发服务器（快速模式）' && echo '  npm run clean      - 清理构建目录'",
+    "help": "echo '可用的构建命令：' && echo '  npm run build      - 完整构建（默认）' && echo '  npm run build:fast - 快速构建（禁用 RSS、sitemap 和搜索索引）' && echo '  npm run build:full - 完整构建（包含所有功能）' && echo '  npm run build:search - 仅构建搜索索引' && echo '  npm run serve      - 启动开发服务器（完整模式）' && echo '  npm run serve:fast - 启动开发服务器（快速模式）' && echo '  npm run clean      - 清理构建目录' && echo '  npm run build:css  - 构建 CSS 文件' && echo '  npm run build:js   - 构建 JavaScript 文件' && echo '  npm run build:assets - 构建所有前端资源' && echo '  npm run dev:css    - 监听 CSS 文件变化' && echo '  npm run dev:js     - 监听 JavaScript 文件变化' && echo '  npm run dev:assets - 监听所有前端资源变化'",
     "build": "npm run build:full",
-    "build:fast": "echo '🚀 快速构建模式 - 禁用 RSS、sitemap 和搜索索引' && hugo --config hugo.yaml,config/fast.yaml",
-    "build:full": "echo '📦 完整构建模式 - 包含 RSS、sitemap 和搜索索引' && hugo --config hugo.yaml",
+    "build:fast": "echo '🚀 快速构建模式 - 禁用 RSS、sitemap 和搜索索引' && npm run build:assets && hugo --config hugo.yaml,config/fast.yaml",
+    "build:full": "echo '📦 完整构建模式 - 包含 RSS、sitemap 和搜索索引' && npm run build:assets && hugo --config hugo.yaml",
     "build:search": "echo '🔍 构建搜索索引' && hugo --config hugo.yaml --renderToDisk --renderStaticToDisk --renderStaticToDiskDir public",
-    "serve": "echo '🌐 启动开发服务器（完整模式）' && hugo server --config hugo.yaml --bind 0.0.0.0 --port 1313",
-    "serve:fast": "echo '🌐 启动开发服务器（快速模式）' && hugo server --config hugo.yaml,config/fast.yaml --bind 0.0.0.0 --port 1313",
+    "serve": "echo '🌐 启动开发服务器（完整模式）' && npm run dev:assets & hugo server --config hugo.yaml --bind 0.0.0.0 --port 13131",
+    "serve:fast": "echo '🌐 启动开发服务器（快速模式）' && npm run dev:assets & hugo server --config hugo.yaml,config/fast.yaml --bind 0.0.0.0 --port 13131",
     "clean": "echo '🧹 清理构建目录' && rm -rf public/",
     "dev": "npm run serve:fast",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "build:css": "echo '🎨 构建 CSS 文件' && sass src/scss/main.scss:static/css/main.css --style=compressed",
+    "build:js": "echo '⚡ 构建 JavaScript 文件' && webpack --mode=production",
+    "build:assets": "echo '📦 构建所有前端资源' && npm run build:css && npm run build:js",
+    "dev:css": "echo '🎨 监听 CSS 文件变化' && sass src/scss/main.scss:static/css/main.css --watch",
+    "dev:js": "echo '⚡ 监听 JavaScript 文件变化' && webpack --mode=development --watch",
+    "dev:assets": "echo '📦 监听所有前端资源变化' && npm run dev:css & npm run dev:js"
   },
   "keywords": [
     "hugo",
@@ -24,5 +30,13 @@
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.7",
+    "fuse.js": "^7.0.0",
+    "sass": "^1.89.2",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
   }
 }
