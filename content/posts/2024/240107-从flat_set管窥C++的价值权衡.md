@@ -1,9 +1,7 @@
 ---
 title: 从flat_set管窥C++的价值权衡
 date: 2024-01-07 03:31:00+08:00
-badges:
-- 公众号
-categories: [不靠谱颜论, 编程]
+categories: [公众号, 编程]
 tags: [C++, flat_set, 容器, 性能, 标准库]
 slug: glimpsing-cpp-value-trade-offs-from-flat-set
 ---

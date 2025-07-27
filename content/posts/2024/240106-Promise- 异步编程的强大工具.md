@@ -1,9 +1,7 @@
 ---
 title: Promise- 异步编程的强大工具
 date: 2024-01-06 22:07:00+08:00
-badges:
-- 公众号
-categories: [不靠谱颜论, 编程]
+categories: [公众号, 编程]
 tags: [JavaScript, Promise, 异步编程, 小程序, 教程]
 slug: promise-powerful-tool-for-asynchronous-programming
 ---

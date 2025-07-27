@@ -1,9 +1,7 @@
 ---
 title: 超高效的图像处理技能：用ImageMagick搞定批量图片编辑
 date: 2024-01-01 23:19:00+08:00
-badges:
-- 公众号
-categories: [不靠谱颜论, IT技巧]
+categories: [公众号, IT技巧]
 tags: [图像处理, ImageMagick, 命令行, 批量处理, 教程]
 slug: ultra-efficient-image-processing-skills-batch-editing-with-imagemagick
 ---
