@@ -13,49 +13,79 @@ subtitle: "关于不靠谱颜论"
 
 我相信技术应该服务于生活，而生活也应该充满探索的乐趣。
 
-## 专业领域
+## 关于这个网站
 
-- **精准医疗**：高通量组学数据分析
-- **生物信息学**：基因组学、转录组学等
-- **AI/LLM应用**：大语言模型在生物医学中的应用
-- **编程技术**：Python、R、JavaScript等
-- **开源贡献**：崇尚开源精神，积极参与开源项目
+### 为什么叫"不靠谱颜论"？
+
+这个名字源于我对科学和生活的态度。在严谨的学术研究之外，我常常会有一些"不靠谱"的想法和观察——那些看似天马行空，却可能蕴含着独特视角的思考。这些想法可能不够严谨，但往往能带来意想不到的启发。
+
+### 网站的理念
+
+这个网站不仅仅是一个技术博客，更是我思考和实践的见证。在这里，我记录：
+
+- **技术探索**：从生物信息学到AI应用，分享在技术前沿的发现和思考
+- **学术思考**：对科研工作的反思，以及对科学本质的探讨
+- **生活感悟**：在科研之外，对生活、学习和成长的思考
+- **跨界思考**：将不同领域的知识融会贯通，寻找新的可能性
+
+### 写作风格
+
+我倾向于用平实的语言表达复杂的概念，用具体的例子说明抽象的理论。我相信最好的学习方式是通过分享和交流，所以这里的每一篇文章都是我与读者的一次对话。
+
+## 我的思考方式
+
+### 跨学科思维
+
+多年的生物信息学研究和编程实践让我形成了跨学科的思维方式。我习惯从多个角度思考问题，将不同领域的知识和方法结合起来，寻找创新的解决方案。
+
+### 实践导向
+
+我坚信理论必须与实践相结合。无论是学术研究还是技术开发，我都注重将想法转化为可执行的方案，并在实践中不断优化和改进。
+
+### 持续学习
+
+在快速发展的科技领域，保持学习能力比掌握特定技术更重要。我始终保持开放的心态，愿意尝试新技术、新方法，并从中获得新的认知。
 
 ## 联系方式
 
-- **个人微信**：yanlinlin82
-  <div class="text-center">
-    <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" style="width:40%;max-width:200px;height:auto">
+<div class="row g-4">
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-body text-center">
+        <h5 class="card-title">个人微信</h5>
+        <p class="card-text">yanlinlin82</p>
+        <img alt="yanlinlin82" src="/images/weixin_scancode.jpg" class="img-fluid" style="max-width: 200px;">
+        <p class="card-text text-muted small mt-2">扫码请注明来意</p>
+      </div>
+    </div>
   </div>
-
-- **个人公众号**：不靠谱颜论
-  <div class="text-center">
-    <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" style="width:40%;max-width:200px;height:auto">
-  </div>
-
-- **其他平台**：
-[ORCID](https://orcid.org/0000-0002-4990-6239) |
-[GitHub](http://github.com/yanlinlin82) |
-[ResearchGate](https://www.researchgate.net/profile/Linlin_Yan4) |
-[Twitter](http://twitter.com/yanlinlin82) |
-[LinkedIn](http://linkedin.com/in/yanlinlin82) |
-[Facebook](http://facebook.com/yanlinlin82) |
-[微博](http://weibo.com/yanlinlin82)
-
-## 支持与赞赏
-
-如果您觉得我的分享对您有所帮助，不妨赞赏一下，这将是对我最大的鼓励和支持：
-
-<div class="row">
-  <div class="col text-end">
-    <img alt="微信赞赏码" src="/images/weixin-zanshang.png" style="width:60%;height:auto;display:inline-block">
-  </div>
-  <div class="col text-center">
-    <img alt="微信付款码" src="/images/weixin-shoukuan.png" style="width:60%;height:auto;display:inline-block">
-  </div>
-  <div class="col text-start">
-    <img alt="支付宝付款码" src="/images/zhifubao-shoukuan.jpg" style="width:45%;height:auto;display:inline-block">
+  <div class="col-md-6">
+    <div class="card h-100">
+      <div class="card-body text-center">
+        <h5 class="card-title">个人公众号</h5>
+        <p class="card-text">不靠谱颜论</p>
+        <img alt="不靠谱颜论" src="/images/bukaopuyanlun-qrcode.jpg" class="img-fluid" style="max-width: 200px;">
+        <p class="card-text text-muted small mt-2">欢迎关注和支持</p>
+      </div>
+    </div>
   </div>
 </div>
 
-再次感谢您的支持与关注！
+<div class="mt-4 text-center">
+  <h5>其他平台</h5>
+  <div class="d-flex flex-wrap gap-2 justify-content-center">
+    <a href="https://orcid.org/0000-0002-4990-6239" class="badge bg-light text-dark text-decoration-none border">ORCID</a>
+    <a href="http://github.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">GitHub</a>
+    <a href="https://www.researchgate.net/profile/Linlin_Yan4" class="badge bg-light text-dark text-decoration-none border">ResearchGate</a>
+    <a href="http://twitter.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Twitter</a>
+    <a href="http://linkedin.com/in/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">LinkedIn</a>
+    <a href="http://facebook.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Facebook</a>
+    <a href="http://weibo.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">微博</a>
+  </div>
+</div>
+
+## 期待交流
+
+如果你对我的文章有任何想法、建议或疑问，欢迎通过各种方式与我交流。我相信思想的碰撞能产生新的火花，也期待能在这里遇到志同道合的朋友。
+
+让我们一起在科学和技术的道路上探索前行，发现更多"不靠谱"却有趣的可能性。
