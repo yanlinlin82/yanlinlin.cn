@@ -1,0 +1,82 @@
+{{ define "main" -}}
+<!-- 简历页面专用样式 -->
+<style>
+  @media print {
+    /* 隐藏所有不需要的元素 */
+    .navbar,
+    .footer-geek,
+    #searchModal,
+    .article-navigation,
+    .related-posts,
+    .article-header .article-meta,
+    .article-header .article-date {
+      display: none !important;
+    }
+
+    /* 重置页面布局 */
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      background: white !important;
+    }
+
+    /* 调整主容器 */
+    .container {
+      max-width: none !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* 调整主内容区域 */
+    .main-content-geek {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* 优化简历内容 */
+    .article-content {
+      font-size: 12pt !important;
+      line-height: 1.4 !important;
+      margin: 0 !important;
+      padding: 20px !important;
+      color: black !important;
+    }
+
+    /* 确保标题可见 */
+    h1, h2, h3, h4, h5, h6 {
+      color: black !important;
+      page-break-after: avoid !important;
+      page-break-inside: avoid !important;
+    }
+
+    /* 确保文本可见 */
+    p, li, ul, ol {
+      color: black !important;
+      page-break-inside: avoid !important;
+    }
+
+    /* 确保链接可见 */
+    a {
+      color: black !important;
+      text-decoration: underline !important;
+    }
+
+    /* 移除背景和阴影 */
+    * {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+</style>
+
+<article class="article-content">
+  <header class="article-header mb-4">
+    <h1 class="h2 mb-3">{{ .Title }}</h1>
+  </header>
+
+  <div class="article-body">
+    {{ .Content -}}
+  </div>
+</article>
+{{ end -}}
