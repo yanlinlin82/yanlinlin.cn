@@ -28,9 +28,10 @@ window.searchIndex = [
 {{ range $index, $page := $pages }}
   {
     "title": {{ $page.Title | jsonify }},
-    "url": {{ $page.Permalink | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
     "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
     "summary": {{ $page.Summary | jsonify }},
+    "content": {{ $page.Content | plainify | jsonify }},
     "tags": {{ $page.Params.tags | default (slice) | jsonify }},
     "categories": {{ $page.Params.categories | default (slice) | jsonify }}
   }{{ if ne $index (sub (len $pages) 1) }},{{ end }}
