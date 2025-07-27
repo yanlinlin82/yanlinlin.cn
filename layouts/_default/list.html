@@ -7,15 +7,17 @@
 <ul class="article-list">
   {{ range .Paginator.Pages -}}
   <li class="article-item">
-    <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
-    <div class="article-title">
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-        {{ range .Params.badges }}
-        <span class="article-badge">{{ . }}</span>
-        {{ end }}
-      </a>
-    </div>
+    <a href="{{ .RelPermalink }}" class="article-card-link">
+      <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
+      <div class="article-title">
+        <span class="article-title-text">
+          {{ .Title }}
+          {{ range .Params.badges }}
+          <span class="article-badge">{{ . }}</span>
+          {{ end }}
+        </span>
+      </div>
+    </a>
   </li>
   {{ end -}}
 </ul>

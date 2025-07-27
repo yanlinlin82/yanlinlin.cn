@@ -413,15 +413,42 @@ body {
   gap: 0.5rem;
 }
 
-.article-title a {
-  color: var(--bs-body-color);
+.article-card-link {
+  display: block;
   text-decoration: none;
-  transition: color 0.2s ease;
-  flex: 1;
-  min-width: 0;
+  color: inherit;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
-.article-title a:hover {
+.article-card-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-card-link:hover .article-item {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(234, 88, 12, 0.15);
+  border-color: rgba(234, 88, 12, 0.3);
+}
+
+.article-card-link:hover .article-item::before {
+  transform: scaleY(1);
+}
+
+.article-title-text {
+  color: var(--bs-body-color);
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-card-link:hover .article-title-text {
   color: var(--bs-primary);
 }
 
