@@ -398,6 +398,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+// 文章统计信息样式
+.article-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--bs-secondary-color);
+  font-style: italic;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-word-count,
+.article-reading-time {
+  display: inline;
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .article-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .article-word-count,
+  .article-reading-time {
+    font-size: 0.8rem;
+  }
+}
+
 .article-title {
   font-weight: 600;
   font-size: 1rem;
