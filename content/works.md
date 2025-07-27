@@ -87,9 +87,12 @@ R包：
 
 ### 3.1 PPT分享
 
-- 2024-03-21 - [GitHub简介](https://github.com/yanlinlin82/share/raw/main/GitHub%E7%AE%80%E4%BB%8B-20240321.pptx)
-- 2023-04-17 - [Git与GitHub简介](https://github.com/yanlinlin82/share/raw/main/Git%E4%B8%8EGitHub%E7%AE%80%E4%BB%8B-20230417.pptx)
+- 2024-09-09 - [生物信息学中的信息搜索方法](https://github.com/yanlinlin82/share/raw/refs/heads/main/%E9%A2%9C%E6%9E%97%E6%9E%97-%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E4%B8%AD%E7%9A%84%E4%BF%A1%E6%81%AF%E6%90%9C%E7%B4%A2%E6%96%B9%E6%B3%95-20240909.pptx)
+- 2024-03-21 - [GitHub简介](https://github.com/yanlinlin82/share/raw/refs/heads/main/GitHub%E7%AE%80%E4%BB%8B-20240321.pptx)
+- 2023-04-17 - [Git与GitHub简介](https://github.com/yanlinlin82/share/raw/refs/heads/main/Git%E4%B8%8EGitHub%E7%AE%80%E4%BB%8B-20230417.pptx)
 
 ### 3.2 在线分享（视频）
 
+- 2025-04-22 - [首医生信培训：Linux操作与AI辅助编程](https://www.bilibili.com/video/BV1Vd5XzdEL6/)
+- 2025-04-22 - [首医生信培训：生物信息基础与公共数据库](https://www.bilibili.com/video/BV1Yd5XzdEaC/)
 - 2022-07-23 - [文献学习：用DNA分子实现生物计算机](https://www.bilibili.com/video/BV1ug4111728/)
