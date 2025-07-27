@@ -31,6 +31,9 @@ menu:
   - name: 博客
     url: /posts/
     weight: 10
+  - name: 专栏
+    url: /categories/
+    weight: 15
   - name: 关于
     url: /about/
     weight: 20
