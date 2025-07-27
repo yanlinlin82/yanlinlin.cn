@@ -659,6 +659,42 @@ body {
   margin: 1.5rem 0;
 }
 
+.article-body a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(234, 88, 12, 0.3);
+  transition: all 0.2s ease;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.article-body a:hover {
+  color: var(--bs-link-hover-color);
+  border-bottom-color: var(--bs-primary);
+  text-decoration: none;
+}
+
+.article-body a:focus {
+  outline: 2px solid rgba(234, 88, 12, 0.5);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+// 外链接指示器
+.article-body a[href^="http"]:not([href*="yanlinlin.cn"]):not([href*="localhost"])::after {
+  content: "↗";
+  font-size: 0.75em;
+  margin-left: 0.25em;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  vertical-align: super;
+  line-height: 1;
+}
+
+.article-body a[href^="http"]:not([href*="yanlinlin.cn"]):not([href*="localhost"]):hover::after {
+  opacity: 1;
+}
+
 .article-body table {
   width: 100%;
   border-collapse: collapse;
