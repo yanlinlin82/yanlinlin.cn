@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
               .replace(/<[^>]*>/g, '')
               .substring(0, 200) + '...' : '';
 
-          console.log('item:', item);
+
 
           return `
             <div class="search-result-item mb-3 p-3 border rounded">
@@ -160,30 +160,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 中文字数统计功能
   const articleStats = document.querySelector('.article-stats');
-  console.log('找到article-stats元素:', articleStats);
   if (articleStats) {
     const content = articleStats.getAttribute('data-content');
-    console.log('文章内容长度:', content ? content.length : 0);
     if (content) {
       // 计算中文字符数（包括中文标点符号）
       const chineseChars = content.match(/[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]/g);
       const chineseCount = chineseChars ? chineseChars.length : 0;
-      console.log('中文字符数:', chineseCount);
 
       // 计算英文字符数
       const englishWords = content.match(/[a-zA-Z]+/g);
       const englishCount = englishWords ? englishWords.length : 0;
-      console.log('英文单词数:', englishCount);
 
       // 总字数 = 中文字符数 + 英文字符数
       const totalCount = chineseCount + englishCount;
-      console.log('总字数:', totalCount);
 
       // 更新字数显示
       const wordCountNumber = articleStats.querySelector('.word-count-number');
       if (wordCountNumber && totalCount > 0) {
         wordCountNumber.textContent = totalCount;
-        console.log('已更新字数显示');
       }
 
       // 更新阅读时间（按每分钟300字计算）
@@ -191,7 +185,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (readingTimeNumber && totalCount > 0) {
         const readingTime = Math.max(1, Math.round(totalCount / 300));
         readingTimeNumber.textContent = readingTime;
-        console.log('已更新阅读时间');
       }
     }
   }
