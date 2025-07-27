@@ -388,13 +388,9 @@ body {
 }
 
 .article-date {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--bs-secondary-color);
-  background: rgba(234, 88, 12, 0.1);
-  border: 1px solid rgba(234, 88, 12, 0.2);
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
   display: inline-block;
   margin-bottom: 0.5rem;
   letter-spacing: 0.01em;
@@ -453,15 +449,23 @@ body {
 }
 
 .article-badge {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
   background: rgba(234, 88, 12, 0.08);
   border: 1px solid rgba(234, 88, 12, 0.15);
   color: var(--bs-primary);
   white-space: nowrap;
   flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.article-badge:hover {
+  background: rgba(234, 88, 12, 0.15);
+  border-color: rgba(234, 88, 12, 0.3);
+  color: var(--bs-primary);
+  text-decoration: none;
 }
 
 // 分页器极客风格
