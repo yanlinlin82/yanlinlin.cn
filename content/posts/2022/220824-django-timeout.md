@@ -1,7 +1,7 @@
 ---
 title: 解决Django Timeout问题
 date: 2022-08-24 06:44:00+08:00
-categories: [不靠谱颜论]
+categories: [公众号]
 tags: [编程, Django, Ubuntu]
 slug: solving-django-timeout-issue
 ---
