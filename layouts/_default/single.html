@@ -8,6 +8,14 @@
       </div>
     {{ end -}}
 
+    {{ if .WordCount -}}
+      {{ $readingTime := math.Max 1 (math.Round (div .WordCount 300.0)) }}
+      <div class="article-stats mb-3" data-content="{{ .Content | plainify }}">
+        <span class="article-word-count">本文共约 <span class="word-count-number">{{ .WordCount }}</span> 字</span>
+        <span class="article-reading-time">预计阅读时间约 <span class="reading-time-number">{{ $readingTime }}</span> 分钟</span>
+      </div>
+    {{ end -}}
+
     {{ if or .Params.categories .Params.tags }}
       <div class="article-meta mb-4">
         {{ range .Params.categories }}
