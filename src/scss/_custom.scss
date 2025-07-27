@@ -956,3 +956,251 @@ body {
     padding: 0.35rem 1rem;
   }
 }
+
+// Categories Page Styles
+.categories-page {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.categories-header {
+  margin-bottom: 2rem;
+}
+
+.categories-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--bs-body-color);
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.categories-intro {
+  color: var(--bs-secondary-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.categories-content {
+  margin-top: 2rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.category-card-wrapper {
+  position: relative;
+  perspective: 1000px;
+}
+
+.category-card {
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateZ(0);
+}
+
+// 叠加卡片效果
+.category-card::before,
+.category-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  z-index: -1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-card::before {
+  transform: translateY(4px) translateX(2px);
+  opacity: 0.6;
+  filter: blur(1px);
+}
+
+.category-card::after {
+  transform: translateY(8px) translateX(4px);
+  opacity: 0.3;
+  filter: blur(2px);
+}
+
+.category-card:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 0 12px 32px rgba(234, 88, 12, 0.2);
+  border-color: rgba(234, 88, 12, 0.4);
+}
+
+.category-card:hover::before {
+  transform: translateY(8px) translateX(4px);
+  opacity: 0.4;
+}
+
+.category-card:hover::after {
+  transform: translateY(16px) translateX(8px);
+  opacity: 0.2;
+}
+
+.category-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.category-card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+}
+
+.category-card-header {
+  flex: 1;
+}
+
+.category-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--bs-body-color);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.category-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-count {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--bs-primary);
+  background: rgba(234, 88, 12, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.category-date {
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color);
+  font-weight: 400;
+}
+
+.category-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+}
+
+.category-arrow {
+  font-size: 1.2rem;
+  color: var(--bs-primary);
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-arrow {
+  transform: translateX(4px);
+}
+
+// 响应式设计
+@media (max-width: 1200px) {
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-title {
+    font-size: 1.75rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  
+  .category-card {
+    padding: 1.25rem;
+  }
+  
+  .category-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .category-card-meta {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .category-count {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  .category-date {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .categories-title {
+    font-size: 1.5rem;
+  }
+  
+  .categories-intro {
+    font-size: 1rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+  
+  .category-card {
+    padding: 1rem;
+  }
+  
+  .category-card-title {
+    font-size: 1rem;
+  }
+  
+  .category-card-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .category-count {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.5rem;
+  }
+  
+  .category-date {
+    font-size: 0.7rem;
+  }
+}

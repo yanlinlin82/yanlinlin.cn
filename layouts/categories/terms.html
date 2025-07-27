@@ -1,27 +1,48 @@
 {{ define "main" -}}
-<div>
-  <h1>{{ .Title }}</h1>
-</div>
-<div>
-  {{ .Content -}}
-</div>
-{{ $categories := slice }}
-{{ range .Data.Terms.ByCount }}
-  {{ $term := .Page.Title }}
-  {{ $pages := where .Pages "Type" "!=" "taxonomy" }}
-  {{ $latestPost := index (sort $pages "Date" "desc") 0 }}
-  {{ if $latestPost }}
-    {{ $categories = $categories | append (dict "term" $term "count" .Count "latestPost" $latestPost "permalink" .Page.RelPermalink) }}
-  {{ end }}
-{{ end }}
-{{ $sortedCategories := sort $categories "latestPost.Date" "desc" }}
-<ul>
-  {{ range $sortedCategories }}
-  <li class="my-1">
-    <div class="d-inline">
-      <a href="{{ .permalink }}">{{ .term }} (共 {{ .count }} 篇，{{ .latestPost.Date.Format "2006-01-02" }} 更新)</a></div>
+<div class="categories-page">
+  <div class="categories-header mb-4">
+    <h1 class="categories-title">{{ .Title }}</h1>
+    {{ if .Content }}
+    <div class="categories-intro">
+      {{ .Content }}
     </div>
-  </li>
-  {{ end -}}
-</ul>
+    {{ end }}
+  </div>
+
+  <div class="categories-content">
+    {{ $categories := slice }}
+    {{ range .Data.Terms.ByCount }}
+      {{ $term := .Page.Title }}
+      {{ $pages := where .Pages "Type" "!=" "taxonomy" }}
+      {{ $latestPost := index (sort $pages "Date" "desc") 0 }}
+      {{ if $latestPost }}
+        {{ $categories = $categories | append (dict "term" $term "count" .Count "latestPost" $latestPost "permalink" .Page.RelPermalink) }}
+      {{ end }}
+    {{ end }}
+    {{ $sortedCategories := sort $categories "latestPost.Date" "desc" }}
+    
+    <div class="categories-grid">
+      {{ range $index, $category := $sortedCategories }}
+      <div class="category-card-wrapper">
+        <div class="category-card">
+          <a href="{{ .permalink }}" class="category-card-link">
+            <div class="category-card-content">
+              <div class="category-card-header">
+                <h3 class="category-card-title">{{ .term }}</h3>
+                <div class="category-card-meta">
+                  <span class="category-count">{{ .count }} 篇</span>
+                  <span class="category-date">{{ .latestPost.Date.Format "2006-01-02" }} 更新</span>
+                </div>
+              </div>
+              <div class="category-card-footer">
+                <span class="category-arrow">→</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
 {{ end -}}
