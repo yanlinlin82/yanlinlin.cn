@@ -11,7 +11,7 @@
     {{ if or .Params.categories .Params.tags }}
       <div class="article-meta mb-4">
         {{ range .Params.categories }}
-          <a href="/categories/{{ lower . }}" class="article-badge me-2">#{{ . }}</a>
+          <a href="/categories/{{ lower . }}" class="article-badge me-2">{{ . }}</a>
         {{ end }}
 
         {{ $taxo := "tags" -}}
@@ -25,7 +25,7 @@
             {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
               {{ $data.Set "url" .Permalink }}
             {{ end }}
-            <a href="{{ $data.Get "url" | relURL }}" class="article-badge me-2">#{{ $name }}</a>
+            <a href="{{ $data.Get "url" | relURL }}" class="article-badge me-2">{{ $name }}</a>
           {{ end -}}
         {{ end -}}
       </div>
