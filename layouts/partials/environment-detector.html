@@ -1,0 +1,17 @@
+<!-- 环境检测工具 - 仅开发环境显示 -->
+<script>
+  // 检测当前环境
+  var isProduction = window.location.hostname === 'yanlinlin.cn' || 
+                     window.location.hostname === 'www.yanlinlin.cn';
+  var isLocalhost = window.location.hostname === 'localhost' || 
+                    window.location.hostname === '127.0.0.1';
+  
+  if (!isProduction) {
+    console.log('=== 环境检测 ===');
+    console.log('当前环境:', isLocalhost ? '本地开发' : '其他环境');
+    console.log('域名:', window.location.hostname);
+    console.log('协议:', window.location.protocol);
+    console.log('分析工具状态: 已禁用（仅生产环境启用）');
+    console.log('================');
+  }
+</script> 

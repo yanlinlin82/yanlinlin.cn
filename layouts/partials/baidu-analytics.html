@@ -1,0 +1,30 @@
+{{ if .Site.Params.baiduAnalytics }}
+<!-- 百度统计 - 延时加载，仅在生产环境启用 -->
+<script>
+  // 检测是否为生产环境（在线部署版本）
+  var isProduction = window.location.hostname === 'yanlinlin.cn' || 
+                     window.location.hostname === 'www.yanlinlin.cn';
+  
+  if (isProduction) {
+    // 延时加载百度统计，避免影响页面性能
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        try {
+          var _hmt = _hmt || [];
+          (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?{{ .Site.Params.baiduAnalytics }}";
+            hm.async = true; // 异步加载
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+          })();
+        } catch (e) {
+          console.log('百度统计加载失败，但不影响页面功能');
+        }
+      }, 2000); // 延迟2秒加载
+    });
+  } else {
+    console.log('本地开发环境，跳过百度统计加载');
+  }
+</script>
+{{ end }} 

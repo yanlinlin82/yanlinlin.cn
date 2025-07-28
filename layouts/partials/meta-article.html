@@ -73,4 +73,19 @@
 }
 </script>
 
+<!-- 网站搜索结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ $siteData.seo.siteName }}",
+  "url": "{{ $siteData.baseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ $siteData.baseURL }}search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 {{- end -}}

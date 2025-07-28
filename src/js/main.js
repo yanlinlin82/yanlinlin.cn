@@ -4,6 +4,45 @@ import 'bootstrap';
 // Import Fuse.js for search functionality
 const Fuse = require('fuse.js');
 
+// 字体加载性能监控
+function monitorFontLoading() {
+  // 监控字体加载性能
+  if ('fonts' in document) {
+    document.fonts.ready.then(() => {
+      console.log('字体加载完成');
+      
+      // 记录字体加载时间
+      const fontLoadTime = performance.now();
+      console.log(`字体加载耗时: ${fontLoadTime.toFixed(2)}ms`);
+      
+      // 如果字体加载时间过长，可以考虑优化
+      if (fontLoadTime > 2000) {
+        console.warn('字体加载时间较长，建议检查网络连接或使用本地字体');
+      }
+    });
+  }
+  
+  // 监控字体回退情况
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        const hasFallback = mutation.target.classList.contains('fonts-fallback');
+        if (hasFallback) {
+          console.log('已启用字体回退模式');
+        }
+      }
+    });
+  });
+  
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class']
+  });
+}
+
+// 页面加载完成后启动监控
+document.addEventListener('DOMContentLoaded', monitorFontLoading);
+
 // Constants
 const SEARCH_MIN_LENGTH = 2;
 const SEARCH_MAX_RESULTS = 10;

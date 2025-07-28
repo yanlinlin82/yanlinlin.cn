@@ -9,9 +9,17 @@ mainSections:
   - posts
 googleAnalytics: "G-P6SH63QQPQ"
 
+# 网站分析工具配置
 params:
   fastBuild: false
   disableSearchIndex: false
+  # 百度统计代码
+  baiduAnalytics: "a9ec9e8a36d71ac1ea9f1f77bdfcb909"
+
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
 
 taxonomies:
   category: categories
@@ -38,19 +46,19 @@ menu:
     weight: 10
   - name: 专栏
     url: /categories/
-    weight: 15
+    weight: 20
   - name: 系列
     url: /series/
-    weight: 16
+    weight: 30
   - name: 标签
     url: /tags/
-    weight: 17
+    weight: 40
   - name: 关于
     url: /about/
-    weight: 20
+    weight: 50
   - name: 作品
     url: /works/
-    weight: 30
+    weight: 60
   - name: 简历
     url: /cv/
-    weight: 40
+    weight: 70
