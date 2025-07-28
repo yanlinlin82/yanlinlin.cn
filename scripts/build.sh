@@ -44,12 +44,8 @@ build() {
             build_assets
             hugo --config hugo.yaml
             ;;
-        "search")
-            log "🔍 构建搜索索引"
-            hugo --config hugo.yaml --renderToDisk --renderStaticToDisk --renderStaticToDiskDir public
-            ;;
         *)
-            error "未知的构建模式: $mode (支持: fast, full, search)"
+            error "未知的构建模式: $mode (支持: fast, full)"
             ;;
     esac
 
