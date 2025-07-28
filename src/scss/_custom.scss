@@ -222,8 +222,8 @@ body {
   background: var(--bs-secondary-bg);
   border-top: 1px solid var(--bs-border-color);
   padding: 2rem 0;
-  margin-top: 3rem;
   position: relative;
+  text-align: center;
 }
 
 .footer-geek::before {
@@ -279,6 +279,11 @@ body {
 .main-content-geek {
   padding: 2rem 0;
   min-height: 60vh;
+}
+
+// Recent posts section
+.recent-posts {
+  margin-top: 2rem;
 }
 
 // Article list styles
@@ -784,8 +789,12 @@ body {
 
 // Related posts
 .related-posts h3 {
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--bs-body-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(234, 88, 12, 0.2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
