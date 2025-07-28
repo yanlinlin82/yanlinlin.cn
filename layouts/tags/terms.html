@@ -14,7 +14,7 @@
           {{ range .Data.Terms.ByCount }}
             {{ if ge .Count 10 }}
             <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
-              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-name">{{ .Page.Title }}</span>
               <span class="tag-count-badge">{{ .Count }}</span>
             </a>
             {{ end }}
@@ -29,7 +29,7 @@
           {{ range .Data.Terms.ByCount }}
             {{ if and (ge .Count 5) (lt .Count 10) }}
             <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
-              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-name">{{ .Page.Title }}</span>
               <span class="tag-count-badge">{{ .Count }}</span>
             </a>
             {{ end }}
@@ -44,7 +44,7 @@
           {{ range .Data.Terms.ByCount }}
             {{ if and (ge .Count 2) (lt .Count 5) }}
             <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
-              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-name">{{ .Page.Title }}</span>
               <span class="tag-count-badge">{{ .Count }}</span>
             </a>
             {{ end }}
@@ -59,7 +59,7 @@
           {{ range .Data.Terms.ByCount }}
             {{ if lt .Count 2 }}
             <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
-              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-name">{{ .Page.Title }}</span>
               <span class="tag-count-badge">{{ .Count }}</span>
             </a>
             {{ end }}
