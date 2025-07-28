@@ -1,102 +1,57 @@
 {{ define "main" -}}
-<div class="categories-page">
-  <div class="mb-4">
-    <h1 class="h2 mb-3">{{ .Title }}</h1>
-    {{ .Content -}}
-  </div>
-  
-  <div class="categories-content">
-    {{ $categories := slice }}
-    {{ range .Data.Terms.ByCount }}
-      {{ $term := .Page.Title }}
-      {{ $pages := where .Pages "Type" "!=" "taxonomy" }}
-      {{ $latestPost := index (sort $pages "Date" "desc") 0 }}
-      {{ if $latestPost }}
-        {{ $categories = $categories | append (dict "term" $term "count" .Count "latestPost" $latestPost "permalink" .Page.RelPermalink "pages" $pages) }}
-      {{ end }}
-    {{ end }}
-    {{ $sortedCategories := sort $categories "latestPost.Date" "desc" }}
+<div class="mb-4">
+  <h1 class="h2 mb-3">{{ .Title }}</h1>
+  {{ .Content -}}
+</div>
 
-    <div class="categories-grid">
-      {{ range $sortedCategories }}
-        <div class="category-card">
-          <div class="category-header">
-            <h3 class="category-title">
-              <a href="{{ .permalink }}" class="text-decoration-none">
-                {{ .term }}
-              </a>
-            </h3>
-            <div class="category-meta">
-              <span class="category-count">{{ .count }} 篇文章</span>
-            </div>
-          </div>
-          <div class="category-content">
-            {{ $latestPosts := first 3 .pages.ByDate.Reverse }}
-            {{ range $latestPosts }}
-              <div class="category-post-item">
-                <a href="{{ .RelPermalink }}" class="text-decoration-none">
-                  <span class="post-title">{{ .Title }}</span>
-                  <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
-                </a>
-              </div>
-            {{ end }}
-            {{ if gt (len .pages) 3 }}
-              <div class="category-more">
-                <a href="{{ .permalink }}" class="text-decoration-none">
-                  还有 {{ sub (len .pages) 3 }} 篇文章 →
-                </a>
-              </div>
-            {{ end }}
-          </div>
-        </div>
-      {{ end }}
+<div class="categories-grid">
+{{ $series := slice }}
+{{ range .Data.Terms.ByCount }}
+  {{ $term := .Term }}
+  {{ $pages := where .Pages "Type" "!=" "taxonomy" }}
+  {{ $latestPost := index (sort $pages "Date" "desc") 0 }}
+  {{ if $latestPost }}
+    {{ $series = $series | append (dict "term" $term "count" .Count "latestPost" $latestPost "permalink" .Page.RelPermalink "pages" $pages) }}
+  {{ end }}
+{{ end }}
+{{ $sortedSeries := sort $series "latestPost.Date" "desc" }}
+
+{{ range $sortedSeries }}
+  <div class="category-card">
+    <div class="category-header">
+      <h3 class="category-title">
+        <a href="{{ .permalink }}" class="text-decoration-none">
+          {{ .term }}
+        </a>
+      </h3>
+      <div class="category-meta">
+        <span class="category-count">{{ .count }} 篇文章</span>
+      </div>
     </div>
+          <div class="category-content">
+        {{ $latestPosts := first 3 .pages.ByDate.Reverse }}
+        {{ range $latestPosts }}
+          <div class="category-post-item">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none">
+              <span class="post-title">{{ .Title }}</span>
+              <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+            </a>
+          </div>
+        {{ end }}
+        {{ if gt (len .pages) 3 }}
+          <div class="category-more">
+            <a href="{{ .permalink }}" class="text-decoration-none">
+              还有 {{ sub (len .pages) 3 }} 篇文章 →
+            </a>
+          </div>
+        {{ end }}
+      </div>
   </div>
+{{ end }}
 </div>
 
 <style>
-/* 专栏页面样式 */
-.categories-page {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.categories-header {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--bs-border-color);
-}
-
-.categories-header-content {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.categories-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--bs-body-color);
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  flex-shrink: 0;
-}
-
-.categories-intro {
-  color: var(--bs-secondary-color);
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  flex: 1;
-  min-width: 0;
-}
-
-.categories-content {
-  margin-top: 1rem;
-}
-
+/* 系列页面样式 */
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -265,20 +220,6 @@
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .categories-header-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .categories-title {
-    font-size: 1.5rem;
-  }
-
-  .categories-intro {
-    font-size: 0.95rem;
-  }
-
   .categories-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -308,36 +249,5 @@
     align-self: flex-end;
   }
 }
-
-@media (max-width: 576px) {
-  .categories-header {
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .categories-title {
-    font-size: 1.4rem;
-  }
-
-  .categories-intro {
-    font-size: 0.9rem;
-  }
-
-  .categories-content {
-    margin-top: 0.75rem;
-  }
-
-  .categories-grid {
-    gap: 0.875rem;
-  }
-
-  .category-card {
-    padding: 1rem;
-  }
-
-  .category-title {
-    font-size: 1rem;
-  }
-}
 </style>
-{{ end -}}
+{{ end -}} 
