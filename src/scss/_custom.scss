@@ -823,13 +823,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.related-posts .article-list {
+.related-posts .article-list.related-articles {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
-.related-posts .article-item {
+.related-posts .article-list.related-articles .article-item {
   padding: 1.25rem;
   border-radius: 10px;
   background: var(--bs-secondary-bg);
@@ -840,7 +840,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.related-posts .article-item::before {
+.related-posts .article-list.related-articles .article-item::before {
   content: '';
   position: absolute;
   top: 0;
@@ -852,23 +852,23 @@ body {
   transition: transform 0.3s ease;
 }
 
-.related-posts .article-item:hover {
+.related-posts .article-list.related-articles .article-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(234, 88, 12, 0.15);
   border-color: rgba(234, 88, 12, 0.3);
 }
 
-.related-posts .article-item:hover::before {
+.related-posts .article-list.related-articles .article-item:hover::before {
   transform: scaleY(1);
 }
 
-.related-posts .article-title {
+.related-posts .article-list.related-articles .article-title {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.related-posts .article-date {
+.related-posts .article-list.related-articles .article-date {
   font-size: 0.7rem;
   padding: 0.2rem 0.4rem;
   margin-bottom: 0.75rem;
@@ -876,19 +876,19 @@ body {
 
 // 响应式优化
 @media (max-width: 1199px) {
-  .related-posts .article-list {
+  .related-posts .article-list.related-articles {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 
 @media (max-width: 767px) {
-  .related-posts .article-list {
+  .related-posts .article-list.related-articles {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 
-  .related-posts .article-item {
+  .related-posts .article-list.related-articles .article-item {
     padding: 1rem;
     border-radius: 8px;
   }
@@ -963,21 +963,21 @@ body {
 }
 
 @media (max-width: 576px) {
-  .related-posts .article-list {
+  .related-posts .article-list.related-articles {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 
-  .related-posts .article-item {
+  .related-posts .article-list.related-articles .article-item {
     padding: 0.875rem;
     border-radius: 6px;
   }
 
-  .related-posts .article-title {
+  .related-posts .article-list.related-articles .article-title {
     font-size: 0.9rem;
   }
 
-  .related-posts .article-date {
+  .related-posts .article-list.related-articles .article-date {
     font-size: 0.65rem;
     padding: 0.15rem 0.35rem;
   }

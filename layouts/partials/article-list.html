@@ -1,0 +1,31 @@
+{{ $articles := .articles }}
+{{ $showBadges := .showBadges | default true }}
+{{ $showDate := .showDate | default true }}
+{{ $dateFormat := .dateFormat | default "2006-01-02" }}
+{{ $maxItems := .maxItems | default 0 }}
+
+<ul class="article-list{{ if .customClass }} {{ .customClass }}{{ end }}">
+  {{ if gt $maxItems 0 }}
+    {{ $articles = first $maxItems $articles }}
+  {{ end }}
+
+  {{ range $articles }}
+  <li class="article-item">
+    <a href="{{ .RelPermalink }}" class="article-card-link">
+      {{ if $showDate }}
+      <div class="article-date">{{ .Date.Format $dateFormat }}</div>
+      {{ end }}
+      <div class="article-title">
+        <span class="article-title-text">
+          {{ .Title }}
+          {{ if $showBadges }}
+            {{ range .Params.badges }}
+            <span class="article-badge">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        </span>
+      </div>
+    </a>
+  </li>
+  {{ end }}
+</ul>
