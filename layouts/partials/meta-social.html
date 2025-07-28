@@ -1,13 +1,14 @@
-{{- $title := cond .IsHome site.Title (printf "%s - %s" .Title site.Title) -}}
-{{- $description := cond .IsHome "记录技术探索、学术研究、生活感悟的个人数字空间" (.Summary | default .Content | plainify | truncate 160) -}}
-{{- $image := cond (.Params.image) (.Params.image | absURL) "https://yanlinlin.cn/static/images/og-image.jpg" -}}
+{{- $siteData := resources.Get "site.json" | transform.Unmarshal -}}
+{{- $title := cond .IsHome $siteData.title (printf "%s - %s" .Title $siteData.title) -}}
+{{- $description := cond .IsHome $siteData.description (.Summary | default .Content | plainify | truncate 160) -}}
+{{- $image := cond (.Params.image) (.Params.image | absURL) $siteData.images.og -}}
 
 <!-- Open Graph标签 -->
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="不靠谱颜论">
+<meta property="og:site_name" content="{{ $siteData.title }}">
 <meta property="og:image" content="{{ $image }}">
 <meta property="og:locale" content="zh_CN">
 
@@ -16,4 +17,4 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
 <meta name="twitter:image" content="{{ $image }}">
-<meta name="twitter:creator" content="@yanlinlin82"> 
+<meta name="twitter:creator" content="{{ $siteData.social.twitter }}"> 

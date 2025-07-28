@@ -18,7 +18,8 @@
     "copy:fonts": "mkdir -p static/webfonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/webfonts/",
     "dev:css": "sass src/scss/main.scss:static/css/main.css --watch",
     "dev:js": "webpack --mode=development --watch",
-    "dev:assets": "npm run dev:css & npm run dev:js"
+    "dev:assets": "npm run dev:css & npm run dev:js",
+    "sync": "bash scripts/sync-config.sh"
   },
   "keywords": [
     "hugo",
