@@ -38,41 +38,13 @@
 </head>
 <body>
   <div class="container">
-  <header class="navbar navbar-expand-lg navbar-dark navbar-geek">
-    {{ block "header" . }}
-    <div class="navbar-brand-wrapper">
-      <a class="navbar-brand navbar-brand-geek fw-bold d-flex align-items-center" href="/">
-        <img src="{{ "logo/geek-logo.svg" | relURL }}" alt="Logo" class="me-2" width="48" height="48">
-        {{ site.Title }}
-      </a>
-      <div class="navbar-subtitle">用代码构建世界，用文字记录人生</div>
-    </div>
-    <nav class="navbar-nav ms-auto">
-      {{- range .Site.Menus.main -}}
-      <a class="nav-link nav-link-geek" href="{{ .URL }}">{{ .Name }}</a>
-      {{- end -}}
-      <button class="btn btn-outline-primary btn-search-geek ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-        <i class="fas fa-search me-1"></i> 搜索
-      </button>
-    </nav>
-    {{ end }}
-  </header>
+  {{- partial "header.html" . -}}
 
   <main class="main-content-geek">
     {{ block "main" . }}{{ end }}
   </main>
 
-  <footer class="footer-geek">
-    <div class="py-1">© 2007-2025 颜林林 | <a href="https://beian.miit.gov.cn/" target="_blank" class="external-link">京ICP备18031542号-1</a></div>
-    <div class="py-1">
-      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="external-link">CC-BY-4.0</a> |
-      <a href="https://gohugo.io/" target="_blank" class="external-link">Hugo</a> |
-      <a href="https://getbootstrap.com/" target="_blank" class="external-link">Bootstrap.js</a> |
-      <a href="https://www.boyouquan.com/" target="_blank" class="external-link">博友圈</a> |
-      <a href="https://github.com/yanlinlin82/yanlinlin.cn" target="_blank" class="external-link">GitHub源码</a> |
-      <a href="{{ "index.xml" | relURL }}" target="_blank" class="external-link">RSS订阅</a>
-    </div>
-  </footer>
+  {{- partial "footer.html" . -}}
   </div>
 
   {{- partial "search.html" . -}}
