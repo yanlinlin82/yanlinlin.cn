@@ -17,7 +17,7 @@ log() {
 serve() {
     local mode=${1:-fast}
     local port=${2:-13131}
-    
+
     case $mode in
         "fast")
             log "🌐 启动开发服务器（快速模式）"

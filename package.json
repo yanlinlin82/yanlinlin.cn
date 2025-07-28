@@ -4,7 +4,7 @@
   "scripts": {
     "build": "bash scripts/build.sh",
     "build:fast": "bash scripts/build.sh fast",
-    "build:full": "bash scripts/build.sh full", 
+    "build:full": "bash scripts/build.sh full",
     "build:search": "bash scripts/build.sh search",
     "serve": "bash scripts/serve.sh",
     "serve:fast": "bash scripts/serve.sh fast",

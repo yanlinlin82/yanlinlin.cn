@@ -32,7 +32,7 @@ build_assets() {
 # 主构建函数
 build() {
     local mode=${1:-full}
-    
+
     case $mode in
         "fast")
             log "🚀 快速构建模式 - 禁用 RSS、sitemap 和搜索索引"
@@ -52,7 +52,7 @@ build() {
             error "未知的构建模式: $mode (支持: fast, full, search)"
             ;;
     esac
-    
+
     log "构建完成"
 }
 

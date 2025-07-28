@@ -20,7 +20,7 @@
       {{ end }}
     {{ end }}
     {{ $sortedCategories := sort $categories "latestPost.Date" "desc" }}
-    
+
     <div class="categories-grid">
       {{ range $index, $category := $sortedCategories }}
       <div class="category-card-wrapper">
