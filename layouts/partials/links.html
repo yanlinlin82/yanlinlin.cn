@@ -2,12 +2,69 @@
 <link rel="canonical" href="{{ .Permalink }}">
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "index.xml" | relURL }}">
 
+<!-- DNS预解析 -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+
 <!-- 字体预连接 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- 字体和样式 -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- 关键资源预加载 -->
+<link rel="preload" href="{{ "assets/css/main.css" | relURL }}" as="style">
+<link rel="preload" href="{{ "assets/js/main.js" | relURL }}" as="script">
+
+<!-- 字体加载策略 - 优化国内访问 -->
+<script>
+// 字体加载优化 - 检测网络环境并选择合适的字体源
+(function() {
+  // 检测是否为国内网络环境
+  function isChineseNetwork() {
+    return navigator.language.includes('zh') || 
+           navigator.languages.some(lang => lang.includes('zh')) ||
+           /cn|china|chinese/i.test(navigator.userAgent);
+  }
+  
+  // 检测Google Fonts是否可访问
+  function testGoogleFonts() {
+    return new Promise((resolve) => {
+      const testImg = new Image();
+      testImg.onload = () => resolve(true);
+      testImg.onerror = () => resolve(false);
+      testImg.src = 'https://fonts.googleapis.com/favicon.ico';
+      setTimeout(() => resolve(false), 3000); // 3秒超时
+    });
+  }
+  
+  // 动态加载字体
+  async function loadFonts() {
+    const isChinese = isChineseNetwork();
+    const canAccessGoogle = await testGoogleFonts();
+    
+    if (isChinese && !canAccessGoogle) {
+      // 国内网络且无法访问Google Fonts，使用系统字体
+      console.log('检测到国内网络环境，使用系统字体优化');
+      document.documentElement.classList.add('fonts-fallback');
+    } else {
+      // 可以访问Google Fonts，正常加载
+      console.log('加载Google Fonts');
+      const link = document.createElement('link');
+      link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap';
+      link.rel = 'stylesheet';
+      document.head.appendChild(link);
+    }
+  }
+  
+  // 页面加载完成后执行字体检测
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadFonts);
+  } else {
+    loadFonts();
+  }
+})();
+</script>
+
+<!-- 样式表 -->
 <link rel="stylesheet" href="{{ "assets/css/main.css" | relURL }}">
 
 <!-- 网站图标 -->

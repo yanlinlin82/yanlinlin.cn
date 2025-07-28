@@ -1,6 +1,19 @@
+// 字体回退策略 - 优化国内用户访问体验
+.fonts-fallback {
+  // 当无法加载Google Fonts时，使用优化的系统字体栈
+  --font-sans: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', 'Menlo', 'Consolas', 'DejaVu Sans Mono', 'Courier New', monospace;
+  --font-serif: 'Noto Serif SC', 'SimSun', 'STSong', 'STKaiti', 'KaiTi', 'FangSong', 'STFangsong', serif;
+}
+
 // 极客橙红配色方案 - 增强版
 body {
   font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+// 字体回退优化
+.fonts-fallback body {
+  font-family: var(--font-sans);
 }
 
 // External link indicators
@@ -645,6 +658,10 @@ body {
   font-size: 0.9em;
 }
 
+.fonts-fallback .article-body code {
+  font-family: var(--font-mono);
+}
+
 .article-body pre {
   background: var(--bs-secondary-bg);
   border: 1px solid var(--bs-border-color);
@@ -924,6 +941,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fonts-fallback .category-title {
+  font-family: var(--font-sans);
+}
+
 .category-title a {
   color: var(--bs-primary);
   transition: color 0.2s ease;
@@ -950,6 +971,10 @@ body {
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.fonts-fallback .category-count {
+  font-family: var(--font-sans);
 }
 
 .category-content {

@@ -1,0 +1,47 @@
+{{ if .Site.GoogleAnalytics }}
+<!-- Google Analytics - 延时加载，仅在生产环境启用 -->
+<script>
+  // 检测是否为生产环境（在线部署版本）
+  var isProduction = window.location.hostname === 'yanlinlin.cn' || 
+                     window.location.hostname === 'www.yanlinlin.cn';
+  
+  if (isProduction) {
+    // 延迟加载 Google Analytics，避免影响页面性能
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        try {
+          // 检查是否能够访问 Google Analytics
+          var testImg = new Image();
+          testImg.onload = function() {
+            // 可以访问，加载 GA
+            loadGoogleAnalytics();
+          };
+          testImg.onerror = function() {
+            // 无法访问，跳过加载
+            console.log('Google Analytics 服务不可用，跳过加载');
+          };
+          testImg.src = 'https://www.google-analytics.com/favicon.ico';
+        } catch (e) {
+          console.log('Google Analytics 加载失败，但不影响页面功能');
+        }
+      }, 2000); // 延迟2秒加载
+    });
+  } else {
+    console.log('本地开发环境，跳过 Google Analytics 加载');
+  }
+
+  function loadGoogleAnalytics() {
+    // Google Analytics 4 代码
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ .Site.GoogleAnalytics }}');
+    
+    // 动态加载 gtag 脚本
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}';
+    document.head.appendChild(script);
+  }
+</script>
+{{ end }} 
