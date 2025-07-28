@@ -1,0 +1,8 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- 基础Meta信息 -->
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ if .IsHome }}颜林林的个人主页，记录技术探索、学术研究、生活感悟。专注于精准医疗、生物信息学、AI/LLM应用等领域。{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
+<meta name="keywords" content="颜林林,生物信息学,精准医疗,AI,LLM,编程,个人主页,不靠谱颜论">
+<meta name="author" content="颜林林"> 

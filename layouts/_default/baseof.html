@@ -1,40 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- 基础Meta信息 -->
-  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ if .IsHome }}颜林林的个人主页，记录技术探索、学术研究、生活感悟。专注于精准医疗、生物信息学、AI/LLM应用等领域。{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
-  <meta name="keywords" content="颜林林,生物信息学,精准医疗,AI,LLM,编程,个人主页,不靠谱颜论">
-  <meta name="author" content="颜林林">
-  
-  <!-- Open Graph标签 -->
-  <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-  <meta property="og:description" content="{{ if .IsHome }}记录技术探索、学术研究、生活感悟的个人数字空间{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
-  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:site_name" content="不靠谱颜论">
-  <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}https://yanlinlin.cn/static/images/og-image.jpg{{ end }}">
-  <meta property="og:locale" content="zh_CN">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-  <meta name="twitter:description" content="{{ if .IsHome }}记录技术探索、学术研究、生活感悟的个人数字空间{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
-  <meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}https://yanlinlin.cn/static/images/twitter-card.jpg{{ end }}">
-  <meta name="twitter:creator" content="@yanlinlin82">
-  
-  <!-- 其他Meta信息 -->
-  <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "index.xml" | relURL }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
-  <link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ "logo/geek-logo.svg" | relURL }}" type="image/svg+xml">
+  {{- partial "head.html" . -}}
 </head>
 <body>
   <div class="container">
