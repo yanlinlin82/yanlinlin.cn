@@ -179,9 +179,47 @@ function calculateArticleStats() {
   }
 }
 
-// Initialize all functionality
+// 返回顶部功能
+function setupBackToTop() {
+  const backToTopButton = document.getElementById('backToTop');
+  if (!backToTopButton) return;
+
+  const scrollThreshold = 300; // 滚动超过300px时显示按钮
+
+  function toggleBackToTop() {
+    if (window.scrollY > scrollThreshold) {
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  }
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // 监听滚动事件
+  window.addEventListener('scroll', toggleBackToTop, { passive: true });
+
+  // 点击事件
+  backToTopButton.addEventListener('click', scrollToTop);
+
+  // 键盘事件支持
+  backToTopButton.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      scrollToTop();
+    }
+  });
+}
+
+// 初始化所有功能
 document.addEventListener('DOMContentLoaded', function() {
   setupExternalLinks();
   setupSearch();
+  setupBackToTop();
   calculateArticleStats();
 });
