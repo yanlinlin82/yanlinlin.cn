@@ -15,7 +15,7 @@ log() {
 
 # 启动开发服务器
 serve() {
-    local mode=${1:-fast}
+    local mode=${1:-full}
     local port=${2:-13131}
 
     case $mode in

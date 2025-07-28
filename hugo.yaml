@@ -9,6 +9,10 @@ mainSections:
   - posts
 googleAnalytics: "G-P6SH63QQPQ"
 
+params:
+  fastBuild: false
+  disableSearchIndex: false
+
 taxonomies:
   category: categories
   series: series
