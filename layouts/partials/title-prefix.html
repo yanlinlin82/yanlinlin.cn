@@ -1,0 +1,9 @@
+{{- if eq .Kind "term" -}}
+  {{- if eq .Section "tags" -}}
+    标签：
+  {{- else if eq .Section "categories" -}}
+    专栏：
+  {{- else if eq .Section "series" -}}
+    系列：
+  {{- end -}}
+{{- end -}}

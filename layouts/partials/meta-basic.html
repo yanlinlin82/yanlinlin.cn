@@ -3,7 +3,8 @@
 
 <!-- 基础Meta信息 -->
 {{- $siteData := resources.Get "site.json" | transform.Unmarshal -}}
-{{- $title := cond .IsHome $siteData.title (printf "%s - %s" .Title $siteData.title) -}}
+{{- $titlePrefix := partial "title-prefix.html" . -}}
+{{- $title := cond .IsHome $siteData.title (printf "%s%s - %s" $titlePrefix .Title $siteData.title) -}}
 {{- $description := cond .IsHome $siteData.description (.Summary | default .Content | plainify | truncate 160) -}}
 
 <title>{{ $title }}</title>
