@@ -1,7 +1,6 @@
 {
   "name": "yanlinlin-cn",
   "version": "1.0.0",
-  "description": "颜林林的个人网站",
   "scripts": {
     "build": "bash scripts/build.sh",
     "build:fast": "bash scripts/build.sh fast",
@@ -21,14 +20,6 @@
     "dev:assets": "npm run dev:css & npm run dev:js",
     "sync": "bash scripts/sync-config.sh"
   },
-  "keywords": [
-    "hugo",
-    "static-site",
-    "blog",
-    "personal-website"
-  ],
-  "author": "颜林林",
-  "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
   },

@@ -1,0 +1,76 @@
+{{- $siteData := resources.Get "site.json" | transform.Unmarshal -}}
+{{- if and .IsPage $siteData.seo -}}
+
+<!-- 文章页面的结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Summary | default .Content | plainify | truncate 200 }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ $siteData.seo.authorName }}",
+    "jobTitle": "{{ $siteData.seo.authorTitle }}",
+    "description": "{{ $siteData.seo.authorBio }}",
+    "url": "{{ $siteData.baseURL }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ $siteData.seo.authorName }}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- if .Lastmod -}}
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{- end -}}
+  "url": "{{ .Permalink }}",
+  {{- if .Params.image -}}
+  "image": "{{ .Params.image | absURL }}",
+  {{- else -}}
+  "image": "{{ $siteData.images.og }}",
+  {{- end -}}
+  "articleSection": "{{ .Section }}",
+  {{- if .Params.categories -}}
+  "articleSection": "{{ index .Params.categories 0 }}",
+  {{- end -}}
+  {{- if .Params.tags -}}
+  "keywords": "{{ delimit .Params.tags ", " }}",
+  {{- end -}}
+  "inLanguage": "zh-CN",
+  "isAccessibleForFree": true
+}
+</script>
+
+<!-- 面包屑导航结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "{{ $siteData.baseURL }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Section | title }}",
+      "item": "{{ $siteData.baseURL }}{{ .Section }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+
+{{- end -}} 
