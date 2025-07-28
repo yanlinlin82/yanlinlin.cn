@@ -31,9 +31,6 @@ npm run build:fast
 
 # 完整构建（包含所有功能）
 npm run build:full
-
-# 仅构建搜索索引
-npm run build:search
 ```
 
 ### 前端资源构建
@@ -99,7 +96,6 @@ npm run clean
 | **构建** | `npm run build` | 完整构建（默认） |
 | | `npm run build:fast` | 快速构建 |
 | | `npm run build:full` | 完整构建 |
-| | `npm run build:search` | 仅构建搜索索引 |
 | **资源** | `npm run build:assets` | 构建所有前端资源 |
 | | `npm run build:css` | 构建 CSS |
 | | `npm run build:js` | 构建 JavaScript |
@@ -147,10 +143,6 @@ npm run clean
 
 1. **前端资源构建** (同上)
 2. **Hugo 静态站点生成** (禁用 RSS、sitemap 和搜索索引)
-
-### 搜索索引构建 (`npm run build:search`)
-
-仅构建搜索索引，用于增量更新搜索功能。
 
 ### 开发服务器
 
