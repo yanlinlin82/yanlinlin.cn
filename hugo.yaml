@@ -7,12 +7,13 @@ pagination:
   pagerSize: 12
 mainSections:
   - posts
-googleAnalytics: "G-P6SH63QQPQ"
 
 # 网站分析工具配置
 params:
   fastBuild: false
   disableSearchIndex: false
+  # Google Analytics 代码
+  googleAnalytics: "G-P6SH63QQPQ"
   # 百度统计代码
   baiduAnalytics: "a9ec9e8a36d71ac1ea9f1f77bdfcb909"
 

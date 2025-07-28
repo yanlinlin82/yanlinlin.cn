@@ -1,4 +1,4 @@
-{{ if .Site.GoogleAnalytics }}
+{{ if .Site.Params.googleAnalytics }}
 <!-- Google Analytics - 延时加载，仅在生产环境启用 -->
 <script>
   // 检测是否为生产环境（在线部署版本）
@@ -35,12 +35,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '{{ .Site.GoogleAnalytics }}');
+    gtag('config', '{{ .Site.Params.googleAnalytics }}');
     
     // 动态加载 gtag 脚本
     var script = document.createElement('script');
     script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}';
+    script.src = 'https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}';
     document.head.appendChild(script);
   }
 </script>
