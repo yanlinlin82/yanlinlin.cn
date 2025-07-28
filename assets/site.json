@@ -1,0 +1,19 @@
+{
+  "name": "yanlinlin-cn",
+  "title": "不靠谱颜论",
+  "subtitle": "颜林林的个人主页",
+  "description": "颜林林的个人主页，记录技术探索、学术研究、生活感悟。专注于精准医疗、生物信息学、AI/LLM应用等领域。",
+  "keywords": "颜林林,生物信息学,精准医疗,AI,LLM,编程,个人主页,不靠谱颜论",
+  "author": "颜林林",
+  "version": "1.0.0",
+  "license": "MIT",
+  "baseURL": "https://yanlinlin.cn/",
+  "social": {
+    "twitter": "@yanlinlin82",
+    "github": "yanlinlin82"
+  },
+  "images": {
+    "og": "https://yanlinlin.cn/static/images/og-image.jpg",
+    "twitter": "https://yanlinlin.cn/static/images/twitter-card.jpg"
+  }
+} 
