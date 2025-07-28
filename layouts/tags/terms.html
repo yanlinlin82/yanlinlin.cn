@@ -1,14 +1,10 @@
 {{ define "main" -}}
 <div class="tags-page">
-  <div class="tags-header">
-    <h1 class="tags-title">{{ .Title }}</h1>
-    {{ if .Content }}
-    <div class="tags-intro">
-      {{ .Content }}
-    </div>
-    {{ end }}
+  <div class="mb-4">
+    <h1 class="h2 mb-3">{{ .Title }}</h1>
+    {{ .Content -}}
   </div>
-
+  
   <div class="tags-content">
     <div class="tags-cloud" id="tags-cloud">
       <!-- 第一层：>=10篇的文章 -->
@@ -155,7 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .tags-header {
   margin-bottom: 2rem;
-  text-align: center;
 }
 
 .tags-title {

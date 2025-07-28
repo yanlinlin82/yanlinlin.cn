@@ -1,6 +1,16 @@
 {{ define "main" -}}
 <div class="mb-4">
-  <h1 class="h2 mb-3">{{ .Title }}</h1>
+  <h1 class="h2 mb-3">
+    {{ if eq .Section "tags" }}
+      标签：{{ .Title }}
+    {{ else if eq .Section "categories" }}
+      专栏：{{ .Title }}
+    {{ else if eq .Section "series" }}
+      系列：{{ .Title }}
+    {{ else }}
+      {{ .Title }}
+    {{ end }}
+  </h1>
   {{ .Content -}}
 </div>
 

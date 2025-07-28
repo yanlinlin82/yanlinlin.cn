@@ -11,6 +11,7 @@ googleAnalytics: "G-P6SH63QQPQ"
 
 taxonomies:
   category: categories
+  series: series
   tag: tags
 
 markup:
@@ -34,6 +35,12 @@ menu:
   - name: 专栏
     url: /categories/
     weight: 15
+  - name: 系列
+    url: /series/
+    weight: 16
+  - name: 标签
+    url: /tags/
+    weight: 17
   - name: 关于
     url: /about/
     weight: 20
