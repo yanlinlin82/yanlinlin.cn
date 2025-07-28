@@ -5,25 +5,8 @@
 
 <div class="recent-posts">
   <h2 class="section-title">最新文章</h2>
-  <ul class="article-list">
-    {{ $pages := where .Site.RegularPages "Type" "posts" }}
-    {{ $recent := first 6 $pages }}
-    {{ range $recent }}
-    <li class="article-item">
-      <a href="{{ .RelPermalink }}" class="article-card-link">
-        <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
-        <div class="article-title">
-          <span class="article-title-text">
-            {{ .Title }}
-            {{ range .Params.badges }}
-            <span class="article-badge">{{ . }}</span>
-            {{ end }}
-          </span>
-        </div>
-      </a>
-    </li>
-    {{ end -}}
-  </ul>
+  {{ $pages := where .Site.RegularPages "Type" "posts" }}
+  {{ partial "article-list.html" (dict "articles" $pages "maxItems" 6) }}
   <div class="text-center mt-4">
     <a href="/posts/" class="btn btn-more-posts">查看更多文章</a>
   </div>

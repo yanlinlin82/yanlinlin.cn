@@ -80,23 +80,7 @@
   {{ $related := .Site.RegularPages.Related . | first 6 }}
   {{ with $related }}
   <h2 class="section-title">相关文章</h2>
-  <ul class="article-list">
-   {{ range . }}
-   <li class="article-item">
-     <a href="{{ .RelPermalink }}" class="article-card-link">
-       <div class="article-date">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</div>
-       <div class="article-title">
-         <span class="article-title-text">
-           {{ .Title }}
-           {{ range .Params.badges }}
-           <span class="article-badge">{{ . }}</span>
-           {{ end }}
-         </span>
-       </div>
-     </a>
-   </li>
-   {{ end }}
-  </ul>
+  {{ partial "article-list.html" (dict "articles" $related "customClass" "related-articles") }}
   {{ end }}
 </div>
 {{ end -}}
