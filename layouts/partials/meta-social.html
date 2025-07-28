@@ -1,15 +1,19 @@
+{{- $title := cond .IsHome site.Title (printf "%s - %s" .Title site.Title) -}}
+{{- $description := cond .IsHome "记录技术探索、学术研究、生活感悟的个人数字空间" (.Summary | default .Content | plainify | truncate 160) -}}
+{{- $image := cond (.Params.image) (.Params.image | absURL) "https://yanlinlin.cn/static/images/og-image.jpg" -}}
+
 <!-- Open Graph标签 -->
-<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-<meta property="og:description" content="{{ if .IsHome }}记录技术探索、学术研究、生活感悟的个人数字空间{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="不靠谱颜论">
-<meta property="og:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}https://yanlinlin.cn/static/images/og-image.jpg{{ end }}">
+<meta property="og:image" content="{{ $image }}">
 <meta property="og:locale" content="zh_CN">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}">
-<meta name="twitter:description" content="{{ if .IsHome }}记录技术探索、学术研究、生活感悟的个人数字空间{{ else }}{{ .Summary | default .Content | plainify | truncate 160 }}{{ end }}">
-<meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}https://yanlinlin.cn/static/images/twitter-card.jpg{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $image }}">
 <meta name="twitter:creator" content="@yanlinlin82"> 
