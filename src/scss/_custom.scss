@@ -1343,3 +1343,74 @@ body {
     padding: 0.4rem 1.25rem;
   }
 }
+
+// 返回顶部按钮样式
+.btn-back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.9) 0%, rgba(234, 88, 12, 0.8) 100%);
+  border: 2px solid rgba(234, 88, 12, 0.3);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-back-to-top:hover {
+  background: linear-gradient(135deg, rgba(234, 88, 12, 1) 0%, rgba(234, 88, 12, 0.9) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-back-to-top:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.5);
+}
+
+.btn-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btn-back-to-top i {
+  transition: transform 0.2s ease;
+}
+
+.btn-back-to-top:hover i {
+  transform: translateY(-2px);
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .btn-back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.9rem;
+  }
+}
