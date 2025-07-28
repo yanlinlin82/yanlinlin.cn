@@ -1,0 +1,413 @@
+{{ define "main" -}}
+<div class="tags-page">
+  <div class="tags-header">
+    <h1 class="tags-title">{{ .Title }}</h1>
+    {{ if .Content }}
+    <div class="tags-intro">
+      {{ .Content }}
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="tags-content">
+    <div class="tags-cloud" id="tags-cloud">
+      <!-- 第一层：>=10篇的文章 -->
+      <div class="tags-layer" id="layer-10" data-min-count="10">
+        <h3 class="layer-title">热门标签 (≥10篇)</h3>
+        <div class="tags-layer-content">
+          {{ range .Data.Terms.ByCount }}
+            {{ if ge .Count 10 }}
+            <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
+              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-count-badge">{{ .Count }}</span>
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- 第二层：>=5篇的文章 -->
+      <div class="tags-layer" id="layer-5" data-min-count="5">
+        <h3 class="layer-title">活跃标签 (≥5篇)</h3>
+        <div class="tags-layer-content">
+          {{ range .Data.Terms.ByCount }}
+            {{ if and (ge .Count 5) (lt .Count 10) }}
+            <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
+              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-count-badge">{{ .Count }}</span>
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- 第三层：>=2篇的文章 -->
+      <div class="tags-layer" id="layer-2" data-min-count="2" style="display: none;">
+        <h3 class="layer-title">普通标签 (≥2篇)</h3>
+        <div class="tags-layer-content">
+          {{ range .Data.Terms.ByCount }}
+            {{ if and (ge .Count 2) (lt .Count 5) }}
+            <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
+              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-count-badge">{{ .Count }}</span>
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- 第四层：<2篇的文章 -->
+      <div class="tags-layer" id="layer-1" data-min-count="1" style="display: none;">
+        <h3 class="layer-title">其他标签 (<2篇)</h3>
+        <div class="tags-layer-content">
+          {{ range .Data.Terms.ByCount }}
+            {{ if lt .Count 2 }}
+            <a href="{{ .Page.RelPermalink }}" class="tag-cloud-item" data-count="{{ .Count }}">
+              <span class="tag-name">{{ .Term }}</span>
+              <span class="tag-count-badge">{{ .Count }}</span>
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="tags-load-more" id="load-more-container">
+      <button class="btn-load-more" id="load-more-btn" onclick="loadMoreTags()">
+        <span class="btn-text">加载更多标签</span>
+        <span class="btn-icon">▼</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+let currentLayer = 1; // 修改初始值，因为前两层（layer-10和layer-5）默认显示
+const layers = [
+  { id: 'layer-10', minCount: 10, title: '热门标签 (≥10篇)' },
+  { id: 'layer-5', minCount: 5, title: '活跃标签 (≥5篇)' },
+  { id: 'layer-2', minCount: 2, title: '普通标签 (≥2篇)' },
+  { id: 'layer-1', minCount: 1, title: '其他标签 (<2篇)' }
+];
+
+function loadMoreTags() {
+  // 查找下一个有内容的层
+  let nextLayerIndex = currentLayer + 1;
+  
+  while (nextLayerIndex < layers.length) {
+    const layer = document.getElementById(layers[nextLayerIndex].id);
+    const content = layer.querySelector('.tags-layer-content');
+    
+    if (content.children.length > 0) {
+      layer.style.display = 'block';
+      currentLayer = nextLayerIndex;
+      break;
+    }
+    nextLayerIndex++;
+  }
+  
+  // 检查是否还有更多层可以显示
+  let hasMoreLayers = false;
+  for (let i = currentLayer + 1; i < layers.length; i++) {
+    const layer = document.getElementById(layers[i].id);
+    const content = layer.querySelector('.tags-layer-content');
+    if (content.children.length > 0) {
+      hasMoreLayers = true;
+      break;
+    }
+  }
+  
+  // 更新按钮文本或隐藏按钮
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const btnText = document.querySelector('.btn-text');
+  
+  if (!hasMoreLayers) {
+    loadMoreBtn.style.display = 'none';
+  } else {
+    btnText.textContent = '加载更多标签';
+  }
+}
+
+// 初始化：检查是否需要显示加载更多按钮
+document.addEventListener('DOMContentLoaded', function() {
+  let hasHiddenLayers = false;
+  for (let i = 2; i < layers.length; i++) {
+    const layer = document.getElementById(layers[i].id);
+    const content = layer.querySelector('.tags-layer-content');
+    if (content.children.length > 0) {
+      hasHiddenLayers = true;
+      break;
+    }
+  }
+  
+  if (!hasHiddenLayers) {
+    document.getElementById('load-more-container').style.display = 'none';
+  }
+});
+</script>
+
+<style>
+/* 标签页面样式 */
+.tags-page {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tags-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tags-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--bs-body-color);
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tags-intro {
+  color: var(--bs-secondary-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tags-content {
+  margin-top: 2rem;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tags-layer {
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.layer-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--bs-body-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(234, 88, 12, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.layer-title::before {
+  content: '';
+  width: 4px;
+  height: 1rem;
+  background: var(--bs-primary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.tags-layer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.tag-cloud-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.tag-cloud-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.1), rgba(234, 88, 12, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tag-cloud-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+  border-color: rgba(234, 88, 12, 0.4);
+  color: var(--bs-primary);
+}
+
+.tag-cloud-item:hover::before {
+  opacity: 1;
+}
+
+.tag-name {
+  position: relative;
+  z-index: 1;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tag-count-badge {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  color: var(--bs-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  min-width: 1.5rem;
+  text-align: center;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace;
+  border: 1px solid var(--bs-primary);
+}
+
+.tags-load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-load-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-load-more:hover {
+  background: var(--bs-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.btn-text {
+  font-weight: 600;
+}
+
+.btn-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-load-more:hover .btn-icon {
+  transform: translateY(2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .tags-title {
+    font-size: 1.75rem;
+  }
+
+  .tags-intro {
+    font-size: 1rem;
+  }
+
+  .tags-layer {
+    padding: 1.25rem;
+  }
+
+  .layer-title {
+    font-size: 1rem;
+  }
+
+  .tag-cloud-item {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .tag-count-badge {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.35rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tags-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .tags-title {
+    font-size: 1.5rem;
+  }
+
+  .tags-intro {
+    font-size: 0.95rem;
+  }
+
+  .tags-content {
+    margin-top: 1.5rem;
+  }
+
+  .tags-cloud {
+    gap: 1.5rem;
+  }
+
+  .tags-layer {
+    padding: 1rem;
+  }
+
+  .layer-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tags-layer-content {
+    gap: 0.5rem;
+  }
+
+  .tag-cloud-item {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .tag-count-badge {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.3rem;
+  }
+
+  .btn-load-more {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+</style>
+{{ end -}} 
