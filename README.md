@@ -118,7 +118,8 @@ npm run clean
 ├── layouts/          # 模板文件
 │   └── partials/     # 可重用模板组件
 ├── assets/           # 资源文件（Hugo 处理）
-│   └── site.json     # 统一站点配置
+│   ├── site.json     # 网站配置
+│   └── project.json  # 项目配置
 ├── static/           # 静态资源
 ├── src/              # 前端源码
 │   ├── scss/         # SCSS 源文件
@@ -163,8 +164,10 @@ npm run clean
 
 ### 配置管理
 
-- 使用 `assets/site.json` 统一管理站点配置
-- 运行 `npm run sync` 检查 `package.json` 和 `assets/site.json` 的一致性
+- **`package.json`**: 只包含必需字段（name, version）和构建相关配置
+- **`assets/site.json`**: 管理网站配置（标题、描述、关键词、社交媒体等）
+- **`assets/project.json`**: 管理项目信息（作者、版本、许可证、关键词等）
+- 运行 `npm run sync` 检查配置一致性并显示项目信息
 
 ## 许可证
 

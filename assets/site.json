@@ -1,13 +1,18 @@
 {
   "name": "yanlinlin-cn",
+  "version": "1.0.0",
   "title": "不靠谱颜论",
   "subtitle": "颜林林的个人主页",
-  "description": "颜林林的个人主页，记录技术探索、学术研究、生活感悟。专注于精准医疗、生物信息学、AI/LLM应用等领域。",
-  "keywords": "颜林林,生物信息学,精准医疗,AI,LLM,编程,个人主页,不靠谱颜论",
+  "description": "颜林林博士的个人主页 - 生物信息学专家、精准医疗研究者、AI/LLM应用探索者。20年编程经验，专注高通量组学数据分析、临床肿瘤基因检测、大模型在生物信息学领域的应用。分享技术探索、学术思考、生活感悟，记录那些'不靠谱'却有趣的发现。",
+  "keywords": "颜林林,生物信息学,精准医疗,高通量测序,组学数据分析,临床肿瘤基因检测,AI应用,大语言模型,LLM,生物标志物,多组学数据,机器学习,深度学习,Python编程,C++编程,R编程,生物信息学算法,突变检测,基因融合,免疫治疗,数字病理学,ACMGator,生信软件开发,跨学科研究,技术博客,个人主页,不靠谱颜论",
   "author": "颜林林",
-  "version": "1.0.0",
   "license": "MIT",
   "baseURL": "https://yanlinlin.cn/",
+  "homepage": "https://yanlinlin.cn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanlinlin82/yanlinlin.cn.git"
+  },
   "social": {
     "twitter": "@yanlinlin82",
     "github": "yanlinlin82"
@@ -15,5 +20,52 @@
   "images": {
     "og": "https://yanlinlin.cn/static/images/og-image.jpg",
     "twitter": "https://yanlinlin.cn/static/images/twitter-card.jpg"
+  },
+  "analytics": {
+    "google": "G-P6SH63QQPQ"
+  },
+  "content": {
+    "rssLimit": 20,
+    "pagerSize": 12,
+    "mainSections": ["posts"]
+  },
+  "seo": {
+    "siteName": "不靠谱颜论 - 颜林林的个人主页",
+    "siteDescription": "生物信息学专家颜林林博士的个人主页，专注精准医疗、AI/LLM应用、技术探索与学术思考",
+    "authorName": "颜林林",
+    "authorTitle": "生物信息学博士、精准医疗研究者、AI应用探索者",
+    "authorBio": "北京大学生物信息学博士，20年编程经验，专注高通量组学数据分析、临床肿瘤基因检测、大模型在生物信息学领域的应用",
+    "expertise": [
+      "生物信息学",
+      "精准医疗",
+      "高通量测序",
+      "组学数据分析",
+      "临床肿瘤基因检测",
+      "AI/LLM应用",
+      "机器学习",
+      "深度学习",
+      "生物标志物发现",
+      "多组学数据整合",
+      "生信软件开发",
+      "Python/C++/R编程"
+    ],
+    "researchAreas": [
+      "肿瘤早筛",
+      "免疫治疗",
+      "数字病理学",
+      "突变致病性评级",
+      "基因组注释",
+      "文献挖掘",
+      "临床决策支持"
+    ],
+    "contentCategories": [
+      "技术探索",
+      "学术思考",
+      "生活感悟",
+      "书评分享",
+      "编程实践",
+      "AI应用",
+      "生物信息学"
+    ]
   }
-} 
+}

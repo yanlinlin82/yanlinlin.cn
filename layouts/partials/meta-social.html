@@ -17,4 +17,66 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
 <meta name="twitter:image" content="{{ $image }}">
-<meta name="twitter:creator" content="{{ $siteData.social.twitter }}"> 
+<meta name="twitter:creator" content="{{ $siteData.social.twitter }}">
+
+<!-- 扩展社交媒体标签 -->
+{{- if $siteData.seo -}}
+<meta property="og:author" content="{{ $siteData.seo.authorName }}">
+<meta property="og:author:title" content="{{ $siteData.seo.authorTitle }}">
+<meta property="og:author:bio" content="{{ $siteData.seo.authorBio }}">
+<meta property="og:site_name" content="{{ $siteData.seo.siteName }}">
+<meta property="og:site_description" content="{{ $siteData.seo.siteDescription }}">
+
+<!-- 专业领域标签 -->
+{{- range $siteData.seo.expertise -}}
+<meta property="og:expertise" content="{{ . }}">
+{{- end -}}
+
+<!-- 研究方向标签 -->
+{{- range $siteData.seo.researchAreas -}}
+<meta property="og:research_area" content="{{ . }}">
+{{- end -}}
+{{- end -}}
+
+<!-- 结构化数据 - 作者信息 -->
+{{- if $siteData.seo -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ $siteData.seo.authorName }}",
+  "jobTitle": "{{ $siteData.seo.authorTitle }}",
+  "description": "{{ $siteData.seo.authorBio }}",
+  "url": "{{ $siteData.baseURL }}",
+  "sameAs": [
+    "https://github.com/{{ $siteData.social.github }}",
+    "https://twitter.com/{{ $siteData.social.twitter }}"
+  ],
+  "knowsAbout": [
+    {{- range $index, $expertise := $siteData.seo.expertise -}}
+    "{{ $expertise }}"{{- if ne $index (sub (len $siteData.seo.expertise) 1) }},{{- end -}}
+    {{- end -}}
+  ]
+}
+</script>
+
+<!-- 结构化数据 - 网站信息 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ $siteData.seo.siteName }}",
+  "description": "{{ $siteData.seo.siteDescription }}",
+  "url": "{{ $siteData.baseURL }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ $siteData.seo.authorName }}",
+    "jobTitle": "{{ $siteData.seo.authorTitle }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ $siteData.seo.authorName }}"
+  }
+}
+</script>
+{{- end -}} 

@@ -14,4 +14,28 @@
 <!-- SEO和浏览器优化 -->
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0d6efd">
-<meta name="color-scheme" content="light dark"> 
+<meta name="color-scheme" content="light dark">
+
+<!-- 扩展SEO信息 -->
+{{- if $siteData.seo -}}
+<meta name="author:name" content="{{ $siteData.seo.authorName }}">
+<meta name="author:title" content="{{ $siteData.seo.authorTitle }}">
+<meta name="author:bio" content="{{ $siteData.seo.authorBio }}">
+<meta name="site:name" content="{{ $siteData.seo.siteName }}">
+<meta name="site:description" content="{{ $siteData.seo.siteDescription }}">
+
+<!-- 专业领域标签 -->
+{{- range $siteData.seo.expertise -}}
+<meta name="expertise" content="{{ . }}">
+{{- end -}}
+
+<!-- 研究方向标签 -->
+{{- range $siteData.seo.researchAreas -}}
+<meta name="research-area" content="{{ . }}">
+{{- end -}}
+
+<!-- 内容分类标签 -->
+{{- range $siteData.seo.contentCategories -}}
+<meta name="content-category" content="{{ . }}">
+{{- end -}}
+{{- end -}} 
