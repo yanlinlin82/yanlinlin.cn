@@ -10,18 +10,30 @@
 # 快速开发（推荐）
 npm run dev
 
-# 或完整开发模式
-npm run serve
+# 完整开发模式
+npm run start
+
+# 快速服务器模式
+npm run serve:fast
+
+# 完整服务器模式
+npm run serve:full
 ```
 
 ### 构建
 
 ```bash
-# 快速构建（开发用）
+# 完整构建（生产用，默认）
+npm run build
+
+# 快速构建（开发用，禁用 RSS、sitemap 和搜索索引）
 npm run build:fast
 
-# 完整构建（生产用）
-npm run build
+# 完整构建（包含所有功能）
+npm run build:full
+
+# 仅构建搜索索引
+npm run build:search
 ```
 
 ### 前端资源构建
@@ -40,6 +52,26 @@ npm run build:js
 npm run copy:fonts
 ```
 
+### 开发监听
+
+```bash
+# 监听所有前端资源变化
+npm run dev:assets
+
+# 监听 CSS 文件变化
+npm run dev:css
+
+# 监听 JavaScript 文件变化
+npm run dev:js
+```
+
+### 配置管理
+
+```bash
+# 检查配置一致性
+npm run sync
+```
+
 ### 其他命令
 
 ```bash
@@ -56,21 +88,49 @@ npm run clean
 - **样式**: Bootstrap 5 + 自定义 SCSS + FontAwesome 图标
 - **构建工具**: npm scripts + Webpack + Sass
 
+## 命令总览
+
+| 类别 | 命令 | 说明 |
+|------|------|------|
+| **开发** | `npm run dev` | 快速开发模式（推荐） |
+| | `npm run start` | 完整开发模式 |
+| | `npm run serve:fast` | 快速服务器模式 |
+| | `npm run serve:full` | 完整服务器模式 |
+| **构建** | `npm run build` | 完整构建（默认） |
+| | `npm run build:fast` | 快速构建 |
+| | `npm run build:full` | 完整构建 |
+| | `npm run build:search` | 仅构建搜索索引 |
+| **资源** | `npm run build:assets` | 构建所有前端资源 |
+| | `npm run build:css` | 构建 CSS |
+| | `npm run build:js` | 构建 JavaScript |
+| | `npm run copy:fonts` | 拷贝字体文件 |
+| **监听** | `npm run dev:assets` | 监听所有资源变化 |
+| | `npm run dev:css` | 监听 CSS 变化 |
+| | `npm run dev:js` | 监听 JS 变化 |
+| **工具** | `npm run clean` | 清理构建目录 |
+| | `npm run sync` | 检查配置一致性 |
+| | `npm run help` | 查看所有命令 |
+
 ## 项目结构
 
 ```
 ├── content/          # 内容文件
 ├── layouts/          # 模板文件
+│   └── partials/     # 可重用模板组件
+├── assets/           # 资源文件（Hugo 处理）
+│   └── site.json     # 统一站点配置
 ├── static/           # 静态资源
-├── src/scss/         # SCSS 源文件
+├── src/              # 前端源码
+│   ├── scss/         # SCSS 源文件
+│   └── js/           # JavaScript 源文件
+├── scripts/          # 构建脚本
 ├── config/           # Hugo 配置
-├── docs/             # 文档
 └── public/           # 构建输出（自动生成）
 ```
 
 ## 构建流程
 
-### 完整构建流程 (`npm run build`)
+### 完整构建流程 (`npm run build` / `npm run build:full`)
 
 1. **前端资源构建** (`npm run build:assets`)
    - 构建 CSS 文件 (`npm run build:css`)
@@ -87,12 +147,24 @@ npm run clean
 1. **前端资源构建** (同上)
 2. **Hugo 静态站点生成** (禁用 RSS、sitemap 和搜索索引)
 
+### 搜索索引构建 (`npm run build:search`)
+
+仅构建搜索索引，用于增量更新搜索功能。
+
+### 开发服务器
+
+- **快速模式** (`npm run serve:fast`): 禁用 RSS、sitemap 和搜索索引，启动速度更快
+- **完整模式** (`npm run serve:full`): 包含所有功能，适合最终测试
+
 ### 字体文件管理
 
 - FontAwesome 字体文件从 `node_modules/@fortawesome/fontawesome-free/webfonts/` 自动拷贝到 `static/webfonts/`
 - 每次构建时自动更新，确保字体文件与依赖版本同步
 
-详细说明请查看 [构建文档](docs/BUILD.md)。
+### 配置管理
+
+- 使用 `assets/site.json` 统一管理站点配置
+- 运行 `npm run sync` 检查 `package.json` 和 `assets/site.json` 的一致性
 
 ## 许可证
 
