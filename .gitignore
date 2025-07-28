@@ -11,17 +11,17 @@
 /node_modules
 
 # Frontend build artifacts
-static/css/main.css
-static/css/main.css.map
-static/js/main.js
-static/js/main.js.map
-static/js/main.js.LICENSE.txt
+static/assets/css/main.css
+static/assets/css/main.css.map
+static/assets/js/main.js
+static/assets/js/main.js.map
+static/assets/js/main.js.LICENSE.txt
 
 # FontAwesome font files (copied from node_modules)
-static/webfonts/*.woff2
-static/webfonts/*.woff
-static/webfonts/*.ttf
-static/webfonts/*.eot
+static/assets/fonts/*.woff2
+static/assets/fonts/*.woff
+static/assets/fonts/*.ttf
+static/assets/fonts/*.eot
 
 # Build cache
 .sass-cache/
