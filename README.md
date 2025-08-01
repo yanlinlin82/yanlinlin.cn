@@ -163,4 +163,5 @@ npm run clean
 
 ## 许可证
 
-MIT License
+- **代码**：[MIT License](LICENSE) - 自由使用，保留版权声明
+- **内容**：[CC-BY-4.0](LICENSE-CC-BY-4.0) - 自由使用，必须注明原作者
