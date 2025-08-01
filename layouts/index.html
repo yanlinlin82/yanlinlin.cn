@@ -6,7 +6,7 @@
 <div class="recent-posts">
   <h2 class="section-title">最新文章</h2>
   {{ $pages := where .Site.RegularPages "Type" "posts" }}
-  {{ partial "article-list.html" (dict "articles" $pages "maxItems" 6) }}
+  {{ partial "article-list.html" (dict "articles" $pages "maxItems" 6 "showThumbnail" true) }}
   <div class="text-center mt-4">
     <a href="/posts/" class="btn btn-more-posts">查看更多文章</a>
   </div>

@@ -20,26 +20,17 @@
   </div>
 </div>
 
-<!-- Load search index -->
+<!-- Search index loader -->
 <script>
 {{ if not .Site.Params.fastBuild }}
-window.searchIndex = [
-{{ $pages := where .Site.RegularPages "Type" "posts" }}
-{{ range $index, $page := $pages }}
-  {
-    "title": {{ $page.Title | jsonify }},
-    "url": {{ $page.RelPermalink | jsonify }},
-    "date": {{ $page.Date.Format "2006-01-02" | jsonify }},
-    "summary": {{ $page.Summary | jsonify }},
-    "content": {{ $page.Content | plainify | jsonify }},
-    "tags": {{ $page.Params.tags | default (slice) | jsonify }},
-    "categories": {{ $page.Params.categories | default (slice) | jsonify }}
-  }{{ if ne $index (sub (len $pages) 1) }},{{ end }}
-{{ end }}
-];
+// 使用预生成的搜索索引数据
+window.searchIndex = window.searchIndexData || [];
+window.searchIndexLoaded = true;
+console.log('搜索索引已加载，共', window.searchIndex.length, '篇文章');
 {{ else }}
 // 快速构建模式 - 搜索功能已禁用
 window.searchIndex = [];
+window.searchIndexLoaded = true;
 console.log('快速构建模式：搜索索引已跳过');
 {{ end }}
 </script>

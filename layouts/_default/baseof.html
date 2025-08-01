@@ -5,24 +5,26 @@
 </head>
 <body>
   <div class="container">
-  {{- partial "header.html" . -}}
+    {{- partial "header.html" . -}}
 
-  <main class="main-content-geek">
-    {{ block "main" . }}{{ end }}
-  </main>
+    <main class="main-content-geek">
+      {{ block "main" . }}{{ end }}
+    </main>
 
-  {{- partial "footer.html" . -}}
+    {{- partial "footer.html" . -}}
   </div>
 
+  {{- partial "search-index-generator.html" . -}}
   {{- partial "search.html" . -}}
-  
+
   <!-- 返回顶部按钮 -->
   <button id="backToTop" class="btn-back-to-top" aria-label="返回顶部" title="返回顶部">
     <i class="fas fa-arrow-up"></i>
   </button>
-  
+
   <script src="{{ "assets/js/main.js" | relURL }}"></script>
-  
+  <script src="{{ "assets/js/thumbnails.js" | relURL }}"></script>
+
   <!-- 网站分析工具 -->
   {{ partial "analytics.html" . }}
 </body>
