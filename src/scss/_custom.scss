@@ -288,6 +288,57 @@ body {
   line-height: 1.6;
 }
 
+.footer-geek .footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-geek .footer-column {
+  text-align: center;
+  min-width: 120px;
+}
+
+.footer-geek .footer-column-title {
+  color: var(--bs-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-geek .footer-column-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer-geek .footer-column-content a {
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+}
+
+// 移动端适配
+@media (max-width: 768px) {
+  .footer-geek .footer-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .footer-geek .footer-column {
+    min-width: auto;
+  }
+  
+  .footer-geek .footer-column-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
 // Main content area
 .main-content-geek {
   padding: 2rem 0;
@@ -472,18 +523,19 @@ body {
   font-weight: 500;
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
-  background: rgba(234, 88, 12, 0.08);
-  border: 1px solid rgba(234, 88, 12, 0.15);
+  background: transparent;
+  border: 1px solid var(--bs-primary);
   color: var(--bs-primary);
   white-space: nowrap;
   flex-shrink: 0;
   transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 .article-badge:hover {
-  background: rgba(234, 88, 12, 0.15);
-  border-color: rgba(234, 88, 12, 0.3);
-  color: var(--bs-primary);
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: white;
   text-decoration: none;
 }
 
@@ -820,6 +872,25 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+/* 相关文章响应式断点 - 与首页最新文章保持一致 */
+@media (min-width: 1200px) {
+  .related-posts .article-list.related-articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .related-posts .article-list.related-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .related-posts .article-list.related-articles {
+    grid-template-columns: 1fr;
+  }
 }
 
 .related-posts .article-list.related-articles .article-item {
