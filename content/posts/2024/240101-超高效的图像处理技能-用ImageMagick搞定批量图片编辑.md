@@ -7,7 +7,7 @@ slug: ultra-efficient-image-processing-skills-batch-editing-with-imagemagick
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0101/01.png" alt="题图" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2024/0101/01.png" alt="题图" style="max-width:640px">
   <div><small>（题图由AI生成）</small></div>
 </div>
 

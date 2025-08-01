@@ -7,7 +7,7 @@ slug: lululemon-method-founder-story
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0720/book-cover.png" alt="图书封面">
+  <img class="img-fluid" src="/uploads/2024/0720/book-cover.png" alt="图书封面">
 </div>
 
 《lululemon方法：创始人亲述》，[加]奇普·威尔逊 著，赵磊 译，中信出版集团，2024年4月出版。
