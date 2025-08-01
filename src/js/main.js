@@ -1,8 +1,8 @@
 // Import Bootstrap JavaScript
 import 'bootstrap';
 
-// Import Fuse.js for search functionality
-const Fuse = require('fuse.js');
+// Import search functionality
+const { setupSearch } = require('./search.js');
 
 // 字体加载性能监控
 function monitorFontLoading() {
@@ -44,10 +44,7 @@ function monitorFontLoading() {
 document.addEventListener('DOMContentLoaded', monitorFontLoading);
 
 // Constants
-const SEARCH_MIN_LENGTH = 2;
-const SEARCH_MAX_RESULTS = 10;
 const WORDS_PER_MINUTE = 300;
-const CONTENT_MAX_LENGTH = 200;
 
 // External link handling
 function setupExternalLinks() {
@@ -55,142 +52,6 @@ function setupExternalLinks() {
   externalLinks.forEach(link => {
     link.classList.add('external-link');
     link.setAttribute('target', '_blank');
-  });
-}
-
-// HTML entity decoding
-function decodeHtmlEntities(text) {
-  return text
-    .replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
-    .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(parseInt(dec, 10)))
-    .replace(/&#x([0-9a-fA-F]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
-    .replace(/&quot;/g, '"')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&apos;/g, "'")
-    .replace(/&nbsp;/g, ' ')
-    .replace(/<[^>]*>/g, '');
-}
-
-// Highlight matched text in search results
-function highlightMatches(text, matches, key) {
-  if (!matches) return text;
-  
-  matches.forEach(match => {
-    if (match.key === key) {
-      match.indices.forEach(([start, end]) => {
-        const matchedText = text.substring(start, end + 1);
-        text = text.replace(matchedText, `<mark>${matchedText}</mark>`);
-      });
-    }
-  });
-  
-  return text;
-}
-
-// Process search result item
-function processSearchResult(result) {
-  const { item, matches } = result;
-  
-  // Clean URL and highlight title
-  item.url = item.url.replace(/^["']|["']$/g, '');
-  let title = highlightMatches(item.title, matches, 'title');
-  
-  // Process content with highlighting and decoding
-  let content = '';
-  if (item.summary) {
-    content = highlightMatches(item.summary, matches, 'summary');
-    content = decodeHtmlEntities(content).substring(0, CONTENT_MAX_LENGTH) + '...';
-  }
-  
-  return { title, content, item };
-}
-
-// Generate search result HTML
-function generateSearchResultHtml({ title, content, item }) {
-  const tagsHtml = item.tags && Array.isArray(item.tags) && item.tags.length > 0
-    ? `<div class="mb-2">${item.tags.map(tag => `<span class="badge bg-secondary me-1">${tag}</span>`).join('')}</div>`
-    : '';
-    
-  return `
-    <div class="search-result-item mb-3 p-3 border rounded">
-      <h6 class="mb-1">
-        <a href="${item.url}" class="text-decoration-none">${title}</a>
-      </h6>
-      <p class="text-muted small mb-1">${item.date}</p>
-      <p class="mb-2">${content}</p>
-      ${tagsHtml}
-    </div>
-  `;
-}
-
-// Perform search and update results
-function performSearch(fuse, query, searchResults) {
-  if (query.length < SEARCH_MIN_LENGTH) {
-    searchResults.innerHTML = '<p class="text-muted">输入至少2个字符开始搜索...</p>';
-    return;
-  }
-
-  const results = fuse.search(query);
-  
-  if (results.length === 0) {
-    searchResults.innerHTML = '<p class="text-muted">没有找到相关结果</p>';
-    return;
-  }
-
-  // Sort by date (newest first) and limit results
-  const sortedResults = results
-    .sort((a, b) => {
-      const dateA = new Date(a.item.date.replace(/"/g, ''));
-      const dateB = new Date(b.item.date.replace(/"/g, ''));
-      return dateB - dateA;
-    })
-    .slice(0, SEARCH_MAX_RESULTS)
-    .map(processSearchResult)
-    .map(generateSearchResultHtml)
-    .join('');
-
-  searchResults.innerHTML = sortedResults;
-}
-
-// Setup search functionality
-function setupSearch() {
-  if (typeof window.searchIndex === 'undefined') return;
-
-  const fuseOptions = {
-    keys: ['title', 'summary', 'content', 'tags', 'categories'],
-    threshold: 0.3,
-    includeScore: true,
-    includeMatches: true
-  };
-
-  const fuse = new Fuse(window.searchIndex, fuseOptions);
-  const searchInput = document.getElementById('searchInput');
-  const searchResults = document.getElementById('searchResults');
-  const searchModal = document.getElementById('searchModal');
-
-  if (!searchInput || !searchResults || !searchModal) return;
-
-  // Search input handler
-  searchInput.addEventListener('input', function() {
-    performSearch(fuse, this.value.trim(), searchResults);
-  });
-
-  // Modal event handlers
-  searchModal.addEventListener('shown.bs.modal', () => {
-    setTimeout(() => searchInput.focus(), 100);
-  });
-
-  searchModal.addEventListener('hide.bs.modal', () => {
-    searchInput.value = '';
-    searchResults.innerHTML = '<p class="text-muted">输入至少2个字符开始搜索...</p>';
-  });
-
-  searchModal.addEventListener('hidden.bs.modal', () => {
-    searchModal.removeAttribute('aria-hidden');
-    const searchButton = document.querySelector('[data-bs-target="#searchModal"]');
-    if (searchButton) searchButton.focus();
   });
 }
 

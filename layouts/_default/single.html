@@ -80,7 +80,7 @@
   {{ $related := .Site.RegularPages.Related . | first 6 }}
   {{ with $related }}
   <h2 class="section-title">相关文章</h2>
-  {{ partial "article-list.html" (dict "articles" $related "customClass" "related-articles") }}
+  {{ partial "article-list.html" (dict "articles" $related "customClass" "related-articles" "showThumbnail" true) }}
   {{ end }}
 </div>
 {{ end -}}

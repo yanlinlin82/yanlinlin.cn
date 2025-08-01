@@ -1,5 +1,8 @@
+{{- if not .Site.Params.fastBuild -}}
+<script>
+// 生成搜索索引数据
+window.searchIndexData = [
 {{- $pages := where .Site.RegularPages "Type" "posts" -}}
-[
 {{- range $index, $page := $pages -}}
   {
     "title": {{ $page.Title | jsonify }},
@@ -11,4 +14,6 @@
     "categories": {{ $page.Params.categories | default (slice) | jsonify }}
   }{{- if ne $index (sub (len $pages) 1) -}},{{- end -}}
 {{- end -}}
-]
+];
+</script>
+{{- end -}} 

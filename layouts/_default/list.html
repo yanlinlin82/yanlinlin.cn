@@ -4,7 +4,7 @@
   {{ .Content -}}
 </div>
 
-{{ partial "article-list.html" (dict "articles" .Paginator.Pages) }}
+{{ partial "article-list.html" (dict "articles" .Paginator.Pages "showThumbnail" true) }}
 
 {{ if gt .Paginator.TotalPages 1 }}
   {{ partial "pagination.html" . }}

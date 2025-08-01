@@ -9,7 +9,7 @@
   </div>
   <nav class="navbar-nav ms-auto">
     {{- range .Site.Menus.main -}}
-    <a class="nav-link nav-link-geek" href="{{ .URL }}">{{ .Name }}</a>
+    <a class="nav-link nav-link-geek {{ if eq .URL $.RelPermalink }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
     {{- end -}}
     <button class="btn btn-outline-primary btn-search-geek ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
       <i class="fas fa-search me-1"></i> 搜索
