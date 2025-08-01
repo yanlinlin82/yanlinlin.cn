@@ -64,6 +64,7 @@ else
     npm install
     
     log "🏗️  开始构建..."
+    rm -rf public
     npm run build
     
     log "✅ 更新完成！"
