@@ -7,7 +7,7 @@ slug: promise-powerful-tool-for-asynchronous-programming
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0106/01.png" alt="题图" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2024/0106/01.png" alt="题图" style="max-width:640px">
   <div><small>（题图由AI生成）</small></div>
 </div>
 

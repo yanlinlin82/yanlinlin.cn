@@ -7,7 +7,7 @@ slug: how-to-export-chatgpt-history
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2023/1223/01.png" alt="题图" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2023/1223/01.png" alt="题图" style="max-width:640px">
 </div>
 
 Image

@@ -7,7 +7,7 @@ slug: book-review-cpp-primer
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2023/0125/book-cover.png" alt="图书封面" style="max-width:400px; max-height:400px;">
+  <img class="img-fluid" src="/uploads/2023/0125/book-cover.png" alt="图书封面" style="max-width:400px; max-height:400px;">
 </div>
 
 《C++ Primer》中文版（第5版），[美] Stanley B. Lippman、Josée Lajoie、Barbara E. Moo著，王刚、杨巨峰 译，电子工业出版社 2013年9月出版。

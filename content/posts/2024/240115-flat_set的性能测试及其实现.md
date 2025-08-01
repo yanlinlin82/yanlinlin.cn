@@ -7,7 +7,7 @@ slug: flat-set-performance
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0115/01.png" alt="题图" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2024/0115/01.png" alt="题图" style="max-width:640px">
   <div><small>（题图由AI生成）</small></div>
 </div>
 
@@ -117,7 +117,7 @@ int main() {
 程序执行的结果如下：
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0115/02.png" alt="" style="max-width:350px">
+  <img class="img-fluid" src="/uploads/2024/0115/02.png" alt="" style="max-width:350px">
 </div>
 
 可以看到，flat_set 在查找和迭代遍历的速度，都明显快于 std::set，但相应做出的牺牲，则是在数据插入上，明显慢于 std::set。因此，可以知道，对于修改少但访问频繁的数据（这种场景在现实中应该还是相当常见的），是应该考虑使用 flat_set 来代替 std::set 的。
@@ -126,20 +126,20 @@ int main() {
 最后，再来说说实现（这里可以看看 boost 中的实现）：
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0115/03.png" alt="" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2024/0115/03.png" alt="" style="max-width:640px">
 </div>
 
 为方便展示，这里使用了来自ClickHouse的截图。想查看和学习相应实现的，也推荐使用这个网址在线浏览学习代码（https://clickhouse.com/codebrowser/ClickHouse/contrib/boost/boost/container/flat_set.hpp.html）。
 从上面的代码中可以看到，flat_set::insert() 调用了其成员变量 tree_t 的 insert_unique() 方法。该成员变量的类型，来自于 boost 库的底层实现支持，之所以这么封装，是因为它还可以同时用于支持其他 flat_xxx 类型（如 flat_map）的实现。
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0115/04.png" alt="" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2024/0115/04.png" alt="" style="max-width:640px">
 </div>
 
 我们继续深入到 flat_tree::insert_unique() 中：
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/images/2024/0115/05.png" alt="" style="max-width:640px">
+  <img class="img-fluid" src="/uploads/2024/0115/05.png" alt="" style="max-width:640px">
 </div>
 
 可以看到，该插入其实分为三个步骤：(1) 在容器末尾插入新元素；(2) 快速排序；(3) 将重复元素去掉。这里的步骤二（排序）是最耗时的，也因此使用了通常被认为效率最高的快速排序方法，来确保时间复杂度为 O(n * log(n))。

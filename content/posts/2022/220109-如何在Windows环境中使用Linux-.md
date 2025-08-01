@@ -11,7 +11,7 @@ slug: how-to-use-linux-in-windows-environment
 
 ---
 
-<img src="/images/2020-06-29/code.png" style="max-width:300px"/>
+<img src="/uploads/2020-06-29/code.png" style="max-width:300px"/>
 
 Image
 学习生信，总绕不开需要学习使用Linux系统。
