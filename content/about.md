@@ -1,6 +1,7 @@
 ---
 title: "关于我"
 subtitle: "关于不靠谱颜论"
+slug: about
 ---
 
 ## 个人简介
