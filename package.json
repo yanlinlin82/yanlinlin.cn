@@ -2,22 +2,13 @@
   "name": "yanlinlin-cn",
   "version": "1.0.0",
   "scripts": {
+    "dev": "bash scripts/serve.sh fast",
+    "start": "bash scripts/serve.sh full",
     "build": "bash scripts/build.sh",
     "build:fast": "bash scripts/build.sh fast",
-    "build:full": "bash scripts/build.sh full",
-    "serve": "bash scripts/serve.sh",
-    "serve:fast": "bash scripts/serve.sh fast",
-    "serve:full": "bash scripts/serve.sh full",
     "clean": "bash scripts/clean.sh",
-    "dev": "npm run serve:fast",
-    "start": "npm run serve:full",
-    "build:css": "sass src/scss/main.scss:static/assets/css/main.css --style=compressed",
-    "build:js": "webpack --mode=production",
-    "copy:fonts": "mkdir -p static/assets/fonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/assets/fonts/",
-    "dev:css": "sass src/scss/main.scss:static/assets/css/main.css --watch",
-    "dev:js": "webpack --mode=development --watch",
-    "dev:assets": "npm run dev:css & npm run dev:js",
-    "sync": "bash scripts/sync-config.sh"
+    "check:slugs": "python3 scripts/check_slugs.py",
+    "help": "npm run"
   },
   "engines": {
     "node": ">=14.0.0"
