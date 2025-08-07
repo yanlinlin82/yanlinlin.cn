@@ -21,12 +21,16 @@ serve() {
     case $mode in
         "fast")
             log "🌐 启动开发服务器（快速模式）"
-            npm run dev:assets &
+            # 启动资源监听
+            sass src/scss/main.scss:static/assets/css/main.css --watch &
+            webpack --mode=development --watch &
             hugo server --config hugo.yaml,config/fast.yaml --bind 0.0.0.0 --port $port
             ;;
         "full")
             log "🌐 启动开发服务器（完整模式）"
-            npm run dev:assets &
+            # 启动资源监听
+            sass src/scss/main.scss:static/assets/css/main.css --watch &
+            webpack --mode=development --watch &
             hugo server --config hugo.yaml --bind 0.0.0.0 --port $port
             ;;
         *)

@@ -23,9 +23,19 @@ error() {
 # 构建前端资源
 build_assets() {
     log "构建前端资源..."
-    npm run build:css
-    npm run build:js
-    npm run copy:fonts
+    
+    # 构建CSS
+    log "构建CSS..."
+    sass src/scss/main.scss:static/assets/css/main.css --style=compressed
+    
+    # 构建JavaScript
+    log "构建JavaScript..."
+    webpack --mode=production
+    
+    # 拷贝字体文件
+    log "拷贝字体文件..."
+    mkdir -p static/assets/fonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/assets/fonts/
+    
     log "前端资源构建完成"
 }
 
