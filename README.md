@@ -39,6 +39,10 @@ npm run help
 
 # 清理构建目录
 npm run clean
+
+# 更新node依赖包
+npx npm-check-updates -u
+npm install
 ```
 
 ## 技术栈
