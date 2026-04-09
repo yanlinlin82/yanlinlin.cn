@@ -74,11 +74,12 @@ else
     fi
     
     log "📦 Installing dependencies..."
-    npm install
+    npm ci
     
     log "🏗️  Starting build..."
     rm -rf public
     npm run build
+	hugo
     
     if [ "$FORCE_MODE" = true ]; then
         log "✅ Force build completed!"
