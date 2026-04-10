@@ -31,29 +31,47 @@ require_command() {
 }
 
 detect_build_script() {
-    node -e '
-const pkg = require("./package.json");
-const scripts = pkg.scripts || {};
-if (process.env.BUILD_SCRIPT) {
-  const name = process.env.BUILD_SCRIPT;
-  if (!scripts[name]) {
-    process.stderr.write(`Script not found in package.json: ${name}\n`);
-    process.exit(1);
-  }
-  process.stdout.write(name);
-  process.exit(0);
+    local scripts_json script_name
+
+    scripts_json="$(npm run --json 2>/dev/null || true)"
+    [ -n "$scripts_json" ] || fail "Failed to read scripts from package.json"
+
+    has_script() {
+        script_name="$1"
+        printf '%s\n' "$scripts_json" | awk -v key="$script_name" '
+            match($0, /^[[:space:]]*"([^"]+)"[[:space:]]*:/, m) {
+                if (m[1] == key) {
+                    found = 1;
+                    exit 0;
+                }
+            }
+            END { exit found ? 0 : 1 }
+        '
+    }
+
+    if [ -n "${BUILD_SCRIPT:-}" ]; then
+        if has_script "$BUILD_SCRIPT"; then
+            echo "$BUILD_SCRIPT"
+            return 0
+        fi
+        fail "Script not found in package.json: $BUILD_SCRIPT"
+    fi
+
+    if has_script "build:all"; then
+        echo "build:all"
+        return 0
+    fi
+
+    if has_script "build"; then
+        echo "build"
+        return 0
+    fi
+
+    fail "No build or build:all script found in package.json"
 }
-if (scripts["build:all"]) {
-  process.stdout.write("build:all");
-  process.exit(0);
-}
-if (scripts.build) {
-  process.stdout.write("build");
-  process.exit(0);
-}
-process.stderr.write("No build or build:all script found in package.json\n");
-process.exit(1);
-'
+
+detect_output_dir() {
+    echo "public"
 }
 
 ensure_clean_worktree() {
@@ -64,6 +82,18 @@ ensure_clean_worktree() {
     if [ -n "$(git ls-files --others --exclude-standard)" ]; then
         fail "Working tree has untracked files"
     fi
+}
+
+worktree_is_clean() {
+    if ! git diff --quiet --ignore-submodules -- || ! git diff --cached --quiet --ignore-submodules --; then
+        return 1
+    fi
+
+    if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+        return 1
+    fi
+
+    return 0
 }
 
 while [[ $# -gt 0 ]]; do
@@ -90,7 +120,6 @@ done
 cd "$PROJECT_ROOT"
 
 require_command git
-require_command node
 require_command npm
 
 [ -d .git ] || fail "Current directory is not a Git repository: $PROJECT_ROOT"
@@ -112,8 +141,19 @@ git rev-parse --verify "$UPSTREAM_REF" >/dev/null 2>&1 || fail "Upstream branch 
 
 LOCAL_COMMIT="$(git rev-parse HEAD)"
 REMOTE_COMMIT="$(git rev-parse "$UPSTREAM_REF")"
+BUILD_OUTPUT_DIR_NAME="$(detect_output_dir)"
+REMOTE_UPDATE_DETECTED=false
+OUTPUT_MISSING=false
 
-if [ "$LOCAL_COMMIT" = "$REMOTE_COMMIT" ] && [ "$FORCE_MODE" = false ]; then
+if [ "$LOCAL_COMMIT" != "$REMOTE_COMMIT" ]; then
+    REMOTE_UPDATE_DETECTED=true
+fi
+
+if [ ! -d "$BUILD_OUTPUT_DIR_NAME" ]; then
+    OUTPUT_MISSING=true
+fi
+
+if [ "$REMOTE_UPDATE_DETECTED" = false ] && [ "$FORCE_MODE" = false ] && [ "$OUTPUT_MISSING" = false ]; then
     if [ "$QUIET_MODE" = false ]; then
         echo "Code is already up to date"
         echo "Install and build steps were skipped"
@@ -133,14 +173,23 @@ log "Project root: $PROJECT_ROOT"
 log "Current branch: $CURRENT_BRANCH"
 log "Upstream branch: $UPSTREAM_REF"
 log "Build script: npm run $BUILD_SCRIPT_NAME"
-
-ensure_clean_worktree
+log "Build output directory: $BUILD_OUTPUT_DIR_NAME"
 
 if [ "$FORCE_MODE" = true ]; then
     log "Force mode enabled; running install and build without pulling"
+elif [ "$REMOTE_UPDATE_DETECTED" = true ]; then
+    if worktree_is_clean; then
+        log "Remote update detected; pulling latest changes"
+        git pull --ff-only "$REMOTE_NAME" "$REMOTE_BRANCH" || fail "Failed to pull latest changes"
+    elif [ "$OUTPUT_MISSING" = true ]; then
+        log "Remote update detected, but working tree is dirty; skipping pull and rebuilding because output is missing"
+    else
+        ensure_clean_worktree
+    fi
+elif [ "$OUTPUT_MISSING" = true ]; then
+    log "Code is up to date, but build output is missing; rebuilding without pulling"
 else
-    log "Remote update detected; pulling latest changes"
-    git pull --ff-only "$REMOTE_NAME" "$REMOTE_BRANCH" || fail "Failed to pull latest changes"
+    log "Code is up to date; running install and build"
 fi
 
 log "Installing dependencies with: $INSTALL_CMD"
@@ -149,6 +198,6 @@ $INSTALL_CMD || fail "Dependency installation failed"
 log "Running build"
 npm run "$BUILD_SCRIPT_NAME" || fail "Build failed"
 
-[ -d public ] || fail "Build completed but public directory was not created"
+[ -d "$BUILD_OUTPUT_DIR_NAME" ] || fail "Build completed but $BUILD_OUTPUT_DIR_NAME directory was not created"
 
 log "Update completed successfully"
