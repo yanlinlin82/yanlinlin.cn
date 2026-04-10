@@ -1,80 +1,109 @@
 #!/bin/bash
 
-# 构建脚本 - 统一处理不同的构建模式
-set -e
+set -euo pipefail
 
-# 颜色定义
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-# 日志函数
-log() {
-    echo -e "${GREEN}[BUILD]${NC} $1"
+usage() {
+    echo "Usage: $0 [fast|full]"
+    echo "  fast    Build without RSS, sitemap, or search index"
+    echo "  full    Build the complete site output"
 }
 
-error() {
-    echo -e "${RED}[ERROR]${NC} $1"
+log() {
+    echo "$1"
+}
+
+fail() {
+    echo "Error: $1" >&2
     exit 1
 }
 
-# 构建前端资源
-build_assets() {
-    log "构建前端资源..."
-    
-    # 构建CSS
-    log "构建CSS..."
+require_command() {
+    command -v "$1" >/dev/null 2>&1 || fail "Missing command: $1"
+}
+
+cleanup() {
+    if [ -n "${CUSTOM_CSS_FILE:-}" ] && [ -f "$CUSTOM_CSS_FILE" ]; then
+        rm -f "$CUSTOM_CSS_FILE"
+    fi
+}
+
+build_css() {
     local css_output="static/assets/css/main.css"
-    local custom_css
 
+    log "Building CSS"
     mkdir -p static/assets/css
-    custom_css=$(mktemp)
-    trap 'rm -f "$custom_css"' RETURN
+    CUSTOM_CSS_FILE="$(mktemp)"
 
-    sass src/scss/main.scss "$custom_css" --style=compressed --no-source-map --no-charset
+    sass src/scss/main.scss "$CUSTOM_CSS_FILE" --style=compressed --no-source-map --no-charset
 
     {
         cat node_modules/bootstrap/dist/css/bootstrap.min.css
         cat node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
         sed 's#\.\./webfonts#../fonts#g' node_modules/@fortawesome/fontawesome-free/css/solid.min.css
-        cat "$custom_css"
+        cat "$CUSTOM_CSS_FILE"
     } > "$css_output"
-    
-    # 构建JavaScript
-    log "构建JavaScript..."
-    webpack --mode=production
-    
-    # 拷贝字体文件
-    log "拷贝字体文件..."
-    mkdir -p static/assets/fonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/assets/fonts/
-    
-    log "前端资源构建完成"
 }
 
-# 主构建函数
-build() {
-    local mode=${1:-full}
+build_js() {
+    log "Building JavaScript"
+    webpack --mode=production
+}
 
-    case $mode in
-        "fast")
-            log "🚀 快速构建模式 - 禁用 RSS、sitemap 和搜索索引"
-            build_assets
+copy_fonts() {
+    log "Copying font assets"
+    mkdir -p static/assets/fonts
+    cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/assets/fonts/
+}
+
+build_assets() {
+    log "Building frontend assets"
+    build_css
+    build_js
+    copy_fonts
+}
+
+run_hugo() {
+    local mode="$1"
+
+    case "$mode" in
+        fast)
+            log "Running fast site build"
             hugo --config hugo.yaml,config/fast.yaml
             ;;
-        "full")
-            log "📦 完整构建模式 - 包含 RSS、sitemap 和搜索索引"
-            build_assets
+        full)
+            log "Running full site build"
             hugo --config hugo.yaml
             ;;
         *)
-            error "未知的构建模式: $mode (支持: fast, full)"
+            fail "Unsupported build mode: $mode"
+            ;;
+    esac
+}
+
+main() {
+    local mode="${1:-full}"
+
+    case "$mode" in
+        -h|--help)
+            usage
+            exit 0
             ;;
     esac
 
-    log "构建完成"
+    cd "$PROJECT_ROOT"
+    trap cleanup EXIT
+
+    require_command sass
+    require_command webpack
+    require_command hugo
+
+    log "Project root: $PROJECT_ROOT"
+    build_assets
+    run_hugo "$mode"
+    log "Build completed successfully"
 }
 
-# 执行构建
-build "$1"
+main "$@"
