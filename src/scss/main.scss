@@ -1,11 +1,4 @@
-@use "../../node_modules/bootstrap/scss/bootstrap" as *;
-@use "custom" as *;
-
-// 覆盖Font Awesome字体路径
-$fa-font-path: "../fonts" !default;
-
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@use "custom";
 
 // 极客橙红配色方案 (Scheme 6) - 使用Bootstrap标准变量覆盖
 :root {

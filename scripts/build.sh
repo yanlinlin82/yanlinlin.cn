@@ -26,7 +26,21 @@ build_assets() {
     
     # 构建CSS
     log "构建CSS..."
-    sass src/scss/main.scss:static/assets/css/main.css --style=compressed
+    local css_output="static/assets/css/main.css"
+    local custom_css
+
+    mkdir -p static/assets/css
+    custom_css=$(mktemp)
+    trap 'rm -f "$custom_css"' RETURN
+
+    sass src/scss/main.scss "$custom_css" --style=compressed --no-source-map --no-charset
+
+    {
+        cat node_modules/bootstrap/dist/css/bootstrap.min.css
+        cat node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
+        sed 's#\.\./webfonts#../fonts#g' node_modules/@fortawesome/fontawesome-free/css/solid.min.css
+        cat "$custom_css"
+    } > "$css_output"
     
     # 构建JavaScript
     log "构建JavaScript..."
