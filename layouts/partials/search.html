@@ -1,179 +1,205 @@
 <!-- Search Modal -->
-<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" data-bs-backdrop="true" data-bs-keyboard="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="searchModalLabel">
-          <i class="fas fa-search me-2"></i>搜索文章
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <input type="text" class="form-control form-control-lg" id="searchInput" placeholder="输入关键词搜索文章..." autocomplete="off">
+<div
+    class="modal fade"
+    id="searchModal"
+    tabindex="-1"
+    aria-labelledby="searchModalLabel"
+    data-bs-backdrop="true"
+    data-bs-keyboard="true"
+>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">
+                    <i class="fas fa-search me-2"></i>搜索文章
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="searchInput"
+                        placeholder="输入关键词搜索文章..."
+                        autocomplete="off"
+                    />
+                </div>
+                <div id="searchResults">
+                    <p class="text-muted">输入至少2个字符开始搜索...</p>
+                </div>
+            </div>
         </div>
-        <div id="searchResults">
-          <p class="text-muted">输入至少2个字符开始搜索...</p>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <!-- Search index loader -->
 <script>
-{{ if not .Site.Params.fastBuild }}
-// 使用预生成的搜索索引数据
-window.searchIndex = window.searchIndexData || [];
-window.searchIndexLoaded = true;
-console.log('搜索索引已加载，共', window.searchIndex.length, '篇文章');
-{{ else }}
-// 快速构建模式 - 搜索功能已禁用
-window.searchIndex = [];
-window.searchIndexLoaded = true;
-console.log('快速构建模式：搜索索引已跳过');
-{{ end }}
+    {{ if not .Site.Params.fastBuild }}
+    // 使用预生成的搜索索引数据
+    window.searchIndex = window.searchIndexData || [];
+    window.searchIndexLoaded = true;
+    console.log('搜索索引已加载，共', window.searchIndex.length, '篇文章');
+    {{ else }}
+    // 快速构建模式 - 搜索功能已禁用
+    window.searchIndex = [];
+    window.searchIndexLoaded = true;
+    console.log('快速构建模式：搜索索引已跳过');
+    {{ end }}
 </script>
 
 <style>
-/* 极端 z-index 修复 */
-#searchModal {
-  z-index: 999999 !important;
-}
+    /* 极端 z-index 修复 */
+    #searchModal {
+        z-index: 999999 !important;
+    }
 
-#searchModal .modal-backdrop {
-  z-index: 999998 !important;
-}
+    #searchModal .modal-backdrop {
+        z-index: 999998 !important;
+    }
 
-#searchModal .modal-dialog {
-  z-index: 1000000 !important;
-  position: relative;
-}
+    #searchModal .modal-dialog {
+        z-index: 1000000 !important;
+        position: relative;
+    }
 
-#searchModal .modal-content {
-  z-index: 1000001 !important;
-  position: relative;
-  border: 2px solid rgba(234, 88, 12, 0.3);
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(234, 88, 12, 0.2), 0 0 0 1px rgba(234, 88, 12, 0.1);
-  backdrop-filter: blur(10px);
-  background: linear-gradient(135deg, rgba(41, 37, 36, 0.95) 0%, rgba(28, 25, 23, 0.95) 100%);
-}
+    #searchModal .modal-content {
+        z-index: 1000001 !important;
+        position: relative;
+        border: 2px solid rgba(234, 88, 12, 0.3);
+        border-radius: 12px;
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.3),
+            0 8px 16px rgba(234, 88, 12, 0.2),
+            0 0 0 1px rgba(234, 88, 12, 0.1);
+        backdrop-filter: blur(10px);
+        background: var(--bs-secondary-bg);
+        border: 1px solid var(--bs-border-color);
+    }
 
-/* 模态框头部样式增强 */
-#searchModal .modal-header {
-  border-bottom: 1px solid rgba(234, 88, 12, 0.2);
-  background: linear-gradient(135deg, rgba(234, 88, 12, 0.1) 0%, rgba(234, 88, 12, 0.05) 100%);
-  border-radius: 10px 10px 0 0;
-}
+    /* 模态框头部样式增强 */
+    #searchModal .modal-header {
+        border-bottom: 1px solid rgba(234, 88, 12, 0.2);
+        background: linear-gradient(
+            135deg,
+            rgba(234, 88, 12, 0.1) 0%,
+            rgba(234, 88, 12, 0.05) 100%
+        );
+        border-radius: 10px 10px 0 0;
+    }
 
-#searchModal .modal-title {
-  color: var(--bs-primary);
-  font-weight: 600;
-  font-size: 1.1rem;
-}
+    #searchModal .modal-title {
+        color: var(--bs-primary);
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
 
-/* 模态框背景增强 */
-#searchModal .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
-}
+    /* 模态框背景增强 */
+    #searchModal .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(5px);
+    }
 
-/* 确保所有模态框内容都在最顶层 */
-#searchModal * {
-  position: relative;
-  z-index: 1000002 !important;
-}
+    /* 确保所有模态框内容都在最顶层 */
+    #searchModal * {
+        position: relative;
+        z-index: 1000002 !important;
+    }
 
-/* 特别确保输入框和按钮可以交互 */
-#searchModal input,
-#searchModal button,
-#searchModal .btn,
-#searchModal .btn-close {
-  position: relative !important;
-  z-index: 1000003 !important;
-  pointer-events: auto !important;
-}
+    /* 特别确保输入框和按钮可以交互 */
+    #searchModal input,
+    #searchModal button,
+    #searchModal .btn,
+    #searchModal .btn-close {
+        position: relative !important;
+        z-index: 1000003 !important;
+        pointer-events: auto !important;
+    }
 
-/* 搜索相关样式 */
-.search-result-item {
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
+    /* 搜索相关样式 */
+    .search-result-item {
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
 
-.search-result-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    .search-result-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-.search-result-item mark {
-  background-color: #ea580c;
-  color: white;
-  padding: 0 2px;
-  border-radius: 2px;
-}
+    .search-result-item mark {
+        background-color: #ea580c;
+        color: white;
+        padding: 0 2px;
+        border-radius: 2px;
+    }
 
-#searchInput:focus {
-  border-color: #ea580c;
-  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25);
-}
+    #searchInput:focus {
+        border-color: #ea580c;
+        box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25);
+    }
 
-/* 搜索框激活状态样式 - 使用网站统一的橙色主题 */
-#searchInput:focus,
-#searchInput:active {
-  border-color: #ea580c !important;
-  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
-}
+    /* 搜索框激活状态样式 - 使用网站统一的橙色主题 */
+    #searchInput:focus,
+    #searchInput:active {
+        border-color: #ea580c !important;
+        box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
+    }
 
-/* 覆盖Bootstrap默认的focus样式 */
-#searchInput:focus:not(:focus-visible) {
-  border-color: #ea580c !important;
-  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
-}
+    /* 覆盖Bootstrap默认的focus样式 */
+    #searchInput:focus:not(:focus-visible) {
+        border-color: #ea580c !important;
+        box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
+    }
 
-/* 确保在所有状态下都使用橙色主题 */
-#searchInput:focus-visible {
-  border-color: #ea580c !important;
-  box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
-  outline: none !important;
-}
+    /* 确保在所有状态下都使用橙色主题 */
+    #searchInput:focus-visible {
+        border-color: #ea580c !important;
+        box-shadow: 0 0 0 0.2rem rgba(234, 88, 12, 0.25) !important;
+        outline: none !important;
+    }
 
-/* 搜索框字体大小调整 */
-#searchModal .modal-body {
-  font-size: 0.9rem;
-}
+    /* 搜索框字体大小调整 */
+    #searchModal .modal-body {
+        font-size: 0.9rem;
+    }
 
-#searchModal .form-control {
-  font-size: 0.9rem;
-  padding: 0.5rem 0.75rem;
-}
+    #searchModal .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
 
-#searchModal .form-control-lg {
-  font-size: 0.9rem !important;
-  padding: 0.5rem 0.75rem !important;
-  height: auto !important;
-}
+    #searchModal .form-control-lg {
+        font-size: 0.9rem !important;
+        padding: 0.5rem 0.75rem !important;
+        height: auto !important;
+    }
 
-#searchModal .text-muted {
-  font-size: 0.85rem;
-}
+    #searchModal .text-muted {
+        font-size: 0.85rem;
+    }
 
-#searchModal .search-result-item h6 {
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-}
+    #searchModal .search-result-item h6 {
+        font-size: 0.95rem;
+        margin-bottom: 0.25rem;
+    }
 
-#searchModal .search-result-item p {
-  font-size: 0.85rem;
-  margin-bottom: 0.25rem;
-}
+    #searchModal .search-result-item p {
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+    }
 
-#searchModal .search-result-item .small {
-  font-size: 0.8rem;
-}
+    #searchModal .search-result-item .small {
+        font-size: 0.8rem;
+    }
 
-#searchModal .search-result-item .badge {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-}
+    #searchModal .search-result-item .badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
 </style>

@@ -1,4 +1,15 @@
 {{- partial "meta-basic.html" . -}}
+
+<!-- 主题初始化（防止闪屏）-->
+<script>
+(function() {
+  var theme = localStorage.getItem('theme');
+  if (theme === 'light' || theme === 'dark') {
+    document.documentElement.classList.add('theme-' + theme);
+  }
+})();
+</script>
+
 {{- partial "meta-social.html" . -}}
 {{- partial "meta-article.html" . -}}
 {{- partial "links.html" . -}}
