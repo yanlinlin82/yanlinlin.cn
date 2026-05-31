@@ -327,11 +327,11 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .footer-geek .footer-column {
     min-width: auto;
   }
-  
+
   .footer-geek .footer-column-content {
     flex-direction: row;
     justify-content: center;
@@ -714,7 +714,7 @@ body {
   font-family: var(--font-mono);
 }
 
-.article-body pre {
+.article-body pre:not(.chroma pre) {
   background: var(--bs-secondary-bg);
   border: 1px solid var(--bs-border-color);
   border-radius: 8px;
@@ -723,10 +723,93 @@ body {
   margin: 1.5rem 0;
 }
 
-.article-body pre code {
+.article-body pre:not(.chroma pre) code {
   background: none;
   color: var(--bs-body-color);
   padding: 0;
+}
+
+/* ===== Chroma 代码块（带行号表格）统一样式 ===== */
+
+/* 外容器：整个代码块的边框和圆角 */
+.article-body .highlight .chroma {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* 表格背景统一 */
+.article-body .chroma .lntable {
+  width: 100%;
+  border-spacing: 0;
+  background: var(--bs-secondary-bg) !important;
+}
+
+/* 移除表格单元格的边框和默认间距 */
+.article-body .chroma .lntd {
+  background: transparent !important;
+  padding: 0;
+  vertical-align: top;
+}
+
+/* 行号列：宽度由内容决定 */
+.article-body .chroma .lntd:first-child {
+  width: 1%;
+  white-space: nowrap;
+  padding: 0;
+  vertical-align: top;
+}
+
+/* 行号列内的 <pre>：无边框，居中 */
+.article-body .chroma .lntd:first-child pre {
+  padding: 1rem 0.75em 1rem 0.75em;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 代码列内的 <pre>：无边框，左侧留间距 */
+.article-body .chroma .lntd:last-child pre {
+  padding: 1rem 1rem 1rem 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  overflow-x: auto;
+}
+
+/* 行号样式 */
+.article-body .chroma .lnt,
+.article-body .chroma .ln {
+  color: #a8a29e !important;
+  user-select: none;
+}
+
+/* 所有 chroma 内联 span 继承父级字体大小，去除字符自带背景色 */
+.article-body .chroma span {
+  font-size: inherit;
+  background: transparent !important;
+}
+
+/* 参考链接列表：使用 [1], [2] 样式代替默认数字 */
+.article-body h2[id="参考链接"] + ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: ref-counter;
+}
+
+.article-body h2[id="参考链接"] + ol li {
+  counter-increment: ref-counter;
+  margin-bottom: 0.5rem;
+}
+
+.article-body h2[id="参考链接"] + ol li::before {
+  content: "[" counter(ref-counter) "] ";
+  font-weight: 600;
+  color: var(--bs-primary);
 }
 
 .article-body img {

@@ -45,7 +45,9 @@ markup:
   highlight:
     codeFences: true
     lineNos: true
-    style: monokailight
+    style: monokai
+    noClasses: false
+    guessSyntax: true
 
 permalinks:
   posts: /:year/:month/:day/:slug/
