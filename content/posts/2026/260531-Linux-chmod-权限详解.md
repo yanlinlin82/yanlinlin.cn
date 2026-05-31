@@ -105,6 +105,61 @@ chmod 4770 /path/to/directory
 drwsrwxr-x  2 owner group  ...  test_folder
 ```
 
+### SUID 在脚本上无效
+
+**重要：SUID 对脚本（Shell、Python、Perl 等解释器脚本）同样无效。** 这是很多人容易踩的坑——给一个 `.sh` 脚本设置了 `chmod 4755`，却发现它运行时仍然以当前用户身份执行，并未提权。
+
+原因在于 Linux 执行脚本的底层机制：
+
+1. **内核不直接执行脚本**。当你运行 `./script.sh` 时，内核读取脚本文件头部（`#!/bin/bash`），然后启动对应的解释器程序（如 `/bin/bash`），并将脚本路径作为参数传给它。真正被内核加载执行的**二进制文件是解释器**（`/bin/bash`），而不是脚本本身。
+
+2. **SUID 位在解释器上，而不是在脚本上**。因为实际执行的二进制程序是 `/bin/bash`，而 `/bin/bash` 没有 SUID 位，所以 bash 进程的 EUID 仍然是当前用户。即使脚本文件有 SUID 位，内核的脚本加载器（`binfmt_script`）在处理 `#!` 行时，会**主动忽略**脚本文件上的 setuid 和 setgid 位，以避免安全漏洞。
+
+3. **竞态条件（Race Condition）风险**。假设内核允许脚本上的 SUID 生效，攻击者可以构造以下攻击：
+   - 创建一个 SUID root 的脚本 `/tmp/evil.sh`，该脚本调用 `/sbin/ldconfig` 等危险操作。
+   - 在 `/tmp/evil.sh` 执行瞬间，通过符号链接（symlink）将其替换为攻击者的恶意脚本。
+   - 解释器（如 bash）以 root 权限执行了攻击者的代码。
+   这种 TOCTOU（Time-of-Check Time-of-Use）攻击在脚本场景下极难防御，因此 Linux 内核选择直接禁用脚本上的 SUID。
+
+4. **BSD 方式 vs System V 方式**。历史上，System V 风格的 Unix 允许脚本上的 SUID，而 BSD 风格则禁止。Linux 采用 BSD 方式，忽略脚本的 SUID/SGID 位，但这取决于内核配置和发行版。大多数现代发行版（如 RHEL、Debian、Ubuntu）默认禁用。
+
+```bash
+# 以下设置对脚本无效！
+chmod u+s myscript.sh
+chmod 4755 myscript.sh
+
+# 运行后仍然是当前用户身份，不会提权
+./myscript.sh
+```
+
+如果需要让脚本以特定用户身份运行，正确的做法是：
+
+- 使用 `sudo` 配置（`/etc/sudoers`）允许特定用户无密码执行该脚本。
+- 编写一个 SUID 的 **C 封装程序**（wrapper），在该 C 程序中调用 `setuid()` 和 `execvp()`，然后设置该二进制程序的 SUID 位。
+
+```c
+// suid-wrapper.c — SUID 封装示例
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+int main(int argc, char *argv[]) {
+    setuid(0);  // 提升为 root
+    execvp("/path/to/script.sh", argv);
+    return 0;
+}
+```
+
+编译并设置 SUID：
+
+```bash
+gcc -o suid-wrapper suid-wrapper.c
+chown root:root suid-wrapper
+chmod u+s suid-wrapper
+```
+
+这样，SUID 位设在二进制可执行文件上，内核正常识别并提权；封装程序再以提升后的权限启动脚本。
+
 ## 四、SGID (Set Group ID)
 
 ### 含义
@@ -138,6 +193,10 @@ ls -ld shared_folder
 2. **自动继承**：子目录自动获得 SGID 位，权限规则递归生效。
 3. **简化管理**：管理员无需每次创建文件后手动 `chgrp`。
 
+### SGID 在脚本上无效
+
+与 SUID 同理，SGID 对脚本同样无效。内核在处理 `#!` 脚本时，会忽略脚本文件上的 SGID 位，原因与 SUID 完全一致：真正被内核加载执行的是解释器（如 `bash`、`python3`），而不是脚本文件本身。`binfmt_script` 会主动丢弃 setgid 位，以防止竞态条件攻击。
+
 ### 如何设置
 
 ```bash
@@ -153,7 +212,7 @@ chmod 2770 /path/to/directory
 - **配合 umask**：SGID 只控制组所有权，不控制权限。确保用户有统一的 umask（如 `002` 或 `007`），使新文件自动赋予组的写入权限。
 - **配合 Sticky Bit**：如果希望组成员可以编辑文件但不能删除他人的文件，可以同时设置 Sticky Bit：`chmod 3770 /path/to/directory`。
 
-## 五、Sticky Bit (黏滞位)
+## 五、Sticky Bit (粘滞位)
 
 ### 含义
 
@@ -241,7 +300,7 @@ find / -perm -1000 -type d 2>/dev/null
 
 1. **定期审计**：SUID/SGID 文件是权限提升的常见入口，应定期审计并尽量减少数量。
 2. **不必要的 SUID**：对于不需要提权的程序，使用 `chmod u-s` 移除 SUID 位。
-3. **避免在脚本上设置 SUID**：Shell 脚本等解释型程序上的 SUID 在许多现代 Linux 发行版中被忽略，以避免安全漏洞。
+3. **不要给脚本设置 SUID/SGID**：内核不会对脚本文件上的 SUID/SGID 位生效（详见第三节 **SUID 在脚本上无效**），这样做只会带来错误的安全预期。若需脚本提权，应使用 `sudo` 或 C 封装程序。
 
 ## 八、ACL（访问控制列表）——传统权限的补充
 
@@ -297,9 +356,9 @@ drwxrwxr-x+  2 user group  ...  dir_with_acl
 | 权限机制 | 适用场景 | 优点 | 局限 |
 |----------|----------|------|------|
 | 传统 UGO | 简单权限管理 | 直观、兼容性好 | 只有三组权限，粒度粗 |
-| SUID | 需要提权的程序（如 passwd） | 临时提升执行权限 | 安全风险高，目录无效 |
-| SGID | 共享目录、协作项目 | 自动组继承 | 需配合 umask |
-| Sticky Bit | 公共临时目录 | 防删除他人文件 | 仅对目录有效 |
+| SUID | 需要提权的二进制程序（如 passwd） | 临时提升执行权限 | 安全风险高；对目录和脚本无效 |
+| SGID | 共享目录、协作项目 | 自动组继承；控制文件所属组 | 对脚本无效；需配合 umask |
+| Sticky Bit | 公共临时目录（如 /tmp） | 防删除他人文件 | 仅对目录有效 |
 | ACL | 复杂权限需求 | 粒度极细、支持继承 | 维护复杂度高 |
 
 掌握这些权限位的含义和用法，是 Linux 系统管理的重要基础。无论是搭建共享文件服务器、配置开发环境，还是进行安全审计，都需要灵活运用这些工具。
