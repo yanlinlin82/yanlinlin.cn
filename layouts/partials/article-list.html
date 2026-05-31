@@ -23,19 +23,19 @@
         {{ end }}
       {{ end }}
     {{ end }}
-    
+
   <li class="article-item{{ if $thumbnail }} article-item-with-thumbnail{{ end }}">
     <a href="{{ .RelPermalink }}" class="article-card-link">
       {{ if $thumbnail }}
           <div class="article-thumbnail">
-            <img 
-              src="{{ $thumbnail }}" 
+            <img
+              src="{{ $thumbnail }}"
               alt="{{ .Title }}"
               class="article-thumbnail-img"
             />
           </div>
       {{ end }}
-      
+
       <div class="article-content">
         {{ if $showDate }}
         <div class="article-date">{{ .Date.Format $dateFormat }}</div>
@@ -53,6 +53,24 @@
         {{ if .Summary }}
         <div class="article-summary">{{ .Summary | plainify | truncate 100 }}</div>
         {{ end }}
+        <div class="article-card-footer">
+          {{ if .Content }}
+            {{ $content := .Content | plainify }}
+            {{ $chineseCount := len (findRE `[\x{4E00}-\x{9FFF}\x{3000}-\x{303F}\x{FF00}-\x{FFEF}]` $content) }}
+            {{ $englishCount := len (findRE `[a-zA-Z]+` $content) }}
+            {{ $totalCount := add $chineseCount $englishCount }}
+            {{ if gt $totalCount 0 }}
+            <span class="article-wordcount">{{ $totalCount }} 字</span>
+            {{ end }}
+          {{ end }}
+          {{ with .Params.tags }}
+            <div class="article-card-tags">
+              {{ range first 3 . }}
+              <span class="article-card-tag">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>

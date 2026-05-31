@@ -66,15 +66,10 @@ function calculateArticleStats() {
   const articleStats = document.querySelector(".article-stats");
   if (!articleStats) return;
 
-  const content = articleStats.getAttribute("data-content");
-  if (!content) return;
+  const wordCountAttr = articleStats.getAttribute("data-word-count");
+  if (!wordCountAttr) return;
 
-  const chineseCount = (
-    content.match(/[\u4e00-\u9fff\u3000-\u303f\uff00-\uffef]/g) || []
-  ).length;
-  const englishCount = (content.match(/[a-zA-Z]+/g) || []).length;
-  const totalCount = chineseCount + englishCount;
-
+  const totalCount = parseInt(wordCountAttr, 10);
   if (totalCount > 0) {
     const wordCountElement = articleStats.querySelector(".word-count-number");
     const readingTimeElement = articleStats.querySelector(

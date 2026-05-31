@@ -24,6 +24,28 @@ npm run build
 npm run build:fast
 ```
 
+> 修改 `src/scss/_custom.scss` 后，需要重新构建才会生效，运行 `npm run build:fast` 即可。
+
+### 内容管理
+
+#### 新建书评文章
+
+书评文章的 slug 格式为 `YYYYMMDD-书评-书名拼音`，例如 `260129-书评-架构整洁之道`。
+
+文章使用封面图片，存放在 `static/uploads/YYYY/MMDD/book-cover.png`。
+
+使用 ImageMagick 准备封面图片：
+
+```bash
+# 从下载目录复制并缩放封面图片到文章目录
+magick ~/Downloads/xxx.jpg -resize 250x static/uploads/2026/0523/book-cover.png
+```
+
+参数说明：
+- `~/Downloads/xxx.jpg` — 下载的原始封面图片路径
+- `-resize 250x` — 缩放宽度为 250 像素，高度按比例自动调整
+- `static/uploads/2026/0523/` — 目标目录，`2026` 为年份，`0523` 为月份日期
+
 ### 内容检查
 
 ```bash
