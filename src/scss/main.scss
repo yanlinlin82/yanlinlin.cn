@@ -1,32 +1,64 @@
 @use "custom";
 
-// 极客橙红配色方案 (Scheme 6) - 使用Bootstrap标准变量覆盖
+// =============================================================================
+// 主题配色系统 (System / Light / Dark)
+// =============================================================================
+// 基色 - 所有主题共享
 :root {
-  // 主色调 - 极客橙红
   --bs-primary: #ea580c;
   --bs-primary-rgb: 234, 88, 12;
-
-  // 辅助色
   --bs-secondary: #78716c;
   --bs-secondary-rgb: 120, 113, 108;
-
-  // 成功色
   --bs-success: #16a34a;
   --bs-success-rgb: 22, 163, 74;
-
-  // 信息色
   --bs-info: #0891b2;
   --bs-info-rgb: 8, 145, 178;
-
-  // 警告色
   --bs-warning: #ca8a04;
   --bs-warning-rgb: 202, 138, 4;
-
-  // 危险色
   --bs-danger: #dc2626;
   --bs-danger-rgb: 220, 38, 38;
+  --bs-code-color: #ea580c;
+}
 
-  // 极客橙红主题 - 深色背景
+// System 模式（默认） - 跟随系统偏好
+:root {
+  --bs-body-bg: #fafaf9;
+  --bs-body-color: #1c1917;
+  --bs-secondary-bg: #f5f5f4;
+  --bs-secondary-color: #78716c;
+  --bs-border-color: #d6d3d1;
+  --bs-heading-color: #1c1917;
+  --bs-link-color: #ea580c;
+  --bs-link-hover-color: #c2410c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bs-body-bg: #1c1917;
+    --bs-body-color: #fafaf9;
+    --bs-secondary-bg: #292524;
+    --bs-secondary-color: #a8a29e;
+    --bs-border-color: #44403c;
+    --bs-heading-color: #fafaf9;
+    --bs-link-color: #fb923c;
+    --bs-link-hover-color: #fdba74;
+  }
+}
+
+// Light 模式 - 用户手动选择浅色
+html.theme-light {
+  --bs-body-bg: #fafaf9;
+  --bs-body-color: #1c1917;
+  --bs-secondary-bg: #f5f5f4;
+  --bs-secondary-color: #78716c;
+  --bs-border-color: #d6d3d1;
+  --bs-heading-color: #1c1917;
+  --bs-link-color: #ea580c;
+  --bs-link-hover-color: #c2410c;
+}
+
+// Dark 模式 - 用户手动选择深色
+html.theme-dark {
   --bs-body-bg: #1c1917;
   --bs-body-color: #fafaf9;
   --bs-secondary-bg: #292524;
@@ -35,9 +67,6 @@
   --bs-heading-color: #fafaf9;
   --bs-link-color: #fb923c;
   --bs-link-hover-color: #fdba74;
-
-  // 代码块背景
-  --bs-code-color: #ea580c;
 }
 
 // Pagination centering

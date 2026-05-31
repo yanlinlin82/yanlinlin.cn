@@ -1139,7 +1139,8 @@ body {
 
 .category-post-item {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--bs-border-color);
+  opacity: 0.7;
 }
 
 .category-post-item:last-child {
@@ -1591,5 +1592,67 @@ body {
     width: 2.25rem;
     height: 2.25rem;
     font-size: 0.9rem;
+  }
+}
+
+// =============================================================================
+// 主题切换按钮 - 简约风格，与导航链接融为一体
+// =============================================================================
+.btn-theme-toggle {
+  background: none;
+  border: none;
+  color: var(--bs-secondary-color);
+  font-weight: 500;
+  padding: 0.5rem 0.6rem;
+  margin: 0 0.25rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.btn-theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.1), transparent);
+  transition: left 0.3s ease;
+}
+
+.btn-theme-toggle:hover {
+  color: var(--bs-primary);
+  background: rgba(234, 88, 12, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-theme-toggle:hover::before {
+  left: 100%;
+}
+
+.btn-theme-toggle .theme-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.btn-theme-toggle .theme-icon {
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+// 响应式 - 小屏幕只显示图标
+@media (max-width: 992px) {
+  .btn-theme-toggle .theme-label {
+    display: none;
   }
 }
