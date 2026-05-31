@@ -2,6 +2,13 @@ baseurl: https://yanlinlin.cn/
 title: 不靠谱颜论
 subtitle: 颜林林的个人主页
 
+defaultContentLanguage: zh
+languages:
+  zh:
+    languageCode: zh-CN
+    languageName: 中文
+    title: 不靠谱颜论
+
 rssLimit: 20
 pagination:
   pagerSize: 12
@@ -10,6 +17,10 @@ mainSections:
 
 # 网站分析工具配置
 params:
+  # 站点作者信息
+  author:
+    name: 颜林林
+    email: linlin.yan@bioinfo.app
   fastBuild: false
   disableSearchIndex: false
   # Google Analytics 代码
@@ -42,24 +53,24 @@ permalinks:
 
 menu:
   main:
-  - name: 博客
-    url: /posts/
-    weight: 10
-  - name: 专栏
-    url: /categories/
-    weight: 20
-  - name: 系列
-    url: /series/
-    weight: 30
-  - name: 标签
-    url: /tags/
-    weight: 40
-  - name: 关于
-    url: /about/
-    weight: 50
-  - name: 作品
-    url: /works/
-    weight: 60
-  - name: 简历
-    url: /cv/
-    weight: 70
+    - name: 博客
+      url: /posts/
+      weight: 10
+    - name: 专栏
+      url: /categories/
+      weight: 20
+    - name: 系列
+      url: /series/
+      weight: 30
+    - name: 标签
+      url: /tags/
+      weight: 40
+    - name: 关于
+      url: /about/
+      weight: 50
+    - name: 作品
+      url: /works/
+      weight: 60
+    - name: 简历
+      url: /cv/
+      weight: 70
