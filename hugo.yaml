@@ -5,8 +5,8 @@ subtitle: 颜林林的个人主页
 defaultContentLanguage: zh
 languages:
   zh:
-    languageCode: zh-CN
-    languageName: 中文
+    locale: zh-CN
+    label: 中文
     title: 不靠谱颜论
 
 rssLimit: 20
