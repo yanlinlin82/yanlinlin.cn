@@ -853,6 +853,19 @@ body {
   margin: 1.5rem 0;
 }
 
+.article-body img.img-half {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 桌面端：半幅居中；移动端自动恢复满宽 */
+@media (min-width: 768px) {
+  .article-body img.img-half {
+    max-width: 50%;
+  }
+}
+
 .article-body a {
   color: var(--bs-primary);
   text-decoration: none;
@@ -950,6 +963,184 @@ body {
 .toc-content a:hover {
   color: var(--bs-primary);
   background: rgba(234, 88, 12, 0.05);
+}
+
+.toc-content a.active {
+  color: var(--bs-primary);
+  font-weight: 600;
+  border-left: 3px solid var(--bs-primary);
+  padding-left: calc(0.25rem - 3px);
+}
+
+// Floating TOC sidebar
+.toc-float {
+  position: fixed;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 280px;
+  max-height: 60vh;
+  overflow-y: auto;
+  z-index: 1020;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toc-float .card-header {
+  background: transparent;
+  border-bottom: 1px solid var(--bs-border-color);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.btn-close-toc {
+  background: none;
+  border: none;
+  color: var(--bs-secondary-color);
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.btn-close-toc:hover {
+  color: var(--bs-body-color);
+  background: rgba(128, 128, 128, 0.15);
+}
+
+.toc-float .card-body {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.toc-float .card-body ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.toc-float .card-body li {
+  margin-bottom: 0.3rem;
+}
+
+.toc-float .card-body a {
+  display: block;
+  padding: 0.2rem 0.5rem;
+  color: var(--bs-secondary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  border-left: 3px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.toc-float .card-body a:hover {
+  color: var(--bs-primary);
+  background: rgba(234, 88, 12, 0.05);
+}
+
+.toc-float .card-body a.active {
+  color: var(--bs-primary);
+  font-weight: 600;
+  border-left-color: var(--bs-primary);
+  background: rgba(234, 88, 12, 0.08);
+}
+
+.toc-float .card-body ul ul {
+  padding-left: 1rem;
+}
+
+.toc-float .card-body ul ul a {
+  font-size: 0.85rem;
+}
+
+.toc-float-hidden {
+  transform: translateY(-50%) translateX(calc(100% + 1rem));
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-toc-toggle {
+  position: fixed;
+  bottom: calc(2rem + 3rem + 0.5rem);
+  right: 2rem;
+  z-index: 1021;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.9) 0%, rgba(234, 88, 12, 0.8) 100%);
+  border: 2px solid rgba(234, 88, 12, 0.3);
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-toc-toggle:hover {
+  background: linear-gradient(135deg, rgb(234, 88, 12) 0%, rgba(234, 88, 12, 0.9) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(234, 88, 12, 0.4), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-toc-toggle-hidden {
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  .toc-float {
+    right: 0.5rem;
+    width: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .toc-float {
+    width: auto;
+    left: 0.5rem;
+    right: 0.5rem;
+    top: auto;
+    bottom: 5rem;
+    transform: none;
+    max-height: 40vh;
+  }
+
+  .toc-float-hidden {
+    transform: translateY(calc(100% + 1rem));
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-toc-toggle {
+    bottom: calc(1.5rem + 2.5rem + 0.5rem);
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-toc-toggle {
+    bottom: calc(1rem + 2.25rem + 0.4rem);
+    right: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.9rem;
+  }
 }
 
 // Article navigation
