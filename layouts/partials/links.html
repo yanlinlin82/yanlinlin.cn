@@ -20,11 +20,11 @@
 (function() {
   // 检测是否为国内网络环境
   function isChineseNetwork() {
-    return navigator.language.includes('zh') || 
+    return navigator.language.includes('zh') ||
            navigator.languages.some(lang => lang.includes('zh')) ||
            /cn|china|chinese/i.test(navigator.userAgent);
   }
-  
+
   // 检测Google Fonts是否可访问
   function testGoogleFonts() {
     return new Promise((resolve) => {
@@ -35,12 +35,12 @@
       setTimeout(() => resolve(false), 3000); // 3秒超时
     });
   }
-  
+
   // 动态加载字体
   async function loadFonts() {
     const isChinese = isChineseNetwork();
     const canAccessGoogle = await testGoogleFonts();
-    
+
     if (isChinese && !canAccessGoogle) {
       // 国内网络且无法访问Google Fonts，使用系统字体
       console.log('检测到国内网络环境，使用系统字体优化');
@@ -54,7 +54,7 @@
       document.head.appendChild(link);
     }
   }
-  
+
   // 页面加载完成后执行字体检测
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', loadFonts);

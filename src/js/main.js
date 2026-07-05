@@ -214,6 +214,95 @@ function setupThemeToggle() {
   toggle.addEventListener("click", cycleTheme);
 }
 
+// Floating TOC sidebar
+function setupTocFloat() {
+  var toc = document.getElementById("tocFloat");
+  var toggleBtn = document.getElementById("tocToggleBtn");
+  var closeBtn = document.getElementById("tocCloseBtn");
+  if (!toc) return;
+
+  var visible = true;
+
+  function show() {
+    visible = true;
+    toc.classList.remove("toc-float-hidden");
+    if (toggleBtn) toggleBtn.classList.add("btn-toc-toggle-hidden");
+  }
+
+  function hide() {
+    visible = false;
+    toc.classList.add("toc-float-hidden");
+    if (toggleBtn) toggleBtn.classList.remove("btn-toc-toggle-hidden");
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", show);
+  }
+  if (closeBtn) {
+    closeBtn.addEventListener("click", hide);
+  }
+
+  // Gather headings and TOC links
+  var headings = document.querySelectorAll(
+    ".article-body h2, .article-body h3",
+  );
+  if (headings.length === 0) return;
+
+  var tocLinks = toc.querySelectorAll("a");
+  if (tocLinks.length === 0) return;
+
+  // Build id -> link map
+  var linkMap = {};
+  tocLinks.forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (href && href.startsWith("#")) {
+      linkMap[href.substring(1)] = link;
+    }
+  });
+
+  // Smooth scroll to heading on TOC link click
+  tocLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      var href = link.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        var target = document.getElementById(href.substring(1));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  });
+
+  // Update active heading based on scroll position
+  function updateActive() {
+    var scrollTop = window.scrollY + 120; // offset for fixed navbar
+    var activeId = null;
+
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      if (h.offsetTop <= scrollTop) {
+        activeId = h.getAttribute("id");
+      } else {
+        break;
+      }
+    }
+
+    tocLinks.forEach(function (link) {
+      link.classList.remove("active");
+    });
+
+    if (activeId && linkMap[activeId]) {
+      linkMap[activeId].classList.add("active");
+      // Scroll active link into view within the TOC panel
+      linkMap[activeId].scrollIntoView({ block: "nearest" });
+    }
+  }
+
+  updateActive();
+  window.addEventListener("scroll", updateActive, { passive: true });
+}
+
 // 初始化所有功能
 document.addEventListener("DOMContentLoaded", function () {
   setupExternalLinks();
@@ -221,4 +310,5 @@ document.addEventListener("DOMContentLoaded", function () {
   setupBackToTop();
   calculateArticleStats();
   setupThemeToggle();
+  setupTocFloat();
 });
