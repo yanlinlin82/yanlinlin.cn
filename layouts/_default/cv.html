@@ -9,7 +9,8 @@
     .article-navigation,
     .related-posts,
     .article-header .article-meta,
-    .article-header .article-date {
+    .article-header .article-date,
+    .cv-lang-switch {
       display: none !important;
     }
 
@@ -69,6 +70,16 @@
     }
   }
 </style>
+
+{{ $isEn := eq .RelPermalink "/cv-en/" -}}
+{{ $otherURL := cond $isEn "/cv/" "/cv-en/" -}}
+{{ $otherLabel := cond $isEn "Chinese / 中文" "English" -}}
+
+<div class="cv-lang-switch text-end mb-3">
+  <a href="{{ $otherURL }}" class="btn btn-outline-primary btn-sm">
+    <i class="fas fa-language me-1"></i>{{ $otherLabel }}
+  </a>
+</div>
 
 <article class="article-content">
   <header class="article-header mb-4">
