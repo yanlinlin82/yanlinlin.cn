@@ -50,7 +50,9 @@
             {{ end }}
           </span>
         </div>
-        {{ if .Summary }}
+        {{ if .Params.description }}
+        <div class="article-summary">{{ .Params.description | plainify | truncate 100 }}</div>
+        {{ else if .Summary }}
         <div class="article-summary">{{ .Summary | plainify | truncate 100 }}</div>
         {{ end }}
         <div class="article-card-footer">
