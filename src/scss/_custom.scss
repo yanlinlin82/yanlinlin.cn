@@ -9,6 +9,9 @@
 // 极客橙红配色方案 - 增强版
 body {
   font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  // 页面最小宽度：低于该宽度时整体保持此宽度并出现横向滚动条
+  // （320px 即经典最小设备宽度，正常设备不会触发，仅兜底更窄的极端窗口）
+  min-width: 320px;
 }
 
 // 字体回退优化
@@ -1883,5 +1886,87 @@ body {
 @media (max-width: 992px) {
   .btn-theme-toggle .theme-label {
     display: none;
+  }
+}
+
+// =============================================================================
+// 窄屏下导航项横向铺开并自动折行（lg 断点以下）
+// =============================================================================
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+
+  .navbar-nav .nav-link-geek {
+    margin: 0.125rem 0.25rem;
+  }
+
+  .navbar-nav .btn-search-geek,
+  .navbar-nav .btn-theme-toggle {
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+  }
+}
+
+// 小屏时压缩菜单项间距，让折行更紧凑
+@media (max-width: 576px) {
+  .navbar-nav .nav-link-geek {
+    padding: 0.4rem 0.6rem;
+    margin: 0.125rem;
+    font-size: 0.9rem;
+  }
+}
+
+// =============================================================================
+// 窄屏适配补充
+// =============================================================================
+@media (max-width: 576px) {
+  .navbar-brand-geek img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .article-navigation .row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .article-navigation .text-end {
+    text-align: start;
+  }
+}
+
+// 移动端文章表格横向滚动，避免撑破页面
+@media (max-width: 768px) {
+  .article-body table {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .article-body th,
+  .article-body td {
+    padding: 0.5rem 0.6rem;
+  }
+}
+
+// 窄屏下强制文章图片不超过容器宽度
+// 覆盖正文中内联的固定 max-width 样式（如 style="max-width:640px"），
+// 避免大图将整页撑破、导致其他内容被压缩错位
+@media (max-width: 767.98px) {
+  .article-body img {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  // 部分 WebKit 内核会对 SVG 图片忽略 max-width、按原始尺寸渲染，
+  // 这里额外用 width:100% 兑底，确保不撑破窄屏布局
+  .article-body img[src$=".svg"] {
+    width: 100%;
+    max-width: 100% !important;
   }
 }
