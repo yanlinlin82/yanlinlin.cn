@@ -13,7 +13,7 @@ slug: works
     - [biomed-dl.bioinfo-assist.com](https://biomed-dl.bioinfo-assist.com/): 深度学习在生物医药领域中的应用[[源码](https://github.com/yanlinlin82/what-deep-learning-does-in-biomedicine/)]
     - [single-cell-papers.bioinfo-assist.com](https://single-cell-papers.bioinfo-assist.com/): 单细胞与空转测序相关文章 [[源码](https://github.com/yanlinlin82/single-cell-papers)]
     - [synthetic-biology-papers.bioinfo-assist.com](https://synthetic-biology-papers.bioinfo-assist.com/): 合成生物学相关文章 [[源码](https://github.com/yanlinlin82/synthetic-biology-papers)]
-    - [biological-computing-papers.bioinfo-assist.com](https://biological-computing-papers.bioinfo-assist.com/):生物计算机与DNA存储相关文章 [[源码](https://github.com/yanlinlin82/biological-computing-papers)]
+    - [biological-computing-papers.bioinfo-assist.com](https://biological-computing-papers.bioinfo-assist.com/): 生物计算与DNA存储相关文章 [[源码](https://github.com/yanlinlin82/biological-computing-papers)]
 
 ### 1.2 命令行工具
 
@@ -53,16 +53,16 @@ R包：
 
 ### 1.5 其他
 
-- [yanll-gentoo-overlay](https://github.com/yanlinlin82/yanll-gentoo-overlay)：我自己使用的gentoo软件仓库overlay，用于加入一些官方portage tree中未收录的软件包
-- [leetcode](https://github.com/yanlinlin82/leetcode): 我的leetcode（力扣）刷题记录
+- [yanll-gentoo-overlay](https://github.com/yanlinlin82/yanll-gentoo-overlay)：我自己使用的 Gentoo 软件仓库 overlay，用于收录一些官方 Portage 树中未收录的软件包
+- [leetcode](https://github.com/yanlinlin82/leetcode): 我的 LeetCode（力扣）刷题记录
 
 ## 2. 数据分析
 
-## 2.1. 方法论
+### 2.1 方法论
 
 - [How I Construct My Data Projects](https://github.com/yanlinlin82/how-i-construct-my-data-projects): 数据项目的目录组织结构
 
-## 2.2. 案例
+### 2.2 案例
 
 - [Alive-Daytime](https://github.com/yanlinlin82/191205a_Alive-Daytime)：收集笔记本电脑的运行日志时间，并对其进行可视化（更新结果）
 - [900-Cells](https://github.com/yanlinlin82/191019a_900-Cells)：按月绘制人生格子
