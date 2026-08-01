@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="blockGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="islandGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#334155"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景与网格 -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  <g stroke="#94a3b8" stroke-opacity="0.05" stroke-width="1">
+    <line x1="60"  y1="0" x2="60"  y2="500"/>
+    <line x1="120" y1="0" x2="120" y2="500"/>
+    <line x1="180" y1="0" x2="180" y2="500"/>
+    <line x1="240" y1="0" x2="240" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="360" y1="0" x2="360" y2="500"/>
+    <line x1="420" y1="0" x2="420" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="540" y1="0" x2="540" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="660" y1="0" x2="660" y2="500"/>
+    <line x1="720" y1="0" x2="720" y2="500"/>
+    <line x1="780" y1="0" x2="780" y2="500"/>
+    <line x1="840" y1="0" x2="840" y2="500"/>
+    <line x1="900" y1="0" x2="900" y2="500"/>
+    <line x1="960" y1="0" x2="960" y2="500"/>
+    <line x1="1020" y1="0" x2="1020" y2="500"/>
+    <line x1="1080" y1="0" x2="1080" y2="500"/>
+    <line x1="1140" y1="0" x2="1140" y2="500"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+  </g>
+
+  <!-- 中间被锁岛屿的光晕 -->
+  <circle cx="600" cy="320" r="150" fill="#ea580c" opacity="0.06"/>
+
+  <!-- 上部散落的数据点 -->
+  <g>
+    <circle cx="120" cy="115" r="4" fill="#ea580c" opacity="0.6"/>
+    <circle cx="190" cy="80" r="3" fill="#94a3b8" opacity="0.5"/>
+    <circle cx="265" cy="105" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="340" cy="125" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="410" cy="90" r="4" fill="#ea580c" opacity="0.6"/>
+    <circle cx="150" cy="175" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="300" cy="160" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="470" cy="140" r="3" fill="#94a3b8" opacity="0.5"/>
+  </g>
+
+  <!-- 散落的数据点 -->
+  <g>
+    <circle cx="190" cy="230" r="4" fill="#ea580c" opacity="0.6"/>
+    <circle cx="255" cy="170" r="3" fill="#94a3b8" opacity="0.5"/>
+    <circle cx="350" cy="210" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="420" cy="150" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="640" cy="180" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="700" cy="130" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="780" cy="200" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="900" cy="160" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="1010" cy="210" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="1090" cy="170" r="4" fill="#ea580c" opacity="0.5"/>
+  </g>
+
+  <!-- 岛屿之间的断裂连接线 -->
+  <g stroke="#64748b" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round">
+    <line x1="345" y1="370" x2="430" y2="370"/>
+    <line x1="470" y1="370" x2="515" y2="370"/>
+    <line x1="685" y1="370" x2="770" y2="370"/>
+    <line x1="810" y1="370" x2="855" y2="370"/>
+  </g>
+  <g stroke="#f87171" stroke-width="3" stroke-linecap="round">
+    <line x1="443" y1="363" x2="457" y2="377"/>
+    <line x1="457" y1="363" x2="443" y2="377"/>
+    <line x1="783" y1="363" x2="797" y2="377"/>
+    <line x1="797" y1="363" x2="783" y2="377"/>
+  </g>
+
+  <!-- 数据块（三个岛） -->
+  <g>
+    <!-- 岛 A：三块 -->
+    <rect x="165" y="354" width="110" height="22" rx="5" fill="url(#blockGrad)" opacity="0.7"/>
+    <rect x="165" y="328" width="110" height="22" rx="5" fill="url(#blockGrad)" opacity="0.8"/>
+    <rect x="165" y="302" width="110" height="22" rx="5" fill="url(#blockGrad)" opacity="0.9"/>
+    <!-- 岛 B：四块（最多，被锁） -->
+    <rect x="545" y="354" width="110" height="22" rx="5" fill="url(#blockGrad)"/>
+    <rect x="545" y="328" width="110" height="22" rx="5" fill="url(#blockGrad)"/>
+    <rect x="545" y="302" width="110" height="22" rx="5" fill="url(#blockGrad)"/>
+    <rect x="545" y="276" width="110" height="22" rx="5" fill="url(#blockGrad)"/>
+    <!-- 岛 C：两块 -->
+    <rect x="925" y="354" width="110" height="22" rx="5" fill="url(#blockGrad)" opacity="0.6"/>
+    <rect x="925" y="328" width="110" height="22" rx="5" fill="url(#blockGrad)" opacity="0.7"/>
+  </g>
+
+  <!-- 挂锁（锁住岛 B） -->
+  <g>
+    <path d="M591 242 v-12 a9 9 0 0 1 18 0 v12" fill="none" stroke="#f1f5f9" stroke-width="5"/>
+    <rect x="583" y="242" width="34" height="26" rx="5" fill="#ea580c"/>
+    <circle cx="600" cy="252" r="3" fill="#0f172a"/>
+    <rect x="597.5" y="252" width="5" height="7" rx="1.5" fill="#0f172a"/>
+  </g>
+
+  <!-- 岛屿平台 -->
+  <rect x="100" y="382" width="240" height="28" rx="14" fill="url(#islandGrad)" stroke="#475569" stroke-width="1.5"/>
+  <rect x="480" y="382" width="240" height="28" rx="14" fill="url(#islandGrad)" stroke="#ea580c" stroke-width="1.5"/>
+  <rect x="860" y="382" width="240" height="28" rx="14" fill="url(#islandGrad)" stroke="#475569" stroke-width="1.5"/>
+</svg>
