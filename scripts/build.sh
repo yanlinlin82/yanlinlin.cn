@@ -24,27 +24,10 @@ require_command() {
     command -v "$1" >/dev/null 2>&1 || fail "Missing command: $1"
 }
 
-cleanup() {
-    if [ -n "${CUSTOM_CSS_FILE:-}" ] && [ -f "$CUSTOM_CSS_FILE" ]; then
-        rm -f "$CUSTOM_CSS_FILE"
-    fi
-}
-
 build_css() {
-    local css_output="static/assets/css/main.css"
-
     log "Building CSS"
     mkdir -p static/assets/css
-    CUSTOM_CSS_FILE="$(mktemp)"
-
-    sass src/scss/main.scss "$CUSTOM_CSS_FILE" --style=compressed --no-source-map --no-charset
-
-    {
-        cat node_modules/bootstrap/dist/css/bootstrap.min.css
-        cat node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
-        sed 's#\.\./webfonts#../fonts#g' node_modules/@fortawesome/fontawesome-free/css/solid.min.css
-        cat "$CUSTOM_CSS_FILE"
-    } > "$css_output"
+    "$SCRIPT_DIR/build-css.sh"
 }
 
 build_js() {
@@ -94,7 +77,6 @@ main() {
     esac
 
     cd "$PROJECT_ROOT"
-    trap cleanup EXIT
 
     require_command sass
     require_command webpack

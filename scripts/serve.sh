@@ -3,6 +3,8 @@
 # 开发服务器脚本
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # 颜色定义
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -16,20 +18,20 @@ log() {
 # 启动开发服务器
 serve() {
     local mode=${1:-full}
-    local port=${2:-13131}
+    local port=${2:-1313}
 
     case $mode in
         "fast")
             log "🌐 启动开发服务器（快速模式）"
             # 启动资源监听
-            sass src/scss/main.scss:static/assets/css/main.css --watch &
+            "$SCRIPT_DIR/build-css.sh" --watch &
             webpack --mode=development --watch &
             hugo server --config hugo.yaml,config/fast.yaml --bind 0.0.0.0 --port $port
             ;;
         "full")
             log "🌐 启动开发服务器（完整模式）"
             # 启动资源监听
-            sass src/scss/main.scss:static/assets/css/main.css --watch &
+            "$SCRIPT_DIR/build-css.sh" --watch &
             webpack --mode=development --watch &
             hugo server --config hugo.yaml --bind 0.0.0.0 --port $port
             ;;
