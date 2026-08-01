@@ -17,6 +17,9 @@
     "immutable": "5.1.9",
     "fast-uri": "3.1.4"
   },
+  "allowScripts": {
+    "@parcel/watcher": true
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
     "bootstrap": "^5.3.8",
