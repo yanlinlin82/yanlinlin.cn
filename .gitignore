@@ -3,6 +3,9 @@
 /drafts/
 /.hugo_build.lock
 
+# Hugo generated resource cache
+/resources/_gen/
+
 # R environment files
 .RData
 .Rhistory
