@@ -10,15 +10,15 @@ slug: about
 
 在北大取得生物信息学博士学位后，我一直在精准医疗领域深耕，专注于高通量组学数据分析和技术研发。20多年的编程经验让我在多个技术领域都有所涉猎，从传统的生物信息学算法到新兴的AI/LLM应用，我始终保持着对新技术的好奇和探索精神。
 
-除了专业研究，我也喜欢写作和分享。这个网站就是我的数字花园，记录着技术探索、学术思考、生活感悟，以及那些"不靠谱"却有趣的发现。
+除了专业研究，我也喜欢写作和分享。这个网站就是我的数字花园，记录着技术探索、学术思考、生活感悟，以及那些“不靠谱”却有趣的发现。
 
 我相信技术应该服务于生活，而生活也应该充满探索的乐趣。
 
 ## 关于这个网站
 
-### 为什么叫"不靠谱颜论"？
+### 为什么叫“不靠谱颜论”？
 
-这个名字源于我对科学和生活的态度。在严谨的学术研究之外，我常常会有一些"不靠谱"的想法和观察——那些看似天马行空，却可能蕴含着独特视角的思考。这些想法可能不够严谨，但往往能带来意想不到的启发。
+这个名字源于我对科学和生活的态度。在严谨的学术研究之外，我常常会有一些“不靠谱”的想法和观察——那些看似天马行空，却可能蕴含着独特视角的思考。这些想法可能不够严谨，但往往能带来意想不到的启发。
 
 ### 网站的理念
 
@@ -76,12 +76,12 @@ slug: about
   <h5>其他平台</h5>
   <div class="d-flex flex-wrap gap-2 justify-content-center">
     <a href="https://orcid.org/0000-0002-4990-6239" class="badge bg-light text-dark text-decoration-none border">ORCID</a>
-    <a href="http://github.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">GitHub</a>
+    <a href="https://github.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">GitHub</a>
     <a href="https://www.researchgate.net/profile/Linlin_Yan4" class="badge bg-light text-dark text-decoration-none border">ResearchGate</a>
-    <a href="http://twitter.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Twitter</a>
-    <a href="http://linkedin.com/in/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">LinkedIn</a>
-    <a href="http://facebook.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Facebook</a>
-    <a href="http://weibo.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">微博</a>
+    <a href="https://twitter.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Twitter</a>
+    <a href="https://linkedin.com/in/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">LinkedIn</a>
+    <a href="https://facebook.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Facebook</a>
+    <a href="https://weibo.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">微博</a>
   </div>
 </div>
 
@@ -89,4 +89,4 @@ slug: about
 
 如果你对我的文章有任何想法、建议或疑问，欢迎通过各种方式与我交流。我相信思想的碰撞能产生新的火花，也期待能在这里遇到志同道合的朋友。
 
-让我们一起在科学和技术的道路上探索前行，发现更多"不靠谱"却有趣的可能性。
+让我们一起在科学和技术的道路上探索前行，发现更多“不靠谱”却有趣的可能性。
