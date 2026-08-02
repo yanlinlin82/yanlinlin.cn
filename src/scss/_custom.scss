@@ -1,22 +1,18 @@
-// 字体回退策略 - 优化国内用户访问体验
-.fonts-fallback {
-  // 当无法加载Google Fonts时，使用优化的系统字体栈
-  --font-sans: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', 'Menlo', 'Consolas', 'DejaVu Sans Mono', 'Courier New', monospace;
-  --font-serif: 'Noto Serif SC', 'SimSun', 'STSong', 'STKaiti', 'KaiTi', 'FangSong', 'STFangsong', serif;
+// 系统字体优先策略 - 使用操作系统自带字体，零网络请求、无版权风险
+// 查找逻辑：浏览器逐字符从左到右匹配列表中第一个已安装且含该字符字形的字体
+// （拉丁文字取前段字体，中文字形自动落到后续 CJK 字体）
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'JetBrains Mono', Consolas, Menlo, Monaco, 'DejaVu Sans Mono', monospace;
+  --font-serif: 'Noto Serif SC', 'Songti SC', SimSun, STSong, serif;
 }
 
 // 极客橙红配色方案 - 增强版
 body {
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-family: var(--font-sans);
   // 页面最小宽度：低于该宽度时整体保持此宽度并出现横向滚动条
   // （320px 即经典最小设备宽度，正常设备不会触发，仅兜底更窄的极端窗口）
   min-width: 320px;
-}
-
-// 字体回退优化
-.fonts-fallback body {
-  font-family: var(--font-sans);
 }
 
 // External link indicators
@@ -743,12 +739,8 @@ body {
   color: var(--bs-primary);
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
-  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
-  font-size: 0.9em;
-}
-
-.fonts-fallback .article-body code {
   font-family: var(--font-mono);
+  font-size: 0.9em;
 }
 
 .article-body pre:not(.chroma pre) {
@@ -1321,14 +1313,10 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--bs-primary);
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-family: var(--font-sans);
   letter-spacing: -0.025em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.fonts-fallback .category-title {
-  font-family: var(--font-sans);
 }
 
 .category-title a {
@@ -1353,14 +1341,10 @@ body {
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
-  font-family: 'Noto Sans SC', 'Inter', 'SF Pro Text', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-family: var(--font-sans);
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.fonts-fallback .category-count {
-  font-family: var(--font-sans);
 }
 
 .category-content {
