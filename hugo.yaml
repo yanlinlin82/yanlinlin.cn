@@ -109,12 +109,12 @@ menu:
     - name: 标签
       url: /tags/
       weight: 40
-    - name: 关于
-      url: /about/
-      weight: 50
     - name: 作品
       url: /works/
-      weight: 60
+      weight: 50
     - name: 简历
       url: /cv/
+      weight: 60
+    - name: 关于
+      url: /about/
       weight: 70
