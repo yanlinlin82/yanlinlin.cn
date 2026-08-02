@@ -75,13 +75,10 @@ slug: about
 <div class="mt-4 text-center">
   <h5>其他平台</h5>
   <div class="d-flex flex-wrap gap-2 justify-content-center">
-    <a href="https://orcid.org/0000-0002-4990-6239" class="badge bg-light text-dark text-decoration-none border">ORCID</a>
-    <a href="https://github.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">GitHub</a>
-    <a href="https://www.researchgate.net/profile/Linlin_Yan4" class="badge bg-light text-dark text-decoration-none border">ResearchGate</a>
-    <a href="https://twitter.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Twitter</a>
-    <a href="https://linkedin.com/in/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">LinkedIn</a>
-    <a href="https://facebook.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">Facebook</a>
-    <a href="https://weibo.com/yanlinlin82" class="badge bg-light text-dark text-decoration-none border">微博</a>
+    <a href="https://orcid.org/0000-0002-4990-6239" class="platform-badge badge bg-light text-dark text-decoration-none border"><i class="fa-brands fa-orcid me-1"></i>ORCID</a>
+    <a href="https://github.com/yanlinlin82" class="platform-badge badge bg-light text-dark text-decoration-none border"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+    <a href="https://www.researchgate.net/profile/Linlin_Yan4" class="platform-badge badge bg-light text-dark text-decoration-none border"><i class="fa-brands fa-researchgate me-1"></i>ResearchGate</a>
+    <a href="https://linkedin.com/in/yanlinlin82" class="platform-badge badge bg-light text-dark text-decoration-none border"><i class="fa-brands fa-linkedin me-1"></i>LinkedIn</a>
   </div>
 </div>
 

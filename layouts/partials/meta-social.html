@@ -1,29 +1,46 @@
 {{- $title := cond .IsHome site.Title (printf "%s - %s" .Title site.Title) -}}
 {{- $description := cond .IsHome site.Params.description (.Summary | default .Content | plainify | truncate 160) -}}
 {{- $image := cond (.Params.image) (.Params.image | absURL) site.Params.images.og -}}
+{{- $imageAlt := cond (.Params.image) .Title site.Title -}}
+{{- $isArticle := eq .Section "posts" -}}
 
 <!-- Open Graph标签 -->
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
-<meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+<meta property="og:type" content="{{ cond $isArticle "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
-<meta property="og:image" content="{{ $image }}">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:alt" content="{{ $imageAlt }}">
+{{- if eq $image site.Params.images.og }}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{- end }}
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ $description }}">
-<meta name="twitter:image" content="{{ $image }}">
-<meta name="twitter:creator" content="@{{ site.Params.social.twitter }}">
+{{- if $isArticle }}
+<!-- 文章专属标签 -->
+{{- if .Date }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- if .Lastmod }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- end }}
+{{- with .Params.categories }}
+<meta property="article:section" content="{{ index . 0 }}">
+{{- end }}
+{{- with .Params.tags }}
+{{- range . }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
+{{- end }}
+{{- end }}
 
 <!-- 扩展社交媒体标签 -->
 {{- if site.Params.seo -}}
 <meta property="og:author" content="{{ site.Params.seo.authorName }}">
 <meta property="og:author:title" content="{{ site.Params.seo.authorTitle }}">
 <meta property="og:author:bio" content="{{ site.Params.seo.authorBio }}">
-<meta property="og:site_name" content="{{ site.Params.seo.siteName }}">
 <meta property="og:site_description" content="{{ site.Params.seo.siteDescription }}">
 
 <!-- 专业领域标签 -->
@@ -48,8 +65,7 @@
   "description": "{{ site.Params.seo.authorBio }}",
   "url": "{{ site.BaseURL }}",
   "sameAs": [
-    "https://github.com/{{ site.Params.social.github }}",
-    "https://twitter.com/{{ site.Params.social.twitter }}"
+    "https://github.com/{{ site.Params.social.github }}"
   ],
   "knowsAbout": [
     {{- range $index, $expertise := site.Params.seo.expertise -}}
