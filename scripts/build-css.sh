@@ -25,6 +25,7 @@ combine() {
         cat node_modules/bootstrap/dist/css/bootstrap.min.css
         cat node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
         sed 's#\.\./webfonts#../fonts#g' node_modules/@fortawesome/fontawesome-free/css/solid.min.css
+        sed 's#\.\./webfonts#../fonts#g' node_modules/@fortawesome/fontawesome-free/css/brands.min.css
         cat "$CUSTOM_CSS"
     } > "$OUTPUT"
 }

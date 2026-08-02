@@ -1954,3 +1954,26 @@ body {
     max-width: 100% !important;
   }
 }
+
+// “其他平台”徽章 - 放大品牌图标便于识别；
+// 不显示外部链接的 ↗ 箭头，hover 时主题色反馈，与全站控件风格一致
+.platform-badge {
+  font-size: 1rem;
+  padding: 0.45em 0.9em;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: rgba(234, 88, 12, 0.4);
+    color: var(--bs-primary);
+    transform: translateY(-2px);
+  }
+
+  .fa-brands {
+    font-size: 1.4em;
+    vertical-align: -0.1em;
+  }
+
+  &::after {
+    content: none;
+  }
+}
