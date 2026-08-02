@@ -7,17 +7,6 @@ const { setupSearch } = require("./search.js");
 // Constants
 const WORDS_PER_MINUTE = 300;
 
-// External link handling
-function setupExternalLinks() {
-  const externalLinks = document.querySelectorAll(
-    'main a[href^="http"], a.external-link',
-  );
-  externalLinks.forEach((link) => {
-    link.classList.add("external-link");
-    link.setAttribute("target", "_blank");
-  });
-}
-
 // Calculate word count and reading time
 function calculateArticleStats() {
   const articleStats = document.querySelector(".article-stats");
@@ -262,7 +251,6 @@ function setupTocFloat() {
 
 // 初始化所有功能
 document.addEventListener("DOMContentLoaded", function () {
-  setupExternalLinks();
   setupSearch();
   setupBackToTop();
   calculateArticleStats();
