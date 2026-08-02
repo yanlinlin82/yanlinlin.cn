@@ -15,17 +15,6 @@ body {
   min-width: 320px;
 }
 
-// External link indicators
-.external-link::after {
-  content: " ↗";
-  font-size: 0.75em;
-  opacity: 0.75;
-}
-
-.external-link:hover::after {
-  opacity: 1;
-}
-
 // Navbar components
 .navbar-brand-wrapper {
   display: flex;
@@ -884,20 +873,6 @@ body {
   outline: 2px solid rgba(234, 88, 12, 0.5);
   outline-offset: 2px;
   border-radius: 2px;
-}
-
-.article-body a[href^="http"]:not([href*="yanlinlin.cn"]):not([href*="localhost"])::after {
-  content: "↗";
-  font-size: 0.75em;
-  margin-left: 0.25em;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-  vertical-align: super;
-  line-height: 1;
-}
-
-.article-body a[href^="http"]:not([href*="yanlinlin.cn"]):not([href*="localhost"]):hover::after {
-  opacity: 1;
 }
 
 .article-body table {
@@ -1955,8 +1930,7 @@ body {
   }
 }
 
-// “其他平台”徽章 - 放大品牌图标便于识别；
-// 不显示外部链接的 ↗ 箭头，hover 时主题色反馈，与全站控件风格一致
+// “其他平台”徽章 - 放大品牌图标便于识别，hover 时主题色反馈，与全站控件风格一致
 .platform-badge {
   font-size: 1rem;
   padding: 0.45em 0.9em;
@@ -1971,9 +1945,5 @@ body {
   .fa-brands {
     font-size: 1.4em;
     vertical-align: -0.1em;
-  }
-
-  &::after {
-    content: none;
   }
 }
