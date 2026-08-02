@@ -1,5 +1,4 @@
-{{- $siteData := resources.Get "site.json" | transform.Unmarshal -}}
-{{- if and .IsPage $siteData.seo -}}
+{{- if and .IsPage site.Params.seo -}}
 
 <!-- 文章页面的结构化数据 -->
 <script type="application/ld+json">
@@ -10,14 +9,14 @@
   "description": "{{ .Summary | default .Content | plainify | truncate 200 }}",
   "author": {
     "@type": "Person",
-    "name": "{{ $siteData.seo.authorName }}",
-    "jobTitle": "{{ $siteData.seo.authorTitle }}",
-    "description": "{{ $siteData.seo.authorBio }}",
-    "url": "{{ $siteData.baseURL }}"
+    "name": "{{ site.Params.seo.authorName }}",
+    "jobTitle": "{{ site.Params.seo.authorTitle }}",
+    "description": "{{ site.Params.seo.authorBio }}",
+    "url": "{{ site.BaseURL }}"
   },
   "publisher": {
     "@type": "Person",
-    "name": "{{ $siteData.seo.authorName }}"
+    "name": "{{ site.Params.seo.authorName }}"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -31,7 +30,7 @@
   {{- if .Params.image -}}
   "image": "{{ .Params.image | absURL }}",
   {{- else -}}
-  "image": "{{ $siteData.images.og }}",
+  "image": "{{ site.Params.images.og }}",
   {{- end -}}
   "articleSection": "{{ .Section }}",
   {{- if .Params.categories -}}
@@ -55,7 +54,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": "首页",
-      "item": "{{ $siteData.baseURL }}"
+      "item": "{{ site.BaseURL }}"
     }
     {{- if .IsPage -}}
       {{- if and .Section (ne .Section "") (ne .Section "posts") -}}
@@ -63,7 +62,7 @@
         "@type": "ListItem",
         "position": 2,
         "name": "{{ .Section | title }}",
-        "item": "{{ $siteData.baseURL }}{{ .Section }}/"
+        "item": "{{ site.BaseURL }}{{ .Section }}/"
       }
       ,{
         "@type": "ListItem",
@@ -107,11 +106,11 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "{{ $siteData.seo.siteName }}",
-  "url": "{{ $siteData.baseURL }}",
+  "name": "{{ site.Params.seo.siteName }}",
+  "url": "{{ site.BaseURL }}",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "{{ $siteData.baseURL }}search?q={search_term_string}",
+    "target": "{{ site.BaseURL }}search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
