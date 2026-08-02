@@ -1,14 +1,13 @@
-{{- $siteData := resources.Get "site.json" | transform.Unmarshal -}}
-{{- $title := cond .IsHome $siteData.title (printf "%s - %s" .Title $siteData.title) -}}
-{{- $description := cond .IsHome $siteData.description (.Summary | default .Content | plainify | truncate 160) -}}
-{{- $image := cond (.Params.image) (.Params.image | absURL) $siteData.images.og -}}
+{{- $title := cond .IsHome site.Title (printf "%s - %s" .Title site.Title) -}}
+{{- $description := cond .IsHome site.Params.description (.Summary | default .Content | plainify | truncate 160) -}}
+{{- $image := cond (.Params.image) (.Params.image | absURL) site.Params.images.og -}}
 
 <!-- Open Graph标签 -->
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ $siteData.title }}">
+<meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:image" content="{{ $image }}">
 <meta property="og:locale" content="zh_CN">
 
@@ -17,44 +16,44 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
 <meta name="twitter:image" content="{{ $image }}">
-<meta name="twitter:creator" content="{{ $siteData.social.twitter }}">
+<meta name="twitter:creator" content="@{{ site.Params.social.twitter }}">
 
 <!-- 扩展社交媒体标签 -->
-{{- if $siteData.seo -}}
-<meta property="og:author" content="{{ $siteData.seo.authorName }}">
-<meta property="og:author:title" content="{{ $siteData.seo.authorTitle }}">
-<meta property="og:author:bio" content="{{ $siteData.seo.authorBio }}">
-<meta property="og:site_name" content="{{ $siteData.seo.siteName }}">
-<meta property="og:site_description" content="{{ $siteData.seo.siteDescription }}">
+{{- if site.Params.seo -}}
+<meta property="og:author" content="{{ site.Params.seo.authorName }}">
+<meta property="og:author:title" content="{{ site.Params.seo.authorTitle }}">
+<meta property="og:author:bio" content="{{ site.Params.seo.authorBio }}">
+<meta property="og:site_name" content="{{ site.Params.seo.siteName }}">
+<meta property="og:site_description" content="{{ site.Params.seo.siteDescription }}">
 
 <!-- 专业领域标签 -->
-{{- range $siteData.seo.expertise -}}
+{{- range site.Params.seo.expertise -}}
 <meta property="og:expertise" content="{{ . }}">
 {{- end -}}
 
 <!-- 研究方向标签 -->
-{{- range $siteData.seo.researchAreas -}}
+{{- range site.Params.seo.researchAreas -}}
 <meta property="og:research_area" content="{{ . }}">
 {{- end -}}
 {{- end -}}
 
 <!-- 结构化数据 - 作者信息 -->
-{{- if $siteData.seo -}}
+{{- if site.Params.seo -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "{{ $siteData.seo.authorName }}",
-  "jobTitle": "{{ $siteData.seo.authorTitle }}",
-  "description": "{{ $siteData.seo.authorBio }}",
-  "url": "{{ $siteData.baseURL }}",
+  "name": "{{ site.Params.seo.authorName }}",
+  "jobTitle": "{{ site.Params.seo.authorTitle }}",
+  "description": "{{ site.Params.seo.authorBio }}",
+  "url": "{{ site.BaseURL }}",
   "sameAs": [
-    "https://github.com/{{ $siteData.social.github }}",
-    "https://twitter.com/{{ $siteData.social.twitter }}"
+    "https://github.com/{{ site.Params.social.github }}",
+    "https://twitter.com/{{ site.Params.social.twitter }}"
   ],
   "knowsAbout": [
-    {{- range $index, $expertise := $siteData.seo.expertise -}}
-    "{{ $expertise }}"{{- if ne $index (sub (len $siteData.seo.expertise) 1) }},{{- end -}}
+    {{- range $index, $expertise := site.Params.seo.expertise -}}
+    "{{ $expertise }}"{{- if ne $index (sub (len site.Params.seo.expertise) 1) }},{{- end -}}
     {{- end -}}
   ]
 }
@@ -65,17 +64,17 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "{{ $siteData.seo.siteName }}",
-  "description": "{{ $siteData.seo.siteDescription }}",
-  "url": "{{ $siteData.baseURL }}",
+  "name": "{{ site.Params.seo.siteName }}",
+  "description": "{{ site.Params.seo.siteDescription }}",
+  "url": "{{ site.BaseURL }}",
   "author": {
     "@type": "Person",
-    "name": "{{ $siteData.seo.authorName }}",
-    "jobTitle": "{{ $siteData.seo.authorTitle }}"
+    "name": "{{ site.Params.seo.authorName }}",
+    "jobTitle": "{{ site.Params.seo.authorTitle }}"
   },
   "publisher": {
     "@type": "Person",
-    "name": "{{ $siteData.seo.authorName }}"
+    "name": "{{ site.Params.seo.authorName }}"
   }
 }
 </script>

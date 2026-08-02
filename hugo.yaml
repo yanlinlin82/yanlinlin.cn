@@ -15,12 +15,59 @@ pagination:
 mainSections:
   - posts
 
-# 网站分析工具配置
+# 站点元数据与 SEO 配置（供 HTML meta / Open Graph / JSON-LD / RSS 模板读取）
 params:
   # 站点作者信息
   author:
     name: 颜林林
     email: linlin.yan@bioinfo.app
+  # 站点描述：用于 meta description、og:description 及 RSS <description>
+  description: "颜林林博士的个人主页 - 生物信息学专家、精准医疗研究者、AI/LLM应用探索者。20多年编程经验，专注高通量组学数据分析、临床肿瘤基因检测、大模型在生物信息学领域的应用。分享技术探索、学术思考、生活感悟，记录那些“不靠谱”却有趣的发现。"
+  # 站点关键词：用于 meta keywords
+  keywords: "颜林林,生物信息学,精准医疗,高通量测序,组学数据分析,临床肿瘤基因检测,AI应用,大语言模型,LLM,生物标志物,多组学数据,机器学习,深度学习,Python编程,C++编程,R编程,生物信息学算法,突变检测,基因融合,免疫治疗,数字病理学,ACMGator,生信软件开发,跨学科研究,技术博客,个人主页,不靠谱颜论"
+  # 社交媒体账号（用于 Twitter Card 及 JSON-LD sameAs）
+  social:
+    github: yanlinlin82
+    twitter: yanlinlin82
+  # 社交分享图片（Open Graph / Twitter Card）
+  images:
+    og: "https://yanlinlin.cn/images/og-image.jpg"
+  # SEO 扩展元数据（渲染为 meta 标签与 JSON-LD 结构化数据）
+  seo:
+    siteName: "不靠谱颜论 - 颜林林的个人主页"
+    siteDescription: "生物信息学专家颜林林博士的个人主页，专注精准医疗、AI/LLM应用、技术探索与学术思考"
+    authorName: 颜林林
+    authorTitle: "生物信息学博士、精准医疗研究者、AI/LLM应用探索者"
+    authorBio: "北京大学生物信息学博士，20多年编程经验，专注高通量组学数据分析、临床肿瘤基因检测、大模型在生物信息学领域的应用"
+    expertise:
+      - 生物信息学
+      - 精准医疗
+      - 高通量测序
+      - 组学数据分析
+      - 临床肿瘤基因检测
+      - AI/LLM应用
+      - 机器学习
+      - 深度学习
+      - 生物标志物发现
+      - 多组学数据整合
+      - 生信软件开发
+      - Python/C++/R编程
+    researchAreas:
+      - 肿瘤基因检测
+      - 免疫治疗
+      - 数字病理学
+      - 突变致病性解读
+      - 基因组注释
+      - 文献挖掘
+      - 临床决策支持
+    contentCategories:
+      - 技术探索
+      - 学术思考
+      - 生活感悟
+      - 书评分享
+      - 编程实践
+      - AI应用
+      - 生物信息学
   fastBuild: false
   disableSearchIndex: false
   # Google Analytics 代码

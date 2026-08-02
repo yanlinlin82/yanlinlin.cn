@@ -8,6 +8,7 @@
     "build:fast": "bash scripts/build.sh fast",
     "clean": "bash scripts/clean.sh",
     "check:slugs": "python3 scripts/check_slugs.py",
+    "generate:og-image": "bash scripts/generate-og-image.sh",
     "help": "npm run"
   },
   "engines": {

@@ -2,15 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- 基础Meta信息 -->
-{{- $siteData := resources.Get "site.json" | transform.Unmarshal -}}
 {{- $titlePrefix := partial "title-prefix.html" . -}}
-{{- $title := cond .IsHome $siteData.title (printf "%s%s - %s" $titlePrefix .Title $siteData.title) -}}
-{{- $description := cond .IsHome $siteData.description (.Summary | default .Content | plainify | truncate 160) -}}
+{{- $title := cond .IsHome site.Title (printf "%s%s - %s" $titlePrefix .Title site.Title) -}}
+{{- $description := cond .IsHome site.Params.description (.Summary | default .Content | plainify | truncate 160) -}}
 
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">
-<meta name="keywords" content="{{ $siteData.keywords }}">
-<meta name="author" content="{{ $siteData.author }}">
+<meta name="keywords" content="{{ site.Params.keywords }}">
+<meta name="author" content="{{ site.Params.author.name }}">
 
 <!-- SEO和浏览器优化 -->
 <meta name="robots" content="index, follow">
@@ -18,25 +17,25 @@
 <meta name="color-scheme" content="light dark">
 
 <!-- 扩展SEO信息 -->
-{{- if $siteData.seo -}}
-<meta name="author:name" content="{{ $siteData.seo.authorName }}">
-<meta name="author:title" content="{{ $siteData.seo.authorTitle }}">
-<meta name="author:bio" content="{{ $siteData.seo.authorBio }}">
-<meta name="site:name" content="{{ $siteData.seo.siteName }}">
-<meta name="site:description" content="{{ $siteData.seo.siteDescription }}">
+{{- if site.Params.seo -}}
+<meta name="author:name" content="{{ site.Params.seo.authorName }}">
+<meta name="author:title" content="{{ site.Params.seo.authorTitle }}">
+<meta name="author:bio" content="{{ site.Params.seo.authorBio }}">
+<meta name="site:name" content="{{ site.Params.seo.siteName }}">
+<meta name="site:description" content="{{ site.Params.seo.siteDescription }}">
 
 <!-- 专业领域标签 -->
-{{- range $siteData.seo.expertise -}}
+{{- range site.Params.seo.expertise -}}
 <meta name="expertise" content="{{ . }}">
 {{- end -}}
 
 <!-- 研究方向标签 -->
-{{- range $siteData.seo.researchAreas -}}
+{{- range site.Params.seo.researchAreas -}}
 <meta name="research-area" content="{{ . }}">
 {{- end -}}
 
 <!-- 内容分类标签 -->
-{{- range $siteData.seo.contentCategories -}}
+{{- range site.Params.seo.contentCategories -}}
 <meta name="content-category" content="{{ . }}">
 {{- end -}}
 {{- end -}}

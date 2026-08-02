@@ -46,6 +46,14 @@ magick ~/Downloads/xxx.jpg -resize 250x static/uploads/2026/0523/book-cover.png
 - `-resize 250x` — 缩放宽度为 250 像素，高度按比例自动调整
 - `static/uploads/2026/0523/` — 目标目录，`2026` 为年份，`0523` 为月份日期
 
+### 生成社交分享图
+
+```bash
+npm run generate:og-image
+```
+
+重新生成 `static/images/og-image.jpg`（1200x630，用于 Open Graph / Twitter Card）。依赖 ImageMagick 和 CJK 字体，字体可通过环境变量 `OG_FONT` 指定。
+
 ### 内容检查
 
 ```bash
