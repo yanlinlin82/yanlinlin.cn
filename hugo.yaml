@@ -70,10 +70,6 @@ params:
       - 生物信息学
   fastBuild: false
   disableSearchIndex: false
-  # Google Analytics 代码
-  googleAnalytics: "G-P6SH63QQPQ"
-  # 百度统计代码
-  baiduAnalytics: "a9ec9e8a36d71ac1ea9f1f77bdfcb909"
 
 sitemap:
   changefreq: monthly
