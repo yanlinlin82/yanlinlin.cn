@@ -104,6 +104,7 @@ function setupSearch() {
 
   let fuse = null;
   let searchInitialized = false;
+  let indexLoading = false;
 
   // Initialize search when index is loaded
   function initializeSearch() {
@@ -123,9 +124,38 @@ function setupSearch() {
     console.log('搜索功能初始化完成');
   }
 
+  // Lazily load the external search index on first use
+  function loadSearchIndex() {
+    if (indexLoading || searchInitialized) return;
+    if (window.searchIndexDisabled) {
+      searchResults.innerHTML = '<p class="text-muted">搜索暂不可用</p>';
+      return;
+    }
+    indexLoading = true;
+    searchResults.innerHTML = '<p class="text-muted">正在加载搜索索引...</p>';
+
+    fetch(window.searchIndexURL || 'search-index.json')
+      .then(function(res) {
+        if (!res.ok) throw new Error('search index HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function(data) {
+        window.searchIndex = data;
+      })
+      .catch(function() {
+        window.searchIndex = [];
+      })
+      .finally(function() {
+        window.searchIndexLoaded = true;
+        indexLoading = false;
+        initializeSearch();
+      });
+  }
+
   // Search input handler
   searchInput.addEventListener('input', function() {
     if (!searchInitialized) {
+      loadSearchIndex();
       searchResults.innerHTML = '<p class="text-muted">正在加载搜索索引...</p>';
       return;
     }
@@ -135,11 +165,9 @@ function setupSearch() {
   // Modal event handlers
   searchModal.addEventListener('shown.bs.modal', () => {
     setTimeout(() => searchInput.focus(), 100);
-    
-    // 如果搜索索引已加载但搜索功能未初始化，立即初始化
-    if (window.searchIndexLoaded && !searchInitialized) {
-      initializeSearch();
-    }
+
+    // 首次打开搜索框时预加载搜索索引
+    loadSearchIndex();
   });
 
   searchModal.addEventListener('hide.bs.modal', () => {
@@ -152,21 +180,6 @@ function setupSearch() {
     const searchButton = document.querySelector('[data-bs-target="#searchModal"]');
     if (searchButton) searchButton.focus();
   });
-
-  // 监听搜索索引加载完成事件
-  function checkSearchIndex() {
-    if (window.searchIndexLoaded && !searchInitialized) {
-      initializeSearch();
-    }
-  }
-
-  // 定期检查搜索索引是否已加载
-  const checkInterval = setInterval(() => {
-    checkSearchIndex();
-    if (searchInitialized) {
-      clearInterval(checkInterval);
-    }
-  }, 100);
 
   // 设置全局函数供外部调用
   window.initializeSearch = initializeSearch;

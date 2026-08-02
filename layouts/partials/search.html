@@ -41,14 +41,15 @@
 <!-- Search index loader -->
 <script>
     {{ if not .Site.Params.fastBuild }}
-    // 使用预生成的搜索索引数据
-    window.searchIndex = window.searchIndexData || [];
-    window.searchIndexLoaded = true;
-    console.log('搜索索引已加载，共', window.searchIndex.length, '篇文章');
+    // 搜索索引懒加载：首次打开搜索框时才拉取外部 JSON
+    window.searchIndex = [];
+    window.searchIndexLoaded = false;
+    window.searchIndexURL = '{{ "search-index.json" | relURL }}';
     {{ else }}
     // 快速构建模式 - 搜索功能已禁用
     window.searchIndex = [];
     window.searchIndexLoaded = true;
+    window.searchIndexDisabled = true;
     console.log('快速构建模式：搜索索引已跳过');
     {{ end }}
 </script>
