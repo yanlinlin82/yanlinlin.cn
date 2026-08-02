@@ -11,7 +11,7 @@ slug: flat-set-performance
   <div><small>（题图由AI生成）</small></div>
 </div>
 
-之前在《[从flat_set管窥C++的价值权衡](/2024/01/07/从flat_set管窥c-的价值权衡/)》中没放代码，今天补上（照惯例，文末“阅读原文”可跳转至GitHub完整源码）。
+之前在《[从flat_set管窥C++的价值权衡](/2024/01/07/glimpsing-cpp-value-trade-offs-from-flat-set/)》中没放代码，今天补上（照惯例，文末“阅读原文”可跳转至GitHub完整源码）。
 
 如前所述，flat_set 的用法与 std::set 几乎完全一样，差别主要在于内存布局和性能。由于 flat_set 能保证所包含的元素按次序存储在连续内存空间中，因此，它（的迭代器）还允许进行随机访问。下面的例子展示了基本用法：
 

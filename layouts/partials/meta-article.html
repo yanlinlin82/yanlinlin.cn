@@ -32,7 +32,6 @@
   {{- else -}}
   "image": "{{ site.Params.images.og }}",
   {{- end -}}
-  "articleSection": "{{ .Section }}",
   {{- if .Params.categories -}}
   "articleSection": "{{ index .Params.categories 0 }}",
   {{- end -}}
@@ -101,18 +100,13 @@
 }
 </script>
 
-<!-- 网站搜索结构化数据 -->
+<!-- 网站结构化数据 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "{{ site.Params.seo.siteName }}",
-  "url": "{{ site.BaseURL }}",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{{ site.BaseURL }}search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "url": "{{ site.BaseURL }}"
 }
 </script>
 
