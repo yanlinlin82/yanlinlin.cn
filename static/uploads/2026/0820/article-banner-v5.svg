@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04070f"/>
+      <stop offset="0.55" stop-color="#0a1424"/>
+      <stop offset="1" stop-color="#12233f"/>
+    </linearGradient>
+    <radialGradient id="glowIndigo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRed" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e11d48" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e11d48" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1.2" fill="#38bdf8" opacity="0.14"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  <rect width="1200" height="500" fill="url(#dots)"/>
+  <circle cx="470" cy="260" r="300" fill="url(#glowIndigo)"/>
+  <circle cx="900" cy="260" r="260" fill="url(#glowRed)"/>
+
+  <!-- HUD 四角框 -->
+  <g stroke="#67e8f9" stroke-width="3" fill="none" opacity="0.85">
+    <path d="M 34 76 V 34 H 76"/>
+    <path d="M 1166 34 H 1124 V 76"/>
+    <path d="M 34 424 V 466 H 76"/>
+    <path d="M 1166 466 H 1124 V 424"/>
+  </g>
+
+  <!-- 贯穿的数据流线（数据 → 三关 → 印章） -->
+  <line x1="196" y1="260" x2="821" y2="260" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="2 9" opacity="0.5"/>
+
+  <!-- 数据节点（小，最左） -->
+  <rect x="110" y="222" width="76" height="76" rx="12" fill="#0ea5e9" opacity="0.08" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="120" y="232" width="24" height="4" rx="2" fill="#38bdf8" opacity="0.7"/>
+  <g fill="#38bdf8" opacity="0.35">
+    <rect x="120" y="244" width="52" height="4" rx="2"/>
+    <rect x="120" y="256" width="44" height="4" rx="2"/>
+    <rect x="120" y="268" width="48" height="4" rx="2"/>
+  </g>
+  <rect x="120" y="280" width="48" height="4" rx="2" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="176" cy="282" r="3" fill="#fbbf24"/>
+
+  <!-- 问号（小，浮在数据节点上方） -->
+  <g transform="translate(95 150) scale(0.65)">
+    <path d="M 24 34 A 20 20 0 1 1 56 26 C 56 40 46 44 44 52 L 44 60" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="44" cy="74" r="5.5" fill="#fbbf24"/>
+  </g>
+
+  <!-- 三道关卡（中档，从左到右依次变亮） -->
+  <!-- 第一关（暗） -->
+  <g opacity="0.55">
+    <polygon points="400,224 431.2,242 431.2,278 400,296 368.8,278 368.8,242" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M 387 260 L 396 269 L 411 249" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- 第二关（中） -->
+  <g opacity="0.8">
+    <polygon points="492,224 523.2,242 523.2,278 492,296 460.8,278 460.8,242" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M 479 260 L 488 269 L 503 249" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- 第三关（亮，发光） -->
+  <g>
+    <polygon points="584,224 615.2,242 615.2,278 584,296 552.8,278 552.8,242" fill="#0e7490" stroke="#22d3ee" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M 571 260 L 580 269 L 595 249" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 印章（最大，唯一焦点） -->
+  <g transform="rotate(6 900 260)">
+    <rect x="825" y="185" width="150" height="150" rx="20" fill="#e11d48" filter="url(#glow)"/>
+    <rect x="837" y="197" width="126" height="126" rx="12" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+    <path d="M 856 258 L 878 280 L 938 222" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 少量粒子 -->
+  <g fill="#22d3ee">
+    <circle cx="240" cy="260" r="2.5" opacity="0.8"/>
+    <circle cx="320" cy="260" r="2" opacity="0.6"/>
+    <circle cx="640" cy="260" r="2.5" opacity="0.8"/>
+    <circle cx="720" cy="260" r="2" opacity="0.6"/>
+    <circle cx="80" cy="420" r="2" opacity="0.4"/>
+    <circle cx="300" cy="420" r="2" opacity="0.4"/>
+    <circle cx="1060" cy="140" r="2" opacity="0.5"/>
+    <circle cx="1120" cy="420" r="2" opacity="0.4"/>
+  </g>
+</svg>
