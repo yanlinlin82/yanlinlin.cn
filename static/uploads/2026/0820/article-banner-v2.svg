@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04070f"/>
+      <stop offset="0.55" stop-color="#0a1424"/>
+      <stop offset="1" stop-color="#12233f"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1.2" fill="#38bdf8" opacity="0.14"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  <rect width="1200" height="500" fill="url(#dots)"/>
+  <circle cx="820" cy="250" r="400" fill="url(#glowCyan)"/>
+  <circle cx="280" cy="250" r="360" fill="url(#glowIndigo)"/>
+
+  <!-- 巨大水印字“证” -->
+  <text x="860" y="340" font-size="330" font-weight="bold" fill="#38bdf8" opacity="0.05" text-anchor="middle">证</text>
+
+  <!-- HUD 四角框 -->
+  <g stroke="#67e8f9" stroke-width="3" fill="none" opacity="0.85">
+    <path d="M 34 76 V 34 H 76"/>
+    <path d="M 1166 34 H 1124 V 76"/>
+    <path d="M 34 424 V 466 H 76"/>
+    <path d="M 1166 466 H 1124 V 424"/>
+  </g>
+
+  <!-- 电路走线（装饰） -->
+  <g stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.25">
+    <path d="M 640 90 V 56 H 560"/>
+    <path d="M 830 110 V 70 H 980"/>
+    <path d="M 640 402 H 520 V 440"/>
+    <path d="M 1000 320 H 1170"/>
+    <path d="M 700 90 H 560 V 120"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.5">
+    <circle cx="560" cy="56" r="2.5"/>
+    <circle cx="980" cy="70" r="2.5"/>
+    <circle cx="520" cy="440" r="2.5"/>
+    <circle cx="1170" cy="320" r="2.5"/>
+  </g>
+
+  <!-- 左侧标题区 -->
+  <text x="70" y="152" font-size="17" font-family="'JetBrains Mono','Consolas','Menlo',monospace" fill="#67e8f9" letter-spacing="6">SELF-VERIFICATION IN RESEARCH</text>
+  <text x="70" y="242" font-size="64" font-weight="bold" fill="#f8fafc">做研究需有</text>
+  <text x="70" y="324" font-size="64" font-weight="bold" fill="url(#titleGrad)" filter="url(#glow)">自证清白的觉悟</text>
+  <text x="70" y="362" font-size="15" font-family="'JetBrains Mono','Consolas','Menlo',monospace" fill="#64748b" letter-spacing="3">DATA · REPRODUCTION · LOGIC</text>
+  <rect x="70" y="382" width="90" height="4" rx="2" fill="url(#titleGrad)"/>
+
+  <!-- 右侧：数据面板（被扫描核查） -->
+  <rect x="640" y="110" width="180" height="280" rx="16" fill="#0ea5e9" opacity="0.06" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.45"/>
+  <rect x="652" y="124" width="60" height="8" rx="4" fill="#38bdf8" opacity="0.7"/>
+  <g fill="#38bdf8" opacity="0.35">
+    <rect x="652" y="150" width="150" height="7" rx="3.5"/>
+    <rect x="652" y="172" width="140" height="7" rx="3.5"/>
+    <rect x="652" y="194" width="146" height="7" rx="3.5"/>
+    <rect x="652" y="216" width="120" height="7" rx="3.5"/>
+    <rect x="652" y="238" width="132" height="7" rx="3.5"/>
+  </g>
+  <!-- 被重点标记的行 -->
+  <rect x="652" y="258" width="150" height="7" rx="3.5" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="806" cy="261.5" r="4" fill="#fbbf24"/>
+
+  <!-- 扫描线 -->
+  <line x1="652" y1="261.5" x2="806" y2="261.5" stroke="#22d3ee" stroke-width="12" opacity="0.15" stroke-linecap="round"/>
+  <line x1="652" y1="261.5" x2="806" y2="261.5" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+  <g stroke="#22d3ee" stroke-width="2">
+    <line x1="688" y1="256" x2="688" y2="267"/>
+    <line x1="730" y1="256" x2="730" y2="267"/>
+    <line x1="772" y1="256" x2="772" y2="267"/>
+  </g>
+
+  <!-- 面板与三关的连接线 -->
+  <line x1="820" y1="380" x2="894" y2="368" stroke="#22d3ee" stroke-width="2" stroke-dasharray="2 8" opacity="0.5"/>
+
+  <!-- 三关之间的连接线 -->
+  <g stroke="#22d3ee" fill="none">
+    <line x1="920" y1="198" x2="920" y2="238" stroke-width="2" stroke-dasharray="2 8" opacity="0.5"/>
+    <line x1="920" y1="298" x2="920" y2="338" stroke-width="2" stroke-dasharray="2 8" opacity="0.5"/>
+  </g>
+
+  <!-- 第三关：逻辑完备（最亮、最难） -->
+  <g>
+    <polygon points="920,138 945.98,153 945.98,183 920,198 894.02,183 894.02,153" fill="#0e7490" stroke="#22d3ee" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M 912 168 L 918 174 L 929 161" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="962" y="181" font-size="24" font-weight="bold" fill="#ffffff">逻辑完备</text>
+  </g>
+
+  <!-- 第二关：可以复现 -->
+  <g opacity="0.8">
+    <polygon points="920,238 945.98,253 945.98,283 920,298 894.02,283 894.02,253" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M 912 268 L 918 274 L 929 261" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="962" y="281" font-size="24" font-weight="bold" fill="#ffffff" opacity="0.9">可以复现</text>
+  </g>
+
+  <!-- 第一关：数据真实 -->
+  <g opacity="0.55">
+    <polygon points="920,338 945.98,353 945.98,383 920,398 894.02,383 894.02,353" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M 912 368 L 918 374 L 929 361" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="962" y="381" font-size="24" font-weight="bold" fill="#ffffff" opacity="0.85">数据真实</text>
+  </g>
+
+  <!-- 验证印章（自证清白） -->
+  <g transform="rotate(8 1113 108)">
+    <rect x="1075" y="70" width="76" height="76" rx="10" fill="#e11d48"/>
+    <rect x="1082" y="77" width="62" height="62" rx="6" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85"/>
+    <path d="M 1095 108 L 1104 117 L 1128 95" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 数据粒子 -->
+  <g fill="#22d3ee">
+    <circle cx="920" cy="218" r="3" opacity="0.9"/>
+    <circle cx="920" cy="318" r="2.5" opacity="0.7"/>
+    <circle cx="628" cy="208" r="2.5" opacity="0.6"/>
+    <circle cx="606" cy="300" r="2" opacity="0.5"/>
+    <circle cx="1076" cy="280" r="2" opacity="0.5"/>
+    <circle cx="700" cy="420" r="2" opacity="0.45"/>
+    <circle cx="1000" cy="400" r="2" opacity="0.5"/>
+    <circle cx="500" cy="440" r="2" opacity="0.4"/>
+  </g>
+</svg>

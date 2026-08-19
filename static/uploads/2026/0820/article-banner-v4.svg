@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04070f"/>
+      <stop offset="0.55" stop-color="#0a1424"/>
+      <stop offset="1" stop-color="#12233f"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1.2" fill="#38bdf8" opacity="0.14"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  <rect width="1200" height="500" fill="url(#dots)"/>
+  <circle cx="450" cy="260" r="360" fill="url(#glowCyan)"/>
+  <circle cx="800" cy="270" r="380" fill="url(#glowIndigo)"/>
+
+  <!-- 验证环（拢住右侧柱体） -->
+  <g fill="none" stroke="#22d3ee" stroke-dasharray="4 8">
+    <circle cx="800" cy="270" r="175" stroke-width="2" opacity="0.07"/>
+    <circle cx="800" cy="270" r="145" stroke-width="2" opacity="0.09"/>
+    <circle cx="800" cy="270" r="115" stroke-width="2" opacity="0.11"/>
+  </g>
+
+  <!-- HUD 四角框 -->
+  <g stroke="#67e8f9" stroke-width="3" fill="none" opacity="0.85">
+    <path d="M 34 76 V 34 H 76"/>
+    <path d="M 1166 34 H 1124 V 76"/>
+    <path d="M 34 424 V 466 H 76"/>
+    <path d="M 1166 466 H 1124 V 424"/>
+  </g>
+
+  <!-- 电路走线（装饰） -->
+  <g stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.25">
+    <path d="M 560 90 V 56 H 660"/>
+    <path d="M 560 420 H 480 V 450"/>
+    <path d="M 835 120 V 80 H 950"/>
+    <path d="M 1020 300 H 1170"/>
+    <path d="M 720 90 H 620 V 60"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.5">
+    <circle cx="660" cy="56" r="2.5"/>
+    <circle cx="480" cy="450" r="2.5"/>
+    <circle cx="950" cy="80" r="2.5"/>
+    <circle cx="1170" cy="300" r="2.5"/>
+    <circle cx="620" cy="60" r="2.5"/>
+  </g>
+
+  <!-- 数据面板（被扫描核查） -->
+  <rect x="340" y="110" width="220" height="300" rx="16" fill="#0ea5e9" opacity="0.06" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.45"/>
+  <rect x="354" y="124" width="70" height="9" rx="4" fill="#38bdf8" opacity="0.7"/>
+  <g fill="#38bdf8" opacity="0.35">
+    <rect x="354" y="152" width="170" height="8" rx="4"/>
+    <rect x="354" y="176" width="160" height="8" rx="4"/>
+    <rect x="354" y="200" width="165" height="8" rx="4"/>
+    <rect x="354" y="224" width="140" height="8" rx="4"/>
+    <rect x="354" y="248" width="150" height="8" rx="4"/>
+  </g>
+  <!-- 被重点标记的行（异常点） -->
+  <rect x="354" y="272" width="165" height="8" rx="4" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="530" cy="276" r="4.5" fill="#fbbf24"/>
+
+  <!-- 扫描线 -->
+  <line x1="354" y1="276" x2="530" y2="276" stroke="#22d3ee" stroke-width="12" opacity="0.15" stroke-linecap="round"/>
+  <line x1="354" y1="276" x2="530" y2="276" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+  <g stroke="#22d3ee" stroke-width="2">
+    <line x1="396" y1="270" x2="396" y2="282"/>
+    <line x1="440" y1="270" x2="440" y2="282"/>
+    <line x1="484" y1="270" x2="484" y2="282"/>
+  </g>
+
+  <!-- 问号（批判性怀疑，图形化） -->
+  <g transform="translate(590 128)">
+    <path d="M 24 34 A 20 20 0 1 1 56 26 C 56 40 46 44 44 52 L 44 60" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="44" cy="74" r="5.5" fill="#fbbf24"/>
+  </g>
+
+  <!-- 面板到三关的连接线 -->
+  <line x1="556" y1="380" x2="763" y2="390" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="2 9" opacity="0.5"/>
+
+  <!-- 三关之间的连接线 -->
+  <g stroke="#22d3ee" fill="none">
+    <line x1="800" y1="190" x2="800" y2="230" stroke-width="2.5" stroke-dasharray="2 9" opacity="0.5"/>
+    <line x1="800" y1="310" x2="800" y2="350" stroke-width="2.5" stroke-dasharray="2 9" opacity="0.5"/>
+  </g>
+
+  <!-- 第三关（最亮、最难，发光） -->
+  <g>
+    <polygon points="800,110 834.6,130 834.6,170 800,190 765.4,170 765.4,130" fill="#0e7490" stroke="#22d3ee" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M 788 150 L 796 158 L 810 141" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 第二关 -->
+  <g opacity="0.8">
+    <polygon points="800,230 834.6,250 834.6,290 800,310 765.4,290 765.4,250" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M 788 270 L 796 278 L 810 261" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 第一关 -->
+  <g opacity="0.55">
+    <polygon points="800,350 834.6,370 834.6,410 800,430 765.4,410 765.4,350" fill="#0e7490" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M 788 390 L 796 398 L 810 381" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 验证印章（自证清白，与关卡列对齐） -->
+  <g transform="rotate(8 800 72)">
+    <rect x="762" y="34" width="76" height="76" rx="10" fill="#e11d48" filter="url(#glow)"/>
+    <rect x="769" y="41" width="62" height="62" rx="6" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85"/>
+    <path d="M 782 72 L 791 81 L 815 59" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 数据粒子 -->
+  <g fill="#22d3ee">
+    <circle cx="800" cy="210" r="3" opacity="0.9"/>
+    <circle cx="800" cy="330" r="2.5" opacity="0.7"/>
+    <circle cx="640" cy="175" r="2.5" opacity="0.6"/>
+    <circle cx="700" cy="250" r="2" opacity="0.5"/>
+    <circle cx="1076" cy="260" r="2" opacity="0.5"/>
+    <circle cx="680" cy="440" r="2" opacity="0.45"/>
+    <circle cx="950" cy="450" r="2" opacity="0.5"/>
+    <circle cx="200" cy="430" r="2" opacity="0.4"/>
+  </g>
+</svg>
