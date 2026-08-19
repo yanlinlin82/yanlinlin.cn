@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+<defs>
+  <filter id="hg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="500" fill="#050d1a"/>
+<circle cx="600" cy="250" r="360" fill="#22d3ee" opacity="0.05"/>
+<g stroke="#22d3ee" fill="none">
+  <circle cx="220" cy="260" r="160" stroke-opacity="0.2" stroke-width="1.5"/>
+  <circle cx="980" cy="260" r="160" stroke-opacity="0.2" stroke-width="1.5"/>
+</g>
+<g transform="rotate(-2 475 280)">
+  <rect x="395" y="165" width="170" height="240" rx="8" fill="#22d3ee" opacity="0.06"/>
+  <rect x="390" y="160" width="170" height="240" rx="8" fill="#22d3ee" opacity="0.14" stroke="#67e8f9" stroke-width="2" filter="url(#hg)"/>
+  <rect x="408" y="184" width="82" height="12" rx="3" fill="#67e8f9" opacity="0.9"/>
+<rect x="408" y="222" width="134" height="8" rx="4" fill="#67e8f9" opacity="0.5"/>
+<rect x="408" y="244" width="125" height="8" rx="4" fill="#67e8f9" opacity="0.5"/>
+<rect x="408" y="266" width="130" height="8" rx="4" fill="#67e8f9" opacity="0.5"/>
+<rect x="408" y="288" width="112" height="8" rx="4" fill="#67e8f9" opacity="0.5"/>
+<rect x="408" y="310" width="96" height="8" rx="4" fill="#67e8f9" opacity="0.5"/>
+  <rect x="408" y="336" width="122" height="8" rx="4" fill="#fbbf24" filter="url(#hg)"/>
+</g>
+<circle cx="478" cy="340" r="50" fill="none" stroke="#67e8f9" stroke-width="3" filter="url(#hg)"/>
+<line x1="520" y1="378" x2="586" y2="446" stroke="#67e8f9" stroke-width="12" stroke-linecap="round" opacity="0.7" filter="url(#hg)"/>
+<g font-size="24" font-weight="bold" fill="#a5f3fc">
+  <polygon points="672.0,140.0 698.0,155.0 698.0,185.0 672.0,200.0 646.0,185.0 646.0,155.0" fill="none" stroke="#67e8f9" stroke-width="2.5" filter="url(#hg)"/>
+  <polygon points="672.0,140.0 698.0,155.0 698.0,185.0 672.0,200.0 646.0,185.0 646.0,155.0" fill="#22d3ee" opacity="0.12"/>
+<path d="M 663.2 170.0 L 669.6 177.2 L 680.8 162.8" fill="none" stroke="#a5f3fc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="720" y="180">逻辑完备</text>
+  <polygon points="672.0,240.0 698.0,255.0 698.0,285.0 672.0,300.0 646.0,285.0 646.0,255.0" fill="none" stroke="#67e8f9" stroke-width="2" opacity="0.75"/>
+<path d="M 663.2 270.0 L 669.6 277.2 L 680.8 262.8" fill="none" stroke="#a5f3fc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="720" y="280" opacity="0.8">可以复现</text>
+  <polygon points="672.0,340.0 698.0,355.0 698.0,385.0 672.0,400.0 646.0,385.0 646.0,355.0" fill="none" stroke="#67e8f9" stroke-width="2" opacity="0.5"/>
+<path d="M 663.2 370.0 L 669.6 377.2 L 680.8 362.8" fill="none" stroke="#a5f3fc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="720" y="380" opacity="0.6">数据真实</text>
+</g>
+<g transform="rotate(6 700 90)">
+  <rect x="655" y="45" width="90" height="90" rx="12" fill="#e11d48" opacity="0.18" stroke="#fb7185" stroke-width="2.5" filter="url(#hg)"/>
+  <rect x="663" y="53" width="74" height="74" rx="8" fill="none" stroke="#fda4af" stroke-width="1.5" opacity="0.8"/>
+<path d="M 684.6 90.0 L 695.8 102.6 L 715.4 77.4" fill="none" stroke="#fecdd3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#fbbf24" filter="url(#hg)" transform="rotate(-8 392 105)">？</text>
+<circle cx="90" cy="140" r="3" fill="#67e8f9" opacity="0.7"/>
+<circle cx="1110" cy="150" r="3" fill="#67e8f9" opacity="0.7"/>
+<circle cx="120" cy="380" r="2.5" fill="#67e8f9" opacity="0.5"/>
+<circle cx="1080" cy="390" r="2.5" fill="#67e8f9" opacity="0.5"/>
+
+</svg>

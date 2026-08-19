@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+<defs>
+  <filter id="ng" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#f472b6" stroke-opacity="0.08"/></pattern>
+</defs>
+<rect width="1200" height="500" fill="#08080c"/>
+<rect width="1200" height="500" fill="url(#grid)"/>
+<circle cx="240" cy="260" r="175" fill="none" stroke="#22d3ee" stroke-opacity="0.22" stroke-width="2"/>
+<circle cx="240" cy="260" r="215" fill="none" stroke="#22d3ee" stroke-opacity="0.10" stroke-width="2"/>
+<circle cx="960" cy="260" r="175" fill="none" stroke="#22d3ee" stroke-opacity="0.22" stroke-width="2"/>
+<circle cx="960" cy="260" r="215" fill="none" stroke="#22d3ee" stroke-opacity="0.10" stroke-width="2"/>
+<g transform="rotate(-2 475 280)">
+  <rect x="390" y="160" width="170" height="240" rx="6" fill="#0a1418" stroke="#22d3ee" stroke-width="3" filter="url(#ng)"/>
+  <rect x="408" y="184" width="82" height="12" rx="3" fill="#22d3ee" opacity="0.9"/>
+<rect x="408" y="222" width="134" height="8" rx="4" fill="#22d3ee" opacity="0.45"/>
+<rect x="408" y="244" width="125" height="8" rx="4" fill="#22d3ee" opacity="0.45"/>
+<rect x="408" y="266" width="130" height="8" rx="4" fill="#22d3ee" opacity="0.45"/>
+<rect x="408" y="288" width="112" height="8" rx="4" fill="#22d3ee" opacity="0.45"/>
+<rect x="408" y="310" width="96" height="8" rx="4" fill="#22d3ee" opacity="0.45"/>
+  <rect x="408" y="336" width="122" height="8" rx="4" fill="#ff2a6d" filter="url(#ng)"/>
+</g>
+<circle cx="478" cy="340" r="50" fill="none" stroke="#22d3ee" stroke-width="4" filter="url(#ng)"/>
+<line x1="520" y1="378" x2="586" y2="446" stroke="#22d3ee" stroke-width="14" stroke-linecap="round" filter="url(#ng)"/>
+<g font-size="25" font-weight="bold">
+  <polygon points="672.0,140.0 698.0,155.0 698.0,185.0 672.0,200.0 646.0,185.0 646.0,155.0" fill="#1b1030" stroke="#ff2a6d" stroke-width="3" filter="url(#ng)"/>
+  <path d="M 663.8 170.0 L 669.8 176.8 L 680.2 163.2" fill="none" stroke="#ff2a6d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="698" y="180" fill="#ff2a6d">逻辑完备</text>
+  <polygon points="672.0,240.0 698.0,255.0 698.0,285.0 672.0,300.0 646.0,285.0 646.0,255.0" fill="#1b1030" stroke="#ff2a6d" stroke-width="3" filter="url(#ng)"/>
+  <path d="M 663.8 270.0 L 669.8 276.8 L 680.2 263.2" fill="none" stroke="#ff2a6d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="698" y="280" fill="#ff2a6d">可以复现</text>
+  <polygon points="672.0,340.0 698.0,355.0 698.0,385.0 672.0,400.0 646.0,385.0 646.0,355.0" fill="#1b1030" stroke="#ff2a6d" stroke-width="3" filter="url(#ng)"/>
+  <path d="M 663.8 370.0 L 669.8 376.8 L 680.2 363.2" fill="none" stroke="#ff2a6d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="698" y="380" fill="#ff2a6d">数据真实</text>
+</g>
+<g transform="rotate(8 700 90)">
+  <rect x="655" y="45" width="90" height="90" rx="12" fill="#ff2a6d" filter="url(#ng)"/>
+  <rect x="663" y="53" width="74" height="74" rx="8" fill="none" stroke="#fff" stroke-width="2" opacity="0.9"/>
+<path d="M 684.6 90.0 L 695.8 102.6 L 715.4 77.4" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#fbbf24" filter="url(#ng)" transform="rotate(-8 392 105)">？</text>
+<circle cx="80" cy="120" r="3" fill="#22d3ee" opacity="0.6"/>
+<circle cx="200" cy="90" r="3" fill="#ff2a6d" opacity="0.5"/>
+<circle cx="1120" cy="140" r="3" fill="#22d3ee" opacity="0.6"/>
+<circle cx="1040" cy="400" r="3" fill="#ff2a6d" opacity="0.5"/>
+
+</svg>

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="docGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="stepGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景与网格 -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+  <g stroke="#94a3b8" stroke-opacity="0.05" stroke-width="1">
+    <line x1="60"  y1="0" x2="60"  y2="500"/>
+    <line x1="120" y1="0" x2="120" y2="500"/>
+    <line x1="180" y1="0" x2="180" y2="500"/>
+    <line x1="240" y1="0" x2="240" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="360" y1="0" x2="360" y2="500"/>
+    <line x1="420" y1="0" x2="420" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="540" y1="0" x2="540" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="660" y1="0" x2="660" y2="500"/>
+    <line x1="720" y1="0" x2="720" y2="500"/>
+    <line x1="780" y1="0" x2="780" y2="500"/>
+    <line x1="840" y1="0" x2="840" y2="500"/>
+    <line x1="900" y1="0" x2="900" y2="500"/>
+    <line x1="960" y1="0" x2="960" y2="500"/>
+    <line x1="1020" y1="0" x2="1020" y2="500"/>
+    <line x1="1080" y1="0" x2="1080" y2="500"/>
+    <line x1="1140" y1="0" x2="1140" y2="500"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+  </g>
+
+  <!-- 光晕 -->
+  <circle cx="320" cy="260" r="170" fill="#f59e0b" opacity="0.05"/>
+  <circle cx="890" cy="240" r="180" fill="#ea580c" opacity="0.05"/>
+
+  <!-- 散落数据点 -->
+  <g>
+    <circle cx="120" cy="100" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="190" cy="70" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="140" cy="180" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="80" cy="310" r="4" fill="#ea580c" opacity="0.4"/>
+    <circle cx="470" cy="430" r="4" fill="#ea580c" opacity="0.45"/>
+    <circle cx="560" cy="380" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="680" cy="450" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="1100" cy="420" r="4" fill="#ea580c" opacity="0.4"/>
+    <circle cx="1150" cy="330" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="960" cy="60" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="1150" cy="150" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="60" cy="440" r="3" fill="#94a3b8" opacity="0.35"/>
+  </g>
+
+  <!-- 从文档到三关的连接线 -->
+  <g stroke="#64748b" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round">
+    <line x1="425" y1="330" x2="755" y2="324"/>
+  </g>
+
+  <!-- 论文文档（待检） -->
+  <g transform="rotate(-3 320 250)">
+    <rect x="220" y="120" width="200" height="260" rx="8" fill="url(#docGrad)"/>
+    <rect x="240" y="148" width="96" height="14" rx="4" fill="#475569" opacity="0.75"/>
+    <g fill="#94a3b8" opacity="0.55">
+      <rect x="240" y="190" width="160" height="8" rx="4"/>
+      <rect x="240" y="212" width="150" height="8" rx="4"/>
+      <rect x="240" y="234" width="156" height="8" rx="4"/>
+      <rect x="240" y="256" width="132" height="8" rx="4"/>
+      <rect x="240" y="278" width="110" height="8" rx="4"/>
+    </g>
+    <!-- 被重点检查的那一行 -->
+    <rect x="240" y="310" width="140" height="8" rx="4" fill="#c2410c" opacity="0.9"/>
+    <circle cx="252" cy="314" r="14" fill="none" stroke="#ef4444" stroke-width="3"/>
+  </g>
+
+  <!-- 放大镜 -->
+  <circle cx="340" cy="285" r="50" fill="#0f172a" opacity="0.4" stroke="#f1f5f9" stroke-width="6"/>
+  <circle cx="340" cy="285" r="44" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.3"/>
+  <ellipse cx="320" cy="266" rx="12" ry="7" fill="#ffffff" opacity="0.25" transform="rotate(-25 320 266)"/>
+  <rect x="316" y="278" width="52" height="7" rx="3.5" fill="#fbbf24"/>
+  <line x1="380" y1="325" x2="450" y2="395" stroke="#e2e8f0" stroke-width="16" stroke-linecap="round"/>
+  <line x1="380" y1="325" x2="450" y2="395" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 问号（批判性阅读） -->
+  <text x="450" y="165" font-size="60" font-weight="bold" fill="#fbbf24" opacity="0.9" transform="rotate(-8 450 165)">？</text>
+
+  <!-- 三个验证关卡 -->
+  <g font-size="27" font-weight="bold" fill="#ffffff">
+    <!-- 第三关：逻辑完备（最亮、最难） -->
+    <rect x="770" y="105" width="250" height="58" rx="12" fill="url(#stepGrad)"/>
+    <circle cx="808" cy="134" r="14" fill="#0f172a" opacity="0.35"/>
+    <path d="M 802 134 L 808 140 L 817 127" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="836" y="144">逻辑完备</text>
+
+    <!-- 第二关：可以复现 -->
+    <rect x="770" y="200" width="250" height="58" rx="12" fill="url(#stepGrad)" opacity="0.78"/>
+    <circle cx="808" cy="229" r="14" fill="#0f172a" opacity="0.35"/>
+    <path d="M 802 229 L 808 235 L 817 222" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="836" y="239">可以复现</text>
+
+    <!-- 第一关：数据真实 -->
+    <rect x="770" y="295" width="250" height="58" rx="12" fill="url(#stepGrad)" opacity="0.55"/>
+    <circle cx="808" cy="324" r="14" fill="#0f172a" opacity="0.35"/>
+    <path d="M 802 324 L 808 330 L 817 317" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="836" y="334">数据真实</text>
+  </g>
+
+  <!-- 验证印章（自证清白） -->
+  <g transform="rotate(8 1090 170)">
+    <rect x="1050" y="130" width="80" height="80" rx="10" fill="#dc2626"/>
+    <rect x="1058" y="138" width="64" height="64" rx="6" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    <path d="M 1072 172 L 1082 182 L 1108 158" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

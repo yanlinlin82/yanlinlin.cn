@@ -46,83 +46,97 @@
     <line x1="0" y1="480" x2="1200" y2="480"/>
   </g>
 
-  <!-- 光晕 -->
-  <circle cx="320" cy="260" r="170" fill="#f59e0b" opacity="0.05"/>
-  <circle cx="890" cy="240" r="180" fill="#ea580c" opacity="0.05"/>
+  <!-- 光晕（中央 + 左右两侧） -->
+  <circle cx="600" cy="260" r="280" fill="#f59e0b" opacity="0.05"/>
+  <circle cx="220" cy="250" r="200" fill="#ea580c" opacity="0.04"/>
+  <circle cx="980" cy="250" r="200" fill="#ea580c" opacity="0.04"/>
 
-  <!-- 散落数据点 -->
+  <!-- 左右两侧的大圆环（整幅视图的装饰，方形裁剪时基本被裁掉） -->
+  <g fill="none">
+    <circle cx="270" cy="260" r="160" stroke="#475569" stroke-width="2" opacity="0.28"/>
+    <circle cx="250" cy="260" r="205" stroke="#475569" stroke-width="2" opacity="0.12"/>
+    <circle cx="930" cy="260" r="160" stroke="#475569" stroke-width="2" opacity="0.28"/>
+    <circle cx="950" cy="260" r="205" stroke="#475569" stroke-width="2" opacity="0.12"/>
+  </g>
+
+  <!-- 散落数据点（铺满整幅，左右两侧加密） -->
   <g>
-    <circle cx="120" cy="100" r="4" fill="#ea580c" opacity="0.5"/>
-    <circle cx="190" cy="70" r="3" fill="#94a3b8" opacity="0.4"/>
-    <circle cx="140" cy="180" r="3" fill="#94a3b8" opacity="0.35"/>
-    <circle cx="80" cy="310" r="4" fill="#ea580c" opacity="0.4"/>
-    <circle cx="470" cy="430" r="4" fill="#ea580c" opacity="0.45"/>
-    <circle cx="560" cy="380" r="3" fill="#94a3b8" opacity="0.35"/>
-    <circle cx="680" cy="450" r="3" fill="#94a3b8" opacity="0.35"/>
-    <circle cx="1100" cy="420" r="4" fill="#ea580c" opacity="0.4"/>
-    <circle cx="1150" cy="330" r="3" fill="#94a3b8" opacity="0.35"/>
-    <circle cx="960" cy="60" r="3" fill="#94a3b8" opacity="0.4"/>
-    <circle cx="1150" cy="150" r="3" fill="#94a3b8" opacity="0.4"/>
-    <circle cx="60" cy="440" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="60"   cy="120" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="180"  cy="90"  r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="120"  cy="300" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="240"  cy="420" r="4" fill="#ea580c" opacity="0.45"/>
+    <circle cx="80"   cy="430" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="310"  cy="180" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="150"  cy="220" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="470"  cy="60"  r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="700"  cy="470" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="580"  cy="460" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="930"  cy="120" r="4" fill="#ea580c" opacity="0.5"/>
+    <circle cx="1050" cy="300" r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="990"  cy="90"  r="3" fill="#94a3b8" opacity="0.4"/>
+    <circle cx="1120" cy="420" r="4" fill="#ea580c" opacity="0.45"/>
+    <circle cx="1140" cy="180" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="880"  cy="430" r="3" fill="#94a3b8" opacity="0.35"/>
+    <circle cx="1080" cy="220" r="3" fill="#94a3b8" opacity="0.35"/>
   </g>
 
-  <!-- 从文档到三关的连接线 -->
-  <g stroke="#64748b" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round">
-    <line x1="425" y1="330" x2="755" y2="324"/>
-  </g>
+  <!-- ============ 前景（全部位于中央方形区域 x≈390-830, y≈45-450） ============ -->
+
+  <!-- 问号（批判性阅读） -->
+  <text x="392" y="105" font-size="52" font-weight="bold" fill="#fbbf24" opacity="0.9" transform="rotate(-8 392 105)">？</text>
 
   <!-- 论文文档（待检） -->
-  <g transform="rotate(-3 320 250)">
-    <rect x="220" y="120" width="200" height="260" rx="8" fill="url(#docGrad)"/>
-    <rect x="240" y="148" width="96" height="14" rx="4" fill="#475569" opacity="0.75"/>
+  <g transform="rotate(-3 475 280)">
+    <rect x="390" y="160" width="170" height="240" rx="8" fill="url(#docGrad)"/>
+    <rect x="408" y="184" width="82" height="12" rx="4" fill="#475569" opacity="0.75"/>
     <g fill="#94a3b8" opacity="0.55">
-      <rect x="240" y="190" width="160" height="8" rx="4"/>
-      <rect x="240" y="212" width="150" height="8" rx="4"/>
-      <rect x="240" y="234" width="156" height="8" rx="4"/>
-      <rect x="240" y="256" width="132" height="8" rx="4"/>
-      <rect x="240" y="278" width="110" height="8" rx="4"/>
+      <rect x="408" y="222" width="134" height="8" rx="4"/>
+      <rect x="408" y="244" width="125" height="8" rx="4"/>
+      <rect x="408" y="266" width="130" height="8" rx="4"/>
+      <rect x="408" y="288" width="112" height="8" rx="4"/>
+      <rect x="408" y="310" width="96"  height="8" rx="4"/>
     </g>
     <!-- 被重点检查的那一行 -->
-    <rect x="240" y="310" width="140" height="8" rx="4" fill="#c2410c" opacity="0.9"/>
-    <circle cx="252" cy="314" r="14" fill="none" stroke="#ef4444" stroke-width="3"/>
+    <rect x="408" y="336" width="122" height="8" rx="4" fill="#c2410c" opacity="0.9"/>
+    <circle cx="420" cy="340" r="13" fill="none" stroke="#ef4444" stroke-width="3"/>
   </g>
 
   <!-- 放大镜 -->
-  <circle cx="340" cy="285" r="50" fill="#0f172a" opacity="0.4" stroke="#f1f5f9" stroke-width="6"/>
-  <circle cx="340" cy="285" r="44" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.3"/>
-  <ellipse cx="320" cy="266" rx="12" ry="7" fill="#ffffff" opacity="0.25" transform="rotate(-25 320 266)"/>
-  <rect x="316" y="278" width="52" height="7" rx="3.5" fill="#fbbf24"/>
-  <line x1="380" y1="325" x2="450" y2="395" stroke="#e2e8f0" stroke-width="16" stroke-linecap="round"/>
-  <line x1="380" y1="325" x2="450" y2="395" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="478" cy="340" r="50" fill="#0f172a" opacity="0.4" stroke="#f1f5f9" stroke-width="6"/>
+  <circle cx="478" cy="340" r="44" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.3"/>
+  <ellipse cx="458" cy="321" rx="12" ry="7" fill="#ffffff" opacity="0.25" transform="rotate(-25 458 321)"/>
+  <rect x="454" y="332" width="50" height="7" rx="3.5" fill="#fbbf24"/>
+  <line x1="518" y1="380" x2="586" y2="448" stroke="#e2e8f0" stroke-width="16" stroke-linecap="round"/>
+  <line x1="518" y1="380" x2="586" y2="448" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
 
-  <!-- 问号（批判性阅读） -->
-  <text x="450" y="165" font-size="60" font-weight="bold" fill="#fbbf24" opacity="0.9" transform="rotate(-8 450 165)">？</text>
+  <!-- 从文档到三关的连接线 -->
+  <line x1="558" y1="358" x2="633" y2="370" stroke="#64748b" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round" opacity="0.7"/>
 
-  <!-- 三个验证关卡 -->
-  <g font-size="27" font-weight="bold" fill="#ffffff">
+  <!-- 三个验证关卡（右侧，自上而下依次变亮） -->
+  <g font-size="25" font-weight="bold" fill="#ffffff">
     <!-- 第三关：逻辑完备（最亮、最难） -->
-    <rect x="770" y="105" width="250" height="58" rx="12" fill="url(#stepGrad)"/>
-    <circle cx="808" cy="134" r="14" fill="#0f172a" opacity="0.35"/>
-    <path d="M 802 134 L 808 140 L 817 127" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="836" y="144">逻辑完备</text>
+    <rect x="635" y="140" width="190" height="60" rx="12" fill="url(#stepGrad)"/>
+    <circle cx="672" cy="170" r="13" fill="#0f172a" opacity="0.35"/>
+    <path d="M 666 170 L 672 176 L 681 163" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="698" y="180">逻辑完备</text>
 
     <!-- 第二关：可以复现 -->
-    <rect x="770" y="200" width="250" height="58" rx="12" fill="url(#stepGrad)" opacity="0.78"/>
-    <circle cx="808" cy="229" r="14" fill="#0f172a" opacity="0.35"/>
-    <path d="M 802 229 L 808 235 L 817 222" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="836" y="239">可以复现</text>
+    <rect x="635" y="240" width="190" height="60" rx="12" fill="url(#stepGrad)" opacity="0.78"/>
+    <circle cx="672" cy="270" r="13" fill="#0f172a" opacity="0.35"/>
+    <path d="M 666 270 L 672 276 L 681 263" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="698" y="280">可以复现</text>
 
     <!-- 第一关：数据真实 -->
-    <rect x="770" y="295" width="250" height="58" rx="12" fill="url(#stepGrad)" opacity="0.55"/>
-    <circle cx="808" cy="324" r="14" fill="#0f172a" opacity="0.35"/>
-    <path d="M 802 324 L 808 330 L 817 317" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="836" y="334">数据真实</text>
+    <rect x="635" y="340" width="190" height="60" rx="12" fill="url(#stepGrad)" opacity="0.55"/>
+    <circle cx="672" cy="370" r="13" fill="#0f172a" opacity="0.35"/>
+    <path d="M 666 370 L 672 376 L 681 363" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="698" y="380">数据真实</text>
   </g>
 
-  <!-- 验证印章（自证清白） -->
-  <g transform="rotate(8 1090 170)">
-    <rect x="1050" y="130" width="80" height="80" rx="10" fill="#dc2626"/>
-    <rect x="1058" y="138" width="64" height="64" rx="6" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
-    <path d="M 1072 172 L 1082 182 L 1108 158" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 验证印章（自证清白，顶部中央） -->
+  <g transform="rotate(8 700 90)">
+    <rect x="655" y="45" width="90" height="90" rx="12" fill="#dc2626"/>
+    <rect x="663" y="53" width="74" height="74" rx="8" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    <path d="M 675 90 L 685 100 L 712 74" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>

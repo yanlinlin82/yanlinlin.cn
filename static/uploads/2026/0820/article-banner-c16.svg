@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b1055"/><stop offset="0.45" stop-color="#7597de"/><stop offset="0.75" stop-color="#fdbb6d"/><stop offset="1" stop-color="#f8a5a0"/></linearGradient>
+</defs>
+<rect width="1200" height="500" fill="url(#sky)"/>
+<circle cx="600" cy="330" r="70" fill="#ffe8a3" opacity="0.7"/>
+<g fill="#1c1440" opacity="0.35">
+  <polygon points="0,500 140,500 70,430"/><polygon points="100,500 260,500 170,410"/>
+  <polygon points="940,500 1100,500 1020,420"/><polygon points="1060,500 1200,500 1140,435"/>
+</g>
+<g stroke="#3a2a6a" stroke-width="3" opacity="0.7" fill="none">
+  <path d="M 60 90 q 12 -14 24 0 q 12 14 24 0"/><path d="M 1080 120 q 12 -14 24 0 q 12 14 24 0"/>
+</g>
+<g transform="rotate(-2 475 280)">
+  <rect x="390" y="160" width="170" height="240" rx="10" fill="#ffffff" opacity="0.92"/>
+  <rect x="408" y="184" width="82" height="12" rx="6" fill="#57506b"/>
+<rect x="408" y="222" width="134" height="8" rx="4" fill="#a89fb8" opacity="0.6"/>
+<rect x="408" y="244" width="125" height="8" rx="4" fill="#a89fb8" opacity="0.6"/>
+<rect x="408" y="266" width="130" height="8" rx="4" fill="#a89fb8" opacity="0.6"/>
+<rect x="408" y="288" width="112" height="8" rx="4" fill="#a89fb8" opacity="0.6"/>
+<rect x="408" y="310" width="96" height="8" rx="4" fill="#a89fb8" opacity="0.6"/>
+  <rect x="408" y="336" width="122" height="8" rx="4" fill="#e07a5f"/>
+</g>
+<circle cx="478" cy="340" r="50" fill="#ffffff" opacity="0.85" stroke="#d9d0e4" stroke-width="5"/>
+<rect x="452" y="334" width="52" height="8" rx="4" fill="#e07a5f"/>
+<line x1="522" y1="384" x2="582" y2="444" stroke="#57506b" stroke-width="15" stroke-linecap="round"/>
+<g font-size="24" font-weight="bold" fill="#ffffff">
+  <rect x="635" y="140" width="190" height="60" rx="14" fill="#3d3158"/>
+  <circle cx="672" cy="170" r="12" fill="#ffffff" opacity="0.3"/>
+<path d="M 665.4 170.0 L 670.2 175.4 L 678.6 164.6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="180">逻辑完备</text>
+  <rect x="635" y="240" width="190" height="60" rx="14" fill="#4c3d6e" opacity="0.9"/>
+  <circle cx="672" cy="270" r="12" fill="#ffffff" opacity="0.3"/>
+<path d="M 665.4 270.0 L 670.2 275.4 L 678.6 264.6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="280">可以复现</text>
+  <rect x="635" y="340" width="190" height="60" rx="14" fill="#5c4a85" opacity="0.85"/>
+  <circle cx="672" cy="370" r="12" fill="#ffffff" opacity="0.3"/>
+<path d="M 665.4 370.0 L 670.2 375.4 L 678.6 364.6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="380">数据真实</text>
+</g>
+<g transform="rotate(6 700 90)">
+  <rect x="655" y="45" width="90" height="90" rx="16" fill="#d64550"/>
+  <rect x="663" y="53" width="74" height="74" rx="12" fill="none" stroke="#ffe8e0" stroke-width="2"/>
+<path d="M 684.6 90.0 L 695.8 102.6 L 715.4 77.4" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#ffffff" opacity="0.9" transform="rotate(-8 392 105)">？</text>
+
+</svg>
