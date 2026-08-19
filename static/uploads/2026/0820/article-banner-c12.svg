@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+
+<rect width="1200" height="500" fill="#fdf1e7"/>
+<circle cx="120" cy="100" r="36" fill="#ff5a5f"/>
+<path d="M 1040 60 l 24 24 l -24 24 l -24 -24 z" fill="#06d6a0"/>
+<circle cx="1070" cy="440" r="40" fill="none" stroke="#118ab2" stroke-width="6"/>
+<rect x="80" y="420" width="90" height="18" rx="9" fill="#ffd166" transform="rotate(-12 125 429)"/>
+<path d="M 60 250 q 20 -30 40 0 q 20 30 40 0" fill="none" stroke="#073b4c" stroke-width="5"/>
+<path d="M 1060 280 q 20 -30 40 0 q 20 30 40 0" fill="none" stroke="#ff5a5f" stroke-width="5"/>
+<circle cx="180" cy="250" r="8" fill="#118ab2"/>
+<circle cx="1030" cy="180" r="8" fill="#06d6a0"/>
+<g transform="rotate(-2 475 280)">
+  <rect x="390" y="160" width="170" height="240" rx="12" fill="#ffffff" stroke="#073b4c" stroke-width="3"/>
+  <rect x="408" y="184" width="82" height="12" rx="6" fill="#073b4c"/>
+  <rect x="408" y="222" width="134" height="9" rx="4" fill="#118ab2"/>
+  <rect x="408" y="244" width="125" height="9" rx="4" fill="#06d6a0"/>
+  <rect x="408" y="266" width="130" height="9" rx="4" fill="#ffd166"/>
+  <rect x="408" y="288" width="112" height="9" rx="4" fill="#ff5a5f"/>
+  <rect x="408" y="310" width="96" height="9" rx="4" fill="#118ab2"/>
+  <rect x="408" y="336" width="122" height="9" rx="4" fill="#073b4c"/>
+</g>
+<circle cx="478" cy="340" r="50" fill="#ffffff" stroke="#073b4c" stroke-width="6"/>
+<rect x="452" y="334" width="52" height="9" rx="4" fill="#ff5a5f"/>
+<line x1="522" y1="384" x2="582" y2="444" stroke="#073b4c" stroke-width="16" stroke-linecap="round"/>
+<g font-size="24" font-weight="bold" fill="#ffffff">
+  <rect x="635" y="140" width="190" height="60" rx="18" fill="#118ab2"/>
+  <circle cx="672" cy="170" r="12" fill="#ffffff" opacity="0.35"/>
+<path d="M 665.4 170.0 L 670.2 175.4 L 678.6 164.6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="180">逻辑完备</text>
+  <rect x="635" y="240" width="190" height="60" rx="18" fill="#06d6a0"/>
+  <circle cx="672" cy="270" r="12" fill="#ffffff" opacity="0.35"/>
+<path d="M 665.4 270.0 L 670.2 275.4 L 678.6 264.6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="280">可以复现</text>
+  <rect x="635" y="340" width="190" height="60" rx="18" fill="#ff5a5f"/>
+  <circle cx="672" cy="370" r="12" fill="#ffffff" opacity="0.35"/>
+<path d="M 665.4 370.0 L 670.2 375.4 L 678.6 364.6" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="700" y="380">数据真实</text>
+</g>
+<circle cx="700" cy="90" r="45" fill="#ffd166" stroke="#073b4c" stroke-width="4"/>
+<path d="M 687.9 90.0 L 696.7 99.9 L 712.1 80.1" fill="none" stroke="#073b4c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#073b4c" transform="rotate(-8 392 105)">？</text>
+
+</svg>

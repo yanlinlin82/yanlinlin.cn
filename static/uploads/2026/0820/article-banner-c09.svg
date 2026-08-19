@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+
+<rect width="1200" height="500" fill="#131a22"/>
+<g fill="#1e2936">
+<circle cx="40" cy="40" r="2.5"/><circle cx="40" cy="120" r="2.5"/><circle cx="40" cy="200" r="2.5"/><circle cx="40" cy="280" r="2.5"/><circle cx="40" cy="360" r="2.5"/><circle cx="40" cy="440" r="2.5"/><circle cx="120" cy="40" r="2.5"/><circle cx="120" cy="120" r="2.5"/><circle cx="120" cy="200" r="2.5"/><circle cx="120" cy="280" r="2.5"/><circle cx="120" cy="360" r="2.5"/><circle cx="120" cy="440" r="2.5"/><circle cx="200" cy="40" r="2.5"/><circle cx="200" cy="120" r="2.5"/><circle cx="200" cy="200" r="2.5"/><circle cx="200" cy="280" r="2.5"/><circle cx="200" cy="360" r="2.5"/><circle cx="200" cy="440" r="2.5"/><circle cx="280" cy="40" r="2.5"/><circle cx="280" cy="120" r="2.5"/><circle cx="280" cy="200" r="2.5"/><circle cx="280" cy="280" r="2.5"/><circle cx="280" cy="360" r="2.5"/><circle cx="280" cy="440" r="2.5"/><circle cx="360" cy="40" r="2.5"/><circle cx="360" cy="120" r="2.5"/><circle cx="360" cy="200" r="2.5"/><circle cx="360" cy="280" r="2.5"/><circle cx="360" cy="360" r="2.5"/><circle cx="360" cy="440" r="2.5"/><circle cx="440" cy="40" r="2.5"/><circle cx="440" cy="120" r="2.5"/><circle cx="440" cy="200" r="2.5"/><circle cx="440" cy="280" r="2.5"/><circle cx="440" cy="360" r="2.5"/><circle cx="440" cy="440" r="2.5"/><circle cx="520" cy="40" r="2.5"/><circle cx="520" cy="120" r="2.5"/><circle cx="520" cy="200" r="2.5"/><circle cx="520" cy="280" r="2.5"/><circle cx="520" cy="360" r="2.5"/><circle cx="520" cy="440" r="2.5"/><circle cx="600" cy="40" r="2.5"/><circle cx="600" cy="120" r="2.5"/><circle cx="600" cy="200" r="2.5"/><circle cx="600" cy="280" r="2.5"/><circle cx="600" cy="360" r="2.5"/><circle cx="600" cy="440" r="2.5"/><circle cx="680" cy="40" r="2.5"/><circle cx="680" cy="120" r="2.5"/><circle cx="680" cy="200" r="2.5"/><circle cx="680" cy="280" r="2.5"/><circle cx="680" cy="360" r="2.5"/><circle cx="680" cy="440" r="2.5"/><circle cx="760" cy="40" r="2.5"/><circle cx="760" cy="120" r="2.5"/><circle cx="760" cy="200" r="2.5"/><circle cx="760" cy="280" r="2.5"/><circle cx="760" cy="360" r="2.5"/><circle cx="760" cy="440" r="2.5"/><circle cx="840" cy="40" r="2.5"/><circle cx="840" cy="120" r="2.5"/><circle cx="840" cy="200" r="2.5"/><circle cx="840" cy="280" r="2.5"/><circle cx="840" cy="360" r="2.5"/><circle cx="840" cy="440" r="2.5"/><circle cx="920" cy="40" r="2.5"/><circle cx="920" cy="120" r="2.5"/><circle cx="920" cy="200" r="2.5"/><circle cx="920" cy="280" r="2.5"/><circle cx="920" cy="360" r="2.5"/><circle cx="920" cy="440" r="2.5"/><circle cx="1000" cy="40" r="2.5"/><circle cx="1000" cy="120" r="2.5"/><circle cx="1000" cy="200" r="2.5"/><circle cx="1000" cy="280" r="2.5"/><circle cx="1000" cy="360" r="2.5"/><circle cx="1000" cy="440" r="2.5"/><circle cx="1080" cy="40" r="2.5"/><circle cx="1080" cy="120" r="2.5"/><circle cx="1080" cy="200" r="2.5"/><circle cx="1080" cy="280" r="2.5"/><circle cx="1080" cy="360" r="2.5"/><circle cx="1080" cy="440" r="2.5"/><circle cx="1160" cy="40" r="2.5"/><circle cx="1160" cy="120" r="2.5"/><circle cx="1160" cy="200" r="2.5"/><circle cx="1160" cy="280" r="2.5"/><circle cx="1160" cy="360" r="2.5"/><circle cx="1160" cy="440" r="2.5"/>
+</g>
+<g transform="rotate(-2 475 280)">
+  <polygon points="390,300 475,230 560,300 475,370" fill="#0f1a26" stroke="#38bdf8" stroke-width="2.5"/>
+  <rect x="408" y="278" width="82" height="10" fill="#38bdf8" opacity="0.9"/>
+<rect x="408" y="298" width="134" height="7" rx="4" fill="#38bdf8" opacity="0.45"/>
+<rect x="408" y="314" width="125" height="7" rx="4" fill="#38bdf8" opacity="0.45"/>
+<rect x="408" y="330" width="130" height="7" rx="4" fill="#38bdf8" opacity="0.45"/>
+<rect x="408" y="346" width="112" height="7" rx="4" fill="#38bdf8" opacity="0.45"/>
+<rect x="408" y="362" width="96" height="7" rx="4" fill="#38bdf8" opacity="0.45"/>
+  <rect x="408" y="368" width="122" height="7" fill="#f59e0b"/>
+</g>
+<g transform="rotate(38 478 340)">
+  <polygon points="428,340 478,300 528,340 478,380" fill="none" stroke="#38bdf8" stroke-width="3"/>
+</g>
+<g font-size="24" font-weight="bold" fill="#e2e8f0">
+  <polygon points="672,140 708,164 708,206 672,230 636,206 636,164" fill="#0f1a26" stroke="#38bdf8" stroke-width="2.5"/>
+  <polygon points="672,150 700,168 700,200 672,218 644,200 644,168" fill="#38bdf8" opacity="0.12"/>
+<path d="M 663.8 185.0 L 669.8 191.8 L 680.2 178.2" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="724" y="192">逻辑完备</text>
+  <polygon points="672,240 708,264 708,306 672,330 636,306 636,264" fill="#0f1a26" stroke="#38bdf8" stroke-width="2.5" opacity="0.75"/>
+<path d="M 663.8 285.0 L 669.8 291.8 L 680.2 278.2" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="724" y="292" opacity="0.8">可以复现</text>
+  <polygon points="672,340 708,364 708,406 672,430 636,406 636,364" fill="#0f1a26" stroke="#38bdf8" stroke-width="2.5" opacity="0.5"/>
+<path d="M 663.8 385.0 L 669.8 391.8 L 680.2 378.2" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="724" y="392" opacity="0.55">数据真实</text>
+</g>
+<g transform="rotate(10 700 90)">
+  <polygon points="655,135 745,135 745,45 655,45" fill="#dc2626"/>
+  <polygon points="655,135 680,160 770,160 745,135" fill="#7f1d1d"/>
+  <polygon points="745,45 770,70 770,160 745,135" fill="#b91c1c"/>
+<path d="M 685.7 90.0 L 696.1 101.7 L 714.3 78.3" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#f59e0b" transform="rotate(-8 392 105)">？</text>
+
+</svg>

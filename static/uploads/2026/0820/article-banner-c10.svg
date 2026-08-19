@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+
+<rect width="1200" height="500" fill="#ffffff"/>
+<g stroke="#1a1a1a" fill="none" stroke-width="2">
+  <circle cx="220" cy="250" r="150" opacity="0.15"/>
+  <circle cx="980" cy="250" r="150" opacity="0.15"/>
+  <path d="M 60 120 L 120 120 M 60 130 L 100 130"/>
+  <path d="M 1080 360 L 1140 360 M 1100 370 L 1140 370"/>
+</g>
+<g transform="rotate(-1.5 475 280)">
+  <rect x="390" y="160" width="170" height="240" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+  <rect x="408" y="184" width="82" height="10" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="408" y="222" width="134" height="6" rx="0" stroke="#1a1a1a" stroke-width="2" fill="none" opacity="1"/>
+<rect x="408" y="244" width="125" height="6" rx="0" stroke="#1a1a1a" stroke-width="2" fill="none" opacity="1"/>
+<rect x="408" y="266" width="130" height="6" rx="0" stroke="#1a1a1a" stroke-width="2" fill="none" opacity="1"/>
+<rect x="408" y="288" width="112" height="6" rx="0" stroke="#1a1a1a" stroke-width="2" fill="none" opacity="1"/>
+<rect x="408" y="310" width="96" height="6" rx="0" stroke="#1a1a1a" stroke-width="2" fill="none" opacity="1"/>
+  <rect x="408" y="336" width="122" height="6" fill="#e05252"/>
+</g>
+<circle cx="478" cy="340" r="50" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="522" y1="384" x2="582" y2="444" stroke="#1a1a1a" stroke-width="10" stroke-linecap="round"/>
+<g fill="none" stroke="#1a1a1a" stroke-width="2.5">
+  <circle cx="672" cy="170" r="34"/>
+  <path d="M 657 170 L 666 179 L 687 156"/>
+  <circle cx="672" cy="270" r="34"/>
+  <path d="M 657 270 L 666 279 L 687 256"/>
+  <circle cx="672" cy="370" r="34"/>
+  <path d="M 657 370 L 666 379 L 687 356"/>
+</g>
+<g font-size="24" font-weight="bold" fill="#1a1a1a">
+  <text x="724" y="180">逻辑完备</text><text x="724" y="280">可以复现</text><text x="724" y="380">数据真实</text>
+</g>
+<rect x="655" y="45" width="90" height="90" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+<path d="M 672 90 L 683 101 L 728 61" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#1a1a1a" transform="rotate(-8 392 105)">？</text>
+
+</svg>

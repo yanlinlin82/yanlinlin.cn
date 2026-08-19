@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+
+<rect width="1200" height="500" fill="#faf8f4"/>
+<g opacity="0.08" fill="#33312c">
+  <ellipse cx="140" cy="130" rx="110" ry="70"/><ellipse cx="120" cy="420" rx="90" ry="60"/>
+  <ellipse cx="1060" cy="120" rx="100" ry="64"/><ellipse cx="1080" cy="420" rx="92" ry="62"/>
+</g>
+<g transform="rotate(-1.5 475 280)">
+  <rect x="390" y="160" width="170" height="240" fill="none" stroke="#2c2a26" stroke-width="4"/>
+  <rect x="408" y="184" width="82" height="12" fill="#2c2a26" opacity="0.85"/>
+<rect x="408" y="222" width="134" height="9" rx="2" fill="#2c2a26" opacity="0.45"/>
+<rect x="408" y="244" width="125" height="9" rx="2" fill="#2c2a26" opacity="0.45"/>
+<rect x="408" y="266" width="130" height="9" rx="2" fill="#2c2a26" opacity="0.45"/>
+<rect x="408" y="288" width="112" height="9" rx="2" fill="#2c2a26" opacity="0.45"/>
+<rect x="408" y="310" width="96" height="9" rx="2" fill="#2c2a26" opacity="0.45"/>
+  <rect x="408" y="336" width="122" height="9" fill="#c62828" opacity="0.8"/>
+</g>
+<circle cx="478" cy="340" r="50" fill="none" stroke="#2c2a26" stroke-width="4"/>
+<line x1="524" y1="386" x2="582" y2="444" stroke="#2c2a26" stroke-width="14" stroke-linecap="round"/>
+<g font-size="25" font-weight="bold" fill="#2c2a26">
+  <circle cx="672" cy="170" r="34" fill="none" stroke="#2c2a26" stroke-width="4"/>
+<path d="M 662.1 170.0 L 669.3 178.1 L 681.9 161.9" fill="none" stroke="#2c2a26" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="718" y="180">逻辑完备</text>
+  <circle cx="672" cy="270" r="34" fill="none" stroke="#2c2a26" stroke-width="4" opacity="0.8"/>
+<path d="M 662.1 270.0 L 669.3 278.1 L 681.9 261.9" fill="none" stroke="#2c2a26" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="718" y="280" opacity="0.8">可以复现</text>
+  <circle cx="672" cy="370" r="34" fill="none" stroke="#2c2a26" stroke-width="4" opacity="0.55"/>
+<path d="M 662.1 370.0 L 669.3 378.1 L 681.9 361.9" fill="none" stroke="#2c2a26" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="718" y="380" opacity="0.55">数据真实</text>
+</g>
+<g transform="rotate(-5 700 90)">
+  <rect x="655" y="45" width="90" height="90" rx="12" fill="#c62828"/>
+  <rect x="666" y="56" width="68" height="68" rx="6" fill="none" stroke="#fbe9e7" stroke-width="3"/>
+<path d="M 685.7 90.0 L 696.1 101.7 L 714.3 78.3" fill="none" stroke="#fbe9e7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="392" y="108" font-size="52" font-weight="bold" fill="#2c2a26" transform="rotate(-8 392 105)">？</text>
+
+</svg>
