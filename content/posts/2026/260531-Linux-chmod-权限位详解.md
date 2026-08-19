@@ -371,3 +371,5 @@ drwxrwxr-x+  2 user group  ...  dir_with_acl
 4. [SUID, SGID, Sticky Bit — Red Hat](https://www.redhat.com/en/blog/suid-sgid-sticky-bit)
 5. [What's the purpose of setgid directory? — Server Fault](https://serverfault.com/questions/93894/whats-the-purpose-of-setgid-directory)
 6. [Sticky bit vs setgid for facilitating shared write access — Unix StackExchange](https://unix.stackexchange.com/questions/23063/sticky-bit-vs-setgid-for-facilitating-shared-write-access)
+
+<i><b>注：</b>本文由AI辅助润色，文章内容与观点均由作者本人提出并复核。</i>
