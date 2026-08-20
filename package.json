@@ -16,7 +16,7 @@
   },
   "overrides": {
     "immutable": "5.1.9",
-    "fast-uri": "3.1.4"
+    "fast-uri": "3.1.5"
   },
   "allowScripts": {
     "@parcel/watcher": true

@@ -29,3 +29,6 @@ static/assets/fonts/*.eot
 # Build cache
 .sass-cache/
 .cache/
+
+# Logs
+logs/
