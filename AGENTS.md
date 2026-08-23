@@ -36,3 +36,16 @@
 
 - After content changes, run `hugo --renderToMemory --logLevel warn` to confirm the site builds without errors or warnings.
 - Run `python3 scripts/check_slugs.py --content-dir content` to verify slug uniqueness and frontmatter validity.
+
+## Writing pitfalls
+
+- Avoid passages that assume prior knowledge the reader has not been given. In particular, do not refer to an "original" draft, "the feel/impression" from an earlier version, or any half-finished idea that never appears in the intended final text.
+- Do not fabricate a claim just to attack it. Never invent a "common belief", "a common claim found online", "the old convention", or a specific number (e.g. "IQ 110 means ~68%", "the ceiling is 160-170", "an SD=10 scale") that has no real, verifiable source, then set it up as a strawman to refute - even under another label. If the article never introduced the claim, either introduce it with real evidence, or simply present the correct result directly.
+- When a source does need explaining, use a neutral, general reference that the reader can verify (e.g. state what the actual empirical rule is, or cite a real fact), rather than pointing at a claim of uncertain provenance.
+- Give the reader something to act on. Where the argument depends on the reader's own experience or reasoning, end by inviting them to verify or recompute it themselves (e.g. "try changing the numbers and recalculating"), rather than closing with a lecturing summary.
+
+## Math formulas (KaTeX)
+
+- Math formulas are rendered client-side with KaTeX. Set `math: true` in the frontmatter to load KaTeX.
+- **In the Markdown source, write every backslash as a double backslash** - both the `\( ... \)` delimiters and the LaTeX commands inside (e.g. `\dfrac`, `\Phi`, `\sum`, `\mathbf`). Hugo's goldmark turns `\\` into a single `\` in the rendered HTML, which is exactly what KaTeX expects.
+- Do NOT write single backslashes (\\(, \dfrac). Goldmark treats `\(` as a Markdown escape sequence and drops the backslash, leaving only `(`, so KaTeX receives no opening delimiter and the formula is rendered as literal text (e.g. it shows as `( z = ... )` instead of a math expression).
