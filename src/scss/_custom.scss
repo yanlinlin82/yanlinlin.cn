@@ -746,6 +746,14 @@ body {
   margin-bottom: 1.2rem;
 }
 
+/* 中文博客正文排版：仅对正文第一层的中文段落做首行缩进两个全角字符。
+   text-indent 以当前字体大小为基准，2em 恰为两个汉字宽度。
+   用子选择器 (> p) 只作用于 article-body 的直接子段落，
+   避免缩进嵌套在列表项、表格单元格或引用块中的 <p>，也不影响标题、代码块、原始 HTML 块。 */
+.article-body.post-body > p {
+  text-indent: 2em;
+}
+
 .article-body ul,
 .article-body ol {
   margin-bottom: 1.2rem;
