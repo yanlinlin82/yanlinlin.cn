@@ -44,7 +44,7 @@
     {{ end }}
   </header>
 
-  <div class="article-body">
+  <div class="article-body{{ if eq .Section "posts" }} post-body{{ end }}">
     {{ .Content -}}
   </div>
 </article>
