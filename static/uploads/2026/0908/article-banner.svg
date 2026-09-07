@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bgLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf6ef"/>
+      <stop offset="1" stop-color="#f1e9d9"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a8a77"/>
+      <stop offset="1" stop-color="#215f50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 浅色背景 -->
+  <rect width="1200" height="500" fill="url(#bgLight)"/>
+
+  <!-- 偏置的中央衬底 -->
+  <circle cx="600" cy="250" r="210" fill="#f3ecd9" opacity="0.5"/>
+
+  <!-- 错落的装饰圆环 -->
+  <circle cx="1050" cy="70" r="72" fill="none" stroke="#e9dfc9" stroke-width="18" opacity="0.7"/>
+  <circle cx="110" cy="442" r="56" fill="none" stroke="#e9dfc9" stroke-width="13" opacity="0.7"/>
+  <circle cx="470" cy="60" r="34" fill="none" stroke="#e9dfc9" stroke-width="9" opacity="0.55"/>
+
+  <!-- 随机散落的小点 -->
+  <circle cx="70"   cy="150" r="5"   fill="#d9a441" opacity="0.5"/>
+  <circle cx="140"  cy="320" r="3.5" fill="#8a6fb8" opacity="0.4"/>
+  <circle cx="250"  cy="70"  r="4"   fill="#4f8fc2" opacity="0.45"/>
+  <circle cx="345"  cy="205" r="3"   fill="#e0684f" opacity="0.4"/>
+  <circle cx="430"  cy="96"  r="5.5" fill="#6f9f4e" opacity="0.35"/>
+  <circle cx="900"  cy="52"  r="4"   fill="#d9a441" opacity="0.5"/>
+  <circle cx="1010" cy="204" r="3.5" fill="#c2678f" opacity="0.4"/>
+  <circle cx="815"  cy="470" r="4"   fill="#8a6fb8" opacity="0.35"/>
+  <circle cx="1120" cy="292" r="3"   fill="#4f8fc2" opacity="0.4"/>
+  <circle cx="220"  cy="455" r="4"   fill="#e0684f" opacity="0.35"/>
+  <circle cx="720"  cy="98"  r="3.5" fill="#d9a441" opacity="0.4"/>
+  <circle cx="536"  cy="452" r="4"   fill="#6f9f4e" opacity="0.4"/>
+
+  <!-- 中心到各技能卡片的点状连线 -->
+  <g stroke="#cfc4b0" stroke-width="3" stroke-dasharray="1 12" stroke-linecap="round" fill="none">
+    <line x1="505" y1="185" x2="250" y2="125"/>
+    <line x1="695" y1="185" x2="975" y2="128"/>
+    <line x1="500" y1="330" x2="235" y2="352"/>
+    <line x1="700" y1="330" x2="965" y2="352"/>
+    <line x1="600" y1="345" x2="600" y2="448"/>
+    <line x1="545" y1="150" x2="430" y2="90"/>
+  </g>
+
+  <!-- 技能卡片（卡片一角：短横线代表文本行） -->
+  <g>
+    <rect x="205" y="95"  width="90" height="62" rx="12" fill="#ffffff"/>
+    <rect x="217" y="112" width="66" height="7"  rx="3.5" fill="#d9a441" opacity="0.7"/>
+    <rect x="217" y="128" width="52" height="7"  rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <rect x="217" y="144" width="40" height="7"  rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+
+    <rect x="930" y="96"  width="90" height="62" rx="12" fill="#ffffff"/>
+    <rect x="942" y="113" width="66" height="7"  rx="3.5" fill="#4f8fc2" opacity="0.7"/>
+    <rect x="942" y="129" width="52" height="7"  rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <rect x="942" y="145" width="40" height="7"  rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+  </g>
+
+  <!-- 复用小标记（对角线方向） -->
+  <g fill="#d9a441">
+    <rect x="300" y="33" width="8" height="8" transform="rotate(45 304 37)"/>
+    <rect x="832" y="326" width="8" height="8" transform="rotate(45 836 330)"/>
+    <rect x="420" y="84" width="7" height="7" transform="rotate(45 423.5 87.5)"/>
+  </g>
+
+  <!-- 中心节点：Skill 仓库 -->
+  <rect x="540" y="180" width="120" height="140" rx="22" fill="url(#hubGrad)"/>
+  <!-- 仓库中的卡片层叠（左下角偏移的堆叠边） -->
+  <rect x="576" y="296" width="104" height="10" rx="5" fill="#2a705f" opacity="0.6"/>
+  <rect x="672" y="296" width="103" height="10" rx="5" fill="#2a705f" opacity="0.6"/>
+  <!-- 中心圆圈图标 -->
+  <circle cx="600" cy="230" r="22" fill="#ffffff"/>
+  <path d="M 600 217 L 600 243 M 600 217 L 592 226 M 600 217 L 608 226" stroke="#3a8a77" stroke-width="3.4" stroke-linecap="round" fill="none"/>
+  <text x="600" y="267" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="bold">skill</text>
+
+  <!-- 底部卡片：延迟加载（虚线轮廓，未点亮） -->
+  <rect x="552" y="420" width="96" height="60" rx="14" fill="none" stroke="#cfc4b0" stroke-width="3" stroke-dasharray="6 7"/>
+  <rect x="566" y="436" width="46" height="6" rx="3" stroke="#cfc4b0" stroke-width="2"/>
+  <rect x="566" y="452" width="34" height="6" rx="3" stroke="#cfc4b0" stroke-width="2"/>
+
+  <!-- 状态点：三个小技能点整齐排列（多少与位置错落） -->
+  <circle cx="232" cy="352" r="30" fill="#8a6fb8" opacity="0.15"/>
+  <circle cx="232" cy="352" r="22" fill="#8a6fb8"/>
+  <circle cx="232" cy="352" r="7" fill="#ffffff"/>
+
+  <circle cx="965" cy="352" r="28" fill="#e0684f" opacity="0.15"/>
+  <circle cx="965" cy="352" r="21" fill="#e0684f"/>
+  <circle cx="965" cy="352" r="7" fill="#ffffff"/>
+</svg>
