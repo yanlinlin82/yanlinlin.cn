@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <defs>
+    <linearGradient id="bgLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf6ef"/>
+      <stop offset="1" stop-color="#f1e9d9"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a8a77"/>
+      <stop offset="1" stop-color="#215f50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 浅色背景 -->
+  <rect width="1200" height="500" fill="url(#bgLight)"/>
+
+  <!-- 中央衬底 -->
+  <circle cx="600" cy="250" r="215" fill="#f3ecd9" opacity="0.5"/>
+
+  <!-- 错落的装饰圆环 -->
+  <circle cx="1055" cy="72" r="70" fill="none" stroke="#e9dfc9" stroke-width="18" opacity="0.7"/>
+  <circle cx="108" cy="440" r="56" fill="none" stroke="#e9dfc9" stroke-width="13" opacity="0.7"/>
+  <circle cx="468" cy="58" r="34" fill="none" stroke="#e9dfc9" stroke-width="9" opacity="0.55"/>
+
+  <!-- 随机散落的小点 -->
+  <circle cx="70"   cy="150" r="5"   fill="#d9a441" opacity="0.5"/>
+  <circle cx="140"  cy="320" r="3.5" fill="#8a6fb8" opacity="0.4"/>
+  <circle cx="250"  cy="72"  r="4"   fill="#4f8fc2" opacity="0.45"/>
+  <circle cx="352"  cy="225" r="3"   fill="#e0684f" opacity="0.4"/>
+  <circle cx="430"  cy="96"  r="5.5" fill="#6f9f4e" opacity="0.35"/>
+  <circle cx="905"  cy="52"  r="4"   fill="#d9a441" opacity="0.5"/>
+  <circle cx="1015" cy="210" r="3.5" fill="#c2678f" opacity="0.4"/>
+  <circle cx="815"  cy="470" r="4"   fill="#8a6fb8" opacity="0.35"/>
+  <circle cx="1122" cy="296" r="3"   fill="#4f8fc2" opacity="0.4"/>
+  <circle cx="220"  cy="455" r="4"   fill="#e0684f" opacity="0.35"/>
+  <circle cx="720"  cy="98"  r="3.5" fill="#d9a441" opacity="0.4"/>
+  <circle cx="536"  cy="452" r="4"   fill="#6f9f4e" opacity="0.4"/>
+
+  <!-- 中心到四周作品的点状连线 -->
+  <g stroke="#cfc4b0" stroke-width="3" stroke-dasharray="1 12" stroke-linecap="round" fill="none">
+    <line x1="512" y1="200" x2="320" y2="152"/>
+    <line x1="688" y1="200" x2="880" y2="152"/>
+    <line x1="508" y1="312" x2="320" y2="360"/>
+    <line x1="692" y1="312" x2="880" y2="360"/>
+  </g>
+
+  <!-- 四件被分享出去的作品：卡片 + 金色署名印记 -->
+  <g>
+    <!-- 左上 -->
+    <rect x="205" y="105" width="110" height="82" rx="14" fill="#ffffff"/>
+    <rect x="223" y="128" width="70" height="7" rx="3.5" fill="#4f8fc2" opacity="0.7"/>
+    <rect x="223" y="146" width="54" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <rect x="223" y="164" width="40" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <circle cx="295" cy="123" r="11" fill="none" stroke="#d9a441" stroke-width="3"/>
+    <circle cx="295" cy="123" r="3.5" fill="#d9a441"/>
+
+    <!-- 右上 -->
+    <rect x="885" y="105" width="110" height="82" rx="14" fill="#ffffff"/>
+    <rect x="903" y="128" width="70" height="7" rx="3.5" fill="#6f9f4e" opacity="0.7"/>
+    <rect x="903" y="146" width="54" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <rect x="903" y="164" width="40" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <circle cx="975" cy="123" r="11" fill="none" stroke="#d9a441" stroke-width="3"/>
+    <circle cx="975" cy="123" r="3.5" fill="#d9a441"/>
+
+    <!-- 左下 -->
+    <rect x="205" y="315" width="110" height="82" rx="14" fill="#ffffff"/>
+    <rect x="223" y="338" width="70" height="7" rx="3.5" fill="#8a6fb8" opacity="0.7"/>
+    <rect x="223" y="356" width="54" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <rect x="223" y="374" width="40" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <circle cx="295" cy="333" r="11" fill="none" stroke="#d9a441" stroke-width="3"/>
+    <circle cx="295" cy="333" r="3.5" fill="#d9a441"/>
+
+    <!-- 右下 -->
+    <rect x="885" y="315" width="110" height="82" rx="14" fill="#ffffff"/>
+    <rect x="903" y="338" width="70" height="7" rx="3.5" fill="#e0684f" opacity="0.7"/>
+    <rect x="903" y="356" width="54" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <rect x="903" y="374" width="40" height="7" rx="3.5" fill="#cfc4b0" opacity="0.7"/>
+    <circle cx="975" cy="333" r="11" fill="none" stroke="#d9a441" stroke-width="3"/>
+    <circle cx="975" cy="333" r="3.5" fill="#d9a441"/>
+  </g>
+
+  <!-- 复用小标记（对角线方向） -->
+  <g fill="#d9a441">
+    <rect x="300" y="33" width="8" height="8" transform="rotate(45 304 37)"/>
+    <rect x="832" y="330" width="8" height="8" transform="rotate(45 836 334)"/>
+    <rect x="420" y="84" width="7" height="7" transform="rotate(45 423.5 87.5)"/>
+  </g>
+
+  <!-- 中心节点：成果的起点 -->
+  <rect x="540" y="190" width="120" height="120" rx="24" fill="url(#hubGrad)"/>
+  <!-- 分享图标 -->
+  <g stroke="#ffffff" stroke-width="3.4" fill="none">
+    <line x1="600" y1="218" x2="574" y2="278"/>
+    <line x1="600" y1="218" x2="626" y2="278"/>
+  </g>
+  <circle cx="600" cy="218" r="12" fill="#ffffff"/>
+  <circle cx="574" cy="280" r="11" fill="#ffffff"/>
+  <circle cx="626" cy="280" r="11" fill="#ffffff"/>
+</svg>
