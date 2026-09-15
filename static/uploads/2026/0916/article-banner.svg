@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <!-- 深色渐变底 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070f1e"/>
+      <stop offset="0.45" stop-color="#152340"/>
+      <stop offset="1" stop-color="#08131f"/>
+    </linearGradient>
+
+    <!-- 中心环境光 -->
+    <radialGradient id="halo" cx="0.5" cy="0.48" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="0.55" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 核心辉光 -->
+    <radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 四角压暗，营造纵深 -->
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#04070d" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#04070d" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#04070d" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <!-- 描边渐变：青色到靛蓝 -->
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="braceLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="braceRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <!-- 核心盘面与人形 -->
+    <linearGradient id="disc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12294a"/>
+      <stop offset="1" stop-color="#0a1730"/>
+    </linearGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- 精细网格 -->
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 L 0 48" fill="none" stroke="#2a3f66" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. 渐变背景 / 网格 / 环境光 / 四角压暗 -->
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g opacity="0.32">
+    <rect width="1200" height="500" fill="url(#grid)"/>
+  </g>
+  <rect width="1200" height="500" fill="url(#halo)"/>
+  <rect width="1200" height="500" fill="url(#vignette)"/>
+
+  <!-- 2. 纵深参考环与四角取景框 -->
+  <circle cx="600" cy="250" r="250" fill="none" stroke="#1b2f52" stroke-width="1" stroke-dasharray="2 10" opacity="0.65"/>
+  <path d="M 56,116 L 56,56 L 116,56" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 1144,384 L 1144,444 L 1084,444" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- 3. 中心连向四个工具节点的通路 -->
+  <g stroke="#2a4066" stroke-width="2">
+    <line x1="600" y1="250" x2="727" y2="123"/>
+    <line x1="600" y1="250" x2="473" y2="123"/>
+    <line x1="600" y1="250" x2="473" y2="377"/>
+    <line x1="600" y1="250" x2="727" y2="377"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.85">
+    <circle cx="688.4" cy="161.6" r="3.5"/>
+    <circle cx="511.6" cy="161.6" r="3.5"/>
+    <circle cx="511.6" cy="338.4" r="3.5"/>
+    <circle cx="688.4" cy="338.4" r="3.5"/>
+  </g>
+
+  <!-- 4. 中心辉光 -->
+  <circle cx="600" cy="250" r="165" fill="url(#coreGlow)"/>
+
+  <!-- 5. 外骨骼支撑臂：软光晕 + 主弧 + 关节 + 连接杆 -->
+  <g fill="none" stroke-linecap="round" opacity="0.18">
+    <path d="M 508,150 Q 420,250 508,350" stroke="#22d3ee" stroke-width="24"/>
+    <path d="M 692,150 Q 780,250 692,350" stroke="#818cf8" stroke-width="24"/>
+  </g>
+  <path d="M 508,150 Q 420,250 508,350" fill="none" stroke="url(#braceLeft)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 692,150 Q 780,250 692,350" fill="none" stroke="url(#braceRight)" stroke-width="14" stroke-linecap="round"/>
+  <g fill="#0b1c33" stroke="#38bdf8" stroke-width="3">
+    <circle cx="508" cy="150" r="9"/>
+    <circle cx="508" cy="350" r="9"/>
+    <circle cx="692" cy="150" r="9"/>
+    <circle cx="692" cy="350" r="9"/>
+  </g>
+  <g stroke="#2f4a75" stroke-width="4" stroke-linecap="round">
+    <line x1="514" y1="250" x2="464" y2="250"/>
+    <line x1="686" y1="250" x2="736" y2="250"/>
+  </g>
+  <g fill="#0b1c33" stroke="#22d3ee" stroke-width="3">
+    <circle cx="464" cy="250" r="7"/>
+    <circle cx="736" cy="250" r="7"/>
+  </g>
+
+  <!-- 6. 能力轨道 -->
+  <circle cx="600" cy="250" r="180" fill="none" stroke="url(#ring)" stroke-width="2" stroke-dasharray="6 12"/>
+
+  <!-- 7. 核心盘面与被增强的人 -->
+  <circle cx="600" cy="250" r="88" fill="url(#disc)" stroke="url(#ring)" stroke-width="3" filter="url(#glow)"/>
+  <circle cx="600" cy="250" r="76" fill="none" stroke="#1c3559" stroke-width="1.5"/>
+  <circle cx="600" cy="225" r="26" fill="url(#figure)"/>
+  <path d="M 600,256 c -30,0 -51,19 -55,47 h 110 c -4,-28 -25,-47 -55,-47 z" fill="url(#figure)"/>
+  <path d="M 578,222 Q 600,214 622,222" fill="none" stroke="#22d3ee" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- 8. 四个工具节点 -->
+  <g fill="#0e1c33" stroke-width="2.5">
+    <rect x="704.3" y="99.7" width="46" height="46" rx="13" stroke="#22d3ee"/>
+    <rect x="449.7" y="99.7" width="46" height="46" rx="13" stroke="#38bdf8"/>
+    <rect x="449.7" y="354.3" width="46" height="46" rx="13" stroke="#818cf8"/>
+    <rect x="704.3" y="354.3" width="46" height="46" rx="13" stroke="#f59e0b"/>
+  </g>
+
+  <!-- 检索与生成：齿轮 -->
+  <circle cx="727" cy="123" r="8.5" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+  <g stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round">
+    <line x1="727" y1="110" x2="727" y2="114"/>
+    <line x1="727" y1="136" x2="727" y2="132"/>
+    <line x1="714" y1="123" x2="718" y2="123"/>
+    <line x1="740" y1="123" x2="736" y2="123"/>
+  </g>
+
+  <!-- 知识：文本行 -->
+  <g fill="#38bdf8">
+    <rect x="459.7" y="108" width="26" height="5" rx="2.5"/>
+    <rect x="462.7" y="120" width="20" height="5" rx="2.5" opacity="0.7"/>
+    <rect x="465.7" y="132" width="14" height="5" rx="2.5" opacity="0.5"/>
+  </g>
+
+  <!-- 数据：柱状图 -->
+  <g fill="#818cf8">
+    <rect x="456.7" y="374" width="8" height="16" rx="3" opacity="0.7"/>
+    <rect x="468.7" y="366" width="8" height="24" rx="3"/>
+    <rect x="480.7" y="370" width="8" height="20" rx="3" opacity="0.85"/>
+  </g>
+
+  <!-- 校验：对勾 -->
+  <path d="M 714,378 L 723,387 L 741,366" fill="none" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
