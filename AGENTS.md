@@ -34,7 +34,7 @@
 
 ### Banner design
 
-- Follow the global `banner-svg` skill for the full design system and the skeleton template (`templates/banner-dark.svg`). Its essentials:
+- Follow the `banner-svg` skill in `.agents/skills/` for the full design system and the skeleton template (`templates/banner-dark.svg`). Its essentials:
   - SVG only, 1200 x 500 (`viewBox="0 0 1200 500"`), no text, mirror-symmetric about the vertical centerline.
   - Layered dark background: diagonal 3-stop gradient, 48px grid pattern, centered radial ambient glow, edge vignette, plus dashed depth rings and HUD corner brackets.
   - Gradient strokes (gradients defined in `<defs>` and referenced via `url(#...)`), a soft blur glow on the core, and the accent palette cyan `#22d3ee` -> blue `#3b82f6` -> indigo `#818cf8` with at most one warm accent (`#f59e0b`).
