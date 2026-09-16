@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <!-- Skeleton for a dark gradient banner. See SKILL.md for the full spec.
+       Add the core silhouette (step 7) and the four satellites (step 8) where marked. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070f1e"/>
+      <stop offset="0.45" stop-color="#152340"/>
+      <stop offset="1" stop-color="#08131f"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0.5" cy="0.48" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="0.55" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#04070d" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#04070d" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#04070d" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="braceLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="braceRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="disc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12294a"/>
+      <stop offset="1" stop-color="#0a1730"/>
+    </linearGradient>
+
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 L 0 48" fill="none" stroke="#2a3f66" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 1. Background, grid, ambient light, vignette -->
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g opacity="0.32">
+    <rect width="1200" height="500" fill="url(#grid)"/>
+  </g>
+  <rect width="1200" height="500" fill="url(#halo)"/>
+  <rect width="1200" height="500" fill="url(#vignette)"/>
+
+  <!-- 2. Depth ring and HUD corner brackets -->
+  <circle cx="600" cy="250" r="250" fill="none" stroke="#1b2f52" stroke-width="1" stroke-dasharray="2 10" opacity="0.65"/>
+  <path d="M 56,116 L 56,56 L 116,56" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 1144,384 L 1144,444 L 1084,444" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- 3. Connectors from the core to the four satellites -->
+  <g stroke="#2a4066" stroke-width="2">
+    <line x1="600" y1="250" x2="727" y2="123"/>
+    <line x1="600" y1="250" x2="473" y2="123"/>
+    <line x1="600" y1="250" x2="473" y2="377"/>
+    <line x1="600" y1="250" x2="727" y2="377"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.85">
+    <circle cx="688.4" cy="161.6" r="3.5"/>
+    <circle cx="511.6" cy="161.6" r="3.5"/>
+    <circle cx="511.6" cy="338.4" r="3.5"/>
+    <circle cx="688.4" cy="338.4" r="3.5"/>
+  </g>
+
+  <!-- 4. Core ambient glow -->
+  <circle cx="600" cy="250" r="165" fill="url(#coreGlow)"/>
+
+  <!-- 5. Support braces: soft halo, main arc, joints, strut, pivot -->
+  <g fill="none" stroke-linecap="round" opacity="0.18">
+    <path d="M 508,150 Q 420,250 508,350" stroke="#22d3ee" stroke-width="24"/>
+    <path d="M 692,150 Q 780,250 692,350" stroke="#818cf8" stroke-width="24"/>
+  </g>
+  <path d="M 508,150 Q 420,250 508,350" fill="none" stroke="url(#braceLeft)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 692,150 Q 780,250 692,350" fill="none" stroke="url(#braceRight)" stroke-width="14" stroke-linecap="round"/>
+  <g fill="#0b1c33" stroke="#38bdf8" stroke-width="3">
+    <circle cx="508" cy="150" r="9"/>
+    <circle cx="508" cy="350" r="9"/>
+    <circle cx="692" cy="150" r="9"/>
+    <circle cx="692" cy="350" r="9"/>
+  </g>
+  <g stroke="#2f4a75" stroke-width="4" stroke-linecap="round">
+    <line x1="514" y1="250" x2="464" y2="250"/>
+    <line x1="686" y1="250" x2="736" y2="250"/>
+  </g>
+  <g fill="#0b1c33" stroke="#22d3ee" stroke-width="3">
+    <circle cx="464" cy="250" r="7"/>
+    <circle cx="736" cy="250" r="7"/>
+  </g>
+
+  <!-- 6. Capability orbit -->
+  <circle cx="600" cy="250" r="180" fill="none" stroke="url(#ring)" stroke-width="2" stroke-dasharray="6 12"/>
+
+  <!-- 7. Core disc -->
+  <circle cx="600" cy="250" r="88" fill="url(#disc)" stroke="url(#ring)" stroke-width="3" filter="url(#glow)"/>
+  <circle cx="600" cy="250" r="76" fill="none" stroke="#1c3559" stroke-width="1.5"/>
+
+  <!-- 7b. SILHOUETTE: replace with the concept's figure. Keep the bounding box roughly
+       x 545..655, y 199..303 so it stays centered in the disc. Example:
+    <circle cx="600" cy="225" r="26" fill="url(#figure)"/>
+    <path d="M 600,256 c -30,0 -51,19 -55,47 h 110 c -4,-28 -25,-47 -55,-47 z" fill="url(#figure)"/>
+    <path d="M 578,222 Q 600,214 622,222" fill="none" stroke="#22d3ee" stroke-width="3.5" stroke-linecap="round"/>
+  -->
+
+  <!-- 8. SATELLITES: four 46x46 rounded squares at the 45 degree points of the r=180 orbit,
+       each carrying one minimal glyph in its own accent color. Centers:
+       (727.3,122.7) (472.7,122.7) (472.7,377.3) (727.3,377.3), so x/y = center minus 23. Example:
+    <rect x="704.3" y="99.7" width="46" height="46" rx="13" fill="#0e1c33" stroke="#22d3ee" stroke-width="2.5"/>
+    <circle cx="727" cy="123" r="8.5" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+  -->
+</svg>
