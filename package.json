@@ -16,7 +16,9 @@
   },
   "overrides": {
     "immutable": "5.1.9",
-    "fast-uri": "3.1.5"
+    "fast-uri": "3.1.8",
+    "browserslist": "4.28.9",
+    "baseline-browser-mapping": "2.11.22"
   },
   "allowScripts": {
     "@parcel/watcher": true
