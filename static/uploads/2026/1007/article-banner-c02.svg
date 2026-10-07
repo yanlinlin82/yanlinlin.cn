@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070c19"/>
+      <stop offset="0.5" stop-color="#0f1a33"/>
+      <stop offset="1" stop-color="#060a14"/>
+    </linearGradient>
+
+    <radialGradient id="ambient" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#04070d" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#04070d" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#04070d" stop-opacity="0.72"/>
+    </radialGradient>
+
+    <linearGradient id="lensStroke" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="rowStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 L 0 48" fill="none" stroke="#2a3f66" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <rect width="1200" height="500" fill="url(#grid)"/>
+  </g>
+  <rect width="1200" height="500" fill="url(#ambient)"/>
+
+  <!-- 光束：收敛与展开 -->
+  <polygon points="392,150 392,350 566,308 566,192" fill="#3b82f6" opacity="0.06"/>
+  <polygon points="634,208 634,292 780,346 780,154" fill="#22d3ee" opacity="0.06"/>
+
+  <!-- 左侧：散乱的原始记录 -->
+  <g>
+    <rect x="80" y="170" width="30" height="12" rx="6" fill="#475569" opacity="0.35"/>
+    <rect x="138" y="170" width="18" height="12" rx="6" fill="#6366f1" opacity="0.5"/>
+    <rect x="196" y="170" width="26" height="12" rx="6" fill="#475569" opacity="0.5"/>
+    <rect x="254" y="170" width="34" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+    <rect x="312" y="170" width="22" height="12" rx="6" fill="#475569" opacity="0.5"/>
+    <rect x="370" y="170" width="28" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+
+    <rect x="80" y="226" width="18" height="12" rx="6" fill="#6366f1" opacity="0.5"/>
+    <rect x="138" y="226" width="26" height="12" rx="6" fill="#475569" opacity="0.35"/>
+    <rect x="196" y="226" width="34" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+    <rect x="254" y="226" width="22" height="12" rx="6" fill="#475569" opacity="0.5"/>
+    <rect x="312" y="226" width="28" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+    <rect x="370" y="226" width="18" height="12" rx="6" fill="#475569" opacity="0.5"/>
+
+    <rect x="80" y="282" width="26" height="12" rx="6" fill="#475569" opacity="0.5"/>
+    <rect x="138" y="282" width="34" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+    <rect x="196" y="282" width="22" height="12" rx="6" fill="#475569" opacity="0.35"/>
+    <rect x="254" y="282" width="28" height="12" rx="6" fill="#6366f1" opacity="0.5"/>
+    <rect x="312" y="282" width="18" height="12" rx="6" fill="#475569" opacity="0.35"/>
+    <rect x="370" y="282" width="30" height="12" rx="6" fill="#6366f1" opacity="0.5"/>
+
+    <rect x="80" y="338" width="34" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+    <rect x="138" y="338" width="22" height="12" rx="6" fill="#475569" opacity="0.35"/>
+    <rect x="196" y="338" width="28" height="12" rx="6" fill="#6366f1" opacity="0.5"/>
+    <rect x="254" y="338" width="18" height="12" rx="6" fill="#475569" opacity="0.5"/>
+    <rect x="312" y="338" width="30" height="12" rx="6" fill="#6366f1" opacity="0.35"/>
+    <rect x="370" y="338" width="24" height="12" rx="6" fill="#475569" opacity="0.35"/>
+  </g>
+
+  <!-- 中央：聚焦的透镜 -->
+  <ellipse cx="600" cy="250" rx="34" ry="132" fill="#0e1c33" opacity="0.55" stroke="url(#lensStroke)" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- 右侧：被理清的账目 -->
+  <g stroke="url(#rowStroke)" stroke-width="3" stroke-linecap="round">
+    <line x1="780" y1="150" x2="1130" y2="150" opacity="0.35"/>
+    <line x1="780" y1="178" x2="1130" y2="178" opacity="0.43"/>
+    <line x1="780" y1="206" x2="1130" y2="206" opacity="0.51"/>
+    <line x1="780" y1="234" x2="1130" y2="234" opacity="0.59"/>
+    <line x1="780" y1="262" x2="1130" y2="262" opacity="0.67"/>
+    <line x1="780" y1="290" x2="1130" y2="290" opacity="0.75"/>
+    <line x1="780" y1="318" x2="1130" y2="318" opacity="0.83"/>
+    <line x1="780" y1="346" x2="1130" y2="346" opacity="0.91"/>
+  </g>
+
+  <rect width="1200" height="500" fill="url(#vignette)"/>
+  <path d="M 56,116 L 56,56 L 116,56" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 1144,384 L 1144,444 L 1084,444" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

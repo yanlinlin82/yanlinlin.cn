@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060b18"/>
+      <stop offset="0.5" stop-color="#101a34"/>
+      <stop offset="1" stop-color="#070d1a"/>
+    </linearGradient>
+
+    <radialGradient id="ambient" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#4338ca" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#4338ca" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="peak" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#04070d" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#04070d" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#04070d" stop-opacity="0.72"/>
+    </radialGradient>
+
+    <linearGradient id="trend" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="0.72" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 L 0 48" fill="none" stroke="#2a3f66" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g opacity="0.2">
+    <rect width="1200" height="500" fill="url(#grid)"/>
+  </g>
+  <rect width="1200" height="500" fill="url(#ambient)"/>
+  <circle cx="1000" cy="140" r="210" fill="url(#peak)"/>
+
+  <!-- 账页：外部边框与格线 -->
+  <rect x="132" y="86" width="960" height="352" rx="16" fill="#0a1224" opacity="0.55" stroke="#23406b" stroke-width="2"/>
+  <g stroke="#1c3559" stroke-width="1.5" opacity="0.9">
+    <line x1="252" y1="86" x2="252" y2="438"/>
+    <line x1="372" y1="86" x2="372" y2="438"/>
+    <line x1="492" y1="86" x2="492" y2="438"/>
+    <line x1="612" y1="86" x2="612" y2="438"/>
+    <line x1="732" y1="86" x2="732" y2="438"/>
+    <line x1="852" y1="86" x2="852" y2="438"/>
+    <line x1="972" y1="86" x2="972" y2="438"/>
+    <line x1="132" y1="174" x2="1092" y2="174"/>
+    <line x1="132" y1="262" x2="1092" y2="262"/>
+    <line x1="132" y1="350" x2="1092" y2="350"/>
+  </g>
+
+  <!-- 被算清、点亮的账格 -->
+  <g filter="url(#glow)">
+    <rect x="136" y="354" width="112" height="80" rx="8" fill="#6366f1" opacity="0.85"/>
+    <rect x="256" y="354" width="112" height="80" rx="8" fill="#5b7bf5" opacity="0.85"/>
+    <rect x="496" y="266" width="112" height="80" rx="8" fill="#3b82f6" opacity="0.85"/>
+    <rect x="616" y="178" width="112" height="80" rx="8" fill="#38bdf8" opacity="0.85"/>
+    <rect x="736" y="178" width="112" height="80" rx="8" fill="#22d3ee" opacity="0.85"/>
+    <rect x="856" y="90" width="112" height="80" rx="8" fill="#67e8f9" opacity="0.85"/>
+    <rect x="976" y="90" width="112" height="80" rx="8" fill="#f59e0b" opacity="0.9"/>
+  </g>
+
+  <!-- 上行趋势线 -->
+  <polyline points="192,382 312,382 552,294 672,206 792,206 912,118 1032,118" fill="none" stroke="url(#trend)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- 四角压暗与取景框 -->
+  <rect width="1200" height="500" fill="url(#vignette)"/>
+  <path d="M 56,116 L 56,56 L 116,56" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 1144,384 L 1144,444 L 1084,444" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>
