@@ -18,7 +18,8 @@
     "immutable": "5.1.9",
     "fast-uri": "3.1.8",
     "browserslist": "4.28.9",
-    "baseline-browser-mapping": "2.11.22"
+    "baseline-browser-mapping": "2.11.22",
+    "source-map-js": "1.2.2"
   },
   "allowScripts": {
     "@parcel/watcher": true
