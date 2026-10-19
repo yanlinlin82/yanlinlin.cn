@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070f1e"/>
+      <stop offset="0.45" stop-color="#152340"/>
+      <stop offset="1" stop-color="#08131f"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0.5" cy="0.48" r="0.6">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="0.55" stop-color="#2563eb" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.72">
+      <stop offset="0" stop-color="#04070d" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#04070d" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#04070d" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="braceLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="braceRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="disc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12294a"/>
+      <stop offset="1" stop-color="#0a1730"/>
+    </linearGradient>
+
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 L 0 48" fill="none" stroke="#2a3f66" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g opacity="0.32">
+    <rect width="1200" height="500" fill="url(#grid)"/>
+  </g>
+  <rect width="1200" height="500" fill="url(#halo)"/>
+  <rect width="1200" height="500" fill="url(#vignette)"/>
+
+  <circle cx="600" cy="250" r="250" fill="none" stroke="#1b2f52" stroke-width="1" stroke-dasharray="2 10" opacity="0.65"/>
+  <path d="M 56,116 L 56,56 L 116,56" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <path d="M 1144,384 L 1144,444 L 1084,444" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+
+  <g stroke="#2a4066" stroke-width="2">
+    <line x1="600" y1="250" x2="741.4" y2="108.6"/>
+    <line x1="600" y1="250" x2="458.6" y2="108.6"/>
+    <line x1="600" y1="250" x2="458.6" y2="391.4"/>
+    <line x1="600" y1="250" x2="741.4" y2="391.4"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.85">
+    <circle cx="701.8" cy="148.2" r="3.5"/>
+    <circle cx="498.2" cy="148.2" r="3.5"/>
+    <circle cx="498.2" cy="351.8" r="3.5"/>
+    <circle cx="701.8" cy="351.8" r="3.5"/>
+  </g>
+
+  <circle cx="600" cy="250" r="165" fill="url(#coreGlow)"/>
+
+  <circle cx="600" cy="250" r="150" fill="none" stroke="url(#ring)" stroke-width="2" stroke-dasharray="6 12" opacity="0.6"/>
+  <circle cx="600" cy="250" r="158" fill="none" stroke="#2a4066" stroke-width="1" stroke-dasharray="2 10" opacity="0.35"/>
+
+  <circle cx="600" cy="250" r="88" fill="url(#disc)" stroke="url(#ring)" stroke-width="3" filter="url(#glow)"/>
+  <circle cx="600" cy="250" r="76" fill="none" stroke="#1c3559" stroke-width="1.5"/>
+
+  <circle cx="600" cy="224" r="27" fill="url(#figure)"/>
+  <path d="M 600,251 c -30,0 -51,19 -55,52 h 110 c -4,-33 -25,-52 -55,-52 z" fill="url(#figure)"/>
+  <path d="M 578,221 Q 600,213 622,221" fill="none" stroke="#22d3ee" stroke-width="3.5" stroke-linecap="round"/>
+
+  <rect x="718.4" y="85.6" width="46" height="46" rx="13" fill="#0e1c33" stroke="#22d3ee" stroke-width="2.5"/>
+  <path d="M 731.0,108.6 L 738.2,115.8 L 751.8,101.0" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="435.6" y="85.6" width="46" height="46" rx="13" fill="#0e1c33" stroke="#3b82f6" stroke-width="2.5"/>
+  <g stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round">
+    <circle cx="458.6" cy="108.6" r="9" fill="none"/>
+    <line x1="467.6" y1="108.6" x2="472.1" y2="108.6"/>
+    <line x1="463.1" y1="116.4" x2="465.4" y2="120.3"/>
+    <line x1="454.1" y1="116.4" x2="451.9" y2="120.3"/>
+    <line x1="449.6" y1="108.6" x2="445.1" y2="108.6"/>
+    <line x1="454.1" y1="100.8" x2="451.9" y2="96.9"/>
+    <line x1="463.1" y1="100.8" x2="465.4" y2="96.9"/>
+  </g>
+  <circle cx="458.6" cy="108.6" r="3.5" fill="#3b82f6"/>
+
+  <rect x="435.6" y="368.4" width="46" height="46" rx="13" fill="#0e1c33" stroke="#818cf8" stroke-width="2.5"/>
+  <g stroke="#818cf8" stroke-width="2.5" stroke-linecap="round">
+    <line x1="449.0" y1="384.0" x2="468.2" y2="384.0"/>
+    <line x1="449.0" y1="391.4" x2="468.2" y2="391.4"/>
+    <line x1="449.0" y1="398.8" x2="461.4" y2="398.8"/>
+  </g>
+
+  <rect x="718.4" y="368.4" width="46" height="46" rx="13" fill="#0e1c33" stroke="#f59e0b" stroke-width="2.5"/>
+  <g fill="#f59e0b">
+    <rect x="731.9" y="390.4" width="5" height="8" rx="1.5"/>
+    <rect x="738.9" y="384.4" width="5" height="14" rx="1.5"/>
+    <rect x="745.9" y="387.4" width="5" height="11" rx="1.5"/>
+  </g>
+</svg>
