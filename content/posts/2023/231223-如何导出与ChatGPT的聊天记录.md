@@ -10,7 +10,9 @@ slug: how-to-export-chatgpt-history
   <img class="img-fluid" src="/uploads/2023/1223/01.png" alt="题图" style="max-width:640px">
 </div>
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/02.png" alt="插图">
+</div>
 最近，我频繁地跟ChatGPT聊天。AI给出的很多回答，感觉都挺不错。所以，萌生了把聊天记录保存下来的想法。但我发现，似乎只能一条条地进行复制粘贴。这真太不符合ChatGPT作为一个效率工具的设定了。
 
 于是，在我的循循诱导下，ChatGPT帮我找到了合适的解决方案：写一个Chrome浏览器插件（extension），以浏览器中“所见即所得”的方式，把内容提取出来，并以markdown格式，保存到本地文件中。
@@ -19,31 +21,45 @@ Image
 
 从GitHub下载插件源代码（点击文末“阅读原文”可以跳转到该GitHub仓库）。下图以Linux系统为例，展示了使用git命令获取源码的过程：
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/03.png" alt="插图">
+</div>
 
 打开Chrome浏览器，点击右上角的“…“，打开应用程序的菜单，选择其中的“Extensions” -> “Manage Extensions”。在打开的插件管理界面上方，可以看到“Load unpacked”按钮，点击该按钮，根据提示选取刚才下载源码所保存的目录，即可安装该插件。
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/04.png" alt="插图">
+</div>
 
 安装完成后，在插件列表中将看到“OpenAI Session Downloader”，如下图所示：
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/05.png" alt="插图">
+</div>
 
 点击工具栏上的“Extensions”图标，从中找到“OpenAI Session Downloader”，点击那个图钉（鼠标移动上去将提示“Pin”）按钮，以便将该插件固定展示在工具栏上。
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/06.png" alt="插图">
+</div>
 
 重新打开ChatGPT网站（[https://chat.openai.com/](https://chat.openai.com/)，如已打开，需要刷新页面，使插件生效）。此时点击工具栏中的“OpenAI Session Downloader”图标，该插件会弹出一个附在图标旁边的小窗口，如下图所示。
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/07.png" alt="插图">
+</div>
 
 在弹出的小窗口中，点击其中的“Download”按钮。浏览器会弹出文件保存提示对话框，选择需要保存的文件路径及名称即可。
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/08.png" alt="插图">
+</div>
 
 该文件为markdown格式，使用任何一个文本编辑工具（如VScode）打开阅读即可：
 
-Image
+<div class="p-3 text-center">
+  <img class="img-fluid" src="/uploads/2023/1223/09.png" alt="插图">
+</div>
 
 上述过程，采用的是本地未打包（unpacked）方式进行的插件安装。这种模式，通常是提供给开发者使用的。我之所以暂时没把这个插件正式打包发布，主要是因为这种最简单粗暴的方法，已足够解决问题。而且，由于内容的提取很大程度上依赖于目标网页的具体实现（包括所采用的HTML标签、属性及其层次结构），这些很可能会在未来频繁变更。保持插件代码不打包，用户可以随时打开源码进行调整，以适应最新情况，获取正确的数据。
 
