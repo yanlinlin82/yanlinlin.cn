@@ -41,6 +41,23 @@
   - Never: a flat solid background, stick figures or literal clip-art, randomly scattered dots, text labels.
 - Verify the SVG parses as XML, then build once so the file is copied into `public/`.
 
+## Article formatting
+
+- Wrap every content image in the site's centered block, with the class order `p-3 text-center`:
+  ```html
+  <div class="p-3 text-center">
+    <img class="img-fluid" src="/uploads/YYYY/MMDD/name.ext" alt="...">
+  </div>
+  ```
+- Put the caption inside the block as `<div><small>（说明）</small></div>`, not as a following paragraph or `<center><small>`.
+- For an image that links to a larger version, put the `<a>` inside the block and keep the thumbnail as the only `<img>`: `<a href="full"><img class="img-fluid" src="thumb" alt="..."></a>`.
+- Do not use Markdown image syntax (`![alt](src)`) for article images; write the HTML block above so the layout stays consistent.
+- Intentional side-by-side layouts (e.g. two images with `display:inline` inside a container div) are the only exception; leave them in their container instead of wrapping each image.
+- Use at most one consecutive blank line. Never collapse blank lines inside fenced code blocks.
+- Mark numbered sections with `## N` and keep the rest of the heading hierarchy consistent.
+- Fence code snippets with a language tag (e.g. `r`, `python`, `cpp`).
+- Write bare URLs in prose as Markdown links (`[https://example.com](https://example.com)`). Hugo's automatic linkify fails when the URL touches full-width punctuation such as `（` or `）`.
+
 ## Validation
 
 - After content changes, run `hugo --renderToMemory --logLevel warn` to confirm the site builds without errors or warnings.
