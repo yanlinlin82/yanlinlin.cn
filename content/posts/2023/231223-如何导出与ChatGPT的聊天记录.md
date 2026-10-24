@@ -41,7 +41,7 @@ Image
 
 
 
-重新打开ChatGPT网站（https://chat.openai.com/，如已打开，需要刷新页面，使插件生效）。此时点击工具栏中的“OpenAI Session Downloader”图标，该插件会弹出一个附在图标旁边的小窗口，如下图所示。
+重新打开ChatGPT网站（[https://chat.openai.com/](https://chat.openai.com/)，如已打开，需要刷新页面，使插件生效）。此时点击工具栏中的“OpenAI Session Downloader”图标，该插件会弹出一个附在图标旁边的小窗口，如下图所示。
 
 Image
 

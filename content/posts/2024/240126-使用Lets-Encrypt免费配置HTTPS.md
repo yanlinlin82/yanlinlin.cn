@@ -39,7 +39,7 @@ sudo python3 -m venv /opt/certbot/
 sudo /opt/certbot/bin/pip install --upgrade pip
 ```
 
-对于其他操作系统，或更多详细说明，也可以参考 certbot 官方网站的说明（https://certbot.eff.org/）。
+对于其他操作系统，或更多详细说明，也可以参考 certbot 官方网站的说明（[https://certbot.eff.org/](https://certbot.eff.org/)）。
 生成和安装证书
 
 一旦Certbot安装完成，你就可以生成和安装证书了。对于大多数服务器，这可以通过运行一个简单的命令完成。
