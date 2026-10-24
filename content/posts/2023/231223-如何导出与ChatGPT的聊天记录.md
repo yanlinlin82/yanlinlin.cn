@@ -21,43 +21,29 @@ Image
 
 Image
 
-
-
 打开Chrome浏览器，点击右上角的“…“，打开应用程序的菜单，选择其中的“Extensions” -> “Manage Extensions”。在打开的插件管理界面上方，可以看到“Load unpacked”按钮，点击该按钮，根据提示选取刚才下载源码所保存的目录，即可安装该插件。
 
 Image
-
-
 
 安装完成后，在插件列表中将看到“OpenAI Session Downloader”，如下图所示：
 
 Image
 
-
-
 点击工具栏上的“Extensions”图标，从中找到“OpenAI Session Downloader”，点击那个图钉（鼠标移动上去将提示“Pin”）按钮，以便将该插件固定展示在工具栏上。
 
 Image
-
-
 
 重新打开ChatGPT网站（[https://chat.openai.com/](https://chat.openai.com/)，如已打开，需要刷新页面，使插件生效）。此时点击工具栏中的“OpenAI Session Downloader”图标，该插件会弹出一个附在图标旁边的小窗口，如下图所示。
 
 Image
 
-
-
 在弹出的小窗口中，点击其中的“Download”按钮。浏览器会弹出文件保存提示对话框，选择需要保存的文件路径及名称即可。
 
 Image
 
-
-
 该文件为markdown格式，使用任何一个文本编辑工具（如VScode）打开阅读即可：
 
 Image
-
-
 
 上述过程，采用的是本地未打包（unpacked）方式进行的插件安装。这种模式，通常是提供给开发者使用的。我之所以暂时没把这个插件正式打包发布，主要是因为这种最简单粗暴的方法，已足够解决问题。而且，由于内容的提取很大程度上依赖于目标网页的具体实现（包括所采用的HTML标签、属性及其层次结构），这些很可能会在未来频繁变更。保持插件代码不打包，用户可以随时打开源码进行调整，以适应最新情况，获取正确的数据。
 
