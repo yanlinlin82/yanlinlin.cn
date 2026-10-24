@@ -8,47 +8,51 @@ slug: cpp-delegate
 ---
 在C#中，一个比较漂亮的语法就是delegate，它的“+=”操作符很优雅地使众多事件订阅者能够被一个调用所触发。如：
 
-    class Program
+```csharp
+class Program
+{
+    delegate void DelegateFoo();
+
+    static void Foo() { Console.WriteLine("Foo"); }
+
+    static void Foo2() { Console.WriteLine("Foo2"); }
+
+    static void Main()
     {
-        delegate void DelegateFoo();
-    
-        static void Foo() { Console.WriteLine("Foo"); }
-    
-        static void Foo2() { Console.WriteLine("Foo2"); }
-    
-        static void Main()
-        {
-            DelegateFoo d = new DelegateFoo(Foo);
-            d += Foo2;
-            d();
-        }
+        DelegateFoo d = new DelegateFoo(Foo);
+        d += Foo2;
+        d();
     }
-    
-    // Output:
-    //   Foo
-    //   Foo2
+}
+
+// Output:
+//   Foo
+//   Foo2
+```
 
 这项语法，被很多C#使用者大为称道。其实在C++的boost库中，也有同样功能的实现，一点不比C#的delegate差，那就是boost::signal：
 
-    #include <iostream>
-    #include <boost/signal.hpp>
-    
-    void Foo() { std::cout << "Foo" << std::endl; }
-    
-    void Foo2() { std::cout << "Foo2" << std::endl; }
-    
-    int main()
-    {
-        boost::signal<void ()> s;
-        s.connect( Foo );
-        s.connect( Foo2 );
-        s();
-        return 0;
-    }
-    
-    // Output:
-    //   Foo
-    //   Foo2
+```cpp
+#include <iostream>
+#include <boost/signal.hpp>
+
+void Foo() { std::cout << "Foo" << std::endl; }
+
+void Foo2() { std::cout << "Foo2" << std::endl; }
+
+int main()
+{
+    boost::signal<void ()> s;
+    s.connect( Foo );
+    s.connect( Foo2 );
+    s();
+    return 0;
+}
+
+// Output:
+//   Foo
+//   Foo2
+```
 
 ## 参考：
 

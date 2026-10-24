@@ -14,64 +14,68 @@ It seems geeky to host a personal blog on [GitHub Pages]. Suffered too much pain
 
 The relevance between posts is measured by number of shared tags. It is better to re-order the related posts by relevance. Here goes my final solution (see also [source of my blog]):
 
-    {% if site.brute_force_lsi %}
-      {% capture related %}
-        {% for tag in page.tags %}
-          {{ site.tags[tag] | map: "id" | join: " " }}
-        {% endfor %}
-      {% endcapture %}
-      {% assign related = related | split: " " %}
-      {% assign max_hit = 0 %}
-      {% capture hits %}
-        {% for post in site.posts %}
-          {% assign hit = 0 %}
-          {% if post.id != page.id and related contains post.id %}
-            {% for id in related %}
-              {% if post.id == id %}
-                {% assign hit = hit | plus: 1 %}
-              {% endif %}
-            {% endfor %}
-            {% if hit > max_hit %}
-              {% assign max_hit = hit %}
-            {% endif %}
+```liquid
+{% if site.brute_force_lsi %}
+  {% capture related %}
+    {% for tag in page.tags %}
+      {{ site.tags[tag] | map: "id" | join: " " }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign related = related | split: " " %}
+  {% assign max_hit = 0 %}
+  {% capture hits %}
+    {% for post in site.posts %}
+      {% assign hit = 0 %}
+      {% if post.id != page.id and related contains post.id %}
+        {% for id in related %}
+          {% if post.id == id %}
+            {% assign hit = hit | plus: 1 %}
           {% endif %}
-          {{ hit }}
         {% endfor %}
-      {% endcapture %}
-      {% assign hits = hits | split: " " %}
-      {% capture post_index %}
-        {% assign count = 0 %}
-        {% for level in (1..max_hit) reversed %}
-          {% for hit in hits %}
-            {% assign num = hit | minus: 0 %}
-            {% if level == num %}
-              {{ forloop.index0 }}
-              {% assign count = count | plus: 1 %}
-              {% if count >= site.related_posts_max %}{% break %}{% endif %}
-            {% endif %}
-          {% endfor %}
+        {% if hit > max_hit %}
+          {% assign max_hit = hit %}
+        {% endif %}
+      {% endif %}
+      {{ hit }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign hits = hits | split: " " %}
+  {% capture post_index %}
+    {% assign count = 0 %}
+    {% for level in (1..max_hit) reversed %}
+      {% for hit in hits %}
+        {% assign num = hit | minus: 0 %}
+        {% if level == num %}
+          {{ forloop.index0 }}
+          {% assign count = count | plus: 1 %}
           {% if count >= site.related_posts_max %}{% break %}{% endif %}
-        {% endfor %}
-      {% endcapture %}
-      {% assign post_index = post_index | split: " " %}
-    <div id="related">
-      <hr />
-      <h2>Related Posts</h2>
-      <ul class="posts">
-      {% for index in post_index %}
-        {% assign num = index | minus: 0 %}
-        {% assign post = site.posts[num] %}
-        <li><span>{{ post.date | date: '%Y-%m-%d %H:%M' }}</span>
-        - <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
       {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
+      {% if count >= site.related_posts_max %}{% break %}{% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% assign post_index = post_index | split: " " %}
+<div id="related">
+  <hr />
+  <h2>Related Posts</h2>
+  <ul class="posts">
+  {% for index in post_index %}
+    {% assign num = index | minus: 0 %}
+    {% assign post = site.posts[num] %}
+    <li><span>{{ post.date | date: '%Y-%m-%d %H:%M' }}</span>
+    - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+```
 
 Finally, to enable such brute force scanning for related posts, add following lines into `_config.yml`:
 
-    brute_force_lsi: false
-    related_posts_max: 6
+```yaml
+brute_force_lsi: false
+related_posts_max: 6
+```
 
 [GitHub Pages]: http://pages.github.com/
 [wordpress]: http://wordpress.org/
