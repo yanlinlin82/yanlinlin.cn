@@ -1,0 +1,354 @@
+{{ define "main" -}}
+{{- $posts := where .Site.RegularPages "Type" "posts" -}}
+{{- $yearCounts := newScratch -}}
+{{- $dayKeys := slice -}}
+{{- range $posts -}}
+  {{- $dayKeys = $dayKeys | append (.Date.Format "2006-01-02") -}}
+  {{- $yearCounts.Add (.Date.Format "2006") 1 -}}
+{{- end -}}
+{{- $total := len $posts -}}
+{{- $activeDays := len (uniq $dayKeys) -}}
+{{- $sorted := $posts.ByDate -}}
+{{- $firstYear := 0 -}}
+{{- $lastYear := 0 -}}
+{{- if $posts -}}
+  {{- $firstYear = int ((index $sorted 0).Date.Format "2006") -}}
+  {{- $lastYear = int ((index $sorted (sub (len $sorted) 1)).Date.Format "2006") -}}
+{{- end -}}
+<div class="mb-4">
+  <h1 class="h2 mb-3">{{ .Title }}</h1>
+  {{ .Content -}}
+</div>
+
+<div class="calendar-stats">
+  <div class="calendar-stat">
+    <div class="calendar-stat-value">{{ $total }}</div>
+    <div class="calendar-stat-label">篇文章</div>
+  </div>
+  <div class="calendar-stat">
+    <div class="calendar-stat-value">{{ $activeDays }}</div>
+    <div class="calendar-stat-label">个发布日</div>
+  </div>
+  <div class="calendar-stat">
+    <div class="calendar-stat-value">{{ $firstYear }}–{{ $lastYear }}</div>
+    <div class="calendar-stat-label">覆盖年份</div>
+  </div>
+</div>
+
+{{ if $posts -}}
+<nav class="calendar-year-nav" aria-label="按年份浏览">
+  <button type="button" class="cal-year-step" data-step="-1" aria-label="上一年">‹</button>
+  <div class="cal-year-list" id="calendarYearList">
+    {{- range seq $firstYear $lastYear }}
+    {{- $count := $yearCounts.Get (printf "%d" .) | default 0 }}
+    <button
+      type="button"
+      class="cal-year-btn{{ if eq . $lastYear }} is-active{{ end }}{{ if not $count }} is-empty{{ end }}"
+      data-year="{{ . }}"
+      aria-pressed="{{ if eq . $lastYear }}true{{ else }}false{{ end }}"
+    >
+      <span class="cal-year-label">{{ . }}</span>
+      <span class="cal-year-count">{{ $count }}</span>
+    </button>
+    {{- end }}
+  </div>
+  <button type="button" class="cal-year-step" data-step="1" aria-label="下一年">›</button>
+</nav>
+{{ end -}}
+
+<div
+  class="calendar-grid"
+  id="calendarGrid"
+  data-index-url="{{ "calendar-index.json" | relURL }}"
+>
+  <p class="calendar-message">正在加载文章日历…</p>
+</div>
+
+<noscript>
+  <p class="calendar-message">日历需要启用 JavaScript 才能显示，可直接访问<a href="/posts/">全部文章</a>。</p>
+</noscript>
+
+<style>
+.calendar-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-stat {
+  flex: 1 1 140px;
+  background: var(--bs-secondary-bg);
+  border: 1px solid rgba(234, 88, 12, 0.12);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.calendar-stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--bs-primary);
+  line-height: 1.3;
+}
+
+.calendar-stat-label {
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color);
+}
+
+.calendar-year-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cal-year-list {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cal-year-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--bs-body-color);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cal-year-btn:hover {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+}
+
+.cal-year-btn.is-active {
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+
+.cal-year-count {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+.cal-year-btn.is-empty:not(.is-active) {
+  color: var(--bs-secondary-color);
+}
+
+.cal-year-btn.is-empty .cal-year-count {
+  opacity: 0.45;
+}
+
+.cal-year-step {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--bs-body-color);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cal-year-step:hover:not(:disabled) {
+  border-color: var(--bs-primary);
+  color: var(--bs-primary);
+}
+
+.cal-year-step:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.calendar-message {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--bs-secondary-color);
+}
+
+.cal-month {
+  background: var(--bs-secondary-bg);
+  border: 1px solid rgba(234, 88, 12, 0.12);
+  border-radius: 10px;
+  padding: 0.85rem;
+}
+
+.cal-month-empty {
+  opacity: 0.55;
+}
+
+.cal-month-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(234, 88, 12, 0.12);
+}
+
+.cal-month-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--bs-heading-color);
+}
+
+.cal-month-count {
+  font-size: 0.75rem;
+  color: var(--bs-secondary-color);
+}
+
+.cal-weekdays,
+.cal-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.cal-weekday {
+  padding-bottom: 0.15rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--bs-secondary-color);
+}
+
+.cal-day {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.9em;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--bs-secondary-color);
+}
+
+.cal-day-blank {
+  visibility: hidden;
+}
+
+.cal-day-active {
+  padding: 0;
+  background: rgba(234, 88, 12, 0.12);
+  color: var(--bs-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.cal-day-active:hover,
+.cal-day-active:focus-visible {
+  outline: none;
+  background: var(--bs-primary);
+  color: #fff;
+}
+
+.cal-day-active.is-selected {
+  background: var(--bs-primary);
+  color: #fff;
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.25);
+}
+
+.cal-day-badge {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  min-width: 0.95rem;
+  height: 0.95rem;
+  padding: 0 2px;
+  border-radius: 999px;
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 0.55rem;
+  line-height: 0.95rem;
+  text-align: center;
+}
+
+.cal-day-active:hover .cal-day-badge,
+.cal-day-active.is-selected .cal-day-badge {
+  background: #fff;
+  color: var(--bs-primary);
+}
+
+.cal-month-detail {
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed rgba(234, 88, 12, 0.25);
+}
+
+.cal-detail-head {
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--bs-secondary-color);
+}
+
+.cal-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cal-detail-list a {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.cal-detail-list a:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cal-year-btn {
+    padding: 0.25rem 0.45rem;
+    font-size: 0.8rem;
+  }
+
+  .cal-year-count {
+    font-size: 0.65rem;
+  }
+
+  .cal-year-step {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+</style>
+{{ end -}}

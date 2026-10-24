@@ -4,6 +4,9 @@ import "bootstrap";
 // Import search functionality
 const { setupSearch } = require("./search.js");
 
+// Import calendar page functionality
+const { setupCalendar } = require("./calendar.js");
+
 // Constants
 const WORDS_PER_MINUTE = 300;
 
@@ -256,4 +259,5 @@ document.addEventListener("DOMContentLoaded", function () {
   calculateArticleStats();
   setupThemeToggle();
   setupTocFloat();
+  setupCalendar();
 });

@@ -1,0 +1,6 @@
+{{- $pages := where .Site.RegularPages "Type" "posts" -}}
+{{- $pages = $pages.ByDate -}}
+[{{- range $index, $page := $pages -}}
+{{- if $index }},{{ end -}}
+{"date":{{ $page.Date.Format "2006-01-02" | jsonify }},"title":{{ $page.Title | jsonify }},"url":{{ $page.RelPermalink | jsonify }}}
+{{- end -}}]
