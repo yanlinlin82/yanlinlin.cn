@@ -14,7 +14,9 @@ slug: recording-a-leetcode-problem-solving-087-scramble-string
 * 执行用时4 ms，排名超过97.87%的C++提交者。
 * 内存消耗8.4MB，排名超过95.70%的C++提交者。
 
-[![](/uploads/2020/0128/leetcode.png)](/uploads/2020/0128/leetcode.png)
+<div class="p-3 text-center">
+  <a href="/uploads/2020/0128/leetcode.png"><img class="img-fluid" src="/uploads/2020/0128/leetcode.png" alt=""></a>
+</div>
 
 解题尝试的具体代码（包含中间版本和最终版本）详见于：<https://github.com/yanlinlin82/leetcode/blob/master/00087_scramble-string/>
 
@@ -83,7 +85,6 @@ slug: recording-a-leetcode-problem-solving-087-scramble-string
 > ```
 
 ## 我的解题过程
-
 
 ### 第一次尝试
 

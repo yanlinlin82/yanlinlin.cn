@@ -92,7 +92,6 @@ promise.then(function(value) {
 
 如果有多个异步调用，依葫芦画瓢，依次进行链式调用即可：
 
-
 promise.then(function(value) {
 
   // 第一阶段
@@ -121,7 +120,6 @@ promise.then(function(value) {
 2.3 错误处理
 
 在链式调用中，可以在每个阶段的 .then() 后加上 .catch() 进行错误处理即可：
-
 
 promise
 
@@ -198,7 +196,6 @@ Promise.all([promise1, promise2]).then(function(res) {
 3.2 箭头式函数定义
 不写出函数名，而将函数体直接嵌入（inline）地写在需要提供函数的地方，这种方式导致了关于“this 到底指向哪里”的诸多问题。
 为了确保 this 指向当前所在的对象（比如小程序中的Page），被优先推荐的方式，是采用箭头式函数定义：
-
 
 Page({
 
