@@ -101,6 +101,11 @@ outputFormats:
     baseName: search-index
     isPlainText: true
     notAlternative: true
+  calendarIndex:
+    mediaType: application/json
+    baseName: calendar-index
+    isPlainText: true
+    notAlternative: true
 
 menu:
   main:
@@ -116,6 +121,9 @@ menu:
     - name: 标签
       url: /tags/
       weight: 40
+    - name: 日历
+      url: /calendar/
+      weight: 45
     - name: 作品
       url: /works/
       weight: 50
