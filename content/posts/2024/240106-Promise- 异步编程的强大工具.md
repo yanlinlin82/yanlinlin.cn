@@ -25,6 +25,7 @@ slug: promise-powerful-tool-for-asynchronous-programming
 
 创建一个Promise非常简单：
 
+```javascript
 let promise = new Promise(function(resolve, reject) {
 
   // ... 在这里编写具体的异步操作过程 ...
@@ -40,9 +41,12 @@ let promise = new Promise(function(resolve, reject) {
   }
 
 })
+```
+
 这里，Promise的构造需要以一个函数作为参数，该函数有两个参数，resolve和reject，均为函数类型，分别处理成功和失败的情况。这个用于构造Promise的函数，通常并不在其他地方被调用，因此如上面的代码所示，它可以不用指定函数名，而仅在构造过程中，嵌入（inline）地直接写出该实现即可。
 Promise对象一旦创建，通过调用它的 .then() 函数，就可实际开始执行它所定义的异步操作。
 
+```javascript
 promise.then(function(value) {
 
   // 处理成功情况
@@ -52,11 +56,14 @@ promise.then(function(value) {
   // 处理失败情况
 
 })
+```
+
 上述 .then() 函数是立即返回的。传给它的两个参数，都是函数，前一个是处理成功情况的，对应之前的 resolve，后一个是处理失败情况的，对应之前的 reject。当上面描述的异步操作执行完成后，根据结果成功与否，分别调用 resolve 或 reject ，最终其实也就传递到此，分别调用了这里定义的第一个或第二个函数。
 
 .then() 函数其实只是建立了联系，告诉异步过程完成后，该回调哪个函数（包括成功情况和失败情况）。
 当然，这两个函数也可以分开来写，分别提供给 .then() 和 .catch()。
 
+```javascript
 promise.then(function(value) {
 
   // 处理成功情况
@@ -68,11 +75,14 @@ promise.then(function(value) {
   // 处理失败情况
 
 })
+```
+
 上述 .then 只传入一个参数，即处理成功情况的函数。而对于失败情况，放到了单独的 .catch() 中。
 
 2.2 链式调用
 Promise真正的强大之处在于它的链式调用（chaining）特性：
 
+```javascript
 promise.then(function(value) {
 
   // 第一阶段
@@ -88,10 +98,13 @@ promise.then(function(value) {
   // 第二阶段
 
 })
+```
+
 在上面的代码中，传递给第一个 .then() 函数的回调函数中，其末尾返回了一个新的Promise，这使得当该 .then() 返回后，可以继续调用 .then() 函数，传递一个新的回调函数。这两个回调函数是顺序运行的，第二个回调函数必然在第一个回调函数结束后才会被调用。从而，实现了异步链式调用。同样地，上面整个代码（包括两个 .then()）都是在建立好回调链式关系后就立即返回的，并不影响后续用户界面响应，回调函数的真正执行，是在异步操作完成后，才单独发生的。
 
 如果有多个异步调用，依葫芦画瓢，依次进行链式调用即可：
 
+```javascript
 promise.then(function(value) {
 
   // 第一阶段
@@ -117,10 +130,13 @@ promise.then(function(value) {
   // 第N阶段
 
 })
+```
+
 2.3 错误处理
 
 在链式调用中，可以在每个阶段的 .then() 后加上 .catch() 进行错误处理即可：
 
+```javascript
 promise
 
   .then(result => {/* 第一阶段处理成功场景 */})
@@ -136,9 +152,12 @@ promise
   .then(result => {/* 第N阶段处理成功场景 */})
 
   .catch(error => {/* 第N阶段处理错误 */})
+```
+
 上述 .catch() 都是可选的，如果不处理，该阶段所产生的错误，会累积到最后一个 .catch() 被一次性处理。这种方式比传统的 try...catch （一层套一层）写法优雅多了。
 值得一提的是，Promise 本身其实就是基于 try...catch 来实现的。我们可以通过在回调函数中的错误抛出，看出相应端倪。
 
+```javascript
 promise
 
   .then(res => {
@@ -174,7 +193,8 @@ promise
     console.error('Caught an error:', error);
 
   })
-		
+```
+
 上面的示例代码中，两个阶段分别以不同形式抛出错误，阶段一通过传统异常机制抛出异常，阶段二通过调用Promise.reject()函数，两者在结果上是等效的，都会将错误传递到最终的那个 .catch() 中。
 
 3. Promise的进阶用法
@@ -182,6 +202,7 @@ promise
 3.1 同时处理多个Promise
 Promise.all方法用于将多个Promise实例，包装成一个新的Promise实例。
 
+```javascript
 Promise.all([promise1, promise2]).then(function(res) {
 
   // 当 promise1 和 promise2 都完成时执行
@@ -193,10 +214,13 @@ Promise.all([promise1, promise2]).then(function(res) {
   // 任何一个或多个 promise 失败即触发
 
 });
+```
+
 3.2 箭头式函数定义
 不写出函数名，而将函数体直接嵌入（inline）地写在需要提供函数的地方，这种方式导致了关于“this 到底指向哪里”的诸多问题。
 为了确保 this 指向当前所在的对象（比如小程序中的Page），被优先推荐的方式，是采用箭头式函数定义：
 
+```javascript
 Page({
 
   onLoad: function() {
@@ -212,6 +236,8 @@ Page({
   }
 
 }
+```
+
 3. 总结
 
 简单总结几点，作为应遵循的实践建议：
