@@ -129,7 +129,7 @@ int main() {
   <img class="img-fluid" src="/uploads/2024/0115/03.png" alt="" style="max-width:640px">
 </div>
 
-为方便展示，这里使用了来自ClickHouse的截图。想查看和学习相应实现的，也推荐使用这个网址在线浏览学习代码（https://clickhouse.com/codebrowser/ClickHouse/contrib/boost/boost/container/flat_set.hpp.html）。
+为方便展示，这里使用了来自ClickHouse的截图。想查看和学习相应实现的，也推荐使用这个网址在线浏览学习代码（[https://clickhouse.com/codebrowser/ClickHouse/contrib/boost/boost/container/flat_set.hpp.html](https://clickhouse.com/codebrowser/ClickHouse/contrib/boost/boost/container/flat_set.hpp.html)）。
 从上面的代码中可以看到，flat_set::insert() 调用了其成员变量 tree_t 的 insert_unique() 方法。该成员变量的类型，来自于 boost 库的底层实现支持，之所以这么封装，是因为它还可以同时用于支持其他 flat_xxx 类型（如 flat_map）的实现。
 
 <div class="p-3 text-center">

@@ -26,5 +26,5 @@ slug: how-to-build-blog-with-blogdown
 
 更多的选项和定制，建议仔细阅读如下电子书和网站：
 
-* https://bookdown.org/yihui/blogdown/
-* https://gohugo.io/documentation/
+* [https://bookdown.org/yihui/blogdown/](https://bookdown.org/yihui/blogdown/)
+* [https://gohugo.io/documentation/](https://gohugo.io/documentation/)

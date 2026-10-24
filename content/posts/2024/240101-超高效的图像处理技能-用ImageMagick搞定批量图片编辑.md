@@ -20,7 +20,7 @@ slug: ultra-efficient-image-processing-skills-batch-editing-with-imagemagick
 在正式介绍ImageMagick的妙用之前，让我们先确保它已正确安装在你的系统上。不同操作系统的安装方法略有差异，但总体上都是直接而简单的。接下来将介绍在Windows、MacOS和Linux上的安装步骤。
 Windows:
 
-访问ImageMagick官方网站下载页面（https://imagemagick.org/script/download.php）。
+访问ImageMagick官方网站下载页面（[https://imagemagick.org/script/download.php](https://imagemagick.org/script/download.php)）。
 
 下载相应版本的Windows安装文件。
 
@@ -29,7 +29,7 @@ Windows:
 在安装过程中，确保勾选了“Add application directory to your system path”选项，以便于在命令提示符中直接使用convert命令。
 MacOS:
 
-最简单的安装方法是使用Homebrew，一个MacOS的包管理器。如果尚未安装Homebrew，请访问Homebrew官网（https://docs.brew.sh/Installation）并按照指示进行安装。
+最简单的安装方法是使用Homebrew，一个MacOS的包管理器。如果尚未安装Homebrew，请访问Homebrew官网（[https://docs.brew.sh/Installation](https://docs.brew.sh/Installation)）并按照指示进行安装。
 
 安装Homebrew后，打开终端并输入以下命令：brew install imagemagick。
 
