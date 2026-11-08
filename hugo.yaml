@@ -87,6 +87,7 @@ markup:
   highlight:
     codeFences: true
     lineNos: true
+    lineNumbersInTable: false
     style: monokai
     noClasses: false
     guessSyntax: true
