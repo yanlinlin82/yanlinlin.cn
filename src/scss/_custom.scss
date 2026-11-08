@@ -775,17 +775,20 @@ body {
   border-radius: 0 6px 6px 0;
 }
 
-.article-body code {
-  background: rgba(234, 88, 12, 0.1);
-  color: var(--bs-primary);
-  padding: 0.2rem 0.4rem;
+/* 行内代码：只作用于行内 <code>，不进入代码块内部 */
+.article-body :not(pre) > code {
+  background: var(--code-inline-bg);
+  color: var(--code-inline-fg);
+  padding: 0.15em 0.4em;
   border-radius: 4px;
   font-family: var(--font-mono);
   font-size: 0.9em;
+  word-break: break-word;
 }
 
+/* 无高亮的裸 <pre>（少见）保持块级样式 */
 .article-body pre:not(.chroma pre) {
-  background: var(--bs-secondary-bg);
+  background: var(--code-bg);
   border: 1px solid var(--bs-border-color);
   border-radius: 8px;
   padding: 1rem;
@@ -793,75 +796,336 @@ body {
   margin: 1.5rem 0;
 }
 
-.article-body pre:not(.chroma pre) code {
-  background: none;
-  color: var(--bs-body-color);
-  padding: 0;
-}
+/* ===== 代码块：容器、工具栏、Chroma 高亮 ===== */
 
-/* ===== Chroma 代码块（带行号表格）统一样式 ===== */
-
-/* 外容器：整个代码块的边框和圆角 */
-.article-body .highlight .chroma {
+.article-body .code-block {
+  margin: 1.5rem 0;
   border: 1px solid var(--bs-border-color);
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  background: var(--code-bg);
 }
 
-/* 表格背景统一 */
-.article-body .chroma .lntable {
-  width: 100%;
-  border-spacing: 0;
-  background: var(--bs-secondary-bg) !important;
+.article-body .code-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0.55rem 0.35rem 0.85rem;
+  background: var(--code-toolbar-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--bs-secondary-color);
 }
 
-/* 移除表格单元格的边框和默认间距 */
-.article-body .chroma .lntd {
-  background: transparent !important;
-  padding: 0;
-  vertical-align: top;
-}
-
-/* 行号列：宽度由内容决定 */
-.article-body .chroma .lntd:first-child {
-  width: 1%;
-  white-space: nowrap;
-  padding: 0;
-  vertical-align: top;
-}
-
-/* 行号列内的 <pre>：无边框，居中 */
-.article-body .chroma .lntd:first-child pre {
-  padding: 1rem 0.75em 1rem 0.75em;
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  text-align: center;
-  overflow: hidden;
-}
-
-/* 代码列内的 <pre>：无边框，左侧留间距 */
-.article-body .chroma .lntd:last-child pre {
-  padding: 1rem 1rem 1rem 0;
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  overflow-x: auto;
-}
-
-/* 行号样式 */
-.article-body .chroma .lnt,
-.article-body .chroma .ln {
-  color: #a8a29e !important;
+.article-body .code-lang {
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
   user-select: none;
 }
 
-/* 所有 chroma 内联 span 继承父级字体大小，去除字符自带背景色 */
+.article-body .code-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.article-body .code-copy:hover,
+.article-body .code-copy:focus-visible {
+  background: var(--bs-body-bg);
+  border-color: var(--bs-border-color);
+  color: var(--bs-body-color);
+}
+
+.article-body .code-copy.is-done {
+  color: var(--code-copied);
+}
+
+.article-body .code-copy i {
+  font-size: 0.85em;
+}
+
+.article-body .code-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.article-body .code-wrap-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.article-body .code-wrap-toggle:hover,
+.article-body .code-wrap-toggle:focus-visible {
+  background: var(--bs-body-bg);
+  border-color: var(--bs-border-color);
+  color: var(--bs-body-color);
+}
+
+.article-body .code-wrap-toggle[aria-pressed="true"] {
+  background: var(--bs-body-bg);
+  border-color: var(--bs-border-color);
+  color: var(--bs-primary);
+}
+
+.article-body .code-wrap-toggle i {
+  font-size: 0.85em;
+}
+
+.article-body .code-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.85rem;
+  background: var(--code-toolbar-bg);
+  border-top: 1px solid var(--bs-border-color);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--bs-secondary-color);
+}
+
+/* 代码正文：左右留白；不折行时按需出现水平滚动条 */
+.article-body .code-block .chroma {
+  margin: 0;
+  padding: 0.85rem 1rem 0.85rem 0.75rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--code-fg);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  tab-size: 2;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* 高亮块内部的 <code> 必须完全透明，否则会继承行内代码的底色 */
+.article-body .chroma code {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* 行号：行内对齐，右侧用竖线与代码分隔，不参与选中复制 */
+.article-body .chroma .ln {
+  display: inline-block;
+  width: 2.4em;
+  margin-right: 1em;
+  padding-right: 0.7em;
+  border-right: 1px solid var(--bs-border-color);
+  line-height: inherit;
+  vertical-align: top;
+  text-align: right;
+  color: var(--code-line-number);
+  user-select: none;
+}
+
 .article-body .chroma span {
   font-size: inherit;
-  background: transparent !important;
+  background: transparent;
+}
+
+/* 折行模式：由工具栏按钮切换，状态挂在 html 上 */
+html.code-wrap .article-body .code-block .chroma {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-x: hidden;
+}
+
+/* ---- 语法着色：颜色全部走主题变量 ---- */
+
+.chroma .c,
+.chroma .ch,
+.chroma .cm,
+.chroma .c1,
+.chroma .cs {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.chroma .cp,
+.chroma .cpf {
+  color: var(--code-preproc);
+}
+
+.chroma .k,
+.chroma .kc,
+.chroma .kd,
+.chroma .kn,
+.chroma .kp,
+.chroma .kr {
+  color: var(--code-keyword);
+  font-weight: 600;
+}
+
+.chroma .kt {
+  color: var(--code-type);
+}
+
+.chroma .s,
+.chroma .sa,
+.chroma .sb,
+.chroma .sc,
+.chroma .sd,
+.chroma .s1,
+.chroma .s2,
+.chroma .se,
+.chroma .sh,
+.chroma .si,
+.chroma .sr,
+.chroma .ss,
+.chroma .sx {
+  color: var(--code-string);
+}
+
+.chroma .m,
+.chroma .mb,
+.chroma .mf,
+.chroma .mh,
+.chroma .mi,
+.chroma .mo,
+.chroma .il {
+  color: var(--code-number);
+}
+
+.chroma .nf,
+.chroma .fm {
+  color: var(--code-function);
+}
+
+.chroma .nc,
+.chroma .nn {
+  color: var(--code-class);
+}
+
+.chroma .na,
+.chroma .nt {
+  color: var(--code-attr);
+}
+
+.chroma .nb,
+.chroma .bp,
+.chroma .nv,
+.chroma .vc,
+.chroma .vg,
+.chroma .vi,
+.chroma .vm {
+  color: var(--code-variable);
+}
+
+.chroma .o,
+.chroma .ow {
+  color: var(--code-operator);
+}
+
+.chroma .p {
+  color: var(--code-punctuation);
+}
+
+.chroma .gd {
+  color: var(--code-deleted);
+}
+
+.chroma .gi {
+  color: var(--code-inserted);
+}
+
+.chroma .err {
+  color: var(--code-error);
+}
+
+/* ---- 代码块配色：浅色与深色两套 ---- */
+
+@mixin code-theme-light {
+  --code-bg: #f7f6f5;
+  --code-toolbar-bg: #efedec;
+  --code-fg: #24292f;
+  --code-inline-bg: rgba(234, 88, 12, 0.1);
+  --code-inline-fg: #c2410c;
+  --code-line-number: #a8a29e;
+  --code-comment: #6e7781;
+  --code-preproc: #8250df;
+  --code-keyword: #cf222e;
+  --code-type: #0550ae;
+  --code-string: #0a3069;
+  --code-number: #0550ae;
+  --code-function: #8250df;
+  --code-class: #953800;
+  --code-attr: #953800;
+  --code-variable: #953800;
+  --code-operator: #24292f;
+  --code-punctuation: #24292f;
+  --code-deleted: #82071e;
+  --code-inserted: #116329;
+  --code-error: #cf222e;
+  --code-copied: #15803d;
+}
+
+@mixin code-theme-dark {
+  --code-bg: #171514;
+  --code-toolbar-bg: #232120;
+  --code-fg: #c9d1d9;
+  --code-inline-bg: rgba(251, 146, 60, 0.14);
+  --code-inline-fg: #fdba74;
+  --code-line-number: #78716c;
+  --code-comment: #8b949e;
+  --code-preproc: #d2a8ff;
+  --code-keyword: #ff7b72;
+  --code-type: #79c0ff;
+  --code-string: #a5d6ff;
+  --code-number: #79c0ff;
+  --code-function: #d2a8ff;
+  --code-class: #ffa657;
+  --code-attr: #ffa657;
+  --code-variable: #ffa657;
+  --code-operator: #c9d1d9;
+  --code-punctuation: #c9d1d9;
+  --code-deleted: #ffdcd7;
+  --code-inserted: #aff5b4;
+  --code-error: #ff7b72;
+  --code-copied: #4ade80;
+}
+
+:root {
+  @include code-theme-light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include code-theme-dark;
+  }
+}
+
+html.theme-light {
+  @include code-theme-light;
+}
+
+html.theme-dark {
+  @include code-theme-dark;
 }
 
 /* 参考链接列表：使用 [1], [2] 样式代替默认数字 */
@@ -942,7 +1206,7 @@ body {
 }
 
 .article-body th {
-  background: rgba(234, 88, 12, 0.1);
+  background: var(--code-toolbar-bg);
   font-weight: 600;
   color: var(--bs-primary);
 }

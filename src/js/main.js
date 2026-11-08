@@ -252,6 +252,105 @@ function setupTocFloat() {
   window.addEventListener("scroll", updateActive, { passive: true });
 }
 
+// 代码块：复制到剪贴板
+function setupCodeCopy() {
+  var blocks = document.querySelectorAll(".code-block");
+  if (!blocks.length) return;
+
+  Array.prototype.forEach.call(blocks, function (block) {
+    var button = block.querySelector(".code-copy");
+    var source = block.querySelector("template.code-source");
+    if (!button || !source) return;
+
+    var label = button.querySelector(".code-copy-text");
+    var icon = button.querySelector("i");
+    var idleText = button.getAttribute("data-label-copy") || "复制";
+    var doneText = button.getAttribute("data-label-done") || "已复制";
+    var failText = button.getAttribute("data-label-fail") || "复制失败";
+    var timer = null;
+
+    function reset() {
+      if (label) label.textContent = idleText;
+      if (icon) icon.className = "fas fa-copy";
+      button.classList.remove("is-done");
+    }
+
+    function flash(text, ok) {
+      if (label) label.textContent = text;
+      if (icon) icon.className = ok ? "fas fa-check" : "fas fa-triangle-exclamation";
+      button.classList.toggle("is-done", ok);
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(reset, 1600);
+    }
+
+    function fallbackCopy(text) {
+      return new Promise(function (resolve, reject) {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.top = "-1000px";
+        area.style.opacity = "0";
+        document.body.appendChild(area);
+        area.select();
+        try {
+          resolve(document.execCommand("copy"));
+        } catch (err) {
+          reject(err);
+        } finally {
+          document.body.removeChild(area);
+        }
+      });
+    }
+
+    function copy(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+      return fallbackCopy(text);
+    }
+
+    button.addEventListener("click", function () {
+      var text = source.content
+        ? source.content.textContent
+        : source.textContent;
+      copy(text.replace(/\n$/, ""))
+        .then(function () {
+          flash(doneText, true);
+        })
+        .catch(function () {
+          flash(failText, false);
+        });
+    });
+  });
+}
+
+// 代码块：折行开关（状态记在 localStorage，跨页面生效）
+function setupCodeWrap() {
+  var toggles = document.querySelectorAll(".code-wrap-toggle");
+  if (!toggles.length) return;
+
+  var html = document.documentElement;
+  var enabled = localStorage.getItem("codeWrap") === "on";
+
+  function apply(on) {
+    html.classList.toggle("code-wrap", on);
+    Array.prototype.forEach.call(toggles, function (btn) {
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  apply(enabled);
+
+  Array.prototype.forEach.call(toggles, function (btn) {
+    btn.addEventListener("click", function () {
+      enabled = !html.classList.contains("code-wrap");
+      localStorage.setItem("codeWrap", enabled ? "on" : "off");
+      apply(enabled);
+    });
+  });
+}
+
 // 初始化所有功能
 document.addEventListener("DOMContentLoaded", function () {
   setupSearch();
@@ -260,4 +359,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setupThemeToggle();
   setupTocFloat();
   setupCalendar();
+  setupCodeCopy();
+  setupCodeWrap();
 });
