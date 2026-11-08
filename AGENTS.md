@@ -22,24 +22,15 @@
 
 ## Banner images (题图)
 
-- Use SVG directly (e.g. `static/uploads/YYYY/MMDD/article-banner.svg`); do not convert SVG to PNG with ImageMagick for verification or delivery - browsers render SVG natively.
-- Prefer minimal or no text in banners; express the concept through graphics and shapes rather than words.
-- Reference in the post after the frontmatter, matching the site convention:
+- Generated (AI raster) banners: `static/uploads/YYYY/MMDD/article-banner-ai.png`, 1200 x 500. Hand-drawn SVG banners: `static/uploads/YYYY/MMDD/article-banner.svg`.
+- Reference in the post after the frontmatter, in the site's centered block:
   ```html
   <div class="p-3 text-center">
-    <img class="img-fluid" src="/uploads/YYYY/MMDD/article-banner.svg" alt="题图" style="max-width:640px">
+    <img class="img-fluid" src="/uploads/YYYY/MMDD/article-banner-ai.png" alt="题图" style="max-width:640px">
     <div><small>（题图由AI生成）</small></div>
   </div>
   ```
-
-### Banner design
-
-- Follow the `banner-svg` skill in `.agents/skills/` for the full design system and the skeleton template (`templates/banner-dark.svg`). Its essentials:
-  - SVG only, 1200 x 500 (`viewBox="0 0 1200 500"`), no text, mirror-symmetric about the vertical centerline.
-  - Layered dark background: diagonal 3-stop gradient, 48px grid pattern, centered radial ambient glow, edge vignette, plus dashed depth rings and HUD corner brackets.
-  - Gradient strokes (gradients defined in `<defs>` and referenced via `url(#...)`), a soft blur glow on the core, and the accent palette cyan `#22d3ee` -> blue `#3b82f6` -> indigo `#818cf8` with at most one warm accent (`#f59e0b`).
-  - Never: a flat solid background, stick figures or literal clip-art, randomly scattered dots, text labels.
-- Verify the SVG parses as XML, then build once so the file is copied into `public/`.
+- Production workflow (local image generation, prompt budget, crop, verification) and the SVG design system live in the global skills `article-banner-image` and `banner-svg`. Do not restate them here; only the paths above are specific to this site.
 
 ## Article formatting
 
