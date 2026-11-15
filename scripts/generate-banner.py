@@ -18,7 +18,7 @@ Example:
             --prompt "深色科技风横幅，抽象账本格线，一束光沿对角线逐格点亮，画面无任何文字" \
             --negative-prompt "文字, 水印, 字母, 数字" \
             --resolution 1024:1024 \
-            --out static/uploads/2026/1007/article-banner-ai.png
+            --out static/uploads/2026/1007/article-banner.png
 
 Notes:
   * Needs outbound HTTPS to the API host.
