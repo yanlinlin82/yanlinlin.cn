@@ -4,6 +4,18 @@
 
 ## 快速开始
 
+### 前提
+
+- Node.js 与 npm
+- Hugo Extended，`hugo` 需在 PATH 中
+- Sass 与 Webpack 由 npm 依赖提供，无需全局安装
+
+### 安装
+
+```bash
+npm ci
+```
+
 ### 开发
 
 ```bash
