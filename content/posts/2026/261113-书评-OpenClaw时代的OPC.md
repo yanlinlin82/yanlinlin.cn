@@ -7,7 +7,7 @@ slug: openclaw-era-opc-review
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/uploads/2026/1113/book-cover.png" alt="图书封面">
+  <img class="img-fluid book-cover" src="/uploads/2026/1113/book-cover.png" alt="图书封面">
 </div>
 
 《OpenClaw时代的OPC：一人公司从0到1方法论》，寒树、秋叶、易洋、吴迪、刘海峰 合著，机械工业出版社，2026年6月出版。

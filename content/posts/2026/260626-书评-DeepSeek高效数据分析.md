@@ -7,7 +7,7 @@ slug: deepseek-data-analysis-review
 ---
 
 <div class="p-3 text-center">
-  <img class="img-fluid" src="/uploads/2026/0626/book-cover.png" alt="图书封面">
+  <img class="img-fluid book-cover" src="/uploads/2026/0626/book-cover.png" alt="图书封面">
 </div>
 
 《DeepSeek高效数据分析：从数据清洗到行业案例》，王国平 著，清华大学出版社，2025年11月出版。

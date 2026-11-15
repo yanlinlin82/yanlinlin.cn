@@ -1157,6 +1157,17 @@ html.theme-dark {
   margin: 0;
 }
 
+/* 书评封面：上限 300px，不足 300px 的按原图尺寸显示 */
+.article-body img.book-cover {
+  max-width: 300px;
+}
+
+/* 一篇双书评：两张封面并排显示 */
+.article-body img.book-cover-pair {
+  display: inline;
+  border: 1px solid darkgray;
+}
+
 .article-body img.img-half {
   display: block;
   margin-left: auto;
