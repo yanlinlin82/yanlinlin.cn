@@ -1,6 +1,7 @@
 ---
 title: 《OpenClaw时代的OPC：一人公司从0到1方法论》书评
 date: 2026-11-13 01:34:00+08:00
+description: "本以为是 AI 攒出来的注水书，结果越听越对味：从架构、交付到合规，逐条讲清大模型给一人公司开了哪些口子。我给到了满分，也是这三年的共鸣。"
 categories: [书评]
 tags: [响马读书, 创业, 一人公司, OPC, AI]
 slug: openclaw-era-opc-review

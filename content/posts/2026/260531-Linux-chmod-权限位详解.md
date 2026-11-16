@@ -1,6 +1,7 @@
 ---
 title: Linux chmod 权限位详解：SUID、SGID、Sticky Bit 及 ACL
 date: 2026-05-31 13:15:00+08:00
+description: "从 rwx 和八进制讲起，重点说清 SUID、SGID、Sticky Bit 三位的真实行为：为什么 SUID 对目录和脚本无效，以及共享目录该用 SGID 配 ACL。"
 categories: [技术]
 tags: [Linux, chmod, 权限, SUID, SGID, Sticky Bit, ACL]
 slug: linux-chmod-permissions-suid-sgid-sticky-acl

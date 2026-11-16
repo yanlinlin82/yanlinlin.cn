@@ -1,6 +1,7 @@
 ---
 title: 《DeepSeek高效数据分析》书评
 date: 2026-06-26 23:34:00+08:00
+description: "冲着书名翻开的，越看越像把 DeepSeek 缝进一本数据分析讲义：流程完整，但每步都要贴一段提示词。这类书大概从出版那天起就开始过时了。"
 categories: [书评]
 tags: [响马读书, AI, 数据分析]
 slug: deepseek-data-analysis-review
