@@ -1,4 +1,4 @@
-{{- /* JSON Feed 1.1，条目与 RSS 同源同量（rssLimit）：列表页各自一份，content/feed.md 为整站版 */ -}}
+{{- /* JSON Feed 1.1，条目、数量（rssLimit）和内容层级都与 RSS 对齐：只给摘要，不带全文 */ -}}
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
@@ -25,7 +25,6 @@
 {{- /* 整站版挂在 content/feed.md 上，其 Permalink 就是 feed 自身，故首页地址取站点根 */ -}}
 {{- $homeURL := site.BaseURL -}}
 {{- if not .IsPage -}}{{ $homeURL = .Permalink }}{{- end -}}
-{{- $jsonOpts := dict "noHTMLEscape" true -}}
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": {{ $feedTitle | jsonify }},
@@ -62,12 +61,8 @@
       {{- with $summary }}
       "summary": {{ . | jsonify }},
       {{- end }}
-      {{- if $post.Content }}
-      "content_html": {{ $post.Content | jsonify $jsonOpts }},
-      {{- else }}
-      {{- /* JSON Feed 要求 content_html 或 content_text 二选一 */ -}}
-      "content_text": "",
-      {{- end }}
+      {{- /* 与 RSS 的 <description> 同源：只给摘要，不带全文 */ -}}
+      "content_text": {{ $summary | jsonify }},
       {{- if $image }}
       "image": {{ $image | absURL | jsonify }},
       {{- end }}
