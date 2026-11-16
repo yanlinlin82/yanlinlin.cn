@@ -4,7 +4,7 @@
 <!-- 基础Meta信息 -->
 {{- $titlePrefix := partial "title-prefix.html" . -}}
 {{- $title := cond .IsHome site.Title (printf "%s%s - %s" $titlePrefix .Title site.Title) -}}
-{{- $description := cond .IsHome site.Params.description (.Summary | default .Content | plainify | truncate 160) -}}
+{{- $description := cond .IsHome site.Params.description (.Description | default (.Summary | default .Content | plainify) | plainify | truncate 160) -}}
 
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}">
