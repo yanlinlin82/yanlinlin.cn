@@ -1,7 +1,7 @@
 ---
 title: 如何在Windows环境中使用Linux？
 date: 2022-01-09 17:28:00+08:00
-description: "为了让 Windows 用户也能摸到 Linux，我在家庭版 Win10 上用一组截图走完 WSL 1 安装：勾选子系统功能、商店装 Ubuntu、apt 更新、从 /mnt/c 访问本机文件。"
+description: "在家庭版 Windows 上装 WSL 的全程截图：开功能、装发行版、更新、访问本机文件。"
 categories: [公众号]
 slug: how-to-use-linux-in-windows-environment
 ---

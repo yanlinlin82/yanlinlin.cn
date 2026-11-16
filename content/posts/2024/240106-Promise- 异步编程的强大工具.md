@@ -1,7 +1,7 @@
 ---
 title: Promise- 异步编程的强大工具
 date: 2024-01-06 22:07:00+08:00
-description: "小程序开发绕不开异步：从回调地狱讲到 Promise 的三种状态、then 与 catch 链式调用、Promise.all 并行执行和箭头函数里的 this，末尾给出几条实践建议。"
+description: "从回调地狱讲到异步对象的三种状态与链式调用，末尾给了几条实践建议。"
 categories: [公众号, 编程]
 tags: [JavaScript, Promise, 异步编程, 小程序, 教程]
 slug: promise-powerful-tool-for-asynchronous-programming

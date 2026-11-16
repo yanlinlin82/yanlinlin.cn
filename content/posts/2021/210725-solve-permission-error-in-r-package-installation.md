@@ -1,7 +1,7 @@
 ---
 title: R包安装失败报权限错误的解决
 date: 2021-07-25 13:38:51+08:00
-description: "装 R 包时 mv 挪 00LOCK-xml2 报 Permission denied，在 install.packages 里加 INSTALL_opts = c('--no-lock') 绕开锁目录即可。"
+description: "装 R 包时被残留的锁目录挡住，加上一个跳过加锁的参数就通过了。"
 slug: solve-permission-error-in-r-package-installation
 ---
 

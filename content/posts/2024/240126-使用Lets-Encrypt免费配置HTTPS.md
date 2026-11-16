@@ -1,7 +1,7 @@
 ---
 title: 使用Let's Encrypt免费配置HTTPS
 date: 2024-01-26 21:41:00+08:00
-description: "不想为证书每年掏几百到几千，就用 Let's Encrypt：装 Certbot，一条 certbot --nginx 自动申请并部署，再挂到 crontab 里 renew，九十天到期也不用管。"
+description: "不想每年买证书，就用免费签发服务：一条命令申请部署，再挂上定时续期。"
 categories: [公众号]
 tags: [技术, 信息安全, HTTPS, 证书, 网站运维]
 slug: lets-encrypt-https-setup

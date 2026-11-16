@@ -1,7 +1,7 @@
 ---
 title: MySQL中分组后选择首行
 date: 2021-01-13 08:31:15+08:00
-description: "按创建时间取每天的第一条记录，标准 SQL 做不到；用 ROW_NUMBER() 配合 OVER (PARTITION BY … ORDER BY …) 编号，再套一层筛出编号为 1。"
+description: "按时间取每天第一条记录，标准 SQL 做不到，得靠窗口函数先编号再筛。"
 tags: [mysql, partition, group-by]
 slug: mysql-select-first-row-after-grouping
 ---

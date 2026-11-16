@@ -1,7 +1,7 @@
 ---
 title: 登录Ubuntu时显示的启动文本信息
 date: 2022-08-30 07:14:00+08:00
-description: "每天第一次登录 Ubuntu 刷出的那堆状态文字叫 motd，由 /etc/update-motd.d/ 下的脚本拼成：往里面加脚本就能自定义，想关掉就 touch ~/.hushlogin。"
+description: "每天登录时刷出的那屏状态文字，其实由一组脚本拼成，可以自己加、也可以关掉。"
 categories: [技术]
 tags: [Ubuntu]
 slug: ubuntu-message-of-day-startup-text

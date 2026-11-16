@@ -1,7 +1,7 @@
 ---
 title: 学习WordPress页面头部的Meta信息
 date: 2019-12-20 13:09:23+08:00
-description: "冯大辉给年轻人的作业是讲清页面头部的那些 Meta 都干什么。他于是对着 wordpress.com 的源码逐条拆解：字符集、DNS 预取、视口、来源信息、多语言链接、规范链接、社交卡片，连已不支持的属性也追了来历。"
+description: "照着 WordPress 的源码逐条拆页面头部的那些标记：字符集、视口、多语言、规范链接、社交卡片，连已废弃的属性也追了来历。"
 tags: [HTML5, WordPress, meta]
 slug: learning-wordpress-page-header-meta-information
 ---

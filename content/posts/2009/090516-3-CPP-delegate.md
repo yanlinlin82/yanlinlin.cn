@@ -1,7 +1,7 @@
 ---
 title: C++中的delegate
 date: 2009-05-16 21:15:00+08:00
-description: "delegate 靠 += 串订阅者，boost::signal 也能做到。"
+description: "C# 用委托串订阅者，C++ 的 boost 也能做到同样的事。"
 place: 北京
 tags: [编程, boost, C#, C++, delegate]
 host-at: LiveSpace

@@ -1,7 +1,7 @@
 ---
 title: 记一次GDM登录失败问题的解决
 date: 2020-02-28 22:56:34+08:00
-description: "重装系统后 Gnome 输密码就闪回登录界面，翻日志才找到元凶：自己放进 profile 目录的脚本里有个带减号的函数名，而登录脚本用的是 /bin/sh，只认 POSIX 标识符，减号换下划线就好。"
+description: "重装系统后登录界面反复弹回，最后查出是启动脚本里一个函数名不合 POSIX 规范。"
 tags: [gnome, gdm, posix]
 slug: solving-a-gdm-login-failure-problem
 ---

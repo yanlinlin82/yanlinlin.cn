@@ -1,7 +1,7 @@
 ---
 title: 关于std::string的效率问题
 date: 2009-07-01 10:39:00+08:00
-description: "std::string 未必写时复制，各编译器行为不同。"
+description: "C++ 的字符串未必是写时复制，不同编译器行为还不一样。"
 place: 北京
 tags: [编程, C++, std::string, 传参方式]
 host-at: Oray
