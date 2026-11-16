@@ -1,16 +1,36 @@
-{{- /* JSON Feed 1.1，条目与 RSS 同源同量（rssLimit） */ -}}
-{{- $posts := where site.RegularPages "Type" "posts" -}}
-{{- $posts = where $posts "Params.searchIndex" "!=" true -}}
+{{- /* JSON Feed 1.1，条目与 RSS 同源同量（rssLimit）：列表页各自一份，content/feed.md 为整站版 */ -}}
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := slice -}}
+{{- if .IsPage -}}
+{{- /* content/feed.md：整站 feed */ -}}
+{{- $pages = where site.RegularPages "Type" "posts" -}}
+{{- else if or .IsHome .IsSection -}}
+{{- $pages = $pctx.RegularPages -}}
+{{- else -}}
+{{- $pages = $pctx.Pages -}}
+{{- end -}}
+{{- $pages = where $pages "Params.searchIndex" "!=" true -}}
 {{- $limit := site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
-{{- $posts = $posts | first $limit -}}
+{{- $pages = $pages | first $limit -}}
 {{- end -}}
+{{- /* 标题与 RSS 模板保持一致；整站版直接用站点名 */ -}}
+{{- $feedTitle := site.Title -}}
+{{- if not .IsPage -}}
+{{- $feedTitle = cond (eq .Title site.Title) site.Title (printf "%s on %s" .Title site.Title) -}}
+{{- end -}}
+{{- $feedURL := "" -}}
+{{- with .OutputFormats.Get "jsonFeed" -}}{{ $feedURL = .Permalink }}{{- end -}}
+{{- /* 整站版挂在 content/feed.md 上，其 Permalink 就是 feed 自身，故首页地址取站点根 */ -}}
+{{- $homeURL := site.BaseURL -}}
+{{- if not .IsPage -}}{{ $homeURL = .Permalink }}{{- end -}}
 {{- $jsonOpts := dict "noHTMLEscape" true -}}
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": {{ site.Title | jsonify }},
-  "home_page_url": {{ site.BaseURL | jsonify }},
-  "feed_url": {{ "feed.json" | absURL | jsonify }},
+  "title": {{ $feedTitle | jsonify }},
+  "home_page_url": {{ $homeURL | jsonify }},
+  "feed_url": {{ $feedURL | jsonify }},
   "description": {{ site.Params.description | jsonify }},
   "icon": {{ site.Params.images.og | jsonify }},
   "favicon": {{ "favicon.ico" | absURL | jsonify }},
@@ -22,11 +42,11 @@
     }
   ],
   "items": [
-    {{- range $i, $post := $posts }}
+    {{- range $i, $post := $pages }}
     {{- $summary := $post.Params.description }}
     {{- if not $summary }}
     {{- /* 无 front matter 摘要时用 Hugo 自动摘要，并标出截断 */ -}}
-    {{- $summary = printf "%s…" ($post.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
+    {{- with $post.Summary }}{{ $summary = printf "%s…" (. | plainify | htmlUnescape | strings.TrimSpace) }}{{ end }}
     {{- end }}
     {{- $image := $post.Params.image | default $post.Params.thumbnail }}
     {{- if not $image }}
@@ -39,12 +59,21 @@
       "id": {{ $post.Permalink | jsonify }},
       "url": {{ $post.Permalink | jsonify }},
       "title": {{ $post.Title | jsonify }},
-      "summary": {{ $summary | jsonify }},
+      {{- with $summary }}
+      "summary": {{ . | jsonify }},
+      {{- end }}
+      {{- if $post.Content }}
       "content_html": {{ $post.Content | jsonify $jsonOpts }},
+      {{- else }}
+      {{- /* JSON Feed 要求 content_html 或 content_text 二选一 */ -}}
+      "content_text": "",
+      {{- end }}
       {{- if $image }}
       "image": {{ $image | absURL | jsonify }},
       {{- end }}
+      {{- if not $post.Date.IsZero }}
       "date_published": {{ $post.Date.Format "2006-01-02T15:04:05-07:00" | jsonify }},
+      {{- end }}
       {{- if ne ($post.Lastmod.Format "2006-01-02") ($post.Date.Format "2006-01-02") }}
       "date_modified": {{ $post.Lastmod.Format "2006-01-02T15:04:05-07:00" | jsonify }},
       {{- end }}
@@ -57,7 +86,7 @@
           "name": {{ site.Params.author.name | jsonify }}
         }
       ]
-    }{{ if lt (add $i 1) (len $posts) }},{{ end }}
+    }{{ if lt (add $i 1) (len $pages) }},{{ end }}
     {{- end }}
   ]
 }

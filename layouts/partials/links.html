@@ -1,8 +1,16 @@
 <!-- 页面链接 -->
 <link rel="canonical" href="{{ .Permalink }}">
-{{- /* 订阅入口统一指向站点级 feed：RSS 与 JSON Feed 范围保持一致，避免同页两种格式 scope 不同 */}}
+{{- /* 订阅入口：本页有自己的 feed 就用本页的，普通文章回落到站点级，两种格式取值规则一致 */}}
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ .RelPermalink }}">
+{{- else }}
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "index.xml" | relURL }}">
+{{- end }}
+{{- with .OutputFormats.Get "jsonFeed" }}
+<link rel="alternate" type="application/feed+json" title="JSON Feed" href="{{ .RelPermalink }}">
+{{- else }}
 <link rel="alternate" type="application/feed+json" title="JSON Feed" href="{{ "feed.json" | relURL }}">
+{{- end }}
 
 <!-- 关键资源预加载 -->
 <link rel="preload" href="{{ "assets/css/main.css" | relURL }}" as="style">

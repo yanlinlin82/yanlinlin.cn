@@ -4,6 +4,15 @@ disableKinds:
   - "RSS"
   - "sitemap"
 
+# 快速构建不生成分范围的 feed（RSS 已整体禁用，这里同时去掉 JSON Feed）
+outputs:
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+
 # 禁用搜索索引生成
 params:
   fastBuild: true

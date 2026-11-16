@@ -15,6 +15,22 @@ pagination:
 mainSections:
   - posts
 
+# 各列表页（栏目/分类/标签/系列）各自输出一份 JSON Feed，与 RSS 一一对应
+# 整站 JSON Feed 仍由 content/feed.md 生成于 /feed.json
+outputs:
+  section:
+    - HTML
+    - RSS
+    - jsonFeed
+  taxonomy:
+    - HTML
+    - RSS
+    - jsonFeed
+  term:
+    - HTML
+    - RSS
+    - jsonFeed
+
 # 站点元数据与 SEO 配置（供 HTML meta / Open Graph / JSON-LD / RSS 模板读取）
 params:
   # 站点作者信息
