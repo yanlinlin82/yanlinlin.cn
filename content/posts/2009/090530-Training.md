@@ -1,6 +1,7 @@
 ---
 title: Training
 date: 2009-05-30 09:17:00+08:00
+description: "要学的东西太多，除了反复训练没有捷径。"
 place: 北京
 tags: [学习]
 host-at: LiveSpace

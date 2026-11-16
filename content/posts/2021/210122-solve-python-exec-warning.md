@@ -1,6 +1,7 @@
 ---
 title: 解决python-exec的报错信息
 date: 2021-01-22 04:21:40+08:00
+description: "Gentoo 上删掉旧版 Python 后，python-exec 一直报 Invalid impl；用 eselect python cleanup 清掉失效项再 update 就好，缺模块则补装 eselect-python。"
 tags: [python, eselect, gentoo]
 slug: solve-python-exec-error-message
 ---

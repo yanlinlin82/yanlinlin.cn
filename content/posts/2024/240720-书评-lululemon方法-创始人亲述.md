@@ -1,6 +1,7 @@
 ---
 title: 《lululemon方法：创始人亲述》书评
 date: 2024-07-20 08:00:00+08:00
+description: "奇普·威尔逊亲述 lululemon 从小型女性瑜伽专卖店做成国际品牌：前半部读着像爽文，后半部成了讨伐檄文，痛斥不称职的合伙人、经营者与投资方。他的结论是宁可小而美。"
 categories: [书评]
 tags: [响马读书, 创业, 小而美, lululemon]
 slug: lululemon-method-founder-story

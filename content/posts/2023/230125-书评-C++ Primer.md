@@ -1,6 +1,7 @@
 ---
 title: 《C++ Primer》书评
 date: 2023-01-25 08:00:00+08:00
+description: "第 5 版按 C++11 重写，跳过 C 语言直接教纯粹的 C++，每个知识点都解释清楚为什么。八百多页的大部头，用 C++ 二十多年的我仍能查缺补漏，只是拷贝控制那个例子绕得过分。"
 categories: [书评]
 tags: [响马读书, 编程, C++, 技术]
 slug: book-review-cpp-primer

@@ -1,6 +1,7 @@
 ---
 title: Changing the Life Style
 date: 2008-06-09 13:19:00+08:00
+description: "为了回生命科学这条路，开始改造自己的生活方式。"
 place: 北京
 tags: [考研, 梦想, 学习]
 host-at: LiveSpace

@@ -1,6 +1,7 @@
 ---
 title: The Beginning of FlatTracker
 date: 2009-08-04 00:23:00+08:00
+description: "FlatTracker 基本功能完成，传到了 Google Code。"
 place: 北京
 tags: [开源, 问题跟踪系统, TortoiseSVN, FlatTracker]
 host-at: Oray

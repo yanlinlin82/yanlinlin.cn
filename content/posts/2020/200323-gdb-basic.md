@@ -1,6 +1,7 @@
 ---
 title: GDB基本用法
 date: 2020-03-23 06:29:46+08:00
+description: "调试 C 程序时最常翻的就是这份速查：编译时记着加 -g，否则符号留不住；跑起来后用 next 单步、backtrace 看调用堆栈、print 查变量、breakpoint 下断点，每一项还都配了缩写。"
 tags: [gdb]
 slug: gdb-basic-usage
 ---

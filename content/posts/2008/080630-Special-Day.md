@@ -1,6 +1,7 @@
 ---
 title: Special Day
 date: 2008-06-30 21:14:00+08:00
+description: "2008 年 6 月 30 日，IT 生涯的最后一天。"
 place: 北京
 tags: [考研, 学习, 离职, 梦想]
 host-at: LiveSpace

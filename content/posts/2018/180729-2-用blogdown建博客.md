@@ -1,6 +1,7 @@
 ---
 title: 如何用blogdown快速搭建博客
 date: '2018-07-29T17:59:50+08:00'
+description: "用 R 的 blogdown 搭站很简单：一条命令建站，一条命令预览，再一条发新文章，改完自动刷新。生成的文件都在 public 目录里，整个上传即可；换主题用一条命令从 Hugo 主题站拉下来。"
 tags: [blogdown, 博客]
 slug: how-to-build-blog-with-blogdown
 ---

@@ -1,6 +1,7 @@
 ---
 title: Google Analytics升级至v4
 date: 2022-04-05 19:26:37+08:00
+description: "把博客捞到自建站的顺手活儿：GA 从 analytics.js 换到 gtag.js，账号前缀也从 UA- 变成 G-。文中给了控制台升级、Hugo 内置模板加配置、以及手贴 gtag.js 三种走法。"
 categories: [技术]
 tags: [网站, Google Analytics, 前端]
 slug: google-analytics-upgrade-to-v4

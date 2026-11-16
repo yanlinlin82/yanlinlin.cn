@@ -1,6 +1,7 @@
 ---
 title: 超高效的图像处理技能：用ImageMagick搞定批量图片编辑
 date: 2024-01-01 23:19:00+08:00
+description: "图形界面工具在需要精准坐标和批量处理时不够用，于是改用 ImageMagick 命令行：安装、格式转换、缩放裁剪、背景透明、填色和文字标签各给具体命令。"
 categories: [公众号, 技术]
 tags: [图像处理, ImageMagick, 命令行, 批量处理, 教程]
 slug: ultra-efficient-image-processing-skills-batch-editing-with-imagemagick

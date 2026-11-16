@@ -1,6 +1,7 @@
 ---
 title: 理解Bash中的协程
 date: 2020-03-06 07:41:32+08:00
+description: "翻 bash 手册才发现它自带 coproc 关键字：补齐管道、重定向、awk 和数组后逐次实验，确认协程不过是预定义了输入输出文件描述符的后台进程，用它给每行输出盖时间戳还得补 fflush。"
 tags: [bash, coproc, pipe, 并发编程, 协程]
 slug: understanding-coprocesses-in-bash
 ---

@@ -1,6 +1,7 @@
 ---
 title: New Beginning
 date: 2013-07-24 03:26:00+08:00
+description: "停了很久的博客重新开张，取名 Where Fantasy Continues。"
 place: 北京
 tags: [博客, Blogspot]
 host-at: Blogspot

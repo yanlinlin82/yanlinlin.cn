@@ -1,6 +1,7 @@
 ---
 title: 使用Linux命令进行拼图
 date: 2021-01-12 19:34:52+08:00
+description: "用 convert 的 +append 与 -append 拼图，两行命令。"
 tags: [linux, image-magik]
 slug: using-linux-commands-for-image-tiling
 ---

@@ -1,6 +1,7 @@
 ---
 title: 记一次LeetCode解题（087-扰乱字符串）
 date: 2020-01-28 08:00:27+08:00
+description: "力扣第 87 题扰乱字符串改了五版才过：先按字符位置映射，再补上重复字符与字符集齐全的判断，最后用指针替代 substr、加 256 计数数组预裁，跑到 4 ms。"
 tags: [leetcode, algorithm, 递归, 编程]
 slug: recording-a-leetcode-problem-solving-087-scramble-string
 ---

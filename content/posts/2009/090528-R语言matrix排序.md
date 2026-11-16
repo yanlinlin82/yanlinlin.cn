@@ -1,6 +1,7 @@
 ---
 title: R语言中matrix的排序
 date: 2009-05-28 00:34:00+08:00
+description: "矩阵按两列排序，绕了一大圈才发现一行就够。"
 place: 北京
 tags: [编程, 排序, R]
 host-at: LiveSpace

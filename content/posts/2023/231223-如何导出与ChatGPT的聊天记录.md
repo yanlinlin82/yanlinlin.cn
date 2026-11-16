@@ -1,6 +1,7 @@
 ---
 title: 如何导出与ChatGPT的聊天记录
 date: 2023-12-23 22:31:00+08:00
+description: "聊天记录只能一条条复制太笨，索性让 ChatGPT 写了个 Chrome 插件，把对话直接存成 markdown，下载后随时还能改。插件八成以上代码出自 ChatGPT，前后也就一两个小时。"
 categories: [公众号]
 tags: [ChatGPT, 浏览器插件, 数据导出, 工具, 教程]
 slug: how-to-export-chatgpt-history

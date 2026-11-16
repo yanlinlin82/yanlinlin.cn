@@ -1,6 +1,7 @@
 ---
 title: flat_set的性能测试及其实现
 date: 2024-01-15 11:22:00+08:00
+description: "补上一篇没放的代码：用 100 万个随机数测 flat_set 与 std::set 的插入、查找、迭代，结果查找迭代明显更快、插入更慢。再拆开 boost 实现，插入是末尾追加、快排、去重三步。"
 categories: [公众号, 编程]
 tags: [C++, 编程, flat_set, 性能测试, 容器]
 slug: flat-set-performance

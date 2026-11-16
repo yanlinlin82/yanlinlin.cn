@@ -1,6 +1,7 @@
 ---
 title: 升级云服务器Ubuntu LTS版本时遇到的问题及解决
 date: 2019-12-12 22:59:51+08:00
+description: "云服务器上的系统还是 16.04，想升到 18.04，升级命令报“找不到 ubuntu-minimal”，怀疑是软件源里的第三方镜像搞鬼。把软件源备份后只留一条官方条目，再跑一遍就成功了。"
 tags: [Ubuntu, upgrade]
 slug: issues-and-solutions-when-upgrading-ubuntu-lts-on-cloud-server
 ---

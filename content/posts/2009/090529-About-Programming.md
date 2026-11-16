@@ -1,6 +1,7 @@
 ---
 title: About Programming
 date: 2009-05-29 10:42:00+08:00
+description: "用 C++ 多年后的一点感慨：编程是精确的科学，库和 API 却总带来意外。"
 place: 北京
 tags: [编程, 精确性]
 host-at: LiveSpace

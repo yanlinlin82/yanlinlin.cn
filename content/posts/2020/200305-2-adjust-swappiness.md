@@ -1,6 +1,7 @@
 ---
 title: Linux交换分区的调优
 date: 2020-03-05 08:48:48+08:00
+description: "新装的系统跑大程序就卡，查下来瓶颈卡在磁盘读写，才想起交换分区没调。缺省 swappiness 是 60，桌面机通常压到 10；3.5 以上内核设 0 等于禁用，想兼顾就设 1。"
 tags: [linux, swappiness, memory]
 slug: linux-swap-partition-tuning
 ---

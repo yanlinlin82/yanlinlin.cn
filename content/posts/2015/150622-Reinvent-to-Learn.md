@@ -1,6 +1,7 @@
 ---
 title: Reinvent to Learn
 date: 2015-06-22 13:40:20+08:00
+description: "半年写不了几篇，索性去掉评论，只留个自说自话的站。"
 tags: [博客, 微博, 微信, 发明轮子, 学习, 父亲节]
 host-at: GitHub
 slug: reinvent-to-learn

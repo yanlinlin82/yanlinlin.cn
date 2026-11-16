@@ -1,6 +1,7 @@
 ---
 title: 解决Django Timeout问题
 date: 2022-08-24 06:44:00+08:00
+description: "把 Ubuntu 升到 22.04 后，Django 的 PaperHub 卡死，Apache 日志报响应头被截断。配置里加一行 WSGIApplicationGroup %{GLOBAL} 才解决。"
 categories: [公众号]
 tags: [编程, Django, Ubuntu]
 slug: solving-django-timeout-issue

@@ -1,6 +1,7 @@
 ---
 title: Codes for amino acids
 date: 2008-07-02 12:22:00+08:00
+description: "氨基酸单字母编码里那些不常见的代号，查清后整理成表。"
 place: 北京
 tags: [生物信息学, 氨基酸]
 host-at: LiveSpace

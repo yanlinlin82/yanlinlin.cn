@@ -1,6 +1,7 @@
 ---
 title: 如何在Linux下查看网卡带宽
 date: 2020-01-23 17:52:33+08:00
+description: "查网卡带宽：ethtool 加网卡名，筛出 Speed 那一行。"
 tags: [linux, network]
 slug: how-to-check-network-card-bandwidth-in-linux
 ---

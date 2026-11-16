@@ -1,6 +1,7 @@
 ---
 title: 在GitHub上确保您的提交真实可信：一步一步配置GPG密钥
 date: 2023-12-17 22:17:00+08:00
+description: "在 GitHub 上怎么证明提交真是我做的？第一步生成一对 gpg 密钥，把公钥贴进账户设置，提交时都用本机私钥签名，再用 git log --show-signature 核对，就能换来那个绿色的 Verified 标签。"
 categories: [公众号]
 tags: [GitHub, GPG, 密钥, 网络安全, 教程]
 slug: github-gpg-verified-commit-guide

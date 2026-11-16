@@ -1,6 +1,7 @@
 ---
 title: 如何恢复Linux误删文件
 date: 2020-02-12 19:06:00+08:00
+description: "一条 rm 把数百个重要文件从 4TB 硬盘上抹掉了，立即取消挂载防覆盖，再用 foremost 按文件类型扫分区。文末又拿镜像文件把整个恢复流程重演一遍。"
 tags: [linux, restore, deleted]
 slug: how-to-recover-accidentally-deleted-files-in-linux
 ---

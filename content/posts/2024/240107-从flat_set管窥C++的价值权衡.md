@@ -1,6 +1,7 @@
 ---
 title: 从flat_set管窥C++的价值权衡
 date: 2024-01-07 03:31:00+08:00
+description: "为什么要 flat_set：std::set 走红黑树、unordered_set 靠哈希都不够，于是用容器适配器把 vector 包装成集合，换来缓存局部性和迭代速度，代价是插入删除变慢。"
 categories: [公众号, 编程]
 tags: [C++, flat_set, 容器, 性能, 标准库]
 slug: glimpsing-cpp-value-trade-offs-from-flat-set

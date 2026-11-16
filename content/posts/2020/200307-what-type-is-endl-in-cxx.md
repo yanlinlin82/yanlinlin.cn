@@ -1,6 +1,7 @@
 ---
 title: C++中的std::endl是什么类型？
 date: 2020-03-07 08:25:20+08:00
+description: "一直把 std::endl 当成个全局变量，翻 gcc 头文件才发现它其实是个函数，靠 operator<< 接收函数指针的那个重载被调用；弄清这套技巧后，才写出带颜色的 color-printf 头文件。"
 tags: [C++, endl, 函数]
 slug: what-type-is-std-endl-in-cpp
 ---

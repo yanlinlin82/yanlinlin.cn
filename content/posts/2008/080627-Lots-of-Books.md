@@ -1,6 +1,7 @@
 ---
 title: Books! Lots of Books!
 date: 2008-06-27 18:42:00+08:00
+description: "刚辞职就跑去书店，半个月的生活费一次花完。"
 place: 北京
 tags: [图书, 购物]
 host-at: LiveSpace

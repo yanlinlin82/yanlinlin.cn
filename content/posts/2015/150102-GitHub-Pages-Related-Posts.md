@@ -1,6 +1,7 @@
 ---
 title: Plugin-free Related Posts on GitHub Pages
 date: 2015-01-02 01:20:00+08:00
+description: "插件被禁，就用纯 Liquid 按共同标签算出相关文章。"
 tags: [GitHub, Jekyll]
 host-at: GitHub
 slug: plugin-free-related-posts-on-github-pages

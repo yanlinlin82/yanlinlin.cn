@@ -1,6 +1,7 @@
 ---
 title: Watching from the Other Side
 date: 2008-06-13 00:40:00+08:00
+description: "读书笔记：从观测反推假设，换个方向看问题。"
 place: 北京
 tags: [学习, 观察, 思考]
 host-at: LiveSpace

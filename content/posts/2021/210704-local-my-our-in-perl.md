@@ -1,6 +1,7 @@
 ---
 title: Perl中的关键字local、my与our的区别
 date: 2021-07-04 21:28:03+08:00
+description: "Perl 里 local、my、our 差在哪：our 是包外可见的全局，local 能被后续调用的子程序看到，my 只在当前块有效。作者建议尽量只用 my。"
 slug: difference-between-local-my-and-our-keywords-in-perl
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Migrate SeqPipe onto GitHub
 date: 2015-01-11 21:00:51+08:00
+description: "拖着没搬的项目，这次从 Google Code 挪到了 GitHub。"
 tags: [SeqPipe, GoogleCode, GitHub]
 host-at: GitHub
 slug: migrate-seqpipe-onto-github

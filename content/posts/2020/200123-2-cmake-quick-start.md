@@ -1,6 +1,7 @@
 ---
 title: CMake快速入门
 date: 2020-01-23 23:20:26+08:00
+description: "一直用 Make 攒着自己的固定构建套路，担心跨平台不可移植，才转头看 CMake：先用 add_executable 跑通最简示例，再用 configure_file 把版本号注入头文件，顺带认识了目标的属性继承。"
 tags: [cmake]
 slug: cmake-quick-start
 ---

@@ -1,6 +1,7 @@
 ---
 title: Perl Taint Mode
 date: 2020-03-16 11:38:12+08:00
+description: "把脚本释伴改成 env -S 写法时碰见被推荐的 -T，才回头补 Perl 污染模式这一课：外部输入的数据不准直接拿去写盘或执行命令，反引号里的 hostname 当场被拦下。"
 tags: [perl, taint]
 slug: perl-taint-mode
 ---

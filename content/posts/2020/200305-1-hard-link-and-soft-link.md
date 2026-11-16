@@ -1,6 +1,7 @@
 ---
 title: 理解Linux下的硬链接与软链接
 date: 2020-03-05 07:02:12+08:00
+description: "从 inode 入手比较 cp、ln、ln -s 与 cp -l 的区别：硬链接共用同一块数据、只多一个计数，软链接不过存了一行路径。再用 mv 操作演示软链接为何会断，末尾顺带讲了 unlink 的来历。"
 tags: [linux, hard link, soft link, inode]
 slug: understanding-hard-links-and-soft-links-in-linux
 ---
