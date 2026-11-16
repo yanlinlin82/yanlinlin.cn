@@ -96,6 +96,12 @@ permalinks:
   posts: /:year/:month/:day/:slug/
   page: /:slug/
 
+mediaTypes:
+  # JSON Feed 的官方媒体类型，Hugo 未内置，需自行声明
+  application/feed+json:
+    suffixes:
+      - json
+
 outputFormats:
   searchIndex:
     mediaType: application/json
@@ -105,6 +111,11 @@ outputFormats:
   calendarIndex:
     mediaType: application/json
     baseName: calendar-index
+    isPlainText: true
+    notAlternative: true
+  jsonFeed:
+    mediaType: application/feed+json
+    baseName: feed
     isPlainText: true
     notAlternative: true
 

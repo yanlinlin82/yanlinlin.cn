@@ -1,6 +1,12 @@
 <!-- 页面链接 -->
 <link rel="canonical" href="{{ .Permalink }}">
+{{- /* 列表页/首页指向自身 RSS，普通页回落到站点总 RSS */ -}}
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ .RelPermalink }}">
+{{- else }}
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ "index.xml" | relURL }}">
+{{- end }}
+<link rel="alternate" type="application/feed+json" title="JSON Feed" href="{{ "feed.json" | relURL }}">
 
 <!-- 关键资源预加载 -->
 <link rel="preload" href="{{ "assets/css/main.css" | relURL }}" as="style">

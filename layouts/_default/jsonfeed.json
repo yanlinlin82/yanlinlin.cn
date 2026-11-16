@@ -1,0 +1,63 @@
+{{- /* JSON Feed 1.1，条目与 RSS 同源同量（rssLimit） */ -}}
+{{- $posts := where site.RegularPages "Type" "posts" -}}
+{{- $posts = where $posts "Params.searchIndex" "!=" true -}}
+{{- $limit := site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $posts = $posts | first $limit -}}
+{{- end -}}
+{{- $jsonOpts := dict "noHTMLEscape" true -}}
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": {{ site.Title | jsonify }},
+  "home_page_url": {{ site.BaseURL | jsonify }},
+  "feed_url": {{ "feed.json" | absURL | jsonify }},
+  "description": {{ site.Params.description | jsonify }},
+  "icon": {{ site.Params.images.og | jsonify }},
+  "favicon": {{ "favicon.ico" | absURL | jsonify }},
+  "language": {{ site.Language.Locale | jsonify }},
+  "authors": [
+    {
+      "name": {{ site.Params.author.name | jsonify }},
+      "url": {{ site.BaseURL | jsonify }}
+    }
+  ],
+  "items": [
+    {{- range $i, $post := $posts }}
+    {{- $summary := $post.Params.description }}
+    {{- if not $summary }}
+    {{- /* 无 front matter 摘要时用 Hugo 自动摘要，并标出截断 */ -}}
+    {{- $summary = printf "%s…" ($post.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
+    {{- end }}
+    {{- $image := $post.Params.image | default $post.Params.thumbnail }}
+    {{- if not $image }}
+    {{- /* 与列表页缩略图同规则：取正文第一张图（通常是题图） */ -}}
+    {{- with findRE `<img[^>]+src="([^"]+)"` $post.Content 1 }}
+    {{- $image = replaceRE `.*src="([^"]+)".*` `$1` (index . 0) | absURL }}
+    {{- end }}
+    {{- end }}
+    {
+      "id": {{ $post.Permalink | jsonify }},
+      "url": {{ $post.Permalink | jsonify }},
+      "title": {{ $post.Title | jsonify }},
+      "summary": {{ $summary | jsonify }},
+      "content_html": {{ $post.Content | jsonify $jsonOpts }},
+      {{- if $image }}
+      "image": {{ $image | absURL | jsonify }},
+      {{- end }}
+      "date_published": {{ $post.Date.Format "2006-01-02T15:04:05-07:00" | jsonify }},
+      {{- if ne ($post.Lastmod.Format "2006-01-02") ($post.Date.Format "2006-01-02") }}
+      "date_modified": {{ $post.Lastmod.Format "2006-01-02T15:04:05-07:00" | jsonify }},
+      {{- end }}
+      {{- $tags := union ($post.Params.categories | default (slice)) ($post.Params.tags | default (slice)) }}
+      {{- if $tags }}
+      "tags": {{ $tags | jsonify }},
+      {{- end }}
+      "authors": [
+        {
+          "name": {{ site.Params.author.name | jsonify }}
+        }
+      ]
+    }{{ if lt (add $i 1) (len $posts) }},{{ end }}
+    {{- end }}
+  ]
+}
